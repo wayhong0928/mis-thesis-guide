@@ -317,6 +317,9 @@ li.chk input { margin-right: .5rem; transform: translateY(1px); accent-color: va
   /* 導覽列收合時，按鈕改停在畫面右上角（跟左上角的漢堡選單對稱），
      不管導覽列開關都能點到 */
   .themebtn { top: .7rem; left: auto; right: .7rem; }
+  /* 研究五階段流程圖：原本靠 min-width: 640px + 橫向捲動，窄螢幕改垂直堆疊 */
+  .flow { flex-direction: column; min-width: 0; }
+  .flow .arrow { align-self: center; transform: rotate(90deg); }
 }
 
 /* ---------- 列印 ---------- */
