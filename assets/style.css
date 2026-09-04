@@ -85,7 +85,10 @@ a:hover { border-bottom-color: var(--accent); }
   position: fixed; inset: 0 auto 0 0; width: var(--nav-w);
   background: var(--bg-soft); border-right: 1px solid var(--rule);
   overflow-y: auto; padding: 1.4rem 1.1rem 3rem; z-index: 50;
+  /* 內容太長時仍可捲動，但不顯示捲軸本身（滑鼠滾輪／觸控／鍵盤照常可用） */
+  scrollbar-width: none; -ms-overflow-style: none;
 }
+.sidenav::-webkit-scrollbar { display: none; }
 .brand { display: flex; align-items: center; gap: .6rem; border: 0; margin-bottom: 1.1rem; color: var(--ink); }
 .brand-mark { font-size: 1.5rem; color: var(--accent); }
 .brand-text { font-family: var(--serif); font-weight: 700; font-size: 1.08rem; line-height: 1.3; letter-spacing: .02em; }
