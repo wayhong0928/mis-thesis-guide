@@ -33,7 +33,8 @@
     paint();
   });
   document.addEventListener("DOMContentLoaded", function () {
-    document.body.appendChild(btn);
+    var nav = document.getElementById("sidenav");
+    (nav || document.body).appendChild(btn);
     paint();
   });
 
