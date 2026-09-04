@@ -44,6 +44,7 @@
 </ul></div>
 <div class="navsec"><h2>AI 輔助研究</h2><ul>
 <li class="active"><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流" data-slug="ai-workflow" data-updated="1788520745">AI 輔助研究工作流</a></li>
+<li><a href="../pages/claude-tools-overview.html" data-title="Claude 工具家族：Chat、Code 與 Cowork" data-slug="claude-tools-overview" data-updated="1788531803">Claude 工具家族：Chat、Code 與 Cowork</a></li>
 <li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南" data-slug="tool-directory" data-updated="1788520745">AI 學術研究工具指南</a></li>
 <li><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包" data-slug="ai-agents" data-updated="1788528290">AI 代理工具懶人包</a></li>
 <li><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險" data-slug="ai-tools" data-updated="1788520745">AI 工具生態與風險</a></li>
@@ -503,10 +504,70 @@ AI 摘要傾向保留結論而丟掉條件。原文寫「在 A 條件下、以 B
   → 用語與因果動詞紀律自檢
   → 誠實揭露 AI 輔助的範圍
 </code></pre>
-<h3 id="111">11.1 把重複的工作固定下來</h3>
+<h3 id="111">11.1 一個具體的工具鏈範例</h3>
+<p>上面的四站是概念架構，不指定用什麼工具。這裡給一個實際能動手照做的組合，把「發想→找文獻→讀文獻→做筆記→彙整」串成一條線。工具可以替換，但<strong>這個順序背後的邏輯值得保留</strong>：每一站都先讓 AI 做資訊密集的部分，人做判斷的部分。</p>
+<pre><code>① 主題發想
+   Claude 對話（網頁版或 CLI 皆可）做環境掃描、矛盾偵測
+   → 找到「哪裡有缺口」的候選方向（見第三節「什麼問題才值得動用深度研究」）
+
+② 文獻蒐集與歸檔
+   確定方向後，把找到的文獻用 Zotero 建檔管理
+   → 建議拆成「完整書目庫」（收所有讀過、可能有用的文獻）
+     與「寫作引用庫」（只收確定會寫進論文的文獻）兩層，
+     寫作時只在小範圍裡找引用，不用在整個書目庫裡大海撈針
+
+③ 讀取文獻內容、跟文獻對話
+   PDF 到手後，查詢內容的優先順序建議是：
+   1. 用 NotebookLM 這類「以文件為準」的工具建立筆記本，把 PDF 丟進去問問題
+      （答案錨定在你上傳的原文，比一般對話工具更不容易編造內容）
+   2. 沒有這類工具，或文獻還沒收錄，改用 Claude Code／Codex 這類代理型工具讀 PDF 全文，
+      整理成結構化摘要（見下方模板）；文件長就拆給子任務處理，不要在主對話裡一次吃光
+   3. 只有短文獻（十幾頁內）而且對話上下文還很空時，才考慮直接貼給對話工具讀
+
+④ 整理成 Obsidian 筆記
+   查證過的內容依固定模板寫進筆記，重點是「結構固定＋深度依文獻類型調整」：
+</code></pre>
+<p>一個可以直接套用的文獻筆記模板骨架：</p>
+<pre><code class="language-yaml">---
+type: paper
+citekey: [文獻管理工具給的識別碼，跟 Zotero 一致]
+authors: [作者全名]
+year: [年份]
+journal: [期刊或會議名稱]
+method: [Survey / Experiment / Review / Mixed 擇一]
+供稿去向:
+  - &quot;[[對應的構念或主題筆記]]&quot;
+status: 🌱
+---
+</code></pre>
+<pre><code>   實證論文（Survey／Experiment／Mixed）：深度區全填，含方法詳析、
+     信效度批判、寫作素材、與自身研究的連結。
+   Review／理論／書籍：跳過方法詳析，其餘照填（批判改為對論點的批判）。
+
+   兩條紀律：
+   - 欄位判斷不出來就填「待查證」，不猜；欄位對這篇文獻本質上不適用才填「不適用」，兩者意義不同。
+   - 原文不能直接複製貼上，一律改寫成自己的話；需要逐字引用時要明確標示成引文，不能混在改寫段落裡。
+
+   **每篇筆記都連回一張中央的「概念卡」或「主題卡」**（Obsidian wikilink），
+   而不是各自獨立、互不相連。文獻多了以後，這些連結本身就是一張概念地圖：
+   哪個概念被很多文獻支持、哪個概念只有一兩篇在談，一眼就看得出來。
+
+⑤ 定期彙整
+   固定週期（例如每週）把新讀的文獻交給工具做跨文獻整合（見 11.3 節），
+   輸出共同主題、方法差異、矛盾之處。這份輸出是思辨的起點，不是結論。
+</code></pre>
+<div class="admonition tip">
+<p class="admonition-title">查文獻內容優先用「以文件為準」的工具，不是查完就丟</p>
+<p>第三站選 NotebookLM 這類工具的理由，跟<a href="#_5">第七節「引用查核的三個步驟」</a>的邏輯是同一件事：<strong>答案能不能追溯回原文</strong>。一般對話工具讀完 PDF 給的摘要，跟真正逐句核對過的內容，品質差很多，尤其是條件、範圍這類容易被摘要簡化掉的細節。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">工具是別人的，流程是你自己的</p>
+<p>上面點名的工具（Zotero、NotebookLM、Claude Code、Codex）都會改版、換名字、甚至停止服務。<strong>真正值得留下來的是這個順序背後的邏輯</strong>：先分層管理文獻（別讓寫作引用庫跟到訪庫混在一起）、內容查證要能追溯回原文、筆記要有固定結構並連回中央概念網絡、彙整要定期做而不是等寫作階段才臨時抱佛腳。換掉任何一個工具，這套邏輯都還成立。</p>
+</div>
+<h3 id="112">11.2 把重複的工作固定下來</h3>
 <p>當你發現自己一直在貼同樣的指示，就該把它整理成可重用的提示詞範本或 skill。做法見<a href="ai-agents.html">AI 代理工具懶人包</a>。</p>
 <p><strong>一個實際的例子</strong>：本站的<a href="style.html">學術中文寫作紀律</a>整頁，本身就是一份可執行檢查清單的原料。</p>
-<h3 id="112">11.2 跨文獻整合當成週期性作業</h3>
+<h3 id="113">11.3 跨文獻整合當成週期性作業</h3>
 <p>把每週新讀的十篇文獻一併交給工具做跨文獻整合，輸出共同主題、方法差異、矛盾之處、共同的研究限制。</p>
 <p><strong>重點在於：那份輸出是「思辨的起點」，不是「思辨的結論」。</strong> 它告訴你哪裡有矛盾，判斷矛盾為什麼發生、值不值得追，是你的事。</p>
 <hr />
@@ -524,9 +585,9 @@ AI 摘要傾向保留結論而丟掉條件。原文寫「在 A 條件下、以 B
 <li>卡關時先檢查自己站在哪個階段；站錯階段用錯工具最浪費時間。</li>
 </ul>
 <hr />
-<p><strong>延伸</strong>：<a href="tool-directory.html">AI 學術研究工具指南</a>｜<a href="ai-agents.html">AI 代理工具懶人包</a>｜<a href="ai-tools.html">AI 工具生態與風險</a>｜<a href="ethics.html">學術倫理與 AI 揭露</a>｜<a href="prompts.html">AI 提示詞範本</a></p>
+<p><strong>延伸</strong>：<a href="tool-directory.html">AI 學術研究工具指南</a>｜<a href="claude-tools-overview.html">Claude 工具家族</a>｜<a href="ai-agents.html">AI 代理工具懶人包</a>｜<a href="ai-tools.html">AI 工具生態與風險</a>｜<a href="ethics.html">學術倫理與 AI 揭露</a>｜<a href="prompts.html">AI 提示詞範本</a></p>
 </article>
-<nav class="pager"><a class="prev" href="post-defense.html">← 口試後修訂、典藏與結案</a><a class="next" href="tool-directory.html">AI 學術研究工具指南 →</a></nav>
+<nav class="pager"><a class="prev" href="post-defense.html">← 口試後修訂、典藏與結案</a><a class="next" href="claude-tools-overview.html">Claude 工具家族：Chat、Code 與 Cowork →</a></nav>
 <footer class="foot">
 <p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
 <p><a href="../pages/sources.html">延伸閱讀與資源指南</a></p>
@@ -561,8 +622,9 @@ AI 摘要傾向保留結論而丟掉條件。原文寫「在 A 條件下、以 B
 </li>
 <li><a href="#_8">十、卡關診斷：你站在哪個階段</a></li>
 <li><a href="#_9">十一、一份可用的工作流</a><ul>
-<li><a href="#111">11.1 把重複的工作固定下來</a></li>
-<li><a href="#112">11.2 跨文獻整合當成週期性作業</a></li>
+<li><a href="#111">11.1 一個具體的工具鏈範例</a></li>
+<li><a href="#112">11.2 把重複的工作固定下來</a></li>
+<li><a href="#113">11.3 跨文獻整合當成週期性作業</a></li>
 </ul>
 </li>
 <li><a href="#_10">十二、本頁重點回顧</a></li>

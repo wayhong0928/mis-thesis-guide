@@ -138,6 +138,12 @@
   "section": "AI 輔助研究"
  },
  {
+  "slug": "claude-tools-overview",
+  "title": "Claude 工具家族：Chat、Code 與 Cowork",
+  "desc": "三種介面怎麼選、研究工作怎麼分配、權限與人工查核",
+  "section": "AI 輔助研究"
+ },
+ {
   "slug": "tool-directory",
   "title": "AI 學術研究工具指南",
   "desc": "依研究階段分類：檢索、引文網絡、閱讀、SLR、分析",

@@ -182,4 +182,4 @@ OpenAI 曾因準確率過低而下架自己的 AI Classifier。市面上的偵�
 
 **來源說明**：本頁的工具生態整理來自 2026 年 9 月的一次調查，星數與功能可能已變動，請自行確認現況。
 
-**延伸**：[AI 學術研究工具指南](tool-directory.md)｜[AI 代理工具懶人包](ai-agents.md)｜[AI 輔助研究工作流](ai-workflow.md)｜[學術倫理與 AI 揭露](ethics.md)
+**延伸**：[Claude 工具家族](claude-tools-overview.md)｜[AI 學術研究工具指南](tool-directory.md)｜[AI 代理工具懶人包](ai-agents.md)｜[AI 輔助研究工作流](ai-workflow.md)｜[學術倫理與 AI 揭露](ethics.md)

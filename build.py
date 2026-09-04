@@ -48,6 +48,7 @@ NAV = [
     ]),
     ("AI 輔助研究", [
         ("ai-workflow", "AI 輔助研究工作流", "三層架構、戰略聚焦單、各階段的能與不能"),
+        ("claude-tools-overview", "Claude 工具家族：Chat、Code 與 Cowork", "三種介面怎麼選、研究工作怎麼分配、權限與人工查核"),
         ("tool-directory", "AI 學術研究工具指南", "依研究階段分類：檢索、引文網絡、閱讀、SLR、分析"),
         ("ai-agents", "AI 代理工具懶人包", "Claude Code、Skill／Plugin、Codex 與研究場景應用"),
         ("ai-tools", "AI 工具生態與風險", "Auto Research、去 AI 味工具的定位與紅線"),
