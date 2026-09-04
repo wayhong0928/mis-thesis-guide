@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>次級資料分析與檔案研究｜研究方法與論文寫作知識網絡</title>
+<meta name="description" content="資料來源適配、使用權限、證據脈絡與穩健性檢查">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128218;</text></svg>">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<button class="navtoggle" id="navtoggle" aria-label="開啟導覽">☰</button>
+<nav class="sidenav" id="sidenav" aria-label="全站導覽">
+<a class="brand" href="../index.html"><span class="brand-mark">◈</span><span class="brand-text">研究方法<br><small>知識網絡</small></span></a>
+<div class="navsearch"><input type="search" id="navfilter" placeholder="篩選頁面…" aria-label="篩選頁面"></div>
+<div class="navsec"><h2>研究的基礎</h2><ul>
+<li><a href="../pages/getting-started.html" data-title="從零開始：研究所的第一個月">從零開始：研究所的第一個月</a></li>
+<li><a href="../pages/research-basics.html" data-title="研究的本質、歷程與時程">研究的本質、歷程與時程</a></li>
+<li><a href="../pages/finding-reading.html" data-title="怎麼找、怎麼讀、怎麼選題目">怎麼找、怎麼讀、怎麼選題目</a></li>
+<li><a href="../pages/is-research.html" data-title="資訊管理研究的範疇與取向">資訊管理研究的範疇與取向</a></li>
+<li><a href="../pages/problem-design.html" data-title="研究問題、假說與研究架構">研究問題、假說與研究架構</a></li>
+<li><a href="../pages/literature.html" data-title="文獻回顧與批判性思考">文獻回顧與批判性思考</a></li>
+<li><a href="../pages/theory-building.html" data-title="理論的構成與評估">理論的構成與評估</a></li>
+<li><a href="../pages/theories.html" data-title="常用理論家族與選用原則">常用理論家族與選用原則</a></li>
+</ul></div>
+<div class="navsec"><h2>研究方法</h2><ul>
+<li><a href="../pages/methodology.html" data-title="方法論選擇地圖">方法論選擇地圖</a></li>
+<li><a href="../pages/research-ethics-data.html" data-title="研究倫理與資料管理">研究倫理與資料管理</a></li>
+<li><a href="../pages/systematic-review.html" data-title="系統性回顧與範疇回顧">系統性回顧與範疇回顧</a></li>
+<li><a href="../pages/quant-analysis-basics.html" data-title="量化分析規劃與資料處理基礎">量化分析規劃與資料處理基礎</a></li>
+<li><a href="../pages/method-survey.html" data-title="問卷調查法">問卷調查法</a></li>
+<li><a href="../pages/method-experiment.html" data-title="實驗法">實驗法</a></li>
+<li><a href="../pages/method-dsr.html" data-title="系統發展法與設計科學研究">系統發展法與設計科學研究</a></li>
+<li><a href="../pages/method-data.html" data-title="演算法、最佳化與資料分析">演算法、最佳化與資料分析</a></li>
+<li class="active"><a href="../pages/method-secondary-data.html" data-title="次級資料分析與檔案研究">次級資料分析與檔案研究</a></li>
+<li><a href="../pages/method-qualitative.html" data-title="質性研究方法">質性研究方法</a></li>
+</ul></div>
+<div class="navsec"><h2>論文寫作</h2><ul>
+<li><a href="../pages/writing.html" data-title="論文架構與各章寫作要領">論文架構與各章寫作要領</a></li>
+<li><a href="../pages/style.html" data-title="學術中文寫作紀律">學術中文寫作紀律</a></li>
+<li><a href="../pages/defense.html" data-title="計畫書、口試與簡報">計畫書、口試與簡報</a></li>
+<li><a href="../pages/post-defense.html" data-title="口試後修訂、典藏與結案">口試後修訂、典藏與結案</a></li>
+</ul></div>
+<div class="navsec"><h2>AI 輔助研究</h2><ul>
+<li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流">AI 輔助研究工作流</a></li>
+<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南">AI 學術研究工具指南</a></li>
+<li><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包">AI 代理工具懶人包</a></li>
+<li><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險">AI 工具生態與風險</a></li>
+<li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露">學術倫理與 AI 揭露</a></li>
+</ul></div>
+<div class="navsec"><h2>工具箱</h2><ul>
+<li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫">文獻管理與知識庫</a></li>
+<li><a href="../pages/checklists.html" data-title="檢查清單">檢查清單</a></li>
+<li><a href="../pages/prompts.html" data-title="AI 提示詞範本">AI 提示詞範本</a></li>
+<li><a href="../pages/glossary.html" data-title="名詞與用語對照">名詞與用語對照</a></li>
+<li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南">延伸閱讀與資源指南</a></li>
+</ul></div>
+</nav>
+<div class="wrap">
+<main id="main">
+<p class="crumb"><a href="../index.html">首頁</a> ／ 研究方法</p>
+<article class="doc">
+<h1>次級資料分析與檔案研究</h1>
+<p class='lede'>資料來源適配、使用權限、證據脈絡與穩健性檢查</p>
+<blockquote>
+<p>用既有資料回答新問題，重點不在「省下收集時間」，而在證明資料的形成脈絡、使用權限與研究問題彼此相配。</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、這類研究在做什麼</h2>
+<p><strong>次級資料分析（secondary data analysis）</strong>使用原先為其他目的產生的資料，例如政府統計、平台紀錄、企業交易資料、調查資料庫或研究資料典藏。研究者沒有參與最初的資料生成，因此必須補做來源、定義、涵蓋範圍與品質的查核。</p>
+<p><strong>檔案研究（archival research）</strong>則把文件、紀錄、影像、網站存檔或組織檔案當成證據。它關心的不只文件寫了什麼，也追問誰在什麼制度下製作、為何保存、如何分類，以及哪些材料沒有留下來。</p>
+<p>兩者常有交集，但不完全相同。下載政府開放資料後建立統計模型，通常屬次級資料分析；依公文、會議紀錄與歷年版本重建決策過程，較接近檔案研究。方法名稱應跟實際證據與分析邏輯一致。</p>
+<div class="admonition note">
+<p class="admonition-title">既有資料不等於現成答案</p>
+<p>資料欄位是原蒐集者依其任務設計的結果。研究者仍要建立理論、操作型定義與分析計畫，不能看到有哪些欄位才倒推研究問題。</p>
+</div>
+<hr />
+<h2 id="_2">二、什麼問題適合使用</h2>
+<p>以下情境通常值得先找既有資料：</p>
+<ul>
+<li>研究對象跨多年、跨地區或規模很大，重新蒐集成本過高</li>
+<li>需要真實行為紀錄，且自陳問卷容易受到回憶或社會期許影響</li>
+<li>事件已經發生，只能透過當時留下的紀錄回溯</li>
+<li>希望重做既有分析、檢查結果是否穩健，或用新理論重新解讀舊資料</li>
+<li>研究的是制度、組織決策、系統演進或公共論述的變化</li>
+</ul>
+<p>有些問題則不適合。資料沒有關鍵構念、蒐集目的與研究問題差太遠、缺少必要時間點，或樣本涵蓋範圍無法辨認時，再大的資料也答不了問題。需要理解行動者主觀經驗時，可考慮搭配<a href="method-qualitative.html">質性研究方法</a>。</p>
+<h3 id="21">2.1 先做一張適配表</h3>
+<table>
+<thead>
+<tr>
+<th>研究需要</th>
+<th>要向資料來源確認</th>
+<th>不符合時的處理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分析單位</td>
+<td>每列代表人、帳號、事件、組織或期間</td>
+<td>重新界定問題，不把不同單位硬併</td>
+</tr>
+<tr>
+<td>目標母體</td>
+<td>資料涵蓋誰，又漏掉誰</td>
+<td>限縮推論範圍</td>
+</tr>
+<tr>
+<td>關鍵構念</td>
+<td>欄位能否合理代表理論概念</td>
+<td>另找資料或補充蒐集</td>
+</tr>
+<tr>
+<td>時間順序</td>
+<td>變數在哪些時間點測得</td>
+<td>不主張資料無法支持的方向性</td>
+</tr>
+<tr>
+<td>比較基準</td>
+<td>定義、分類與蒐集方式是否跨期一致</td>
+<td>分期分析或明確標示斷點</td>
+</tr>
+<tr>
+<td>品質資訊</td>
+<td>遺漏、抽樣、加權、修訂與錯誤說明</td>
+<td>納入敏感度分析或停止使用</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">代理變數必須有理論理由</p>
+<p>「系統登入次數」不會自動等於投入程度，「貼文數」也不必然代表參與品質。代理變數與構念之間的關係要以理論、資料生成方式及既有研究說明，並在限制中交代測量誤差。</p>
+</div>
+<hr />
+<h2 id="_3">三、資料的取得與使用權限</h2>
+<p>「網路上找得到」只描述可見性，不能取代授權、倫理與保密判斷。開始下載或複製前，先把資料分成下列四類：</p>
+<table>
+<thead>
+<tr>
+<th>類型</th>
+<th>常見情況</th>
+<th>研究者要做的事</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>公開資料</strong></td>
+<td>政府開放資料、公開統計、開放典藏</td>
+<td>保存來源網址、版本、下載日期與開放授權；確認是否允許再散布衍生資料</td>
+</tr>
+<tr>
+<td><strong>授權資料</strong></td>
+<td>註冊後使用、資料庫訂閱、API 或 End User Licence</td>
+<td>閱讀使用條款，記錄可用目的、引用方式、保存期限與共享限制</td>
+</tr>
+<tr>
+<td><strong>受限資料</strong></td>
+<td>含敏感欄位，只能在安全環境或經申請使用</td>
+<td>先取得核准，依資料管理計畫限制裝置、地點、輸出與共同研究者</td>
+</tr>
+<tr>
+<td><strong>私人資料</strong></td>
+<td>未公開訪談、Email、內部文件、可辨識個人紀錄</td>
+<td>未取得明確同意與權限不得使用；公開專案中必須移除或存放於專案外的受控位置</td>
+</tr>
+</tbody>
+</table>
+<p>受著作權保護的材料並非一律不能研究。著作權保護具體表達，不保護觀念、方法、程序與事實；研究者可以用自己的話分析觀念與事實，但引用、重製、發布影像或大段文字時，仍須遵守授權與合理使用等適用規範。保密義務也不會因改寫而消失。</p>
+<div class="admonition danger">
+<p class="admonition-title">去識別化不是刪掉姓名就結束</p>
+<p>任職單位、精確日期、罕見事件與多個欄位的組合仍可能辨認個人。若資料原本未授權研究、同意範圍不含目前用途，或合約禁止轉交，單靠去識別化不能補足權限。</p>
+</div>
+<p>涉及個人資料、人類研究或跨資料集串接時，先確認所屬機構的倫理審查要求。資料不得上傳至未核准的雲端或生成式 AI 服務，詳細原則見<a href="ethics.html">學術倫理與 AI 揭露</a>。</p>
+<hr />
+<h2 id="_4">四、資料來源適配怎麼查</h2>
+<h3 id="41">4.1 讀資料，不只讀欄位</h3>
+<p>取得資料後至少要保存並閱讀：</p>
+<ul>
+<li>資料說明、資料字典與代碼表</li>
+<li>蒐集目的、母體、抽樣與納入規則</li>
+<li>觀察期間、更新頻率與版本紀錄</li>
+<li>欄位定義、單位、編碼及缺失值代碼</li>
+<li>清理、加權、插補或匿名化方式</li>
+<li>已知限制、修訂公告與聯絡窗口</li>
+</ul>
+<p>找不到這些資訊時，不要自行補出一套看似合理的定義。可以聯絡資料提供者；仍無法確認的欄位標成「待查證」，必要時排除。</p>
+<h3 id="42">4.2 做最小可行性檢查</h3>
+<p>正式分析前，先取一小部分資料回答五個問題：</p>
+<ol>
+<li>唯一識別碼是否真的唯一？</li>
+<li>分析單位和研究問題是否一致？</li>
+<li>關鍵欄位在所需期間是否都有紀錄？</li>
+<li>類別、單位或系統版本曾否改變？</li>
+<li>合併鍵能否穩定連接不同資料表，會不會產生一對多膨脹？</li>
+</ol>
+<p>只要其中一題答不出來，就先停在可行性階段。這比完成模型後才發現年份定義不同，代價小得多。</p>
+<hr />
+<h2 id="_5">五、檔案研究的證據邏輯</h2>
+<p>檔案不是事件的透明複製品。它是某個人或機構在特定任務下製作、選擇與保存的紀錄，因而需要來源批判。</p>
+<h3 id="51">5.1 保留來源與原始脈絡</h3>
+<p>檔案研究常用兩項原則理解材料：</p>
+<ul>
+<li><strong>來源原則（provenance）</strong>：確認檔案由誰建立、保管與移轉，不把不同產生者的紀錄混成同一來源。</li>
+<li><strong>原始秩序（original order）</strong>：盡量保留建立者原有的分類與排列，因為位置、相鄰文件與卷宗結構本身可能提供脈絡。</li>
+</ul>
+<p>拍照或摘錄時，同步記下典藏機構、全宗或系列、盒號、卷宗、頁次、日期與檔名。只留下裁切後的圖片，之後很難重建證據位置。</p>
+<h3 id="52">5.2 對每份材料問六件事</h3>
+<table>
+<thead>
+<tr>
+<th>問題</th>
+<th>判讀重點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>誰製作？</td>
+<td>作者的職責、位置與利害關係</td>
+</tr>
+<tr>
+<td>為何製作？</td>
+<td>行政、說服、稽核、記憶或對外溝通</td>
+</tr>
+<tr>
+<td>寫給誰看？</td>
+<td>預定讀者會影響措辭與省略內容</td>
+</tr>
+<tr>
+<td>何時形成？</td>
+<td>同期紀錄、事後回憶或後來修訂</td>
+</tr>
+<tr>
+<td>如何保存？</td>
+<td>哪些材料較可能留下，哪些容易消失</td>
+</tr>
+<tr>
+<td>能與什麼互證？</td>
+<td>其他來源、不同角色、不同媒介或同時期資料</td>
+</tr>
+</tbody>
+</table>
+<p>「沒有找到」不等於「沒有發生」。可能是未記錄、未保存、尚未開放、索引方式不同，或研究者的檢索路徑不足。負面證據要保守解讀。</p>
+<div class="admonition tip">
+<p class="admonition-title">先建檔案日誌</p>
+<p>每次查檔記錄日期、館藏範圍、查詢詞、調閱項目、未開放項目與選取理由。這份日誌能說明證據如何形成，也能避免下次重走同一條路。</p>
+</div>
+<hr />
+<h2 id="_6">六、從取得到分析的操作流程</h2>
+<h3 id="61">6.1 寫資料使用計畫</h3>
+<p>在接觸完整資料前，先寫清楚研究問題、分析單位、所需欄位、時間範圍、連結方式、權限條件、保存位置與預計產出。若資料提供者要求刪除期限，也要納入時程。</p>
+<h3 id="62">6.2 保存原始層與處理層</h3>
+<p>資料夾至少分成三層：</p>
+<pre><code class="language-text">data/
+├── raw/          原始檔，只讀，不覆寫
+├── interim/      合併、轉碼與去識別化的中間檔
+└── analysis/     實際送進模型的分析檔
+</code></pre>
+<p>原始檔記錄雜湊值或版本識別、取得日期與來源。每一步清理用程式碼或轉換日誌保存，不要只留下最後一份試算表。</p>
+<h3 id="63">6.3 建立資料字典與決策日誌</h3>
+<p>資料字典至少包含原欄位、分析欄位、定義、型態、單位、有效值、缺失碼、轉換方式與來源版本。決策日誌則記錄排除觀察值、重新分類、串接失敗及版本更新的理由。</p>
+<h3 id="64">6.4 分析與穩健性檢查</h3>
+<p>分析方法要回到研究問題與資料生成機制。跨期資料需處理時間趨勢與制度斷點；個體重複出現時，觀察值通常不獨立；平台資料還可能受到推薦機制、機器人帳號與政策改版影響。若只有橫斷觀察資料，結果宜寫成相關、差異或預測，不能直接寫成因果。</p>
+<p>可比較不同納入規則、變數定義、時間窗或模型設定，觀察結論是否大幅改變。敏感度分析不是挑一個最好看的結果，而是揭示結果依賴哪些決定。</p>
+<hr />
+<h2 id="_7">七、品質與倫理風險</h2>
+<table>
+<thead>
+<tr>
+<th>風險</th>
+<th>常見表現</th>
+<th>回應方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>涵蓋偏誤</td>
+<td>平台資料只含活躍使用者</td>
+<td>描述未被觀察者，限縮推論</td>
+</tr>
+<tr>
+<td>定義漂移</td>
+<td>同名欄位跨年改過計算方式</td>
+<td>分期、重建定義或排除不可比期間</td>
+</tr>
+<tr>
+<td>選擇偏誤</td>
+<td>只有願意公開或留下紀錄的案例</td>
+<td>找替代來源互證，承認沉默區域</td>
+</tr>
+<tr>
+<td>資料洩漏</td>
+<td>受限資料被放進共用雲端或版本庫</td>
+<td>隔離儲存、最小權限、輸出審查</td>
+</tr>
+<tr>
+<td>再識別風險</td>
+<td>多資料表串接後可辨認個人</td>
+<td>降低精度、抑制稀有組合、限制輸出</td>
+</tr>
+<tr>
+<td>權限誤判</td>
+<td>把可下載當成可再發布</td>
+<td>保存條款，分開「可分析」與「可分享」</td>
+</tr>
+<tr>
+<td>過度因果化</td>
+<td>觀察到相關就解釋成作用效果</td>
+<td>依設計使用相關、預測或描述語言</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">排除資料要留下理由</p>
+<p>發現不利結果後才刪除年份、群組或異常值，可能構成選擇性分析。排除規則應盡量事先寫明；事後修改時，保留原結果、理由與敏感度分析。</p>
+</div>
+<hr />
+<h2 id="_8">八、本頁重點回顧</h2>
+<ul>
+<li>次級資料分析使用既有資料回答新問題；檔案研究還要解讀紀錄的來源、秩序與保存脈絡。</li>
+<li>資料來源適配要核對分析單位、母體、構念、時間、定義與品質，不能只看樣本量。</li>
+<li>公開、授權、受限與私人資料的條件不同；網路可見不代表可以任意使用或發布。</li>
+<li>著作權保護表達，不保護觀念、方法與事實；私人或未獲授權的保密資料則必須移出公開範圍。</li>
+<li>原始資料不覆寫，所有轉換、排除與串接決定都要可追溯。</li>
+<li>既有觀察資料通常支持描述、相關與預測；因果主張仍需相應的研究設計。</li>
+</ul>
+<hr />
+<p><strong>延伸</strong>：<a href="methodology.html">方法論選擇地圖</a>｜<a href="quant-analysis-basics.html">量化分析規劃與資料處理基礎</a>｜<a href="method-qualitative.html">質性研究方法</a>｜<a href="ethics.html">學術倫理與 AI 揭露</a></p>
+</article>
+<nav class="pager"><a class="prev" href="method-data.html">← 演算法、最佳化與資料分析</a><a class="next" href="method-qualitative.html">質性研究方法 →</a></nav>
+<footer class="foot">
+<p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
+<p><a href="../pages/sources.html">延伸閱讀與資源指南</a></p>
+</footer>
+</main>
+<aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">
+<ul>
+<li><a href="#_1">一、這類研究在做什麼</a></li>
+<li><a href="#_2">二、什麼問題適合使用</a><ul>
+<li><a href="#21">2.1 先做一張適配表</a></li>
+</ul>
+</li>
+<li><a href="#_3">三、資料的取得與使用權限</a></li>
+<li><a href="#_4">四、資料來源適配怎麼查</a><ul>
+<li><a href="#41">4.1 讀資料，不只讀欄位</a></li>
+<li><a href="#42">4.2 做最小可行性檢查</a></li>
+</ul>
+</li>
+<li><a href="#_5">五、檔案研究的證據邏輯</a><ul>
+<li><a href="#51">5.1 保留來源與原始脈絡</a></li>
+<li><a href="#52">5.2 對每份材料問六件事</a></li>
+</ul>
+</li>
+<li><a href="#_6">六、從取得到分析的操作流程</a><ul>
+<li><a href="#61">6.1 寫資料使用計畫</a></li>
+<li><a href="#62">6.2 保存原始層與處理層</a></li>
+<li><a href="#63">6.3 建立資料字典與決策日誌</a></li>
+<li><a href="#64">6.4 分析與穩健性檢查</a></li>
+</ul>
+</li>
+<li><a href="#_7">七、品質與倫理風險</a></li>
+<li><a href="#_8">八、本頁重點回顧</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script src="../assets/site.js"></script>
+</body>
+</html>

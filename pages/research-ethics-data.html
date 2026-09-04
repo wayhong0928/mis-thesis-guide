@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>研究倫理與資料管理｜研究方法與論文寫作知識網絡</title>
+<meta name="description" content="倫理審查、知情同意、風險與資料生命週期">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128218;</text></svg>">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<button class="navtoggle" id="navtoggle" aria-label="開啟導覽">☰</button>
+<nav class="sidenav" id="sidenav" aria-label="全站導覽">
+<a class="brand" href="../index.html"><span class="brand-mark">◈</span><span class="brand-text">研究方法<br><small>知識網絡</small></span></a>
+<div class="navsearch"><input type="search" id="navfilter" placeholder="篩選頁面…" aria-label="篩選頁面"></div>
+<div class="navsec"><h2>研究的基礎</h2><ul>
+<li><a href="../pages/getting-started.html" data-title="從零開始：研究所的第一個月">從零開始：研究所的第一個月</a></li>
+<li><a href="../pages/research-basics.html" data-title="研究的本質、歷程與時程">研究的本質、歷程與時程</a></li>
+<li><a href="../pages/finding-reading.html" data-title="怎麼找、怎麼讀、怎麼選題目">怎麼找、怎麼讀、怎麼選題目</a></li>
+<li><a href="../pages/is-research.html" data-title="資訊管理研究的範疇與取向">資訊管理研究的範疇與取向</a></li>
+<li><a href="../pages/problem-design.html" data-title="研究問題、假說與研究架構">研究問題、假說與研究架構</a></li>
+<li><a href="../pages/literature.html" data-title="文獻回顧與批判性思考">文獻回顧與批判性思考</a></li>
+<li><a href="../pages/theory-building.html" data-title="理論的構成與評估">理論的構成與評估</a></li>
+<li><a href="../pages/theories.html" data-title="常用理論家族與選用原則">常用理論家族與選用原則</a></li>
+</ul></div>
+<div class="navsec"><h2>研究方法</h2><ul>
+<li><a href="../pages/methodology.html" data-title="方法論選擇地圖">方法論選擇地圖</a></li>
+<li class="active"><a href="../pages/research-ethics-data.html" data-title="研究倫理與資料管理">研究倫理與資料管理</a></li>
+<li><a href="../pages/systematic-review.html" data-title="系統性回顧與範疇回顧">系統性回顧與範疇回顧</a></li>
+<li><a href="../pages/quant-analysis-basics.html" data-title="量化分析規劃與資料處理基礎">量化分析規劃與資料處理基礎</a></li>
+<li><a href="../pages/method-survey.html" data-title="問卷調查法">問卷調查法</a></li>
+<li><a href="../pages/method-experiment.html" data-title="實驗法">實驗法</a></li>
+<li><a href="../pages/method-dsr.html" data-title="系統發展法與設計科學研究">系統發展法與設計科學研究</a></li>
+<li><a href="../pages/method-data.html" data-title="演算法、最佳化與資料分析">演算法、最佳化與資料分析</a></li>
+<li><a href="../pages/method-secondary-data.html" data-title="次級資料分析與檔案研究">次級資料分析與檔案研究</a></li>
+<li><a href="../pages/method-qualitative.html" data-title="質性研究方法">質性研究方法</a></li>
+</ul></div>
+<div class="navsec"><h2>論文寫作</h2><ul>
+<li><a href="../pages/writing.html" data-title="論文架構與各章寫作要領">論文架構與各章寫作要領</a></li>
+<li><a href="../pages/style.html" data-title="學術中文寫作紀律">學術中文寫作紀律</a></li>
+<li><a href="../pages/defense.html" data-title="計畫書、口試與簡報">計畫書、口試與簡報</a></li>
+<li><a href="../pages/post-defense.html" data-title="口試後修訂、典藏與結案">口試後修訂、典藏與結案</a></li>
+</ul></div>
+<div class="navsec"><h2>AI 輔助研究</h2><ul>
+<li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流">AI 輔助研究工作流</a></li>
+<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南">AI 學術研究工具指南</a></li>
+<li><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包">AI 代理工具懶人包</a></li>
+<li><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險">AI 工具生態與風險</a></li>
+<li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露">學術倫理與 AI 揭露</a></li>
+</ul></div>
+<div class="navsec"><h2>工具箱</h2><ul>
+<li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫">文獻管理與知識庫</a></li>
+<li><a href="../pages/checklists.html" data-title="檢查清單">檢查清單</a></li>
+<li><a href="../pages/prompts.html" data-title="AI 提示詞範本">AI 提示詞範本</a></li>
+<li><a href="../pages/glossary.html" data-title="名詞與用語對照">名詞與用語對照</a></li>
+<li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南">延伸閱讀與資源指南</a></li>
+</ul></div>
+</nav>
+<div class="wrap">
+<main id="main">
+<p class="crumb"><a href="../index.html">首頁</a> ／ 研究方法</p>
+<article class="doc">
+<h1>研究倫理與資料管理</h1>
+<p class='lede'>倫理審查、知情同意、風險與資料生命週期</p>
+<blockquote>
+<p>這一頁把研究倫理從「送一份表單」改成一套可執行的工作流程：先判定審查義務，再把同意、招募、風險與資料治理一路落實到結案。</p>
+</blockquote>
+<div class="admonition danger">
+<p class="admonition-title">先審查，再招募</p>
+<p>只要研究會接觸人、取得可識別個人資料，或使用原本不是為本研究蒐集的資料，就應先查所屬機構的研究倫理與個資程序。需要審查的計畫，必須在核准後才招募或蒐集資料；不得先做完，再補送審。</p>
+<p>本頁是規劃地圖，不是法律意見，也不能代替研究倫理審查委員會（IRB／REC）的判定。</p>
+</div>
+<hr />
+<h2 id="_1">一、先拆成三個判斷</h2>
+<p>研究者常把「不是醫療研究」「問卷匿名」或「資料已經存在」當成不用處理倫理的理由。這些資訊只能協助判斷，不能直接得出結論。開始前要分別回答：</p>
+<ol>
+<li><strong>研究是否涉及人或其資料？</strong> 包含問卷、訪談、觀察、使用者測試、社群內容，以及可直接或間接辨識個人的次級資料。</li>
+<li><strong>所屬機構要求走哪一種程序？</strong> 可能是一般審查、簡易審查、免予審查的申請，或非人體研究的確認。名稱、適用條件與是否須取得證明，依各機構規定。</li>
+<li><strong>即使不須倫理審查，是否仍有其他義務？</strong> 個資法、資料提供者的使用條款、契約、著作權、保密約定與期刊政策仍可能適用。</li>
+</ol>
+<pre><code class="language-text">研究會接觸人或人的資料嗎？
+│
+├─ 否 ─→ 記錄判斷依據，仍檢查契約、著作權與資訊安全
+│
+└─ 是
+   ├─ 先查本校 IRB／REC 的範圍與申請方式
+   ├─ 送交研究計畫、招募、同意與資料管理文件
+   └─ 取得正式判定或核准後，才依核准版本執行
+</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">免審不等於自己判定不用送</p>
+<p>《人體研究法》列有得免審查的案件，但各機構如何確認、要不要申請證明，須看其程序。以臺大醫院研究倫理委員會為例，是否符合免審由委員會判定；這只能說明一種制度做法，不能直接套用到其他學校。你的學校如何處理：<strong>待查證</strong>。</p>
+</div>
+<hr />
+<h2 id="_2">二、倫理審查：送的不是題目，是完整做法</h2>
+<p>研究倫理審查關心的是研究參與者會經歷什麼、承擔什麼風險，以及研究團隊如何保護他們。常見送審文件包括：</p>
+<ul>
+<li>研究計畫書與研究流程</li>
+<li>納入、排除與停止條件</li>
+<li>招募文案、接觸管道與酬謝方式</li>
+<li>研究參與者說明及同意文件</li>
+<li>問卷、訪談大綱、實驗刺激或系統操作內容</li>
+<li>風險處理、申訴與緊急聯絡方式</li>
+<li>資料管理計畫，包括保存、存取、分享與銷毀</li>
+</ul>
+<h3 id="21">2.1 執行中仍受核准版本約束</h3>
+<p>核准不是一次性的通行證。若要改招募對象、題目、同意方式、資料用途、第三方處理工具或保存期限，先確認是否須提出變更。偏差、疑似外洩、未預期風險與研究終止，也應依核准計畫及機構程序通報。</p>
+<p><strong>實務做法</strong>：所有送審文件都標示版本與日期，例如 <code>訪談大綱_v1.2_2026-09-04</code>。執行人員只能使用目前核准版本，舊版移入封存資料夾，不直接覆寫。</p>
+<hr />
+<h2 id="_3">三、知情同意：是一段理解與選擇的過程</h2>
+<p>簽名只是留下證據，知情同意的核心是研究參與者在可理解、無不當壓力的情況下，自主決定是否參加。《人體研究法》第十四條列出的告知內容包括研究目的與方法、權益與個資保護、撤回方式、可預見風險、救濟措施，以及研究材料的保存期限與運用規劃。</p>
+<p>一份可用的同意程序至少回答：</p>
+<table>
+<thead>
+<tr>
+<th>參與者會問的問題</th>
+<th>應說清楚的內容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>我要做什麼？</td>
+<td>程序、時間、錄音錄影、可能追蹤次數</td>
+</tr>
+<tr>
+<td>可能發生什麼？</td>
+<td>不適、敏感揭露、名譽、就業、法律與隱私風險</td>
+</tr>
+<tr>
+<td>可以不參加嗎？</td>
+<td>自願參加、拒絕或退出不受不利待遇、退出方式</td>
+</tr>
+<tr>
+<td>資料會怎麼用？</td>
+<td>利用目的、分析方式、引用方式、分享對象與地區</td>
+</tr>
+<tr>
+<td>誰看得到？</td>
+<td>研究團隊、委外服務、資料庫或合作單位的範圍</td>
+</tr>
+<tr>
+<td>會留多久？</td>
+<td>保存期限、到期後封存或銷毀方式</td>
+</tr>
+<tr>
+<td>有問題找誰？</td>
+<td>研究團隊與獨立申訴窗口</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">免除書面同意，不等於免除知情同意</p>
+<p>線上勾選、口頭同意或免簽名，可能是經核准的同意形式；它們不代表可以省略說明與自主選擇。若研究擬免除部分或全部同意程序，應提出理由並由有權單位判定，不由研究者自行決定。</p>
+</div>
+<hr />
+<h2 id="_4">四、風險與招募：不要只看身體傷害</h2>
+<p>社會科學與資訊管理研究的主要風險，常出現在資訊與權力關係，而不是身體傷害。</p>
+<table>
+<thead>
+<tr>
+<th>風險面向</th>
+<th>常見情境</th>
+<th>可採措施</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>心理</td>
+<td>回憶創傷、羞辱或壓力事件</td>
+<td>允許跳題與停止；提供支持資源</td>
+</tr>
+<tr>
+<td>社會與名譽</td>
+<td>負面言論被同事或社群辨識</td>
+<td>降低情境細節；限制逐字引述</td>
+</tr>
+<tr>
+<td>就業與經濟</td>
+<td>主管得知員工批評組織</td>
+<td>由非主管招募；報告只呈現彙整結果</td>
+</tr>
+<tr>
+<td>法律</td>
+<td>回答涉及違規或爭議行為</td>
+<td>減少不必要問題；事前界定保密限制</td>
+</tr>
+<tr>
+<td>隱私與資安</td>
+<td>名單、錄音或帳號外洩</td>
+<td>分離識別碼；加密；最小權限</td>
+</tr>
+<tr>
+<td>權力不對等</td>
+<td>教師招募自己的學生、主管招募部屬</td>
+<td>由第三方接觸；成績或考核完成後再招募</td>
+</tr>
+</tbody>
+</table>
+<p>招募文案要與核准計畫一致，說清楚資格、活動、時間、酬謝、風險與聯絡方式。酬謝是補償時間與成本，不應高到讓參與者難以自由拒絕。若招募未成年人、受拘禁者、原住民族或其他可能受不當脅迫的群體，另有更嚴格的法規與程序，須向所屬機構查證。</p>
+<p><strong>判斷風險時問兩次</strong>：第一次問「單一欄位會不會傷害人」，第二次問「把欄位、逐字稿、時間地點與公開資訊合在一起後，會不會辨識出人」。</p>
+<hr />
+<h2 id="_5">五、資料生命週期：收資料以前就決定終點</h2>
+<p>資料管理不是分析完才整理。先建立一份資料管理計畫（data management plan, DMP），把每一階段的產物、責任與處理方式寫清楚。</p>
+<table>
+<thead>
+<tr>
+<th>階段</th>
+<th>要決定什麼</th>
+<th>最少留下什麼</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>規劃</td>
+<td>蒐集目的、資料類型、法規與責任人</td>
+<td>DMP、倫理判定、資料清單</td>
+</tr>
+<tr>
+<td>蒐集</td>
+<td>同意範圍、欄位最小化、傳輸方式</td>
+<td>核准版本、蒐集紀錄、同意紀錄</td>
+</tr>
+<tr>
+<td>儲存</td>
+<td>位置、格式、加密、備份與權限</td>
+<td>檔案命名規則、權限表、備份紀錄</td>
+</tr>
+<tr>
+<td>處理</td>
+<td>清理、轉錄、編碼與衍生資料</td>
+<td>不覆寫的原始資料、處理腳本、變更紀錄</td>
+</tr>
+<tr>
+<td>分析</td>
+<td>版本、軟體環境與決策依據</td>
+<td>可重跑的程式、分析日誌、資料字典</td>
+</tr>
+<tr>
+<td>分享</td>
+<td>誰能取得、提供哪個版本、用什麼授權</td>
+<td>分享版資料、使用說明、風險評估</td>
+</tr>
+<tr>
+<td>保存或銷毀</td>
+<td>保存期限、典藏位置、核准銷毀方式</td>
+<td>結案紀錄、銷毀或移交證明</td>
+</tr>
+</tbody>
+</table>
+<p>保存期限沒有適用所有研究的單一數字。應同時查倫理核准、知情同意、所屬機構、經費補助、合作契約與投稿單位要求，採用能彼此相容的期限；不確定時標為<strong>待查證</strong>，不要自行填一個常見年限。</p>
+<hr />
+<h2 id="_6">六、存取權限：能看資料的人愈少愈好</h2>
+<p>用「最小權限」規劃存取：每個人只取得完成工作所必需的資料與期間。最少做一張權限表：</p>
+<table>
+<thead>
+<tr>
+<th>資料</th>
+<th>可存取角色</th>
+<th>不應放在哪裡</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>聯絡名單與同意文件</td>
+<td>主持人、核准的研究人員</td>
+<td>共用聊天群組、公開連結</td>
+</tr>
+<tr>
+<td>代碼對照表</td>
+<td>指定保管人</td>
+<td>與去識別資料同一資料夾</td>
+</tr>
+<tr>
+<td>原始錄音／逐字稿</td>
+<td>轉錄與分析人員</td>
+<td>個人未加密裝置、一般 AI 服務</td>
+</tr>
+<tr>
+<td>去識別分析檔</td>
+<td>核准的分析人員</td>
+<td>公開儲存庫，除非通過公開風險評估</td>
+</tr>
+<tr>
+<td>彙整結果與可公開程式</td>
+<td>依計畫決定</td>
+<td>含密碼、金鑰或本機路徑的檔案</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>啟用個人帳號、強密碼與多因素驗證，不共用登入資訊。</li>
+<li>原始資料至少有一份獨立備份；備份也要套用相同保護。</li>
+<li>雲端、轉錄與生成式 AI 都是第三方處理。上傳前先查服務條款、資料位置、保留方式、模型訓練設定，以及同意與倫理核准是否涵蓋。</li>
+<li>人員離開計畫、設備遺失或角色變更時，立即撤銷權限並留下紀錄。</li>
+</ul>
+<hr />
+<h2 id="_7">七、去識別化與再識別風險</h2>
+<p>去識別化不是刪掉姓名就完成。能讓人被認出的資訊至少有三類：</p>
+<ol>
+<li><strong>直接識別資訊</strong>：姓名、電話、Email、學號、帳號、照片與聲音。</li>
+<li><strong>間接識別資訊</strong>：稀有職稱、精確地點、日期、年齡、組織與事件組合。</li>
+<li><strong>自由文字與中介資料</strong>：逐字稿中的故事、檔名、修訂者姓名、圖片 EXIF、錄音時間與裝置資訊。</li>
+</ol>
+<h3 id="71">7.1 三個容易混淆的處理</h3>
+<table>
+<thead>
+<tr>
+<th>處理</th>
+<th>還能否連回個人</th>
+<th>管理重點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>代碼化／假名化</td>
+<td>持有對照表者仍可連回</td>
+<td>對照表分開保管，仍按個人資料保護</td>
+</tr>
+<tr>
+<td>去識別化</td>
+<td>依情境降低辨識可能性</td>
+<td>評估接收者、外部資料與未來技術造成的再識別風險</td>
+</tr>
+<tr>
+<td>去連結</td>
+<td>依《人體研究法》定義，永久不能以任何方式連結、比對</td>
+<td>一旦完成就無法再聯絡個人或處理撤回要求</td>
+</tr>
+</tbody>
+</table>
+<h3 id="72">7.2 發布前做一次「有動機的辨識者」測試</h3>
+<p>假設一個有動機的人取得資料，他能否利用搜尋引擎、社群貼文、組織名錄或另一份資料集找到某位參與者？至少檢查：</p>
+<ul>
+<li>稀有值與極小群組是否要合併、區間化或抑制</li>
+<li>逐字引述能否被搜尋，是否需要改為不失原意的摘要</li>
+<li>日期、地點、職稱與事件組合是否形成唯一指紋</li>
+<li>公開版資料是否真的需要每一個欄位</li>
+<li>一段時間後，外部資料增加是否提高再識別風險</li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">分析用資料不等於公開用資料</p>
+<p>團隊內可受控使用的資料，未必適合公開下載。公開分享前要另外產生資料版本、重新做再識別與傷害評估，並確認知情同意及核准範圍。不能安全公開時，可以只公開資料字典、分析程式與取得資料的申請程序。</p>
+</div>
+<hr />
+<h2 id="_8">八、可直接執行的流程</h2>
+<ul>
+<li class="chk"><input type="checkbox"> 寫一頁研究流程，標出每次接觸人與資料的節點</li>
+<li class="chk"><input type="checkbox"> 查本校 IRB／REC 的適用範圍、程序、時程與表單版本</li>
+<li class="chk"><input type="checkbox"> 完成風險表、招募文案、同意程序與 DMP</li>
+<li class="chk"><input type="checkbox"> 取得正式判定或核准，記下核准版本與有效期間</li>
+<li class="chk"><input type="checkbox"> 設定資料夾、命名、備份、加密與權限表</li>
+<li class="chk"><input type="checkbox"> 訓練所有執行人員，確認只使用核准版本</li>
+<li class="chk"><input type="checkbox"> 蒐集期間記錄偏差、變更、事故與權限異動</li>
+<li class="chk"><input type="checkbox"> 分析時保留原始資料，讓清理與分析可重跑</li>
+<li class="chk"><input type="checkbox"> 發布前另做公開版資料與再識別風險評估</li>
+<li class="chk"><input type="checkbox"> 依核准計畫辦理結案、保存、移交或銷毀</li>
+</ul>
+<p>發現誤傳、權限設錯或疑似外洩時，先停止傳輸與進一步利用，保存時間、檔案、服務與操作紀錄，再依校內程序聯絡指導教授、研究倫理、個資或資安窗口。不要自行掩蓋事故，也不要在沒有確認保存義務前刪除證據。</p>
+<p><strong>主要查核來源</strong>：</p>
+<ul>
+<li><a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0020176">全國法規資料庫《人體研究法》</a>：審查、研究對象權益、同意與研究材料管理的法規基礎</li>
+<li><a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=I0050021">全國法規資料庫《個人資料保護法》</a>：蒐集告知、特定目的、利用與安全維護</li>
+<li><a href="https://www.ntuh.gov.tw/RECO/Fpage.action?fid=5536">臺大醫院研究倫理委員會：免審案</a>：機構如何判定免審的一個實例，不能直接代替本校程序</li>
+<li><a href="https://ukdataservice.ac.uk/learning-hub/data-producer-support/foundations-of-research-data-management/">UK Data Service: Foundations of research data management</a>：資料生命週期與負責任分享</li>
+<li><a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-sharing/anonymisation/how-do-we-ensure-anonymisation-is-effective/">UK Information Commissioner's Office: How do we ensure anonymisation is effective?</a>：可辨識性與再識別風險評估</li>
+</ul>
+<p><em>法規與機構頁面查證日期：2026-09-04。使用前仍須查最新版。</em></p>
+<hr />
+<h2 id="_9">九、本頁重點回顧</h2>
+<ul>
+<li>倫理審查、個資義務、契約與著作權是不同判斷，通過其中一項不代表其他項目自動通過。</li>
+<li>是否須審查、免審或非人體研究，應依所屬機構程序取得正式判定；需要審查時，核准前不得招募。</li>
+<li>知情同意是一段理解與自主選擇的過程，不只是一張簽名表。</li>
+<li>風險包括心理、社會、就業、法律與資訊安全；權力不對等也會破壞自願性。</li>
+<li>資料生命週期從規劃、蒐集到保存或銷毀，每一階段都要留下決策與版本紀錄。</li>
+<li>權限採最小化；第三方雲端、轉錄與 AI 服務都要先核對核准與同意範圍。</li>
+<li>去識別化不是刪姓名。公開前要評估資料連結、自由文字與外部資訊造成的再識別風險。</li>
+</ul>
+<hr />
+<p><strong>延伸</strong>：<a href="ethics.html">學術倫理與 AI 揭露</a>｜<a href="method-survey.html">問卷調查法</a>｜<a href="method-qualitative.html">質性研究方法</a>｜<a href="method-secondary-data.html">次級資料分析</a>｜<a href="post-defense.html">口試後修訂、典藏與結案</a></p>
+</article>
+<nav class="pager"><a class="prev" href="methodology.html">← 方法論選擇地圖</a><a class="next" href="systematic-review.html">系統性回顧與範疇回顧 →</a></nav>
+<footer class="foot">
+<p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
+<p><a href="../pages/sources.html">延伸閱讀與資源指南</a></p>
+</footer>
+</main>
+<aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">
+<ul>
+<li><a href="#_1">一、先拆成三個判斷</a></li>
+<li><a href="#_2">二、倫理審查：送的不是題目，是完整做法</a><ul>
+<li><a href="#21">2.1 執行中仍受核准版本約束</a></li>
+</ul>
+</li>
+<li><a href="#_3">三、知情同意：是一段理解與選擇的過程</a></li>
+<li><a href="#_4">四、風險與招募：不要只看身體傷害</a></li>
+<li><a href="#_5">五、資料生命週期：收資料以前就決定終點</a></li>
+<li><a href="#_6">六、存取權限：能看資料的人愈少愈好</a></li>
+<li><a href="#_7">七、去識別化與再識別風險</a><ul>
+<li><a href="#71">7.1 三個容易混淆的處理</a></li>
+<li><a href="#72">7.2 發布前做一次「有動機的辨識者」測試</a></li>
+</ul>
+</li>
+<li><a href="#_8">八、可直接執行的流程</a></li>
+<li><a href="#_9">九、本頁重點回顧</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script src="../assets/site.js"></script>
+</body>
+</html>

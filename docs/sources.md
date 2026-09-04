@@ -194,11 +194,35 @@
 | [立法院三讀通過《人工智慧基本法》（中央社，2025-12-23）](https://www.cna.com.tw/news/aipl/202512230036.aspx)／[數位發展部新聞發布](https://moda.gov.tw/press/press-releases/18316) | 我國 AI 治理的法規框架，主管機關為國科會 |
 | [陽明交大圖書館：搞懂「AI 貢獻聲明」](https://news.lib.nycu.edu.tw/researches/%E7%94%A8ai%E5%AF%AB%E8%AB%96%E6%96%87%E6%9C%83%E8%A2%AB%E9%80%80%E7%A8%BF%E5%97%8E-%E6%90%9E%E6%87%82%E3%80%8Cai-%E8%B2%A2%E7%8D%BB%E8%81%B2%E6%98%8E%E3%80%8D%EF%BC%8C%E5%88%A5%E8%B8%A9%E5%AD%B8/) | 各大出版社的 AI 揭露規定整理，投稿前必看 |
 
-### 6.2 統計判準
+### 6.2 研究倫理、資料管理與學位論文送存
+
+| 來源 | 用途 |
+|---|---|
+| [全國法規資料庫《人體研究法》](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0020176) | 人體研究審查、研究對象權益、同意與研究材料管理 |
+| [全國法規資料庫《個人資料保護法》](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=I0050021) | 個資蒐集告知、特定目的、利用與安全維護 |
+| [臺大醫院研究倫理委員會：免審案](https://www.ntuh.gov.tw/RECO/Fpage.action?fid=5536) | 「免審由機構判定」的一個機構實例；不得代替本校程序 |
+| [UK Data Service: Foundations of research data management](https://ukdataservice.ac.uk/learning-hub/data-producer-support/foundations-of-research-data-management/) | 資料生命週期、文件化與負責任分享 |
+| [ICO: How do we ensure anonymisation is effective?](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-sharing/anonymisation/how-do-we-ensure-anonymisation-is-effective/) | 可辨識性、資料連結與再識別風險 |
+| [ICPSR: Guide to Social Science Data Preparation and Archiving](https://www.icpsr.umich.edu/sites/ICPSR/manage-data/prepare-deposit/guide) | 社會科學資料管理計畫、資料字典、保密與典藏 |
+| [教育部：大專校院學位論文送存國家圖書館典藏作業要點](https://edu.law.moe.gov.tw/LawContent.aspx?id=GL001869) | 2026 年修正的送存、個資隱蔽、授權、延後公開與抽換規定 |
+| [國家圖書館：作業要點及申請表單](https://www.ncl.edu.tw/form-downloads/0Q099526045144197574) | 現行表單與附件下載 |
+
+### 6.3 回顧方法、量化分析與報告準則
+
+| 來源 | 用途 |
+|---|---|
+| [PRISMA 2020](https://www.prisma-statement.org/prisma-2020) | 系統性回顧的檢核表與流程圖 |
+| [PRISMA-ScR](https://www.prisma-statement.org/scoping) | 範疇回顧的報告延伸準則 |
+| [JBI Manual for Evidence Synthesis](https://jbi-global-wiki.refined.site/space/MANUAL/) | 回顧問題、篩選、資料擷取與綜整方法 |
+| [Cochrane Handbook](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current) | 系統性回顧與統合分析方法手冊 |
+| [APA Style Journal Article Reporting Standards](https://www.apa.org/pubs/journals/resources/apa-style-jars.html) | 量化、質性與混合研究的透明報告項目 |
+| [American Statistical Association: Statement on p-values](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf) | p 值、效果大小與完整報告的判讀界線 |
+
+### 6.4 統計判準
 
 - [SmartPLS Documentation: Result Color Thresholds](https://www.smartpls.com/documentation/functionalities/thresholds/)：PLS-SEM 各項指標的門檻，官方文件（依據為 Hair 等人的建議）
 
-### 6.3 你自己要去查的
+### 6.5 你自己要去查的
 
 **這三個沒有通用連結，只能自己找，而且優先序最高**：
 
@@ -350,7 +374,10 @@
 | 2026-09 | 新增〈從零開始〉〈資訊管理研究的範疇與取向〉〈理論的構成與評估〉〈文獻管理與知識庫〉四頁；學術文獻清單補上可查證的網址 |
 | 2026-09 | 新增〈怎麼找、怎麼讀、怎麼選題目〉；講座區改版為四個子區，補上九支已查證講者與頻道的影片、圖書館與寫作中心、部落格與討論區 |
 | 2026-09 | 補強閱讀流程（五層次、螺旋式、Outcome First）、五份知識庫筆記範本、文獻矩陣的切入點與備胎欄位、第四章報告順序、簡報三規則；AI 使用揭露改寫為符合現況的版本 |
+| 2026-09 | 新增〈系統性回顧與範疇回顧〉〈量化分析規劃與資料處理基礎〉〈次級資料分析與檔案研究〉〈研究倫理與資料管理〉〈口試後修訂、典藏與結案〉，補充相應官方來源 |
 
 ---
 
 **延伸**：[回到首頁](../index.html)
+
+

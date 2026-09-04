@@ -1,6 +1,6 @@
 # 名詞與用語對照
 
-> 三張表：研究方法名詞的中英對照、統計術語速查、台灣與大陸用語對照。用瀏覽器的 Ctrl/Cmd + F 直接搜尋比較快。
+> 四組速查表：研究設計、統計分析、台灣與大陸用語，以及常見縮寫。用瀏覽器的 Ctrl/Cmd + F 直接搜尋比較快。
 
 ---
 
@@ -42,6 +42,12 @@
 | 厚描述 | thick description | 詳盡到讀者能判斷可否轉移的情境描述 |
 | 反身性 | reflexivity | 研究者交代自身立場對研究的可能影響 |
 | 人造物 | IT artifact | 設計科學研究產出的構念、模型、方法或系統 |
+| 次級資料分析 | secondary data analysis | 以原本為其他目的蒐集的既有資料回答新的研究問題 |
+| 檔案研究 | archival research | 系統性分析文件、紀錄或數位檔案，並保留其來源脈絡 |
+| 系統性回顧 | systematic review | 依預先界定、可重做的方法檢索、篩選、評讀與綜整研究 |
+| 範疇回顧 | scoping review | 描繪一個領域的概念、證據類型與研究空白，不必然估計整體效果 |
+| 回顧計畫書 | review protocol | 在正式篩選前寫定問題、納入排除、檢索、擷取與綜整方法 |
+| 納入／排除準則 | inclusion / exclusion criteria | 決定哪一筆研究能進入回顧的事前規則 |
 | 效度 | validity | 有沒有測到該測的東西 |
 | 信度 | reliability | 測量結果的一致性與穩定性 |
 
@@ -83,6 +89,10 @@
 | 多群組分析 | MGA | 比較不同群組的路徑係數 |
 | 測量不變性 | MICOM / measurement invariance | 跑 MGA 前必做 |
 | 共同方法變異 | CMV / CMB | 同一方法造成的系統性誤差 |
+| 資料字典 | data dictionary | 定義每個欄位的名稱、型態、編碼、單位、遺漏與來源 |
+| 遺漏資料 | missing data | 應先描述模式與可能機制，再決定刪除、插補或模型處理 |
+| 離群值 | outlier | 與多數觀察明顯不同的值；先查來源，不等於應刪除 |
+| 穩健性檢查 | robustness check | 改變合理設定後，檢查主要結論是否仍大致成立 |
 | 傾向分數配對 | PSM | 觀察性資料的準實驗配對手段 |
 | 過度擬合 | overfitting | 模型記住了訓練資料的雜訊 |
 | 訓練／驗證／測試集 | train / validation / test | 測試集必須完全隔離 |
@@ -188,6 +198,8 @@
 | DSR | Design Science Research | 設計科學研究 |
 | SDLC | Systems Development Life Cycle | 系統開發生命週期 |
 | IRB / REC | Institutional Review Board / Research Ethics Committee | 研究倫理審查委員會 |
+| DMP | Data Management Plan | 資料管理計畫 |
+| PRISMA | Preferred Reporting Items for Systematic Reviews and Meta-Analyses | 系統性回顧與統合分析的報告指引 |
 | CMV / CMB | Common Method Variance / Bias | 共同方法變異／偏誤 |
 | AIGC | AI-Generated Content | 人工智慧生成內容 |
 | COPE | Committee on Publication Ethics | 出版倫理委員會 |
@@ -195,4 +207,25 @@
 
 ---
 
-**延伸**：[學術中文寫作紀律](style.md)｜[問卷調查法](method-survey.md)｜[常用理論家族](theories.md)
+## 五、研究倫理、資料治理與結案
+
+| 中文 | 英文 | 一句話說明 |
+|---|---|---|
+| 研究倫理審查 | ethics review | 在研究開始前，由有權單位評估風險、利益、同意與參與者保護 |
+| 知情同意 | informed consent | 參與者在理解研究與風險後，自主決定是否參加的持續過程 |
+| 最低風險 | minimal risk | 風險機率與強度不高於規範所採的日常生活或例行程序基準；由有權單位判定 |
+| 易受傷害群體 | vulnerable population | 可能因能力、處境或權力關係而難以自由決定是否參加的群體 |
+| 代碼化／假名化 | coding / pseudonymisation | 用代碼取代識別資訊，但持有對照表者仍可能連回個人 |
+| 去識別化 | de-identification | 依資料與使用情境降低個人被直接或間接辨識的可能性 |
+| 去連結 | unlinking | 依《人體研究法》定義，處理後永久不能與可辨識資訊連結、比對 |
+| 再識別風險 | re-identification risk | 資料與外部資訊連結後，重新辨識個人的可能性與傷害 |
+| 最小權限 | least privilege | 每個人只取得完成工作所需的最低資料權限與期間 |
+| 資料生命週期 | data lifecycle | 從規劃、蒐集、儲存、處理、分析、分享，到保存或銷毀的全程 |
+| 版本控制 | version control | 保存變更時間、內容與責任人，讓成果可比較、回復與追溯 |
+| 重現套件 | reproducibility package | 讓他人依說明重跑分析所需的程式、環境、資料說明與可分享輸入 |
+| 機構典藏庫 | institutional repository | 由大學或研究機構保存、管理與提供研究成果的系統 |
+| 延後公開 | embargo | 經規定程序核准，在特定期間暫緩公開全文；不等於免除送存 |
+
+---
+
+**延伸**：[學術中文寫作紀律](style.md)｜[量化分析規劃與資料處理基礎](quant-analysis-basics.md)｜[系統性回顧與範疇回顧](systematic-review.md)｜[研究倫理與資料管理](research-ethics-data.md)｜[常用理論家族](theories.md)

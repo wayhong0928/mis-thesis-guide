@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>量化分析規劃與資料處理基礎｜研究方法與論文寫作知識網絡</title>
+<meta name="description" content="分析計畫、資料字典、清理、假設檢查與可重現紀錄">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128218;</text></svg>">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<button class="navtoggle" id="navtoggle" aria-label="開啟導覽">☰</button>
+<nav class="sidenav" id="sidenav" aria-label="全站導覽">
+<a class="brand" href="../index.html"><span class="brand-mark">◈</span><span class="brand-text">研究方法<br><small>知識網絡</small></span></a>
+<div class="navsearch"><input type="search" id="navfilter" placeholder="篩選頁面…" aria-label="篩選頁面"></div>
+<div class="navsec"><h2>研究的基礎</h2><ul>
+<li><a href="../pages/getting-started.html" data-title="從零開始：研究所的第一個月">從零開始：研究所的第一個月</a></li>
+<li><a href="../pages/research-basics.html" data-title="研究的本質、歷程與時程">研究的本質、歷程與時程</a></li>
+<li><a href="../pages/finding-reading.html" data-title="怎麼找、怎麼讀、怎麼選題目">怎麼找、怎麼讀、怎麼選題目</a></li>
+<li><a href="../pages/is-research.html" data-title="資訊管理研究的範疇與取向">資訊管理研究的範疇與取向</a></li>
+<li><a href="../pages/problem-design.html" data-title="研究問題、假說與研究架構">研究問題、假說與研究架構</a></li>
+<li><a href="../pages/literature.html" data-title="文獻回顧與批判性思考">文獻回顧與批判性思考</a></li>
+<li><a href="../pages/theory-building.html" data-title="理論的構成與評估">理論的構成與評估</a></li>
+<li><a href="../pages/theories.html" data-title="常用理論家族與選用原則">常用理論家族與選用原則</a></li>
+</ul></div>
+<div class="navsec"><h2>研究方法</h2><ul>
+<li><a href="../pages/methodology.html" data-title="方法論選擇地圖">方法論選擇地圖</a></li>
+<li><a href="../pages/research-ethics-data.html" data-title="研究倫理與資料管理">研究倫理與資料管理</a></li>
+<li><a href="../pages/systematic-review.html" data-title="系統性回顧與範疇回顧">系統性回顧與範疇回顧</a></li>
+<li class="active"><a href="../pages/quant-analysis-basics.html" data-title="量化分析規劃與資料處理基礎">量化分析規劃與資料處理基礎</a></li>
+<li><a href="../pages/method-survey.html" data-title="問卷調查法">問卷調查法</a></li>
+<li><a href="../pages/method-experiment.html" data-title="實驗法">實驗法</a></li>
+<li><a href="../pages/method-dsr.html" data-title="系統發展法與設計科學研究">系統發展法與設計科學研究</a></li>
+<li><a href="../pages/method-data.html" data-title="演算法、最佳化與資料分析">演算法、最佳化與資料分析</a></li>
+<li><a href="../pages/method-secondary-data.html" data-title="次級資料分析與檔案研究">次級資料分析與檔案研究</a></li>
+<li><a href="../pages/method-qualitative.html" data-title="質性研究方法">質性研究方法</a></li>
+</ul></div>
+<div class="navsec"><h2>論文寫作</h2><ul>
+<li><a href="../pages/writing.html" data-title="論文架構與各章寫作要領">論文架構與各章寫作要領</a></li>
+<li><a href="../pages/style.html" data-title="學術中文寫作紀律">學術中文寫作紀律</a></li>
+<li><a href="../pages/defense.html" data-title="計畫書、口試與簡報">計畫書、口試與簡報</a></li>
+<li><a href="../pages/post-defense.html" data-title="口試後修訂、典藏與結案">口試後修訂、典藏與結案</a></li>
+</ul></div>
+<div class="navsec"><h2>AI 輔助研究</h2><ul>
+<li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流">AI 輔助研究工作流</a></li>
+<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南">AI 學術研究工具指南</a></li>
+<li><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包">AI 代理工具懶人包</a></li>
+<li><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險">AI 工具生態與風險</a></li>
+<li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露">學術倫理與 AI 揭露</a></li>
+</ul></div>
+<div class="navsec"><h2>工具箱</h2><ul>
+<li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫">文獻管理與知識庫</a></li>
+<li><a href="../pages/checklists.html" data-title="檢查清單">檢查清單</a></li>
+<li><a href="../pages/prompts.html" data-title="AI 提示詞範本">AI 提示詞範本</a></li>
+<li><a href="../pages/glossary.html" data-title="名詞與用語對照">名詞與用語對照</a></li>
+<li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南">延伸閱讀與資源指南</a></li>
+</ul></div>
+</nav>
+<div class="wrap">
+<main id="main">
+<p class="crumb"><a href="../index.html">首頁</a> ／ 研究方法</p>
+<article class="doc">
+<h1>量化分析規劃與資料處理基礎</h1>
+<p class='lede'>分析計畫、資料字典、清理、假設檢查與可重現紀錄</p>
+<blockquote>
+<p>從研究問題、分析計畫與資料字典開始，把原始資料轉成可檢查、可重跑、能支持適當主張的分析結果。</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、分析不從開軟體開始</h2>
+<p>統計軟體可以很快算出係數，卻不會替研究者判斷分析單位、測量尺度、抽樣方式與模型是否相配。資料進軟體前，先把問題寫成一條可檢查的推理：</p>
+<blockquote>
+<p>研究問題 → 理論構念 → 操作型定義 → 資料來源與分析單位 → 統計方法 → 可支持的結論</p>
+</blockquote>
+<p>任何一段接不上，都應先回頭修正。若研究問題問的是個人行為，資料列卻代表帳號或交易事件，係數再精確也可能答非所問。</p>
+<div class="admonition note">
+<p class="admonition-title">描述、比較、相關與因果要分開</p>
+<p>描述資料分布、比較群組、估計變數關係與識別因果效果，需要不同設計與假設。橫斷觀察資料通常支持相關或預測，不會因為使用複雜模型就自動取得因果解釋。</p>
+</div>
+<hr />
+<h2 id="_2">二、先寫分析計畫</h2>
+<p>分析計畫的目的，是把研究者的自由度攤開來。至少寫清楚：</p>
+<ul>
+<li>研究問題、假說與主要／次要結果變項</li>
+<li>分析單位、母體、樣本來源與納入條件</li>
+<li>每個構念或變項的計算方式</li>
+<li>主要模型、比較基準與調整變項</li>
+<li>分組、中介、調節或重複量測的處理</li>
+<li>遺漏值、異常值與資料排除規則</li>
+<li>模型假設及不符合時的替代方案</li>
+<li>穩健性或敏感度分析</li>
+<li>圖表、效果估計、不確定性與報告方式</li>
+</ul>
+<p>計畫不是不能改。探索時發現資料結構與原先理解不同，修改很正常；但要記錄何時改、為什麼改，並區分事先規劃與事後探索。這讓讀者知道哪些檢定是原問題的回答，哪些是新線索。</p>
+<h3 id="21">2.1 從問題選方法</h3>
+<table>
+<thead>
+<tr>
+<th>研究目的</th>
+<th>要先確認</th>
+<th>可能的分析家族</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>描述分布與趨勢</td>
+<td>變項型態、時間與權重</td>
+<td>次數、比例、集中與離散、圖表</td>
+</tr>
+<tr>
+<td>比較群組</td>
+<td>群組形成、基準差異、相依性</td>
+<td>平均或分布比較、迴歸、配對方法</td>
+</tr>
+<tr>
+<td>估計關係或預測</td>
+<td>結果型態、函數形式、過度擬合</td>
+<td>相關、廣義線性模型、預測模型</td>
+</tr>
+<tr>
+<td>檢驗潛在構念關係</td>
+<td>測量模型、樣本與識別條件</td>
+<td>因素分析、SEM／PLS-SEM</td>
+</tr>
+<tr>
+<td>分析重複或群聚資料</td>
+<td>個體、班級、組織或時間內相依</td>
+<td>混合模型、群聚穩健方法、縱貫模型</td>
+</tr>
+</tbody>
+</table>
+<p>表格只指出方向。實際模型還要依研究設計、分布、樣本資訊量及領域慣例決定，不宜把某種檢定視為所有連續或類別資料的固定答案。</p>
+<hr />
+<h2 id="_3">三、資料字典是分析的地基</h2>
+<p>資料字典讓欄位的意義與處理規則不依賴記憶。最低限度可用下列欄位：</p>
+<table>
+<thead>
+<tr>
+<th>欄位</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>原始變項名</td>
+<td>資料來源中的欄位名稱</td>
+</tr>
+<tr>
+<td>分析變項名</td>
+<td>程式碼與報告採用的名稱</td>
+</tr>
+<tr>
+<td>定義與分析單位</td>
+<td>測量什麼，每列或每筆代表什麼</td>
+</tr>
+<tr>
+<td>型態與尺度</td>
+<td>文字、日期、名目、次序、計數或連續</td>
+</tr>
+<tr>
+<td>合法值與單位</td>
+<td>可接受範圍、類別代碼、時間或貨幣單位</td>
+</tr>
+<tr>
+<td>缺失碼</td>
+<td>空白、NA、拒答、不適用或系統遺漏如何區分</td>
+</tr>
+<tr>
+<td>來源與版本</td>
+<td>問卷題號、系統表、資料庫版本或下載日期</td>
+</tr>
+<tr>
+<td>轉換規則</td>
+<td>反向計分、加總、標準化、分組或合併方式</td>
+</tr>
+<tr>
+<td>使用角色</td>
+<td>主要結果、預測變項、控制變項、識別碼或權重</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">0 不一定是零</p>
+<p>有些資料以 0、9、99 或負值表示未填、拒答與不適用。如果沒讀代碼表，這些值會被當成真實觀察值參與平均與模型估計。先還原語意，再轉成分析用缺失碼。</p>
+</div>
+<h3 id="31">3.1 保留資料來歷</h3>
+<p>每份原始檔記下來源、取得日期、版本、授權與校驗資訊。跨表合併時，記錄鍵值、配對成功率、一對多關係與未配對原因。更多既有資料的判讀方式見<a href="method-secondary-data.html">次級資料分析與檔案研究</a>。</p>
+<hr />
+<h2 id="_4">四、建立不覆寫原始資料的流程</h2>
+<p>原始資料設為只讀。所有更正、轉碼、排除與衍生欄位都在程式碼或轉換日誌中完成，產生新的中間檔與分析檔。</p>
+<pre><code class="language-text">project/
+├── data_raw/        原始輸出，只讀
+├── data_clean/      可由程式重新產生
+├── scripts/         依執行順序編號
+├── output/          表格、圖與模型輸出
+├── docs/            資料字典、分析計畫、決策日誌
+└── README.md        執行環境、順序與必要說明
+</code></pre>
+<p>檔名使用固定規則，日期採不易混淆的格式。不要以 <code>final_final2.xlsx</code> 管理版本，也不要手動修改輸出表後忘了同步分析程式。</p>
+<h3 id="41">4.1 每一步都要有筆數核對</h3>
+<p>資料匯入、合併、篩選、轉長寬格式與排除後，記錄列數、唯一個體數、重複數及關鍵欄位遺漏數。若筆數意外增加或減少，先查明原因再往下跑。</p>
+<hr />
+<h2 id="_5">五、資料清理的合理順序</h2>
+<h3 id="51">5.1 結構與型態</h3>
+<ul>
+<li>檢查編碼、欄名、日期格式、小數點與單位</li>
+<li>確認每列、每欄與每張表代表的實體</li>
+<li>找出完全重複與鍵值重複，判斷是錯誤還是合理的重複量測</li>
+<li>檢查類別拼字、前後空白與大小寫造成的假類別</li>
+</ul>
+<h3 id="52">5.2 邏輯與範圍</h3>
+<ul>
+<li>驗證不可能值，例如結束日在開始日前、比例超出定義範圍</li>
+<li>檢查跳題邏輯與互斥欄位</li>
+<li>對照原始系統或問卷，區分輸入錯誤與真實極端觀察</li>
+<li>確認反向題與量尺方向，不要只靠欄名猜測</li>
+</ul>
+<h3 id="53">5.3 衍生變項</h3>
+<p>衍生變項要在資料字典記公式、條件、單位與缺失值傳遞規則。分數、分類與時間窗若有多種合理定義，可在分析計畫指定主要版本，其他版本用於敏感度分析。</p>
+<div class="admonition tip">
+<p class="admonition-title">先畫圖再看單一統計值</p>
+<p>次數表、直方圖、箱形圖、散布圖與時間序列圖能揭露錯碼、群聚、天花板效應、非線性與制度斷點。圖形用來診斷資料，不是分析完成後才補的裝飾。</p>
+</div>
+<hr />
+<h2 id="_6">六、遺漏值不能只按一個刪除鍵</h2>
+<p>先分清楚遺漏的來源：未作答、拒答、不適用、追蹤流失、系統故障、資料串接失敗，或原設計根本沒有收。這些情況的含義不同，不應全部併成同一個空白。</p>
+<h3 id="61">6.1 先做遺漏概況</h3>
+<p>至少報告每個變項的遺漏數與比例、每筆資料的遺漏程度、共同遺漏模式，以及遺漏與可觀察特徵的關係。若某群人更容易缺資料，完整案例分析可能改變樣本組成。</p>
+<h3 id="62">6.2 處理方式要說明假設</h3>
+<table>
+<thead>
+<tr>
+<th>做法</th>
+<th>何時可能考慮</th>
+<th>主要風險</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>完整案例分析</td>
+<td>遺漏有限，且其機制與目標分析可合理相容</td>
+<td>浪費資訊，樣本可能偏移</td>
+</tr>
+<tr>
+<td>單一插補</td>
+<td>特定描述或流程需要完整欄位</td>
+<td>常低估不確定性，不宜把填補值當真值</td>
+</tr>
+<tr>
+<td>多重插補</td>
+<td>模型與可用變項足以支持插補模型</td>
+<td>需正確指定模型並合併估計不確定性</td>
+</tr>
+<tr>
+<td>模型式處理</td>
+<td>所用模型能在明確假設下使用不完整資料</td>
+<td>假設不合理時仍會偏誤</td>
+</tr>
+<tr>
+<td>權重或敏感度分析</td>
+<td>追蹤流失、選擇進入分析等問題</td>
+<td>權重模型與未觀察機制仍需論證</td>
+</tr>
+</tbody>
+</table>
+<p>不能用單一遺漏比例門檻決定方法。處理方式取決於遺漏機制、變項角色、模型與研究問題；主分析之外，應評估不同合理處理是否改變結論。</p>
+<hr />
+<h2 id="_7">七、離群值與影響點要查原因</h2>
+<p>離群值是相對於資料分布或模型顯得異常的觀察；影響點則會明顯改變估計結果。兩者不是「錯誤值」的同義詞。</p>
+<p>檢查可分三層：</p>
+<ul>
+<li><strong>資料層</strong>：輸入、單位、串接或感測錯誤</li>
+<li><strong>現象層</strong>：少見但真實的個案、特殊群體或制度事件</li>
+<li><strong>模型層</strong>：非線性、長尾分布、異質群體或模型設定不當</li>
+</ul>
+<p>箱形圖界線、標準化距離與各種影響度量只是標記候選值，適用性取決於分布及模型。沒有一個數值能跨所有資料自動決定刪除。</p>
+<div class="admonition danger">
+<p class="admonition-title">不得為了顯著而刪離群值</p>
+<p>只有能證明資料錯誤、違反事先納入規則或屬於不同分析母體時，刪除才有明確依據。真實但極端的值可採轉換、穩健方法、分層模型或敏感度分析，並同時報告處理前後結果。</p>
+</div>
+<hr />
+<h2 id="_8">八、假設檢查要對準模型</h2>
+<p>「資料常態」不是所有方法的通用前提。許多模型關心的是條件分布或殘差，類別與計數模型也有自己的分布與結構假設。先問模型依賴什麼，再選診斷工具。</p>
+<h3 id="81">8.1 常見檢查面向</h3>
+<table>
+<thead>
+<tr>
+<th>面向</th>
+<th>可用診斷</th>
+<th>不符合時可能處理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>觀察值獨立或相依結構</td>
+<td>研究設計、群聚／時間圖、相關結構</td>
+<td>混合模型、群聚穩健估計、時間序列方法</td>
+</tr>
+<tr>
+<td>函數形式與線性</td>
+<td>散布圖、殘差對擬合值、部分殘差</td>
+<td>轉換、非線性項、分段或其他模型</td>
+</tr>
+<tr>
+<td>變異是否穩定</td>
+<td>殘差圖、依群組比較</td>
+<td>異質變異模型、穩健標準誤</td>
+</tr>
+<tr>
+<td>分布假設</td>
+<td>直方圖、分位數圖、殘差診斷</td>
+<td>改用合適分布、穩健或無母數方法</td>
+</tr>
+<tr>
+<td>共線性</td>
+<td>變項關係、條件指標或 VIF 等</td>
+<td>回到理論刪整冗餘、重新參數化</td>
+</tr>
+<tr>
+<td>高影響觀察</td>
+<td>殘差、槓桿值與影響度量</td>
+<td>查資料、報告敏感度、採穩健方法</td>
+</tr>
+</tbody>
+</table>
+<p>正式檢定會受樣本數影響，大樣本可能把細微偏離判為顯著，小樣本又可能沒有能力發現問題。因此圖形、設計知識、效果大小與檢定結果應一起判讀。</p>
+<h3 id="82">8.2 假設不符不是自動換檢定</h3>
+<p>先確認問題來自資料錯誤、模型形式、群聚、分布，還是研究設計。每種替代方法也有自己的假設。報告時說明檢查了什麼、發現什麼、採取何種處理，以及結論對處理方式是否敏感。</p>
+<hr />
+<h2 id="_9">九、估計、檢定與報告</h2>
+<p>p 值只回答在特定模型與虛無假設下，觀察到目前或更極端資料的相容程度。它不表示效果大小、理論重要性、結果可重現的機率，也不能單獨判斷研究價值。</p>
+<p>分析結果至少搭配：</p>
+<ul>
+<li>樣本與排除流程</li>
+<li>描述統計與適當圖形</li>
+<li>效果估計及其不確定性，例如信賴區間</li>
+<li>模型設定、調整變項與假設診斷</li>
+<li>多重比較、探索分析與模型選擇的說明</li>
+<li>預先規劃與事後探索的區分</li>
+<li>穩健性或敏感度分析</li>
+</ul>
+<p>結果用語要符合設計。隨機實驗、自然實驗與觀察研究的因果識別條件不同；相關、迴歸係數或 SEM 路徑顯著，通常只支持關聯或預測敘述。問卷與 PLS-SEM 的進一步注意事項見<a href="method-survey.html">問卷調查法</a>。</p>
+<div class="admonition warning">
+<p class="admonition-title">不要只留下最好看的模型</p>
+<p>嘗試多種排除方式、變項定義或模型後，只報最顯著的一個，會讓不確定性看起來過小。保留分析歷程，說明主要模型的選擇依據，並把重要替代設定列入敏感度分析。</p>
+</div>
+<hr />
+<h2 id="_10">十、建立可重現紀錄</h2>
+<p>可重現不只表示有一份程式碼。另一位研究者還需要知道資料從哪裡來、以什麼順序執行、使用哪些套件版本，以及人工判斷發生在哪裡。</p>
+<p>最低限度應保存：</p>
+<ul>
+<li>原始資料或合法取得方式，以及版本識別</li>
+<li>資料字典、分析計畫與變更紀錄</li>
+<li>從匯入、清理、分析到製表的完整程式碼</li>
+<li>執行環境、軟體與套件版本</li>
+<li>隨機種子與非決定性步驟說明</li>
+<li>不能公開的資料如何申請，以及可分享的模擬或遮蔽版本</li>
+<li>決策日誌與人工覆核紀錄</li>
+</ul>
+<h3 id="101">10.1 交付前重跑</h3>
+<p>在乾淨環境依 README 從原始層重跑到最終表圖。核對論文中的樣本數、係數與圖表是否直接來自產出檔。若無法全自動化，人工步驟也要寫到別人能照做。</p>
+<div class="admonition note">
+<p class="admonition-title">可重現不代表可公開所有資料</p>
+<p>私人、受限或含個資的資料仍須受控。可以分享欄位結構、資料字典、分析程式、模擬資料與申請流程；不能為了開放科學違反同意、契約或法規。</p>
+</div>
+<hr />
+<h2 id="_11">十一、可直接使用的分析前檢查表</h2>
+<ul>
+<li class="chk"><input type="checkbox"> 研究問題、分析單位與資料列的單位一致</li>
+<li class="chk"><input type="checkbox"> 主要與次要分析已區分</li>
+<li class="chk"><input type="checkbox"> 資料字典記錄代碼、單位、缺失碼與轉換規則</li>
+<li class="chk"><input type="checkbox"> 原始資料設為只讀，清理流程可重跑</li>
+<li class="chk"><input type="checkbox"> 合併與排除前後都有筆數核對</li>
+<li class="chk"><input type="checkbox"> 遺漏值依來源與模式處理，不只看總比例</li>
+<li class="chk"><input type="checkbox"> 離群值先查原因，不以顯著與否決定去留</li>
+<li class="chk"><input type="checkbox"> 檢查的是所選模型真正依賴的假設</li>
+<li class="chk"><input type="checkbox"> 效果估計、區間與診斷和 p 值一起報告</li>
+<li class="chk"><input type="checkbox"> 事前分析與事後探索分開標示</li>
+<li class="chk"><input type="checkbox"> 論文表圖可由程式與紀錄重新產生</li>
+<li class="chk"><input type="checkbox"> 結論用語沒有超過研究設計能支持的強度</li>
+</ul>
+<hr />
+<h2 id="_12">十二、本頁重點回顧</h2>
+<ul>
+<li>量化分析從研究問題、操作型定義與分析計畫開始，不從軟體選單開始。</li>
+<li>資料字典要記錄變項語意、尺度、缺失碼、來源與轉換規則。</li>
+<li>原始資料不覆寫；清理、排除、合併與衍生欄位都要可追溯。</li>
+<li>遺漏值與離群值沒有跨情境的固定刪除門檻，處理方式取決於形成原因、模型與研究目的。</li>
+<li>假設檢查應對準模型，並結合圖形、設計知識與正式診斷。</li>
+<li>報告效果估計、不確定性、模型診斷與敏感度，不只報 p 值。</li>
+<li>橫斷觀察資料通常支持相關或預測，複雜模型不會自動把關聯變成因果。</li>
+</ul>
+<hr />
+<p><strong>延伸</strong>：<a href="method-survey.html">問卷調查法</a>｜<a href="method-experiment.html">實驗法</a>｜<a href="method-secondary-data.html">次級資料分析與檔案研究</a>｜<a href="method-data.html">演算法、最佳化與資料分析</a>｜<a href="style.html">學術中文寫作紀律</a></p>
+</article>
+<nav class="pager"><a class="prev" href="systematic-review.html">← 系統性回顧與範疇回顧</a><a class="next" href="method-survey.html">問卷調查法 →</a></nav>
+<footer class="foot">
+<p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
+<p><a href="../pages/sources.html">延伸閱讀與資源指南</a></p>
+</footer>
+</main>
+<aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">
+<ul>
+<li><a href="#_1">一、分析不從開軟體開始</a></li>
+<li><a href="#_2">二、先寫分析計畫</a><ul>
+<li><a href="#21">2.1 從問題選方法</a></li>
+</ul>
+</li>
+<li><a href="#_3">三、資料字典是分析的地基</a><ul>
+<li><a href="#31">3.1 保留資料來歷</a></li>
+</ul>
+</li>
+<li><a href="#_4">四、建立不覆寫原始資料的流程</a><ul>
+<li><a href="#41">4.1 每一步都要有筆數核對</a></li>
+</ul>
+</li>
+<li><a href="#_5">五、資料清理的合理順序</a><ul>
+<li><a href="#51">5.1 結構與型態</a></li>
+<li><a href="#52">5.2 邏輯與範圍</a></li>
+<li><a href="#53">5.3 衍生變項</a></li>
+</ul>
+</li>
+<li><a href="#_6">六、遺漏值不能只按一個刪除鍵</a><ul>
+<li><a href="#61">6.1 先做遺漏概況</a></li>
+<li><a href="#62">6.2 處理方式要說明假設</a></li>
+</ul>
+</li>
+<li><a href="#_7">七、離群值與影響點要查原因</a></li>
+<li><a href="#_8">八、假設檢查要對準模型</a><ul>
+<li><a href="#81">8.1 常見檢查面向</a></li>
+<li><a href="#82">8.2 假設不符不是自動換檢定</a></li>
+</ul>
+</li>
+<li><a href="#_9">九、估計、檢定與報告</a></li>
+<li><a href="#_10">十、建立可重現紀錄</a><ul>
+<li><a href="#101">10.1 交付前重跑</a></li>
+</ul>
+</li>
+<li><a href="#_11">十一、可直接使用的分析前檢查表</a></li>
+<li><a href="#_12">十二、本頁重點回顧</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script src="../assets/site.js"></script>
+</body>
+</html>

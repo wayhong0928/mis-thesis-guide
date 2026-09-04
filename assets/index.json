@@ -50,7 +50,25 @@
  {
   "slug": "methodology",
   "title": "方法論選擇地圖",
-  "desc": "六大方法的適用場合與相對優缺點",
+  "desc": "研究問題分流、方法適配與相對代價",
+  "section": "研究方法"
+ },
+ {
+  "slug": "research-ethics-data",
+  "title": "研究倫理與資料管理",
+  "desc": "倫理審查、知情同意、風險與資料生命週期",
+  "section": "研究方法"
+ },
+ {
+  "slug": "systematic-review",
+  "title": "系統性回顧與範疇回顧",
+  "desc": "問題界定、可重做檢索、篩選、擷取與綜整",
+  "section": "研究方法"
+ },
+ {
+  "slug": "quant-analysis-basics",
+  "title": "量化分析規劃與資料處理基礎",
+  "desc": "分析計畫、資料字典、清理、假設檢查與可重現紀錄",
   "section": "研究方法"
  },
  {
@@ -78,6 +96,12 @@
   "section": "研究方法"
  },
  {
+  "slug": "method-secondary-data",
+  "title": "次級資料分析與檔案研究",
+  "desc": "資料來源適配、使用權限、證據脈絡與穩健性檢查",
+  "section": "研究方法"
+ },
+ {
   "slug": "method-qualitative",
   "title": "質性研究方法",
   "desc": "訪談、個案研究、紮根理論與信實度",
@@ -99,6 +123,12 @@
   "slug": "defense",
   "title": "計畫書、口試與簡報",
   "desc": "十二個考古題、八大核心能力、投影片架構",
+  "section": "論文寫作"
+ },
+ {
+  "slug": "post-defense",
+  "title": "口試後修訂、典藏與結案",
+  "desc": "修訂回覆、版本控制、授權送存、離校與研究結案",
   "section": "論文寫作"
  },
  {

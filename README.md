@@ -37,8 +37,8 @@
 | 區塊 | 內容 |
 |---|---|
 | 研究的基礎 | 從零開始的第一個月、研究的本質與時程、怎麼找／怎麼讀／怎麼選題目、資訊管理研究的範疇、研究問題與假說、文獻回顧與批判性思考、理論的構成與評估、常用理論家族 |
-| 研究方法 | 方法選擇地圖、問卷調查法、實驗法、系統發展法／DSR、演算法與資料分析、質性研究 |
-| 論文寫作 | 論文架構與各章要領、學術中文寫作紀律、計畫書與口試簡報 |
+| 研究方法 | 方法選擇地圖、研究倫理與資料管理、系統性／範疇回顧、量化分析規劃與資料處理、問卷調查法、實驗法、系統發展法／DSR、演算法與資料分析、次級資料／檔案研究、質性研究 |
+| 論文寫作 | 論文架構與各章要領、學術中文寫作紀律、計畫書與口試簡報、口試後修訂／典藏／結案 |
 | AI 輔助研究 | 工作流與三層架構、AI 學術研究工具指南、AI 代理工具懶人包（Claude Code／Skill／Plugin／Codex）、工具生態與風險、學術倫理與 AI 揭露 |
 | 工具箱 | 文獻管理與知識庫、檢查清單、AI 提示詞範本、名詞與用語對照、延伸閱讀與資源指南 |
 
@@ -70,14 +70,19 @@
 │   ├── theory-building.md
 │   ├── theories.md
 │   ├── methodology.md
+│   ├── research-ethics-data.md
+│   ├── systematic-review.md
+│   ├── quant-analysis-basics.md
 │   ├── method-survey.md
 │   ├── method-experiment.md
 │   ├── method-dsr.md
 │   ├── method-data.md
+│   ├── method-secondary-data.md
 │   ├── method-qualitative.md
 │   ├── writing.md
 │   ├── style.md
 │   ├── defense.md
+│   ├── post-defense.md
 │   ├── ai-workflow.md
 │   ├── tool-directory.md
 │   ├── ai-agents.md
@@ -104,6 +109,8 @@
 pip install markdown        # 只需要一次
 python3 build.py
 ```
+
+> **Windows 使用者注意**：主控台預設編碼（cp950）下直接執行可能在印出進度訊息時噴 `UnicodeEncodeError` 而中斷——檔案通常已經正確寫完，只是腳本印訊息時掛掉，不代表資料流失。建議先設定環境變數再執行：`set PYTHONIOENCODING=utf-8`（cmd）或 `$env:PYTHONIOENCODING="utf-8"`（PowerShell）。
 
 3. commit 並 push
 

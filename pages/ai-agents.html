@@ -26,16 +26,21 @@
 </ul></div>
 <div class="navsec"><h2>研究方法</h2><ul>
 <li><a href="../pages/methodology.html" data-title="方法論選擇地圖">方法論選擇地圖</a></li>
+<li><a href="../pages/research-ethics-data.html" data-title="研究倫理與資料管理">研究倫理與資料管理</a></li>
+<li><a href="../pages/systematic-review.html" data-title="系統性回顧與範疇回顧">系統性回顧與範疇回顧</a></li>
+<li><a href="../pages/quant-analysis-basics.html" data-title="量化分析規劃與資料處理基礎">量化分析規劃與資料處理基礎</a></li>
 <li><a href="../pages/method-survey.html" data-title="問卷調查法">問卷調查法</a></li>
 <li><a href="../pages/method-experiment.html" data-title="實驗法">實驗法</a></li>
 <li><a href="../pages/method-dsr.html" data-title="系統發展法與設計科學研究">系統發展法與設計科學研究</a></li>
 <li><a href="../pages/method-data.html" data-title="演算法、最佳化與資料分析">演算法、最佳化與資料分析</a></li>
+<li><a href="../pages/method-secondary-data.html" data-title="次級資料分析與檔案研究">次級資料分析與檔案研究</a></li>
 <li><a href="../pages/method-qualitative.html" data-title="質性研究方法">質性研究方法</a></li>
 </ul></div>
 <div class="navsec"><h2>論文寫作</h2><ul>
 <li><a href="../pages/writing.html" data-title="論文架構與各章寫作要領">論文架構與各章寫作要領</a></li>
 <li><a href="../pages/style.html" data-title="學術中文寫作紀律">學術中文寫作紀律</a></li>
 <li><a href="../pages/defense.html" data-title="計畫書、口試與簡報">計畫書、口試與簡報</a></li>
+<li><a href="../pages/post-defense.html" data-title="口試後修訂、典藏與結案">口試後修訂、典藏與結案</a></li>
 </ul></div>
 <div class="navsec"><h2>AI 輔助研究</h2><ul>
 <li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流">AI 輔助研究工作流</a></li>
@@ -61,6 +66,18 @@
 <blockquote>
 <p>聊天視窗以外的另一類 AI 工具：能讀寫你的檔案、跑你的指令、把重複的流程固化成可重用的模組。這一頁講它們在研究工作裡實際能做什麼。</p>
 </blockquote>
+<div class="admonition note">
+<p class="admonition-title">這頁也寫給第一次開終端機的人</p>
+<p>你不需要先會寫程式，但要願意學會三件基本動作：確認目前所在資料夾、看懂工具準備執行的指令，以及檢查檔案前後差異。若這三件事還做不到，先在測試資料夾練習讀檔與列出清單，不要直接讓代理工具修改唯一一份論文。</p>
+</div>
+<p>開始前至少要知道：</p>
+<ul>
+<li><strong>資料夾與路徑</strong>：目前工作目錄是哪裡，哪些檔案在工作範圍內。</li>
+<li><strong>終端機不是聊天框</strong>：指令會真的執行；刪除、覆寫、安裝與上傳都可能改變電腦或外部服務。</li>
+<li><strong>權限與確認</strong>：看不懂的指令先停下來查，不因工具說「建議」就同意。</li>
+<li><strong>備份與差異</strong>：保留可回復版本，完成後檢查實際改動，不只閱讀 AI 的摘要。</li>
+<li><strong>機密邊界</strong>：密碼、API 金鑰、未公開研究資料與可識別參與者資訊，不貼進提示詞或命令列紀錄。</li>
+</ul>
 <hr />
 <h2 id="_1">一、先分清楚三類工具</h2>
 <table>
@@ -492,8 +509,21 @@ description: 檢查繁體中文學術寫作的用語與因果動詞紀律。當�
 <td>安裝來路不明的 plugin</td>
 <td>plugin 可以執行指令。只安裝你信任的來源</td>
 </tr>
+<tr>
+<td>在錯誤資料夾批次操作</td>
+<td>每次先確認工作目錄與目標檔案清單；範圍不清楚就停止</td>
+</tr>
+<tr>
+<td>執行看不懂的刪除、覆寫或上傳指令</td>
+<td>要求逐條解釋，先做唯讀預覽；不可回復的操作由人確認</td>
+</tr>
+<tr>
+<td>密碼或金鑰進入提示詞、終端機歷史或版本庫</td>
+<td>使用環境變數或祕密管理工具；提交前掃描敏感資訊</td>
+</tr>
 </tbody>
 </table>
+<p>安全界線可以濃縮成一句話：<strong>先限定資料夾，再預覽變更；高風險操作由人確認，原始資料不覆寫。</strong> 若工具要求系統管理員權限、存取工作範圍外的資料夾，或把檔案傳到不明服務，先拒絕並查清楚用途。</p>
 <h3 id="72">7.2 學術風險</h3>
 <p>代理工具讓「產出」變得非常快，這正是它對學位論文最危險的地方。</p>
 <p>三條線：</p>
@@ -512,12 +542,14 @@ description: 檢查繁體中文學術寫作的用語與因果動詞紀律。當�
 <ul>
 <li>三類工具：聊天幫你想、深度研究幫你查、<strong>代理型幫你做</strong>，而且是在你的檔案上做。</li>
 <li>用代理工具前，先有 git 或完整備份。</li>
+<li>終端機初學者先學會辨認工作目錄、指令效果與檔案差異，再碰唯一一份論文。</li>
 <li>CLAUDE.md／AGENTS.md 放<strong>事實與紅線</strong>；Skill 放<strong>程序</strong>。</li>
 <li>Skill 就是把你自己的檢查清單變成可執行的東西。</li>
 <li>Plugin 是把 skill 打包分享；只有 <code>plugin.json</code> 放在 <code>.claude-plugin/</code> 裡。</li>
 <li>MCP 接上自己的文獻庫，是降低幻覺引用最有效的一招。</li>
 <li>最值得交給它的十件事，共同點是<strong>機械、重複、可驗證</strong>。</li>
 <li>產出腳本比產出結果有價值，因為腳本可以重跑。</li>
+<li>安全界線是限定範圍、先預覽、高風險操作由人確認、原始資料不覆寫、機密不進提示詞。</li>
 <li>它可以幫你檢查，不該幫你論述；你講不清楚的段落就不該留在論文裡。</li>
 </ul>
 <hr />
