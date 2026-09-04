@@ -22,6 +22,12 @@
   function writeVisited(slug, value) {
     try { localStorage.setItem("rm-visited:" + slug, String(value)); } catch (e) { /* 忽略 */ }
   }
+  /* 以「日」為單位比較更新時間，避免同一天內多次瑣碎修改重複觸發已更新徽章
+     （用本機時區的年/月/日，不是 UTC，貼近使用者對「今天」的認知） */
+  function dayNumber(unixSeconds) {
+    var d = new Date(unixSeconds * 1000);
+    return d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
+  }
   function addUpdateBadge(link) {
     if (link.querySelector(".rm-update-badge")) { return; }
     var badge = document.createElement("span");
@@ -134,7 +140,7 @@
       var slug = link.getAttribute("data-slug");
       var updated = Number(link.getAttribute("data-updated"));
       var visited = readVisited(slug);
-      if (visited !== null && Number.isFinite(updated) && updated > visited) {
+      if (visited !== null && Number.isFinite(updated) && dayNumber(updated) > dayNumber(visited)) {
         addUpdateBadge(link);
         hasUpdateMarker = true;
       }
@@ -146,7 +152,7 @@
       var currentSlug = currentLink ? currentLink.getAttribute("data-slug") : null;
       var articleUpdated = Number(article.getAttribute("data-updated"));
       var articleVisited = currentSlug ? readVisited(currentSlug) : null;
-      if (articleVisited !== null && Number.isFinite(articleUpdated) && articleUpdated > articleVisited) {
+      if (articleVisited !== null && Number.isFinite(articleUpdated) && dayNumber(articleUpdated) > dayNumber(articleVisited)) {
         var lede = article.querySelector(".lede");
         if (lede) {
           var note = document.createElement("p");
