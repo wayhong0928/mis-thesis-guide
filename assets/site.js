@@ -33,8 +33,10 @@
     paint();
   });
   document.addEventListener("DOMContentLoaded", function () {
-    var nav = document.getElementById("sidenav");
-    (nav || document.body).appendChild(btn);
+    /* 掛在 body 而非 #sidenav：.sidenav 手機版有 transform，會讓內部的
+       position: fixed 子元素改吃 .sidenav 當定位基準，導致收合時按鈕消失。
+       視覺上仍用 CSS 座標對齊到導覽列右上角，效果一樣，只是 DOM 位置不同。 */
+    document.body.appendChild(btn);
     paint();
   });
 

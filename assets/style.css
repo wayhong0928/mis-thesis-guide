@@ -158,6 +158,8 @@ blockquote {
 blockquote p:last-child { margin-bottom: 0; }
 
 hr { border: 0; border-top: 1px solid var(--rule); margin: 2.4rem 0; }
+/* h2 自己已有 border-top，緊接在 h2 前的 hr 會疊出雙線，隱藏掉 */
+.doc hr:has(+ h2) { display: none; }
 
 code {
   font-family: var(--mono); font-size: .87em; background: var(--code-bg);
@@ -286,9 +288,11 @@ li.chk input { margin-right: .5rem; transform: translateY(1px); accent-color: va
 .notice b { display: block; margin-bottom: .35rem; }
 .notice ol { margin: .4rem 0 .4rem 1.2rem; padding: 0; }
 
-/* ---------- 主題切換（併入側邊導覽列右上角） ---------- */
+/* ---------- 主題切換（視覺上併入側邊導覽列右上角；用 position: fixed
+   而非放在 .sidenav 內的 absolute，因為 .sidenav 在手機版有 transform，
+   會讓內部的 fixed 子元素改成相對 .sidenav 定位，導致收合時按鈕也跟著消失） */
 .themebtn {
-  position: absolute; top: 1.4rem; right: 1.1rem; z-index: 60;
+  position: fixed; top: 1.4rem; left: calc(var(--nav-w) - 3.2rem); z-index: 60;
   width: 2.1rem; height: 2.1rem; border-radius: 50%; cursor: pointer;
   border: 1px solid var(--rule); background: var(--panel); color: var(--ink); font-size: .95rem;
 }
@@ -310,6 +314,9 @@ li.chk input { margin-right: .5rem; transform: translateY(1px); accent-color: va
   .pager { flex-direction: column; }
   .pager a { max-width: none; }
   .pager .next { text-align: left; }
+  /* 導覽列收合時，按鈕改停在畫面右上角（跟左上角的漢堡選單對稱），
+     不管導覽列開關都能點到 */
+  .themebtn { top: .7rem; left: auto; right: .7rem; }
 }
 
 /* ---------- 列印 ---------- */
