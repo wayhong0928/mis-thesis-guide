@@ -9,6 +9,37 @@
   function writeTheme(v) {
     try { localStorage.setItem("rm-theme", v); } catch (e) { /* 忽略 */ }
   }
+  function readVisited(slug) {
+    try {
+      var raw = localStorage.getItem("rm-visited:" + slug);
+      if (raw === null) { return null; }
+      var value = Number(raw);
+      return Number.isFinite(value) && value > 0 ? value : null;
+    } catch (e) {
+      return null;
+    }
+  }
+  function writeVisited(slug, value) {
+    try { localStorage.setItem("rm-visited:" + slug, String(value)); } catch (e) { /* 忽略 */ }
+  }
+  function addUpdateBadge(link) {
+    if (link.querySelector(".rm-update-badge")) { return; }
+    var badge = document.createElement("span");
+    badge.className = "rm-update-badge";
+    badge.textContent = "更新";
+    badge.title = "自上次瀏覽後已更新";
+    link.appendChild(badge);
+  }
+  function installUpdateStyles() {
+    var style = document.createElement("style");
+    style.textContent =
+      ".rm-update-badge{display:inline-block;margin-inline-start:.45em;padding:.05em .38em;" +
+      "border-radius:999px;background:#b54708;color:#fff;font-size:.7em;font-weight:700;" +
+      "line-height:1.45;vertical-align:.1em}" +
+      ".rm-update-note{margin:.75rem 0 1.25rem;padding:.65rem .85rem;border-inline-start:.25rem solid #b54708;" +
+      "background:rgba(181,71,8,.1);font-size:.92rem}";
+    document.head.appendChild(style);
+  }
   var saved = readTheme();
   if (saved === "dark" || saved === "light") {
     document.documentElement.setAttribute("data-theme", saved);
@@ -53,6 +84,41 @@
         if (e.target.tagName === "A") { nav.classList.remove("open"); }
       });
     }
+
+    /* 對照來源檔更新時間與這個瀏覽器的上次瀏覽時間 */
+    var updateLinks = document.querySelectorAll("#sidenav a[data-slug][data-updated]");
+    var hasUpdateMarker = false;
+    updateLinks.forEach(function (link) {
+      var slug = link.getAttribute("data-slug");
+      var updated = Number(link.getAttribute("data-updated"));
+      var visited = readVisited(slug);
+      if (visited !== null && Number.isFinite(updated) && updated > visited) {
+        addUpdateBadge(link);
+        hasUpdateMarker = true;
+      }
+    });
+
+    var article = document.querySelector("article.doc[data-updated]");
+    if (article) {
+      var currentLink = document.querySelector("#sidenav li.active a[data-slug]");
+      var currentSlug = currentLink ? currentLink.getAttribute("data-slug") : null;
+      var articleUpdated = Number(article.getAttribute("data-updated"));
+      var articleVisited = currentSlug ? readVisited(currentSlug) : null;
+      if (articleVisited !== null && Number.isFinite(articleUpdated) && articleUpdated > articleVisited) {
+        var lede = article.querySelector(".lede");
+        if (lede) {
+          var note = document.createElement("p");
+          note.className = "rm-update-note";
+          note.textContent = "這一頁自你上次瀏覽後已有更新。";
+          lede.insertAdjacentElement("afterend", note);
+          hasUpdateMarker = true;
+        }
+      }
+      if (currentSlug) {
+        writeVisited(currentSlug, Math.floor(Date.now() / 1000));
+      }
+    }
+    if (hasUpdateMarker) { installUpdateStyles(); }
 
     /* 側欄篩選 */
     var filter = document.getElementById("navfilter");

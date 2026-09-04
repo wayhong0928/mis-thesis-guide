@@ -9,6 +9,7 @@ import os
 import re
 import json
 import html
+import subprocess
 import markdown
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -69,6 +70,41 @@ for _sec, items in NAV:
         FLAT.append((slug, title, desc))
 
 
+_UPDATED_CACHE = {}
+
+
+def source_updated(src):
+    """取得來源檔最後一次 Git 提交的 Unix 時間戳。
+
+    未安裝 Git、指令失敗或檔案尚無提交紀錄時，改用檔案的
+    mtime。結果會在單次建置期間快取，避免每次產生側欄都重複查詢。
+    """
+    if src in _UPDATED_CACHE:
+        return _UPDATED_CACHE[src]
+
+    rel = os.path.relpath(src, ROOT).replace(os.sep, "/")
+    updated = None
+    try:
+        result = subprocess.run(
+            ["git", "log", "-1", "--format=%ct", "--", rel],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=False,
+            timeout=5,
+        )
+        value = result.stdout.strip()
+        if result.returncode == 0 and value.isdigit():
+            updated = int(value)
+    except (OSError, subprocess.TimeoutExpired):
+        pass
+
+    if updated is None:
+        updated = int(os.stat(src).st_mtime)
+    _UPDATED_CACHE[src] = updated
+    return updated
+
+
 def nav_html(active, prefix=""):
     out = ['<nav class="sidenav" id="sidenav" aria-label="全站導覽">']
     out.append(f'<a class="brand" href="{prefix}index.html"><span class="brand-mark">◈</span>'
@@ -79,8 +115,10 @@ def nav_html(active, prefix=""):
         out.append(f'<div class="navsec"><h2>{sec}</h2><ul>')
         for slug, title, _d in items:
             cls = ' class="active"' if slug == active else ""
+            updated = source_updated(os.path.join(DOCS, slug + ".md"))
             out.append(f'<li{cls}><a href="{prefix}pages/{slug}.html" '
-                       f'data-title="{title}">{title}</a></li>')
+                       f'data-title="{title}" data-slug="{slug}" '
+                       f'data-updated="{updated}">{title}</a></li>')
         out.append("</ul></div>")
     out.append("</nav>")
     return "\n".join(out)
@@ -103,7 +141,7 @@ TEMPLATE = """<!DOCTYPE html>
 <div class="wrap">
 <main id="main">
 <p class="crumb"><a href="../index.html">首頁</a> ／ {section}</p>
-<article class="doc">
+<article class="doc" data-updated="{updated}">
 {body}
 </article>
 <nav class="pager">{pager}</nav>
@@ -253,7 +291,8 @@ def build():
         toc = md.toc.replace('<div class="toc">', '<div class="toc-body">')
         out = TEMPLATE.format(title=title, desc=html.escape(desc, quote=True),
                               nav=nav_html(slug, prefix="../"), body=body,
-                              toc=toc, pager=pager, section=section_of(slug))
+                              toc=toc, pager=pager, section=section_of(slug),
+                              updated=source_updated(src))
         with open(os.path.join(PAGES, slug + ".html"), "w", encoding="utf-8") as f:
             f.write(out)
         print("  ✓", slug + ".html")

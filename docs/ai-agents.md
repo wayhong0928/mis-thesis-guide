@@ -15,17 +15,18 @@
 
 ---
 
-## 一、先分清楚三類工具
+## 一、先分清楚四類工具
 
 | 類型 | 代表 | 能碰到什麼 | 適合的任務 |
 |---|---|---|---|
 | **聊天介面** | ChatGPT、Claude、Gemini 的網頁版 | 只有你貼進去的內容 | 問答、腦力激盪、改一段文字 |
 | **深度研究模式** | 各家的 Deep Research | 網路 + 你上傳的檔案 | 環境掃描、帶引用的長篇報告 |
+| **知識工作代理** | Claude Cowork | 你授權的檔案與工具，不需操作終端機 | 整理筆記、跨檔比對、草擬文件與其他多步驟文書作業 |
 | **代理型 CLI／IDE 工具** | Claude Code、OpenAI Codex、Gemini CLI、Cursor | **你的整個資料夾**：讀檔、寫檔、跑指令、多步驟自主執行 | 跨檔案的批次作業、可重複的流程、資料處理 |
 
-第三類的關鍵差異只有一句話：
+後兩類的關鍵差異只有一句話：
 
-> **前兩類幫你想，第三類幫你做，而且是在你的檔案上做。**
+> **前兩類以回答與研究報告為主，代理型工具會在你授權的範圍內實際執行工作。**
 
 這也是它風險最高的地方。它能改的檔案就是你論文的檔案。
 
@@ -164,6 +165,14 @@ MCP（Model Context Protocol）讓 Claude Code 連到外部服務。研究情境
 !!! tip "為什麼接上自己的文獻庫是最有價值的一步"
     AI 幻覺文獻的根本原因是「它沒有你的文獻庫，只好用生成的」。
     一旦它能查詢你真的收藏過的條目，「捏造引用」的機率會大幅下降，因為它有真的東西可以引。
+
+### 2.6 Claude Cowork：不需終端機的知識工作代理
+
+Claude Cowork 與 Claude Code 採用相同的代理型工作架構，但不要求使用者操作終端機。Claude Code 主要面向開發者與熟悉技術工作流程的人；Cowork 則讓一般使用者從 Claude 的桌面、網頁等介面交付多步驟知識工作，例如整理檔案、彙整研究材料與草擬格式化文件。各介面的功能與方案仍在調整，使用前應以官方說明為準。
+
+在研究工作中，Claude Code、Cowork 與 Codex 都能協助處理機械、重複且可驗證的文書作業：依明確條件整理檢索結果、把文獻筆記轉成統一欄位、比對文獻庫與正文引用、找出草稿各章術語不一致之處，或先產生文件初稿供人工改寫。文獻查找的結果仍要回到資料庫與原始文獻核對；工具能整理你提供或授權存取的材料，不能把生成內容當成真實來源。
+
+某些 AI 工具也能透過 skill 或內建檢查協助找出 AI 寫作痕跡，例如套話、過密的對稱結構與破折號濫用。這只能當初步篩檢，最終仍須由作者逐句判斷，詳見[學術中文寫作紀律](style.md)第五節。
 
 ---
 
@@ -339,8 +348,6 @@ thesis/
 
 ---
 
-**來源說明**：Claude Code 的 plugin 與 skill 機制取自 [Claude Code 官方文件](https://code.claude.com/docs/en/plugins)；Codex 的介面與 AGENTS.md 取自 [OpenAI Codex 官方文件](https://developers.openai.com/codex/)。查詢時間為 2026 年 9 月，功能可能已更新。
+**來源說明**：Claude Code 的 plugin 與 skill 機制取自 [Claude Code 官方文件](https://code.claude.com/docs/en/plugins)；Claude Cowork 的定位取自 [Anthropic 官方說明](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork)；Codex 的介面與 AGENTS.md 取自 [OpenAI Codex 官方文件](https://developers.openai.com/codex/)。查詢日期為 2026 年 9 月 4 日，功能可能已更新。
 
 **延伸**：[AI 學術研究工具指南](tool-directory.md)｜[AI 輔助研究工作流](ai-workflow.md)｜[AI 提示詞範本](prompts.md)｜[學術倫理與 AI 揭露](ethics.md)
-
-
