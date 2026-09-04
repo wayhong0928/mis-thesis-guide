@@ -109,6 +109,14 @@ a:hover { border-bottom-color: var(--accent); }
 .navsec li a:hover { background: var(--accent-soft); color: var(--accent-ink); }
 .navsec li.active > a { background: var(--accent-soft); color: var(--accent-ink); font-weight: 600; }
 .navsec li.hide { display: none; }
+.navsec-toggle {
+  display: flex; align-items: center; justify-content: space-between; gap: .5rem;
+  width: 100%; padding: 0; border: 0; background: transparent; color: inherit;
+  font: inherit; letter-spacing: inherit; text-align: left; cursor: pointer;
+}
+.navsec-toggle::after { content: "\25B8"; font-size: .85rem; transition: transform .15s ease; }
+.navsec:not(.collapsed) > h2 .navsec-toggle::after { transform: rotate(90deg); }
+.navsec.collapsed > ul { display: none; }
 
 .navtoggle {
   display: none; position: fixed; top: .7rem; left: .7rem; z-index: 60;

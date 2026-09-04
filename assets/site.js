@@ -85,6 +85,48 @@
       });
     }
 
+    /* 側欄區塊：預設只展開目前頁面所在區塊 */
+    var navSections = nav ? nav.querySelectorAll(".navsec") : [];
+    function setSectionExpanded(sec, expanded) {
+      sec.classList.toggle("collapsed", !expanded);
+      var sectionToggle = sec.querySelector(".navsec-toggle");
+      if (sectionToggle) { sectionToggle.setAttribute("aria-expanded", expanded ? "true" : "false"); }
+    }
+    navSections.forEach(function (sec, index) {
+      var heading = sec.querySelector("h2");
+      if (!heading) { return; }
+      var sectionToggle = document.createElement("button");
+      var list = sec.querySelector("ul");
+      sectionToggle.type = "button";
+      sectionToggle.className = "navsec-toggle";
+      sectionToggle.textContent = heading.textContent;
+      if (list) {
+        list.id = list.id || "navsec-list-" + index;
+        sectionToggle.setAttribute("aria-controls", list.id);
+      }
+      heading.textContent = "";
+      heading.appendChild(sectionToggle);
+      setSectionExpanded(sec, Boolean(sec.querySelector("li.active")));
+      sectionToggle.addEventListener("click", function () {
+        var filterInput = document.getElementById("navfilter");
+        if (filterInput && filterInput.value.trim() !== "") { return; }
+        setSectionExpanded(sec, sec.classList.contains("collapsed"));
+      });
+    });
+    if (nav) {
+      try {
+        var savedScroll = sessionStorage.getItem("rm-sidenav-scroll");
+        if (savedScroll !== null && Number.isFinite(Number(savedScroll))) {
+          nav.scrollTop = Number(savedScroll);
+        }
+      } catch (e) { /* 忽略 */ }
+      nav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          try { sessionStorage.setItem("rm-sidenav-scroll", String(nav.scrollTop)); } catch (e) { /* 忽略 */ }
+        });
+      });
+    }
+
     /* 對照來源檔更新時間與這個瀏覽器的上次瀏覽時間 */
     var updateLinks = document.querySelectorAll("#sidenav a[data-slug][data-updated]");
     var hasUpdateMarker = false;
@@ -125,6 +167,13 @@
     if (filter) {
       filter.addEventListener("input", function () {
         var q = filter.value.trim().toLowerCase();
+        if (q !== "") {
+          navSections.forEach(function (sec) {
+            if (!sec.hasAttribute("data-filter-collapsed")) {
+              sec.setAttribute("data-filter-collapsed", sec.classList.contains("collapsed") ? "true" : "false");
+            }
+          });
+        }
         var items = nav.querySelectorAll(".navsec li");
         items.forEach(function (li) {
           var t = (li.textContent || "").toLowerCase();
@@ -133,6 +182,15 @@
         nav.querySelectorAll(".navsec").forEach(function (sec) {
           var any = sec.querySelectorAll("li:not(.hide)").length > 0;
           sec.style.display = any ? "" : "none";
+          if (q !== "" && any) {
+            setSectionExpanded(sec, true);
+          } else if (q === "") {
+            var wasCollapsed = sec.getAttribute("data-filter-collapsed");
+            if (wasCollapsed !== null) {
+              setSectionExpanded(sec, wasCollapsed !== "true");
+              sec.removeAttribute("data-filter-collapsed");
+            }
+          }
         });
       });
     }

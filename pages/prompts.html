@@ -75,6 +75,7 @@
 <hr />
 <h2 id="_1">零、所有提示詞都應該包含的三層</h2>
 <p>在貼上任何範本之前，先確認你的提問包含這三層（見<a href="ai-workflow.html">三層架構</a>）：</p>
+<p>本頁每一段提示詞都可以視為工作流其中一站的可重複指令：對應第一站（界定與檢索範圍）的是「一、題目探索」與「二、界定檢索範圍」；對應第二站（檢索與組織）的是「三、文獻工作」與「七、跨文獻整合」；對應第三站（設計與分析）的是「五、方法與分析」；對應第四站（寫作與檢查）的是「四、論證診斷」與「六、寫作」。想先看全貌，可對照<a href="ai-workflow.html#_9">「一份可用的工作流」</a>；想知道如何把發想、找文獻、閱讀、筆記與彙整串起來，則見<a href="ai-workflow.html#111">「一個具體的工具鏈範例」</a>。</p>
 <pre><code>【情境與輸入】我的研究目的是什麼？學界現況是什麼？我目前卡在哪？
 【預期產出】我要什麼形式的產出？多長？什麼結構？
 【邊界與作業原則】不准做什麼？引用怎麼處理？語氣與用語規範是什麼？
@@ -491,6 +492,37 @@
 </tbody>
 </table>
 <hr />
+<h2 id="claude-code-skill">九、把常用提示詞包成自己的 Claude Code skill</h2>
+<p>當你對同一類任務連續第三次貼上相同提示詞，就值得把它包成 skill。例如「檢查橫斷面研究的因果動詞是否越線」或「檢查文獻矩陣格式」，規則穩定、操作重複，打包後比每次複製貼上省事。</p>
+<p>Claude Code skill 的基本概念與放置位置，見<a href="ai-agents.html#23-skill">AI 代理工具懶人包的「Skill 的最小結構」</a>。該節的既有範例著重示範 <code>description</code>；本節補上 <code>name</code> 與腳本用法，整理成可直接改寫的完整骨架。最小版本是一個資料夾，裡面至少有 <code>SKILL.md</code>：</p>
+<ul>
+<li>檔案開頭的 frontmatter 至少寫 <code>name</code> 與 <code>description</code>。<code>description</code> 要清楚說明「什麼情況下該使用這個 skill」，因為這段文字會影響 Claude 是否判斷它適用於目前任務。確切觸發機制仍以你使用版本的官方文件為準，<strong>待查證</strong>。</li>
+<li><code>SKILL.md</code> 本體放檢查邏輯、提示詞內容與規則。你可以直接拿本頁某一段範本改寫，但要刪掉只適用單次工作的背景資料。</li>
+<li>如果工作需要機械化檢查，例如用 <code>grep</code> 找出特定詞彙，可以把腳本放在同一個 skill 資料夾，並在 <code>SKILL.md</code> 寫清楚何時執行、如何判讀結果。</li>
+</ul>
+<p>下面把「因果動詞自檢」改成最小骨架。資料夾名稱可自訂，例如 <code>cross-sectional-causality-check/</code>；其中建立一個 <code>SKILL.md</code>：</p>
+<pre><code class="language-markdown">---
+name: cross-sectional-causality-check
+description: 檢查橫斷面研究文字是否把相關或預測結果誤寫成因果關係時使用。
+---
+
+# 橫斷面研究因果動詞檢查
+
+檢查使用者指定的文字或檔案，找出「導致、造成、引發、促使、驅動」等因果動詞。
+
+## 規則
+
+1. 逐句列出疑似越線的原文與位置。
+2. 判斷該句證據是否只來自橫斷面資料；無法判斷時標示「待查證」，不要自行推定研究設計。
+3. 若證據只能支持關聯或預測，建議改用「相關、預測、同向變動」等詞。
+4. 只做診斷與修改建議，不改動原檔，除非使用者明確要求。
+
+## 輸出格式
+
+用表格列出：位置、原句、問題、建議用詞、判斷依據。
+</code></pre>
+<p>skill 是 Claude Code 或其他明確支援 skill 的 Claude 介面所用的機制。如果你平常使用 ChatGPT、Gemini，或不支援 skill 的純網頁對話，本頁的靜態提示詞仍是最泛用的做法，不必勉強轉換。</p>
+<hr />
 <p><strong>延伸</strong>：<a href="ai-workflow.html">AI 輔助研究工作流</a>｜<a href="tool-directory.html">AI 學術研究工具指南</a>｜<a href="ai-agents.html">AI 代理工具懶人包</a>｜<a href="ethics.html">學術倫理與 AI 揭露</a>｜<a href="checklists.html">檢查清單</a></p>
 </article>
 <nav class="pager"><a class="prev" href="checklists.html">← 檢查清單</a><a class="next" href="glossary.html">名詞與用語對照 →</a></nav>
@@ -539,6 +571,7 @@
 </li>
 <li><a href="#_9">七、跨文獻整合（周期化工作流）</a></li>
 <li><a href="#_10">八、不該用的提示詞</a></li>
+<li><a href="#claude-code-skill">九、把常用提示詞包成自己的 Claude Code skill</a></li>
 </ul>
 </div>
 </aside>
