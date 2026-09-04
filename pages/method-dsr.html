@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>系統發展法與設計科學研究｜研究方法與論文寫作知識網絡</title>
+<meta name="description" content="Nunamaker、March &amp;amp; Smith、Hevner 七大規範">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128218;</text></svg>">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<button class="navtoggle" id="navtoggle" aria-label="開啟導覽">☰</button>
+<nav class="sidenav" id="sidenav" aria-label="全站導覽">
+<a class="brand" href="../index.html"><span class="brand-mark">◈</span><span class="brand-text">研究方法<br><small>知識網絡</small></span></a>
+<div class="navsearch"><input type="search" id="navfilter" placeholder="篩選頁面…" aria-label="篩選頁面"></div>
+<div class="navsec"><h2>研究的基礎</h2><ul>
+<li><a href="../pages/getting-started.html" data-title="從零開始：研究所的第一個月">從零開始：研究所的第一個月</a></li>
+<li><a href="../pages/research-basics.html" data-title="研究的本質、歷程與時程">研究的本質、歷程與時程</a></li>
+<li><a href="../pages/finding-reading.html" data-title="怎麼找、怎麼讀、怎麼選題目">怎麼找、怎麼讀、怎麼選題目</a></li>
+<li><a href="../pages/is-research.html" data-title="資訊管理研究的範疇與取向">資訊管理研究的範疇與取向</a></li>
+<li><a href="../pages/problem-design.html" data-title="研究問題、假說與研究架構">研究問題、假說與研究架構</a></li>
+<li><a href="../pages/literature.html" data-title="文獻回顧與批判性思考">文獻回顧與批判性思考</a></li>
+<li><a href="../pages/theory-building.html" data-title="理論的構成與評估">理論的構成與評估</a></li>
+<li><a href="../pages/theories.html" data-title="常用理論家族與選用原則">常用理論家族與選用原則</a></li>
+</ul></div>
+<div class="navsec"><h2>研究方法</h2><ul>
+<li><a href="../pages/methodology.html" data-title="方法論選擇地圖">方法論選擇地圖</a></li>
+<li><a href="../pages/method-survey.html" data-title="問卷調查法">問卷調查法</a></li>
+<li><a href="../pages/method-experiment.html" data-title="實驗法">實驗法</a></li>
+<li class="active"><a href="../pages/method-dsr.html" data-title="系統發展法與設計科學研究">系統發展法與設計科學研究</a></li>
+<li><a href="../pages/method-data.html" data-title="演算法、最佳化與資料分析">演算法、最佳化與資料分析</a></li>
+<li><a href="../pages/method-qualitative.html" data-title="質性研究方法">質性研究方法</a></li>
+</ul></div>
+<div class="navsec"><h2>論文寫作</h2><ul>
+<li><a href="../pages/writing.html" data-title="論文架構與各章寫作要領">論文架構與各章寫作要領</a></li>
+<li><a href="../pages/style.html" data-title="學術中文寫作紀律">學術中文寫作紀律</a></li>
+<li><a href="../pages/defense.html" data-title="計畫書、口試與簡報">計畫書、口試與簡報</a></li>
+</ul></div>
+<div class="navsec"><h2>AI 輔助研究</h2><ul>
+<li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流">AI 輔助研究工作流</a></li>
+<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南">AI 學術研究工具指南</a></li>
+<li><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包">AI 代理工具懶人包</a></li>
+<li><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險">AI 工具生態與風險</a></li>
+<li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露">學術倫理與 AI 揭露</a></li>
+</ul></div>
+<div class="navsec"><h2>工具箱</h2><ul>
+<li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫">文獻管理與知識庫</a></li>
+<li><a href="../pages/checklists.html" data-title="檢查清單">檢查清單</a></li>
+<li><a href="../pages/prompts.html" data-title="AI 提示詞範本">AI 提示詞範本</a></li>
+<li><a href="../pages/glossary.html" data-title="名詞與用語對照">名詞與用語對照</a></li>
+<li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南">延伸閱讀與資源指南</a></li>
+</ul></div>
+</nav>
+<div class="wrap">
+<main id="main">
+<p class="crumb"><a href="../index.html">首頁</a> ／ 研究方法</p>
+<article class="doc">
+<h1>系統發展法與設計科學研究</h1>
+<p class='lede'>Nunamaker、March &amp; Smith、Hevner 七大規範</p>
+<blockquote>
+<p>在資訊管理領域，系統發展法（Systems Development Methodology）現今學界更常稱為<strong>設計科學研究（Design Science Research, DSR）</strong>。它的核心精神是：透過創造人造物（IT Artifacts）來解決真實世界的問題，並從中淬鍊出可普遍化的學術知識。</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、為什麼需要這套方法論</h2>
+<p>1980 到 1990 年代，資訊系統（IS）學界的主流是「行為科學」典範，研究者多半依賴問卷調查法或實驗法來解釋使用者的行為與態度。</p>
+<p>這個典範面臨兩個困境：</p>
+<ul>
+<li><strong>無法回答規範性問題。</strong> 行為科學可以告訴你「使用者偏好什麼」，卻無法回答「系統應該如何設計」。</li>
+<li><strong>研究脫離實務。</strong> 系統開發常被視為純粹的「工程實作」而被學術界邊緣化，導致 IS 研究雖然嚴謹，卻愈來愈難解決實務界的問題。</li>
+</ul>
+<p>Nunamaker 等人（1990）因此提出強烈的主張：</p>
+<blockquote>
+<p>沒有系統發展，研究沒有用；沒有研究，系統發展沒有根基。</p>
+</blockquote>
+<p>他們確立了系統發展法的正當性，證明只要具備<strong>概念框架、架構設計與嚴謹評估</strong>，系統開發本身就是一種合法的研究方法。</p>
+<hr />
+<h2 id="march-smith-1995">二、要產出什麼、要做什麼（March &amp; Smith, 1995）</h2>
+<p>有別於自然科學尋求「真理」，設計科學的核心目標是尋求<strong>效用（utility）</strong>：只要研究產出有效，就有價值。</p>
+<h3 id="21">2.1 四大研究產出</h3>
+<table>
+<thead>
+<tr>
+<th>產出</th>
+<th>意思</th>
+<th>資管的例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>構念（Constructs）</strong></td>
+<td>定義領域內的詞彙與概念語言，讓研究者能溝通與描述問題</td>
+<td>一套描述資料品質的維度定義</td>
+</tr>
+<tr>
+<td><strong>模型（Models）</strong></td>
+<td>由構念組成的命題集合，呈現問題空間與解答空間的抽象表徵</td>
+<td>一個流程模型、一張參考架構</td>
+</tr>
+<tr>
+<td><strong>方法（Methods）</strong></td>
+<td>「如何解決問題」的演算法、程序或指引</td>
+<td>一套推薦演算法、一套導入程序</td>
+</tr>
+<tr>
+<td><strong>實例（Instantiations）</strong></td>
+<td>在真實環境中實作出來的系統或原型，證明前述概念的可行性</td>
+<td>一個可運作的系統原型</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22">2.2 四大研究活動</h3>
+<p><strong>設計科學範疇</strong></p>
+<ul>
+<li><strong>建置（Build）</strong>：示範可行性，回答「<strong>能不能做到？</strong>」</li>
+<li><strong>評估（Evaluate）</strong>：發展指標並測量績效，回答「<strong>做得多好？</strong>」</li>
+</ul>
+<p><strong>自然科學範疇（用以輔助設計科學）</strong></p>
+<ul>
+<li><strong>理論化（Theorize）</strong>：提出因果理論，解釋「<strong>為什麼有效？</strong>」</li>
+<li><strong>驗證（Justify）</strong>：以科學證據測試理論是否成立</li>
+</ul>
+<hr />
+<h2 id="hevner-2004">三、Hevner 等人（2004）的七大規範</h2>
+<p>Hevner、March、Park 與 Ram 於 <em>MIS Quarterly</em> 28(1) 發表的〈Design Science in Information Systems Research〉整合了行為科學與設計科學，提出目前 IS 學界公認的七大規範。<strong>一篇合格的系統發展研究論文，必須明確回應這七點：</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>規範</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>研究產出（Design as an Artifact）</strong></td>
+<td>必須具體產出構念、模型、方法或實例之一</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>問題關聯性（Problem Relevance）</strong></td>
+<td>必須是為了解決真實業界或組織中重要的業務問題，而非純學術假設</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>研究評估（Design Evaluation）</strong></td>
+<td>必須透過嚴謹的方法（觀察、分析、實驗、測試或描述性論證）證明產出的效用與品質</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>研究貢獻（Research Contributions）</strong></td>
+<td>必須在「研究產出本體」「知識基礎」或「方法論」上提供明確的新貢獻</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>研究嚴謹性（Research Rigor）</strong></td>
+<td>建置與評估需應用既有知識庫的理論與方法，並在嚴謹與實務相關性之間取得平衡</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>搜尋過程（Design as a Search Process）</strong></td>
+<td>面對惡性問題（wicked problems）需善用啟發式策略反覆迭代，追求「夠好（satisficing）」而非絕對最佳解</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>研究溝通（Communication of Research）</strong></td>
+<td>對技術取向的讀者要提供足夠細節以利重製；對管理取向的讀者要說明對組織的實際效益</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">把七大規範當成論文的檢查表</p>
+<p>寫作時直接對照這七點，逐條確認論文裡有沒有對應的段落。第 3 點（評估）與第 4 點（貢獻）是最常被打回票的兩項。</p>
+</div>
+<hr />
+<h2 id="vs">四、系統發展法研究 vs 一般系統開發</h2>
+<p>這是初學者最容易混淆的地方。<strong>把系統做出來交差，只是軟體工程；要成為研究，目的與要求完全不同。</strong></p>
+<table>
+<thead>
+<tr>
+<th>比較面向</th>
+<th>一般系統開發（SDLC）</th>
+<th>系統發展法研究（DSR）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>核心目的</strong></td>
+<td>交付符合業務需求的軟體產品（make it work）</td>
+<td>產生可普遍化、回流學術知識庫的知識</td>
+</tr>
+<tr>
+<td><strong>問題意識</strong></td>
+<td>來自特定業主的業務需求</td>
+<td>來自學術界尚未解決的研究問題或理論缺口</td>
+</tr>
+<tr>
+<td><strong>成功標準</strong></td>
+<td>系統能否如期運作、滿足客戶</td>
+<td>必須通過嚴謹的評估方法檢驗其效用</td>
+</tr>
+<tr>
+<td><strong>知識貢獻</strong></td>
+<td>交付給單一特定組織</td>
+<td>貢獻給整體 IS 學術社群</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_2">五、評估：這套方法的成敗關鍵</h2>
+<p>這套方法最常被忽略的前置動作是：<strong>建置之前，先針對現況做調查。</strong></p>
+<p>原本做這件事要花多久、錯誤率多少？系統上線之後又是多少？兩組拿來比對，這才叫評估。換句話說，<strong>你必須在動手之前先把基準線（baseline）量出來</strong>。系統做完才想到「我沒有比較基準」，就再也補不回來了。</p>
+<h3 id="51">5.1 評估設計的三個層次</h3>
+<table>
+<thead>
+<tr>
+<th>層次</th>
+<th>做法</th>
+<th>說服力</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>描述性論證</strong></td>
+<td>用情境、案例或邏輯論證說明產出的效用</td>
+<td>最低，通常只能當補充</td>
+</tr>
+<tr>
+<td><strong>技術性評估</strong></td>
+<td>效能測試、演算法比較、負載測試、正確率比較</td>
+<td>中，適合方法或演算法類產出</td>
+</tr>
+<tr>
+<td><strong>實證性評估</strong></td>
+<td>前後測比對、對照組實驗、實地部署觀察、使用者評估</td>
+<td>最高，也最耗成本</td>
+</tr>
+</tbody>
+</table>
+<h3 id="52">5.2 常見的評估指標</h3>
+<ul>
+<li><strong>效率</strong>：完成任務所需時間、步驟數、錯誤次數</li>
+<li><strong>效能</strong>：正確率、召回率、涵蓋率、系統回應時間</li>
+<li><strong>使用者面</strong>：易用性量表、滿意度、認知負荷</li>
+<li><strong>組織面</strong>：流程週期縮短、人力節省、決策品質</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">示範案例只能「示範」，不能「證明」</p>
+<p>做一兩個成功的案例展示，只是用來<strong>示範</strong>本研究成果的量化效果或優越處，不能被用來<strong>證明</strong>本研究的有效性，否則就觸犯了「以偏概全」的邏輯謬誤。
+如果只有示範案例，就要在結論中誠實界定：本研究提供的是可行性證據，效用的一般化仍待後續評估。</p>
+</div>
+<hr />
+<h2 id="_3">六、寫作結構的建議</h2>
+<p>DSR 論文的章節安排與行為科學論文不同，一個常見的骨架：</p>
+<pre><code>第一章 緒論
+  ├ 真實世界的問題與其重要性（對應規範 2）
+  └ 研究目的與預期產出（對應規範 1）
+
+第二章 文獻探討
+  ├ 問題領域的既有解法與其不足
+  ├ 可援用的知識基礎（理論、方法、技術）（對應規範 5）
+  └ 研究缺口
+
+第三章 研究設計與系統設計
+  ├ 設計方法論（迭代流程、設計決策的依據）（對應規範 6）
+  ├ 系統架構與關鍵設計決策
+  └ 評估設計（指標、基準線、對照方式）（對應規範 3）
+
+第四章 系統實作與評估結果
+  ├ 系統實作（足以讓人重製的細節）（對應規範 7）
+  └ 評估結果與分析
+
+第五章 結論
+  ├ 對知識庫的貢獻（對應規範 4）
+  ├ 實務意涵（對應規範 7）
+  └ 限制與未來研究
+</code></pre>
+<p><strong>每一個設計決策都要有理由。</strong> 「我為什麼選這個架構、這個演算法、這個資料結構，而不選其他的？」這正是 DSR 與軟體工程報告的分水嶺。</p>
+<hr />
+<h2 id="_4">七、什麼時候該選這個方法</h2>
+<p><strong>選它</strong>：當你面對的是「現有技術無法妥善解決的真實問題」，而且你打算<strong>創造並評估</strong>一個新的模型、方法或系統原型，同時能說明它對現有知識庫的創新貢獻。</p>
+<p><strong>不要選它</strong>：當你的研究目的是「了解人們對既有系統的態度」，那應該用問卷或行為科學方法。</p>
+<div class="admonition note">
+<p class="admonition-title">資管碩論的務實提醒</p>
+<p>DSR 的工作量通常比問卷法大得多（要開發、要評估、還要寫理論貢獻），而且最容易失敗的環節是<strong>評估</strong>。如果時間有限，寧可縮小系統範圍，也要保住一個設計嚴謹的評估。
+一個只有原型、沒有評估的論文，在 DSR 的標準下是不完整的。</p>
+</div>
+<hr />
+<h2 id="_5">八、本頁重點回顧</h2>
+<ul>
+<li>DSR 的核心：<strong>創造人造物解決真實問題，並淬鍊出可普遍化的知識</strong>。</li>
+<li>四大產出：構念、模型、方法、實例；四大活動：建置、評估、理論化、驗證。</li>
+<li>Hevner 七大規範是評審的檢查表，逐條對照著寫。</li>
+<li>DSR ≠ SDLC：差別在目的、成功標準與知識貢獻的對象。</li>
+<li><strong>建置前先量基準線</strong>，否則評估無從比較。</li>
+<li>示範案例只能示範可行性，不能證明有效性。</li>
+<li>每一個設計決策都要有理由，這是研究與工程的分水嶺。</li>
+</ul>
+<hr />
+<p><strong>參考文獻</strong>：Nunamaker, Chen &amp; Purdin (1990)；March &amp; Smith (1995), <em>Decision Support Systems</em> 15(4)；Hevner, March, Park &amp; Ram (2004), <em>MIS Quarterly</em> 28(1), 75–105.</p>
+<p><strong>延伸</strong>：<a href="method-data.html">演算法、最佳化與資料分析</a>｜<a href="methodology.html">方法論選擇地圖</a></p>
+</article>
+<nav class="pager"><a class="prev" href="method-experiment.html">← 實驗法</a><a class="next" href="method-data.html">演算法、最佳化與資料分析 →</a></nav>
+<footer class="foot">
+<p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
+<p><a href="../pages/sources.html">延伸閱讀與資源指南</a></p>
+</footer>
+</main>
+<aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">
+<ul>
+<li><a href="#_1">一、為什麼需要這套方法論</a></li>
+<li><a href="#march-smith-1995">二、要產出什麼、要做什麼（March &amp; Smith, 1995）</a><ul>
+<li><a href="#21">2.1 四大研究產出</a></li>
+<li><a href="#22">2.2 四大研究活動</a></li>
+</ul>
+</li>
+<li><a href="#hevner-2004">三、Hevner 等人（2004）的七大規範</a></li>
+<li><a href="#vs">四、系統發展法研究 vs 一般系統開發</a></li>
+<li><a href="#_2">五、評估：這套方法的成敗關鍵</a><ul>
+<li><a href="#51">5.1 評估設計的三個層次</a></li>
+<li><a href="#52">5.2 常見的評估指標</a></li>
+</ul>
+</li>
+<li><a href="#_3">六、寫作結構的建議</a></li>
+<li><a href="#_4">七、什麼時候該選這個方法</a></li>
+<li><a href="#_5">八、本頁重點回顧</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script src="../assets/site.js"></script>
+</body>
+</html>

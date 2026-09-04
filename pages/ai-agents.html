@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 代理工具懶人包｜研究方法與論文寫作知識網絡</title>
+<meta name="description" content="Claude Code、Skill／Plugin、Codex 與研究場景應用">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128218;</text></svg>">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<button class="navtoggle" id="navtoggle" aria-label="開啟導覽">☰</button>
+<nav class="sidenav" id="sidenav" aria-label="全站導覽">
+<a class="brand" href="../index.html"><span class="brand-mark">◈</span><span class="brand-text">研究方法<br><small>知識網絡</small></span></a>
+<div class="navsearch"><input type="search" id="navfilter" placeholder="篩選頁面…" aria-label="篩選頁面"></div>
+<div class="navsec"><h2>研究的基礎</h2><ul>
+<li><a href="../pages/getting-started.html" data-title="從零開始：研究所的第一個月">從零開始：研究所的第一個月</a></li>
+<li><a href="../pages/research-basics.html" data-title="研究的本質、歷程與時程">研究的本質、歷程與時程</a></li>
+<li><a href="../pages/finding-reading.html" data-title="怎麼找、怎麼讀、怎麼選題目">怎麼找、怎麼讀、怎麼選題目</a></li>
+<li><a href="../pages/is-research.html" data-title="資訊管理研究的範疇與取向">資訊管理研究的範疇與取向</a></li>
+<li><a href="../pages/problem-design.html" data-title="研究問題、假說與研究架構">研究問題、假說與研究架構</a></li>
+<li><a href="../pages/literature.html" data-title="文獻回顧與批判性思考">文獻回顧與批判性思考</a></li>
+<li><a href="../pages/theory-building.html" data-title="理論的構成與評估">理論的構成與評估</a></li>
+<li><a href="../pages/theories.html" data-title="常用理論家族與選用原則">常用理論家族與選用原則</a></li>
+</ul></div>
+<div class="navsec"><h2>研究方法</h2><ul>
+<li><a href="../pages/methodology.html" data-title="方法論選擇地圖">方法論選擇地圖</a></li>
+<li><a href="../pages/method-survey.html" data-title="問卷調查法">問卷調查法</a></li>
+<li><a href="../pages/method-experiment.html" data-title="實驗法">實驗法</a></li>
+<li><a href="../pages/method-dsr.html" data-title="系統發展法與設計科學研究">系統發展法與設計科學研究</a></li>
+<li><a href="../pages/method-data.html" data-title="演算法、最佳化與資料分析">演算法、最佳化與資料分析</a></li>
+<li><a href="../pages/method-qualitative.html" data-title="質性研究方法">質性研究方法</a></li>
+</ul></div>
+<div class="navsec"><h2>論文寫作</h2><ul>
+<li><a href="../pages/writing.html" data-title="論文架構與各章寫作要領">論文架構與各章寫作要領</a></li>
+<li><a href="../pages/style.html" data-title="學術中文寫作紀律">學術中文寫作紀律</a></li>
+<li><a href="../pages/defense.html" data-title="計畫書、口試與簡報">計畫書、口試與簡報</a></li>
+</ul></div>
+<div class="navsec"><h2>AI 輔助研究</h2><ul>
+<li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流">AI 輔助研究工作流</a></li>
+<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南">AI 學術研究工具指南</a></li>
+<li class="active"><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包">AI 代理工具懶人包</a></li>
+<li><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險">AI 工具生態與風險</a></li>
+<li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露">學術倫理與 AI 揭露</a></li>
+</ul></div>
+<div class="navsec"><h2>工具箱</h2><ul>
+<li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫">文獻管理與知識庫</a></li>
+<li><a href="../pages/checklists.html" data-title="檢查清單">檢查清單</a></li>
+<li><a href="../pages/prompts.html" data-title="AI 提示詞範本">AI 提示詞範本</a></li>
+<li><a href="../pages/glossary.html" data-title="名詞與用語對照">名詞與用語對照</a></li>
+<li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南">延伸閱讀與資源指南</a></li>
+</ul></div>
+</nav>
+<div class="wrap">
+<main id="main">
+<p class="crumb"><a href="../index.html">首頁</a> ／ AI 輔助研究</p>
+<article class="doc">
+<h1>AI 代理工具懶人包</h1>
+<p class='lede'>Claude Code、Skill／Plugin、Codex 與研究場景應用</p>
+<blockquote>
+<p>聊天視窗以外的另一類 AI 工具：能讀寫你的檔案、跑你的指令、把重複的流程固化成可重用的模組。這一頁講它們在研究工作裡實際能做什麼。</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、先分清楚三類工具</h2>
+<table>
+<thead>
+<tr>
+<th>類型</th>
+<th>代表</th>
+<th>能碰到什麼</th>
+<th>適合的任務</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>聊天介面</strong></td>
+<td>ChatGPT、Claude、Gemini 的網頁版</td>
+<td>只有你貼進去的內容</td>
+<td>問答、腦力激盪、改一段文字</td>
+</tr>
+<tr>
+<td><strong>深度研究模式</strong></td>
+<td>各家的 Deep Research</td>
+<td>網路 + 你上傳的檔案</td>
+<td>環境掃描、帶引用的長篇報告</td>
+</tr>
+<tr>
+<td><strong>代理型 CLI／IDE 工具</strong></td>
+<td>Claude Code、OpenAI Codex、Gemini CLI、Cursor</td>
+<td><strong>你的整個資料夾</strong>：讀檔、寫檔、跑指令、多步驟自主執行</td>
+<td>跨檔案的批次作業、可重複的流程、資料處理</td>
+</tr>
+</tbody>
+</table>
+<p>第三類的關鍵差異只有一句話：</p>
+<blockquote>
+<p><strong>前兩類幫你想，第三類幫你做，而且是在你的檔案上做。</strong></p>
+</blockquote>
+<p>這也是它風險最高的地方。它能改的檔案就是你論文的檔案。</p>
+<div class="admonition warning">
+<p class="admonition-title">用代理型工具的第一條規矩：版本控制</p>
+<p>在讓任何代理工具動你的論文資料夾之前，先把它變成 git repo，或至少確保有一份完整備份。
+<code>repo</code> 就是放置整個專案檔案的資料夾；<code>commit</code> 是替目前版本留一個可回復的存檔點，<code>diff</code> 則是查看前後改了哪些內容。
+<strong>能自動改一百個檔案的工具，也能自動改壞一百個檔案。</strong></p>
+</div>
+<hr />
+<h2 id="claude-code">二、Claude Code</h2>
+<h3 id="21">2.1 它是什麼</h3>
+<p>一個跑在終端機（也有 IDE 擴充與桌面版）的代理工具。你給它一個資料夾，它可以讀裡面的檔案、執行指令、修改內容，並且把多步驟的工作連貫做完。</p>
+<p>原本是給寫程式用的，但它處理的其實是<strong>「一批檔案 + 一套規則」</strong>這個通用問題。論文資料夾、文獻筆記庫、問卷資料，全都符合這個形狀。</p>
+<h3 id="22">2.2 四個擴充機制</h3>
+<p>Claude Code 的可客製化程度來自四個東西，由淺入深：</p>
+<table>
+<thead>
+<tr>
+<th>機制</th>
+<th>是什麼</th>
+<th>什麼時候用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CLAUDE.md</strong></td>
+<td>放在專案根目錄的說明檔，每次啟動都會被讀進去</td>
+<td>記錄<strong>事實</strong>：這個專案是什麼、檔案怎麼放、有什麼規矩</td>
+</tr>
+<tr>
+<td><strong>Skill</strong></td>
+<td>一個 <code>SKILL.md</code>，寫一套<strong>程序</strong></td>
+<td>你一直在貼同樣的指示、同樣的檢查清單</td>
+</tr>
+<tr>
+<td><strong>Subagent</strong></td>
+<td>有自己系統提示詞與工具限制的子代理</td>
+<td>需要一個獨立、乾淨的視角（例如「批判性審稿人」）</td>
+</tr>
+<tr>
+<td><strong>Plugin</strong></td>
+<td>把上面這些打包成可安裝、可分享、可版本控制的一包</td>
+<td>想跨專案重用，或分享給同學／實驗室</td>
+</tr>
+</tbody>
+</table>
+<p><strong>CLAUDE.md 與 Skill 的分工</strong>是最常搞混的：CLAUDE.md 放<strong>事實</strong>（會一直佔用脈絡），Skill 放<strong>程序</strong>（只有用到時才載入，所以長篇的參考資料放在 skill 裡幾乎不花成本）。</p>
+<p>當你發現 CLAUDE.md 裡某一段已經長成一套步驟而不是一條事實，那一段就該搬進 skill。</p>
+<h3 id="23-skill">2.3 Skill 的最小結構</h3>
+<p>一個 skill 就是一個資料夾裡的 <code>SKILL.md</code>：</p>
+<pre><code>.claude/skills/tw-style-check/SKILL.md
+</code></pre>
+<pre><code class="language-markdown">---
+description: 檢查繁體中文學術寫作的用語與因果動詞紀律。當使用者要求檢查論文段落、
+  或提到「用語檢查」「去 AI 感」「大陸用語」時使用。
+---
+
+# 台灣學術用語與因果動詞檢查
+
+對使用者提供的段落執行下列檢查，逐項列出「行號 + 原句 + 問題 + 建議改法」。
+**只診斷，不要直接改寫，除非使用者明確要求。**
+
+## 一、因果動詞（橫斷面研究）
+掃描：導致、造成、引發、決定、促使形成、固化為、讓⋯⋯變得
+判斷規則：
+- 若該句是在報告**本研究的橫斷面結果** → 必須改成「預測」「與⋯⋯相關」
+- 若該句是在**引用他人的實驗或縱貫研究** → 保留因果動詞，但要確認引文標示清楚
+
+## 二、大陸用語
+掃描並對照建議：
+被試→受試者／填答者、數據收集→資料蒐集、信息→資訊、回歸→迴歸、
+結果表明→結果顯示、人工智能→人工智慧、用戶→使用者、算法→演算法、
+數據庫→資料庫、優化→最佳化、場景→情境、聚合效度→收斂效度、
+橫截面→橫斷面、縱向→縱貫、方差→變異數、置信區間→信賴區間
+
+## 三、AI 套話
+掃描：換句話說、換言之、綜上所述、值得注意的是、具有重要意涵、填補研究缺口
+規則：「值得注意的是」全篇最多兩次；其餘建議刪除或改寫為具體內容。
+
+## 四、句長變異
+若連續三句字數相差在 4 字以內，標記為「句長過於一致」，建議插入短句或長句。
+
+## 輸出格式
+用表格輸出：| 行號 | 原句 | 問題類型 | 建議 |
+最後給一段總評：這一節最需要優先處理的三個問題是什麼。
+</code></pre>
+<p>存好之後，在對話裡打 <code>/tw-style-check</code> 就會執行；或者你只是說「幫我檢查這段的用語」，Claude 也會自己判斷要用它。</p>
+<p><strong>這就是「把你自己的檢查清單變成可執行的東西」</strong>。本站<a href="style.html">學術中文寫作紀律</a>那一頁的內容，剛好就是一份 skill 的原料。</p>
+<h3 id="24-plugin-skill">2.4 Plugin：把 skill 打包分享</h3>
+<p>當你的 skill 累積到值得分享時，可以打包成 plugin。結構是：</p>
+<pre><code>my-research-kit/
+├── .claude-plugin/
+│   └── plugin.json          ← 只有這個檔案放在 .claude-plugin/ 裡
+├── skills/
+│   ├── tw-style-check/SKILL.md
+│   ├── lit-matrix/SKILL.md
+│   └── citation-verify/SKILL.md
+├── agents/                  ← 自訂子代理
+├── hooks/hooks.json         ← 事件觸發的自動化
+├── .mcp.json                ← 外部工具連接設定
+└── README.md
+</code></pre>
+<p><code>plugin.json</code> 最少只要三個欄位：</p>
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;my-research-kit&quot;,
+  &quot;description&quot;: &quot;碩論寫作的檢查與整理工具組&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;
+}
+</code></pre>
+<p>常用指令：</p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>claude plugin init my-tool</code></td>
+<td>在 skills 目錄下建立一個 plugin 骨架，下次啟動自動載入</td>
+</tr>
+<tr>
+<td><code>claude --plugin-dir ./my-plugin</code></td>
+<td>開發時直接載入本地 plugin 測試（不用安裝）</td>
+</tr>
+<tr>
+<td><code>/reload-plugins</code></td>
+<td>改完之後重新載入，不必重開</td>
+</tr>
+<tr>
+<td><code>claude plugin validate ./my-plugin</code></td>
+<td>驗證結構是否正確</td>
+</tr>
+<tr>
+<td><code>/plugin</code></td>
+<td>開啟 plugin 管理介面（安裝、停用、看錯誤）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>兩個容易踩的坑</strong>：</p>
+<ol>
+<li><strong>只有 <code>plugin.json</code> 放在 <code>.claude-plugin/</code> 裡</strong>，<code>skills/</code>、<code>agents/</code>、<code>hooks/</code> 都要放在 plugin 根目錄。</li>
+<li>plugin 的 skill 一律加上命名空間，叫做 <code>/my-research-kit:tw-style-check</code>，避免和別人的同名 skill 撞名。</li>
+</ol>
+<p>想安裝別人做好的，Anthropic 維護兩個公開市集：官方策展的 <code>claude-plugins-official</code>，以及社群審核後上架的 <code>claude-community</code>（用 <code>/plugin marketplace add anthropics/claude-plugins-community</code> 加入）。</p>
+<h3 id="25-mcp">2.5 MCP：把外部工具接進來</h3>
+<p>MCP（Model Context Protocol）讓 Claude Code 連到外部服務。研究情境常見的接法：</p>
+<ul>
+<li><strong>文獻管理器</strong>（例如 Zotero 的 MCP server）：讓 AI 直接查你自己的文獻庫，而不是憑空生成引用</li>
+<li><strong>檔案系統／雲端硬碟</strong>：存取論文資料夾</li>
+<li><strong>資料庫</strong>：直接查你的問卷原始資料</li>
+<li><strong>瀏覽器</strong>：抓取指定網頁</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">為什麼接上自己的文獻庫是最有價值的一步</p>
+<p>AI 幻覺文獻的根本原因是「它沒有你的文獻庫，只好用生成的」。
+一旦它能查詢你真的收藏過的條目，「捏造引用」的機率會大幅下降，因為它有真的東西可以引。</p>
+</div>
+<hr />
+<h2 id="openai-codex">三、OpenAI Codex</h2>
+<h3 id="31">3.1 定位</h3>
+<p>OpenAI 的編碼代理，包含在 ChatGPT 的 Plus、Pro、Business、Edu 與 Enterprise 方案中。</p>
+<p>官方列出的能力：程式碼生成、理解陌生或既有的程式碼、程式碼審查（找潛在錯誤與邊界情況）、除錯與根因診斷、以及重構／測試／遷移這類重複性工作的自動化。</p>
+<h3 id="32">3.2 可用介面</h3>
+<table>
+<thead>
+<tr>
+<th>介面</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CLI</strong></td>
+<td>終端機，最接近 Claude Code 的用法</td>
+</tr>
+<tr>
+<td><strong>IDE 擴充</strong></td>
+<td>在編輯器裡直接用</td>
+</tr>
+<tr>
+<td><strong>App（桌面）</strong></td>
+<td>圖形介面</td>
+</tr>
+<tr>
+<td><strong>Web</strong></td>
+<td>雲端執行，適合長時間任務</td>
+</tr>
+<tr>
+<td><strong>整合</strong></td>
+<td>GitHub、Slack、Linear</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-agentsmd">3.3 AGENTS.md</h3>
+<p>Codex 用 <code>AGENTS.md</code> 作為專案層級的代理設定檔，角色類似 Claude Code 的 <code>CLAUDE.md</code>：把專案的規則、慣例與注意事項寫進去，每次執行都會被讀到。</p>
+<p><strong>一個研究專案的 <code>AGENTS.md</code> 骨架</strong>（<code>CLAUDE.md</code> 也適用，換個檔名即可）：</p>
+<pre><code class="language-markdown"># 專案：碩士論文
+
+## 這個資料夾是什麼
+- `chapters/` 論文各章的 Markdown 原稿
+- `refs/` 文獻筆記，每篇一個檔，檔名為 `作者年份-關鍵詞.md`
+- `data/` 問卷原始資料與分析腳本（**這個資料夾禁止修改原始檔**）
+- `figures/` 圖表輸出
+
+## 寫作規則
+- 繁體中文，台灣學術用語。禁用大陸用語（見 `docs/用語對照.md`）
+- 本研究是橫斷面設計：描述本研究結果一律用「預測」「相關」，
+  禁用「導致」「造成」「引發」。引用他人實驗時才可用因果動詞
+- 引用格式 APA 7 中文化：中文用「等人」與「與」，頁碼用 en dash
+- 每個構念全篇只能有一個中文譯名
+
+## 絕對不要做的事
+- 不要生成任何我沒有給你的文獻引用。找不到就說找不到
+- 不要修改 `data/raw/` 底下的任何檔案
+- 不要替我寫完整的論述段落。你可以診斷、可以列出問題、可以提供改寫選項，
+  但最終的句子由我自己寫
+
+## 我常請你做的事
+- 檢查一節的用語與因果動詞紀律
+- 把 `refs/` 底下指定的幾篇整理成文獻比較表
+- 檢查某一章的結論有沒有回應緒論的研究問題
+</code></pre>
+<p><strong>最後兩個區塊比前面重要。</strong> 「絕對不要做的事」是你的<a href="ai-workflow.html">邊界</a>，它決定了工具會不會替你製造麻煩。</p>
+<hr />
+<h2 id="_2">四、其他常見的代理型工具</h2>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>定位</th>
+<th>研究情境的用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Gemini CLI</strong></td>
+<td>Google 的終端機代理</td>
+<td>與 Google 生態（Drive、Docs）整合較順</td>
+</tr>
+<tr>
+<td><strong>Cursor / Windsurf</strong></td>
+<td>AI 優先的編輯器</td>
+<td>適合習慣圖形介面、需要看 diff 才安心的人</td>
+</tr>
+<tr>
+<td><strong>GitHub Copilot</strong></td>
+<td>編輯器內的補完與對話</td>
+<td>寫分析腳本時的即時輔助</td>
+</tr>
+<tr>
+<td><strong>Jupyter + AI 擴充</strong></td>
+<td>資料分析筆記本</td>
+<td>統計分析與圖表生成</td>
+</tr>
+</tbody>
+</table>
+<p><strong>選哪一個不重要，重要的是三件事</strong>：能不能限定它的工作範圍、能不能看到它改了什麼、能不能還原。</p>
+<hr />
+<h2 id="_3">五、研究情境的十個實際應用</h2>
+<p>以下每一個都假設你已經把論文資料夾交給代理工具，而且<strong>已經有版本控制</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>情境</th>
+<th>怎麼下指令</th>
+<th>為什麼值得交給它</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>全篇用語稽核</strong></td>
+<td>「掃描 <code>chapters/</code> 底下所有檔案，找出大陸用語與橫斷面研究不該用的因果動詞，用表格列出檔名、行號、原句、建議」</td>
+<td>人工做會漏，而且做不了第二次</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>術語一致性檢查</strong></td>
+<td>「檢查全篇有沒有同一個構念用了兩個不同的中文譯名」</td>
+<td>這是口試委員最容易抓到、你最容易忽略的問題</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>引用交叉核對</strong></td>
+<td>「比對 <code>chapters/</code> 內文的所有引註與 <code>references.md</code> 的清單，列出：內文有但清單沒有的、清單有但內文沒引的」</td>
+<td>純機械工作，人做極慢且易錯</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>文獻筆記轉比較表</strong></td>
+<td>「讀 <code>refs/</code> 底下這 12 個檔案，整理成一張表：作者年份、理論、方法、樣本、主要結果、研究限制」</td>
+<td><a href="literature.html">文獻比較表</a>的半自動版</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>結論對照研究問題</strong></td>
+<td>「把第一章的研究問題和第五章的結論並排比對，指出哪一題沒有被明確回應」</td>
+<td>最致命的結構性缺陷，也最難自己看出來</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>邏輯斷鏈診斷</strong></td>
+<td>「對第二章第三節做論證結構診斷：抽出命題、標出跳步與隱含前提」</td>
+<td>見<a href="ai-workflow.html">AI 輔助研究工作流</a>的研究教練角色</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>資料前處理腳本</strong></td>
+<td>「寫一個 Python 腳本，把 <code>data/raw/survey.csv</code> 依照這些規則清理，輸出到 <code>data/clean/</code>，<strong>不要動原始檔</strong>」</td>
+<td>腳本可重跑、可檢查，比手動改 Excel 可靠得多</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>圖表批次產生</strong></td>
+<td>「用 <code>data/clean/</code> 產生這五張圖，統一用這組配色與字型，輸出 300dpi PNG 到 <code>figures/</code>」</td>
+<td>統一格式，改一次全部重跑</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>格式套用</strong></td>
+<td>「把 <code>chapters/</code> 的 Markdown 依照系所模板轉成 Word，套用指定樣式」</td>
+<td>排版是最不值得手工做的事</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>口試模擬</strong></td>
+<td>「用 <code>agents/</code> 裡的『嚴格口試委員』子代理，針對第三章提出最尖銳的十個問題」</td>
+<td>子代理有獨立視角，不會被前面的對話帶著走</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">注意第 7 到第 9 項的共同點</p>
+<p>它們產出的是<strong>腳本或流程</strong>，不是一次性的結果。
+這就是代理型工具真正的價值：<strong>你得到的是一個可以重跑的東西</strong>，而不是一份改一次就要重做一次的輸出。</p>
+</div>
+<hr />
+<h2 id="_4">六、起手式：一個可用的專案結構</h2>
+<pre><code>thesis/
+├── CLAUDE.md              # 或 AGENTS.md：專案事實 + 規則 + 紅線
+├── .claude/
+│   └── skills/
+│       ├── tw-style-check/SKILL.md     # 用語與動詞紀律檢查
+│       ├── cite-audit/SKILL.md         # 引用交叉核對
+│       └── lit-matrix/SKILL.md         # 文獻筆記轉比較表
+├── chapters/
+├── refs/
+├── data/
+│   ├── raw/               # 唯讀
+│   └── clean/
+├── figures/
+└── .git/
+</code></pre>
+<p><strong>建置順序建議</strong>：</p>
+<ol>
+<li>先建 git repo（沒有這一步，其他都不要做）</li>
+<li>寫 <code>CLAUDE.md</code>，特別是「絕對不要做的事」</li>
+<li>用一兩週，把你重複貼的指示記下來</li>
+<li>重複三次以上的，才變成 skill</li>
+<li>skill 累積到五個以上、而且你想分享時，才打包成 plugin</li>
+</ol>
+<p><strong>不要一開始就設計一套完整的系統。</strong> 你還不知道自己會重複做什麼。</p>
+<hr />
+<h2 id="_5">七、風險與邊界</h2>
+<h3 id="71">7.1 技術風險</h3>
+<table>
+<thead>
+<tr>
+<th>風險</th>
+<th>對策</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>改壞檔案</td>
+<td>git；<code>data/raw/</code> 設唯讀；重要操作前先 commit</td>
+</tr>
+<tr>
+<td>悄悄改了你沒要它改的地方</td>
+<td>每次都看 diff，不要盲目接受</td>
+</tr>
+<tr>
+<td>幻覺引用寫進論文</td>
+<td>三步查核；接上自己的文獻庫</td>
+</tr>
+<tr>
+<td>敏感資料外流</td>
+<td>受訪者資料先去識別化；確認同意書涵蓋範圍</td>
+</tr>
+<tr>
+<td>安裝來路不明的 plugin</td>
+<td>plugin 可以執行指令。只安裝你信任的來源</td>
+</tr>
+</tbody>
+</table>
+<h3 id="72">7.2 學術風險</h3>
+<p>代理工具讓「產出」變得非常快，這正是它對學位論文最危險的地方。</p>
+<p>三條線：</p>
+<ol>
+<li><strong>它可以幫你檢查，不該幫你論述。</strong> 診斷、列問題、提供選項可以；替你寫出你講不清楚的段落不行。</li>
+<li><strong>它產出的每一行，你都要能防守。</strong> 口試委員指著任何一句問「你為什麼這樣寫」，你答不出來就是紅燈。</li>
+<li><strong>揭露範圍要誠實。</strong> 用了代理工具做資料清理、格式轉換、用語檢查，該寫進<a href="ethics.html">AI 使用聲明</a>就寫進去。</li>
+</ol>
+<div class="admonition danger">
+<p class="admonition-title">最容易失守的一步</p>
+<p>請它「把這一節改得更通順」，然後直接採用。
+改完之後你如果講不清楚那段的邏輯，代表<strong>這段內容本質上還不是你的知識</strong>。這時候該退回去重讀文獻，不是繼續潤飾。</p>
+</div>
+<hr />
+<h2 id="_6">八、本頁重點回顧</h2>
+<ul>
+<li>三類工具：聊天幫你想、深度研究幫你查、<strong>代理型幫你做</strong>，而且是在你的檔案上做。</li>
+<li>用代理工具前，先有 git 或完整備份。</li>
+<li>CLAUDE.md／AGENTS.md 放<strong>事實與紅線</strong>；Skill 放<strong>程序</strong>。</li>
+<li>Skill 就是把你自己的檢查清單變成可執行的東西。</li>
+<li>Plugin 是把 skill 打包分享；只有 <code>plugin.json</code> 放在 <code>.claude-plugin/</code> 裡。</li>
+<li>MCP 接上自己的文獻庫，是降低幻覺引用最有效的一招。</li>
+<li>最值得交給它的十件事，共同點是<strong>機械、重複、可驗證</strong>。</li>
+<li>產出腳本比產出結果有價值，因為腳本可以重跑。</li>
+<li>它可以幫你檢查，不該幫你論述；你講不清楚的段落就不該留在論文裡。</li>
+</ul>
+<hr />
+<p><strong>來源說明</strong>：Claude Code 的 plugin 與 skill 機制取自 <a href="https://code.claude.com/docs/en/plugins">Claude Code 官方文件</a>；Codex 的介面與 AGENTS.md 取自 <a href="https://developers.openai.com/codex/">OpenAI Codex 官方文件</a>。查詢時間為 2026 年 9 月，功能可能已更新。</p>
+<p><strong>延伸</strong>：<a href="tool-directory.html">AI 學術研究工具指南</a>｜<a href="ai-workflow.html">AI 輔助研究工作流</a>｜<a href="prompts.html">AI 提示詞範本</a>｜<a href="ethics.html">學術倫理與 AI 揭露</a></p>
+</article>
+<nav class="pager"><a class="prev" href="tool-directory.html">← AI 學術研究工具指南</a><a class="next" href="ai-tools.html">AI 工具生態與風險 →</a></nav>
+<footer class="foot">
+<p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
+<p><a href="../pages/sources.html">延伸閱讀與資源指南</a></p>
+</footer>
+</main>
+<aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">
+<ul>
+<li><a href="#_1">一、先分清楚三類工具</a></li>
+<li><a href="#claude-code">二、Claude Code</a><ul>
+<li><a href="#21">2.1 它是什麼</a></li>
+<li><a href="#22">2.2 四個擴充機制</a></li>
+<li><a href="#23-skill">2.3 Skill 的最小結構</a></li>
+<li><a href="#24-plugin-skill">2.4 Plugin：把 skill 打包分享</a></li>
+<li><a href="#25-mcp">2.5 MCP：把外部工具接進來</a></li>
+</ul>
+</li>
+<li><a href="#openai-codex">三、OpenAI Codex</a><ul>
+<li><a href="#31">3.1 定位</a></li>
+<li><a href="#32">3.2 可用介面</a></li>
+<li><a href="#33-agentsmd">3.3 AGENTS.md</a></li>
+</ul>
+</li>
+<li><a href="#_2">四、其他常見的代理型工具</a></li>
+<li><a href="#_3">五、研究情境的十個實際應用</a></li>
+<li><a href="#_4">六、起手式：一個可用的專案結構</a></li>
+<li><a href="#_5">七、風險與邊界</a><ul>
+<li><a href="#71">7.1 技術風險</a></li>
+<li><a href="#72">7.2 學術風險</a></li>
+</ul>
+</li>
+<li><a href="#_6">八、本頁重點回顧</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script src="../assets/site.js"></script>
+</body>
+</html>

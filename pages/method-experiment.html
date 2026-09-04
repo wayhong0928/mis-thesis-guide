@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>實驗法｜研究方法與論文寫作知識網絡</title>
+<meta name="description" content="操弄、控制、隨機化與內外部效度">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128218;</text></svg>">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<button class="navtoggle" id="navtoggle" aria-label="開啟導覽">☰</button>
+<nav class="sidenav" id="sidenav" aria-label="全站導覽">
+<a class="brand" href="../index.html"><span class="brand-mark">◈</span><span class="brand-text">研究方法<br><small>知識網絡</small></span></a>
+<div class="navsearch"><input type="search" id="navfilter" placeholder="篩選頁面…" aria-label="篩選頁面"></div>
+<div class="navsec"><h2>研究的基礎</h2><ul>
+<li><a href="../pages/getting-started.html" data-title="從零開始：研究所的第一個月">從零開始：研究所的第一個月</a></li>
+<li><a href="../pages/research-basics.html" data-title="研究的本質、歷程與時程">研究的本質、歷程與時程</a></li>
+<li><a href="../pages/finding-reading.html" data-title="怎麼找、怎麼讀、怎麼選題目">怎麼找、怎麼讀、怎麼選題目</a></li>
+<li><a href="../pages/is-research.html" data-title="資訊管理研究的範疇與取向">資訊管理研究的範疇與取向</a></li>
+<li><a href="../pages/problem-design.html" data-title="研究問題、假說與研究架構">研究問題、假說與研究架構</a></li>
+<li><a href="../pages/literature.html" data-title="文獻回顧與批判性思考">文獻回顧與批判性思考</a></li>
+<li><a href="../pages/theory-building.html" data-title="理論的構成與評估">理論的構成與評估</a></li>
+<li><a href="../pages/theories.html" data-title="常用理論家族與選用原則">常用理論家族與選用原則</a></li>
+</ul></div>
+<div class="navsec"><h2>研究方法</h2><ul>
+<li><a href="../pages/methodology.html" data-title="方法論選擇地圖">方法論選擇地圖</a></li>
+<li><a href="../pages/method-survey.html" data-title="問卷調查法">問卷調查法</a></li>
+<li class="active"><a href="../pages/method-experiment.html" data-title="實驗法">實驗法</a></li>
+<li><a href="../pages/method-dsr.html" data-title="系統發展法與設計科學研究">系統發展法與設計科學研究</a></li>
+<li><a href="../pages/method-data.html" data-title="演算法、最佳化與資料分析">演算法、最佳化與資料分析</a></li>
+<li><a href="../pages/method-qualitative.html" data-title="質性研究方法">質性研究方法</a></li>
+</ul></div>
+<div class="navsec"><h2>論文寫作</h2><ul>
+<li><a href="../pages/writing.html" data-title="論文架構與各章寫作要領">論文架構與各章寫作要領</a></li>
+<li><a href="../pages/style.html" data-title="學術中文寫作紀律">學術中文寫作紀律</a></li>
+<li><a href="../pages/defense.html" data-title="計畫書、口試與簡報">計畫書、口試與簡報</a></li>
+</ul></div>
+<div class="navsec"><h2>AI 輔助研究</h2><ul>
+<li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流">AI 輔助研究工作流</a></li>
+<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南">AI 學術研究工具指南</a></li>
+<li><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包">AI 代理工具懶人包</a></li>
+<li><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險">AI 工具生態與風險</a></li>
+<li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露">學術倫理與 AI 揭露</a></li>
+</ul></div>
+<div class="navsec"><h2>工具箱</h2><ul>
+<li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫">文獻管理與知識庫</a></li>
+<li><a href="../pages/checklists.html" data-title="檢查清單">檢查清單</a></li>
+<li><a href="../pages/prompts.html" data-title="AI 提示詞範本">AI 提示詞範本</a></li>
+<li><a href="../pages/glossary.html" data-title="名詞與用語對照">名詞與用語對照</a></li>
+<li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南">延伸閱讀與資源指南</a></li>
+</ul></div>
+</nav>
+<div class="wrap">
+<main id="main">
+<p class="crumb"><a href="../index.html">首頁</a> ／ 研究方法</p>
+<article class="doc">
+<h1>實驗法</h1>
+<p class='lede'>操弄、控制、隨機化與內外部效度</p>
+<blockquote>
+<p>隨機實驗是最直接、內部效度通常最強的因果識別設計。準實驗與自然實驗也可識別因果，但必須額外論證分組可比性、排除替代解釋，並誠實界定推論限制。</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、定義與三大要素</h2>
+<p><strong>定義</strong>：透過操控變數來觀察其對受試者的影響，並藉此分析因果關係。</p>
+<p><strong>目的</strong>：驗證因果關係、檢驗研究假設、評估變數的影響程度、提供決策依據。</p>
+<p><strong>三大要素</strong>：</p>
+<ol>
+<li><strong>操弄獨立變項（manipulation）</strong>：研究者主動改變自變項的水準，而不是被動觀察</li>
+<li><strong>控制外部變項（control）</strong>：讓其他可能影響結果的因素保持恆定或平衡</li>
+<li><strong>隨機化（randomization）</strong>：隨機分派受試者到各組，讓未知的干擾因子在組間平均分布</li>
+</ol>
+<p>這三者對應著<a href="methodology.html">因果三條件</a>：操弄創造了時序，控制與隨機化排除了替代解釋，統計檢定確認了相關。</p>
+<hr />
+<h2 id="_2">二、實驗設計的基本型態</h2>
+<table>
+<thead>
+<tr>
+<th>設計</th>
+<th>結構</th>
+<th>優點</th>
+<th>代價</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>後測控制組設計</strong></td>
+<td>隨機分派 → 實驗組給刺激 / 控制組不給 → 後測</td>
+<td>最乾淨，不受前測污染</td>
+<td>無法看個體變化</td>
+</tr>
+<tr>
+<td><strong>前後測控制組設計</strong></td>
+<td>隨機分派 → 前測 → 操弄 → 後測</td>
+<td>可看變化量，統計檢力較高</td>
+<td>前測可能引發敏感化</td>
+</tr>
+<tr>
+<td><strong>受試者間（between-subjects）</strong></td>
+<td>每個人只經歷一種情境</td>
+<td>無順序效應</td>
+<td>需要較多受試者</td>
+</tr>
+<tr>
+<td><strong>受試者內（within-subjects）</strong></td>
+<td>每個人經歷所有情境</td>
+<td>受試者自身為對照，效率高</td>
+<td>順序效應、學習效應、疲勞</td>
+</tr>
+<tr>
+<td><strong>因子設計（factorial）</strong></td>
+<td>同時操弄兩個以上自變項</td>
+<td>可檢驗<strong>交互作用</strong></td>
+<td>樣本需求快速上升</td>
+</tr>
+<tr>
+<td><strong>準實驗（quasi-experiment）</strong></td>
+<td>無法隨機分派，用既有分組</td>
+<td>現場可行性高</td>
+<td>選擇偏誤，需統計控制</td>
+</tr>
+<tr>
+<td><strong>自然實驗（natural experiment）</strong></td>
+<td>利用外生事件造成的分組</td>
+<td>生態效度高</td>
+<td>分組非隨機，需仔細論證可比性</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">自然實驗的經典設計思路</p>
+<p>當你無法操弄，但外部世界替你操弄了（法規變動、平台改版、政策上路），就可以尋找一組「除了受到該事件影響之外，其他條件盡量相似」的對照組。
+最漂亮的作法是<strong>相鄰行政區配對</strong>：跨越政策邊界的兩側地區，經濟社會條件相近，卻只有一側受政策影響。這個設計的說服力，來自它同時處理了「地區性差異」這個最大的干擾因子。</p>
+</div>
+<hr />
+<h2 id="_3">三、實驗設計的三大要領</h2>
+<p>彭明輝書中對實驗設計的三點歸納，同樣適用於行為實驗：</p>
+<ol>
+<li><strong>選擇最有利的實驗條件</strong>，讓你企圖驗證的現象表現得最鮮明、突出。</li>
+<li><strong>設法隔離或排除其他干擾因素或雜訊的影響</strong>，或將其效應降至最低。</li>
+<li><strong>當前兩項目標衝突時</strong>，優先在設計上排除或降低衝突程度，然後再選擇最佳條件，在兩個衝突目標之間取得最佳平衡。</li>
+</ol>
+<p>同時，你必須把<strong>考慮過的因素與理論依據</strong>清楚寫出來，說服審查委員兩件事：</p>
+<ul>
+<li>這樣的設計可以有效排除不相關因素的干擾，並產出檢證假說所需的證據與可靠度；</li>
+<li>這個實驗的條件、步驟與數量都是<strong>必要的</strong>，沒有明顯可省略的部分，也沒有疊床架屋的贅餘。</li>
+</ul>
+<hr />
+<h2 id="_4">四、效度威脅</h2>
+<h3 id="41">4.1 內部效度（是不是真的因為操弄才有這個結果）</h3>
+<table>
+<thead>
+<tr>
+<th>威脅</th>
+<th>意思</th>
+<th>對策</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>歷史（history）</td>
+<td>實驗期間發生了外部事件</td>
+<td>控制組、縮短實驗期間</td>
+</tr>
+<tr>
+<td>成熟（maturation）</td>
+<td>受試者自然的變化</td>
+<td>控制組</td>
+</tr>
+<tr>
+<td>測驗（testing）</td>
+<td>前測本身改變了受試者</td>
+<td>後測控制組設計、Solomon 四組設計</td>
+</tr>
+<tr>
+<td>工具（instrumentation）</td>
+<td>測量工具或評分者標準漂移</td>
+<td>標準化程序、多評分者信度</td>
+</tr>
+<tr>
+<td>選擇（selection）</td>
+<td>組別本來就不同</td>
+<td>隨機分派；不可行時用配對或統計控制</td>
+</tr>
+<tr>
+<td>流失（mortality）</td>
+<td>中途退出者非隨機</td>
+<td>記錄流失率並比較流失者特徵</td>
+</tr>
+<tr>
+<td>迴歸假象</td>
+<td>極端分數自然向平均迴歸</td>
+<td>避免以極端分數選樣</td>
+</tr>
+<tr>
+<td>需求特徵</td>
+<td>受試者猜到假設而配合</td>
+<td>掩飾研究目的、使用填充任務</td>
+</tr>
+</tbody>
+</table>
+<h3 id="42">4.2 外部效度（能不能推論到別的人、別的情境）</h3>
+<p>實驗法最大的代價。常見的質疑：</p>
+<ul>
+<li>受試者以學生為主，能推論到職場工作者嗎？</li>
+<li>實驗室的簡化任務，能代表真實情境的複雜決策嗎？</li>
+<li>一次性的短暫暴露，能推論到長期使用嗎？</li>
+</ul>
+<p><strong>誠實的處理方式</strong>：在研究限制中明確界定推論範圍，並在未來研究建議中提出場域實驗或縱貫追蹤。</p>
+<h3 id="43">4.3 建構效度</h3>
+<p><strong>操弄檢核（manipulation check）是必做的。</strong> 你以為你操弄了「高／低任務難度」，但受試者實際感受到的差異是什麼？沒有操弄檢核，整個實驗的因果宣稱就懸空了。</p>
+<p>同樣要檢查的還有：刺激材料是否只在目標變項上不同（其他面向要盡量等值）。</p>
+<hr />
+<h2 id="_5">五、實驗法與問卷法的搭配</h2>
+<p>只有當研究問題需要識別因果，而且自變項可以合理、合乎倫理地操弄時，實驗才適合補強橫斷面問卷的限制。問卷也可以作為實驗中的測量工具，用來測量中介與依變數；是否加入實驗，應由研究問題與可操弄性決定。</p>
+<p>典型的資管組合設計：</p>
+<pre><code>隨機分派 → 接觸不同版本的系統／介面／訊息（操弄）
+        → 操弄檢核
+        → 問卷測量心理歷程（中介變數）與行為意圖（依變數）
+        → 若可能，加上實際行為指標（點擊、完成率、停留時間）
+</code></pre>
+<p><strong>加入客觀行為指標</strong>是提升說服力最划算的一步：它同時降低了共同方法變異的疑慮。</p>
+<hr />
+<h2 id="_6">六、樣本與統計</h2>
+<ul>
+<li><strong>事前</strong>做統計檢力分析（power analysis）決定樣本數，不要事後才補算。</li>
+<li>報告<strong>效果量</strong>（Cohen's d、η²、partial η²），不要只報 p 值。</li>
+<li>因子設計要報告<strong>交互作用</strong>的檢定與簡單主效果分析。</li>
+<li>有中介假設時，用 bootstrapping 的間接效果與信賴區間，而非 Baron &amp; Kenny 的逐步法。</li>
+<li>前後測設計優先考慮 ANCOVA（以前測為共變數），而非單純比較差異分數。</li>
+</ul>
+<hr />
+<h2 id="_7">七、研究倫理</h2>
+<p>凡涉及人類受試者的研究，都要留意所屬機構的<strong>研究倫理審查（IRB／REC）</strong>規定：</p>
+<ul>
+<li>知情同意書：說明目的、程序、風險、退出權利、資料用途</li>
+<li>欺瞞設計（deception）必須有正當理由，並在事後充分告知（debriefing）</li>
+<li>個資保護與資料去識別化</li>
+<li>誘因設計不得構成不當影響</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">AI 工具的使用不能取代正式的知情同意與資料保護程序</p>
+<p>用 AI 協助整理逐字稿或分析資料時，要注意是否會把受試者的可辨識資料送到外部服務。這一點在多數學校的研究倫理規範與資安規定中都有明確要求。</p>
+</div>
+<hr />
+<h2 id="_8">八、優缺點總表</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>內容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>優點</strong></td>
+<td>隨機化與控制充分時可識別因果；可精確操弄與控制；可檢驗交互作用；可重複驗證性高</td>
+</tr>
+<tr>
+<td><strong>缺點</strong></td>
+<td>外部效度較低；情境人工化；受試者招募成本高；某些變項在倫理上不可操弄；需求特徵與實驗者效應</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_9">九、本頁重點回顧</h2>
+<ul>
+<li>實驗法的三要素是操弄、控制、隨機化。它們正好對應因果三條件。</li>
+<li>設計三要領：讓現象鮮明、排除干擾、在衝突時取得平衡，並把理由寫出來。</li>
+<li>內部效度看「是不是真的因為操弄」，外部效度看「能推論到哪」。</li>
+<li><strong>操弄檢核不可省略</strong>，否則因果宣稱懸空。</li>
+<li>問題需識別因果且具可操弄性時，可用實驗補強橫斷面問卷的限制；加入客觀行為指標能提升說服力。</li>
+<li>事前做檢力分析，報告效果量，中介用 bootstrapping。</li>
+<li>涉及人類受試者就要走研究倫理審查。</li>
+</ul>
+<hr />
+<p><strong>延伸</strong>：<a href="method-survey.html">問卷調查法</a>｜<a href="methodology.html">方法論選擇地圖</a>｜<a href="ethics.html">學術倫理與 AI 揭露</a></p>
+</article>
+<nav class="pager"><a class="prev" href="method-survey.html">← 問卷調查法</a><a class="next" href="method-dsr.html">系統發展法與設計科學研究 →</a></nav>
+<footer class="foot">
+<p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
+<p><a href="../pages/sources.html">延伸閱讀與資源指南</a></p>
+</footer>
+</main>
+<aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">
+<ul>
+<li><a href="#_1">一、定義與三大要素</a></li>
+<li><a href="#_2">二、實驗設計的基本型態</a></li>
+<li><a href="#_3">三、實驗設計的三大要領</a></li>
+<li><a href="#_4">四、效度威脅</a><ul>
+<li><a href="#41">4.1 內部效度（是不是真的因為操弄才有這個結果）</a></li>
+<li><a href="#42">4.2 外部效度（能不能推論到別的人、別的情境）</a></li>
+<li><a href="#43">4.3 建構效度</a></li>
+</ul>
+</li>
+<li><a href="#_5">五、實驗法與問卷法的搭配</a></li>
+<li><a href="#_6">六、樣本與統計</a></li>
+<li><a href="#_7">七、研究倫理</a></li>
+<li><a href="#_8">八、優缺點總表</a></li>
+<li><a href="#_9">九、本頁重點回顧</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script src="../assets/site.js"></script>
+</body>
+</html>

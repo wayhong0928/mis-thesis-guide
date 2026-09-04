@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 工具生態與風險｜研究方法與論文寫作知識網絡</title>
+<meta name="description" content="Auto Research、去 AI 味工具的定位與紅線">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128218;</text></svg>">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<button class="navtoggle" id="navtoggle" aria-label="開啟導覽">☰</button>
+<nav class="sidenav" id="sidenav" aria-label="全站導覽">
+<a class="brand" href="../index.html"><span class="brand-mark">◈</span><span class="brand-text">研究方法<br><small>知識網絡</small></span></a>
+<div class="navsearch"><input type="search" id="navfilter" placeholder="篩選頁面…" aria-label="篩選頁面"></div>
+<div class="navsec"><h2>研究的基礎</h2><ul>
+<li><a href="../pages/getting-started.html" data-title="從零開始：研究所的第一個月">從零開始：研究所的第一個月</a></li>
+<li><a href="../pages/research-basics.html" data-title="研究的本質、歷程與時程">研究的本質、歷程與時程</a></li>
+<li><a href="../pages/finding-reading.html" data-title="怎麼找、怎麼讀、怎麼選題目">怎麼找、怎麼讀、怎麼選題目</a></li>
+<li><a href="../pages/is-research.html" data-title="資訊管理研究的範疇與取向">資訊管理研究的範疇與取向</a></li>
+<li><a href="../pages/problem-design.html" data-title="研究問題、假說與研究架構">研究問題、假說與研究架構</a></li>
+<li><a href="../pages/literature.html" data-title="文獻回顧與批判性思考">文獻回顧與批判性思考</a></li>
+<li><a href="../pages/theory-building.html" data-title="理論的構成與評估">理論的構成與評估</a></li>
+<li><a href="../pages/theories.html" data-title="常用理論家族與選用原則">常用理論家族與選用原則</a></li>
+</ul></div>
+<div class="navsec"><h2>研究方法</h2><ul>
+<li><a href="../pages/methodology.html" data-title="方法論選擇地圖">方法論選擇地圖</a></li>
+<li><a href="../pages/method-survey.html" data-title="問卷調查法">問卷調查法</a></li>
+<li><a href="../pages/method-experiment.html" data-title="實驗法">實驗法</a></li>
+<li><a href="../pages/method-dsr.html" data-title="系統發展法與設計科學研究">系統發展法與設計科學研究</a></li>
+<li><a href="../pages/method-data.html" data-title="演算法、最佳化與資料分析">演算法、最佳化與資料分析</a></li>
+<li><a href="../pages/method-qualitative.html" data-title="質性研究方法">質性研究方法</a></li>
+</ul></div>
+<div class="navsec"><h2>論文寫作</h2><ul>
+<li><a href="../pages/writing.html" data-title="論文架構與各章寫作要領">論文架構與各章寫作要領</a></li>
+<li><a href="../pages/style.html" data-title="學術中文寫作紀律">學術中文寫作紀律</a></li>
+<li><a href="../pages/defense.html" data-title="計畫書、口試與簡報">計畫書、口試與簡報</a></li>
+</ul></div>
+<div class="navsec"><h2>AI 輔助研究</h2><ul>
+<li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流">AI 輔助研究工作流</a></li>
+<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南">AI 學術研究工具指南</a></li>
+<li><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包">AI 代理工具懶人包</a></li>
+<li class="active"><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險">AI 工具生態與風險</a></li>
+<li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露">學術倫理與 AI 揭露</a></li>
+</ul></div>
+<div class="navsec"><h2>工具箱</h2><ul>
+<li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫">文獻管理與知識庫</a></li>
+<li><a href="../pages/checklists.html" data-title="檢查清單">檢查清單</a></li>
+<li><a href="../pages/prompts.html" data-title="AI 提示詞範本">AI 提示詞範本</a></li>
+<li><a href="../pages/glossary.html" data-title="名詞與用語對照">名詞與用語對照</a></li>
+<li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南">延伸閱讀與資源指南</a></li>
+</ul></div>
+</nav>
+<div class="wrap">
+<main id="main">
+<p class="crumb"><a href="../index.html">首頁</a> ／ AI 輔助研究</p>
+<article class="doc">
+<h1>AI 工具生態與風險</h1>
+<p class='lede'>Auto Research、去 AI 味工具的定位與紅線</p>
+<div class="admonition warning">
+<p class="admonition-title">請務必先讀</p>
+<p>本頁整理的所有工具與 repo，本質上都只是<strong>工具包</strong>。它們沒有能力知道你所屬系所的論文格式規定、指導教授的要求，或學術倫理委員會的審查標準。</p>
+<p><strong>看到某個工具能做什麼，不等於你被允許用它來做這件事。</strong> 能不能用、用到什麼程度，一律以下列真實世界的權威來源為準，且優先順序高於本頁任何建議：</p>
+<ol>
+<li>所屬系所／研究所的論文寫作規範與 AIGC 使用規定</li>
+<li>指導教授的具體要求</li>
+<li>學校研究倫理審查委員會的規範</li>
+<li>預計投稿期刊／研討會的作者須知</li>
+</ol>
+</div>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">這一頁講「該不該用」，工具清單在別頁</p>
+<p>想找<strong>依研究階段分類的具體工具</strong>（Elicit、Consensus、scite、Zotero、Rayyan 等），看<a href="tool-directory.html">AI 學術研究工具指南</a>。
+想了解 <strong>Claude Code、Skill／Plugin、Codex 這類代理型工具</strong>怎麼用在研究上，看<a href="ai-agents.html">AI 代理工具懶人包</a>。
+這一頁處理的是它們共同的定位問題與紅線。</p>
+</div>
+<hr />
+<h2 id="auto-research">一、自動化研究工具（Auto Research）</h2>
+<h3 id="11">1.1 分層回答：它們重要嗎？</h3>
+<p><strong>結論先行：對「加速資訊處理」很重要，對「論文的核心價值」不重要，甚至有風險。</strong></p>
+<p><a href="research-basics.html">研究的四大核心能力</a>中，AI 能真正取代人力的只有「資訊蒐集與初步整理」這一段。Auto Research 類工具正好把這一段自動化、規模化，這解釋了它們為何值得關注，也解釋了為何不能過度依賴。</p>
+<h3 id="12">1.2 生態概覽</h3>
+<p>以下為 2026 年 9 月當時的整理。<strong>星數與功能會持續變動，實際使用前請自行到專案頁面確認現況與授權條款。</strong></p>
+<table>
+<thead>
+<tr>
+<th>專案</th>
+<th>定位</th>
+<th>對學術研究的價值</th>
+<th>限制／風險</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gpt-researcher</td>
+<td>Plan→Search→Read→Reflect→Iterate→Synthesize 的全自動研究迴圈</td>
+<td>快速產出帶引用的環境掃描報告，適合題目探索階段</td>
+<td>引用來源仍需人工核對，深度不足以支撐理論建構</td>
+</tr>
+<tr>
+<td>STORM / Co-STORM（史丹佛）</td>
+<td>視角引導提問 + 兩階段（先寫大綱再產出長文）</td>
+<td>生成帶引用的長篇結構性文章、文獻綜述初稿；Co-STORM 可人工介入</td>
+<td>英文為主，對中文學術生態支援有限</td>
+</tr>
+<tr>
+<td>Open Deep Research（LangChain）</td>
+<td>高度模組化、可配置的深度研究框架</td>
+<td>適合想自建研究 pipeline 的開發者</td>
+<td>需要程式能力與 API 金鑰</td>
+</tr>
+<tr>
+<td>local-deep-research</td>
+<td>本地 LLM、隱私優先，整合多個學術資料庫</td>
+<td>處理敏感研究資料時的選項</td>
+<td>需要本地算力，設定門檻較高</td>
+</tr>
+<tr>
+<td>PaperQA2</td>
+<td>科學 PDF 的 RAG 問答，精確引用原文段落</td>
+<td>在大量 PDF 中找答案、驗證引用來源</td>
+<td>主要為生醫與自然科學設計</td>
+</tr>
+<tr>
+<td>AI-Scientist / Agent Laboratory</td>
+<td>文獻 → 實驗 → 論文的全自動流程</td>
+<td>展示了自動化的極限在哪</td>
+<td>目前不適合人文社科；需要大量算力</td>
+</tr>
+<tr>
+<td>學術工作流電子書與 Skill 集</td>
+<td>教學框架，常結合 Obsidian 等知識管理工具</td>
+<td>提供中文學術情境的實作流程</td>
+<td>社群規模與更新頻率差異大</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13">1.3 為什麼「重要」但不能「依賴」</h3>
+<p><strong>角度一：對應三層架構。</strong>
+Auto Research 工具幾乎都只覆蓋「情境」中的資料蒐集與部分「產出」的大綱整理，無法替代「<a href="ai-workflow.html">邊界</a>」所要求的研究倫理界限與人類批判性判斷。工具能幫你把 100 篇文獻壓縮成一份摘要，但無法幫你判斷「這 100 篇裡哪一篇的理論框架真正適合我的研究情境」。</p>
+<p><strong>角度二：速度與嚴謹度的取捨。</strong>
+標榜十分鐘產出兩萬字草稿的工具，對學位論文而言是警訊而非優勢。</p>
+<p><strong>角度三：適合的使用情境。</strong>
+這類工具最適合用在<strong>題目探索階段的環境掃描</strong>，也就是研究初期建立領域地圖時。一旦進入「框架建構」與「資料分析討論」等需要思辨與判斷的階段，就必須切換回人類主導、AI 輔助查核的模式。</p>
+<h3 id="14-vs">1.4 人本 vs 自動化：兩種哲學</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>「AI 是副駕駛」</th>
+<th>「AI 是自動駕駛」</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>主張</td>
+<td>研究者始終坐在駕駛座，保有學術主體性</td>
+<td>輸入一個問題，幾分鐘後得到完整報告</td>
+</tr>
+<tr>
+<td>自動化程度</td>
+<td>低到中</td>
+<td>高到極高</td>
+</tr>
+<tr>
+<td>幻覺防範</td>
+<td>事前（設計問題時）＋ 事後（審稿時）</td>
+<td>多來源交叉驗證或原文引用</td>
+</tr>
+<tr>
+<td>適合的幻覺類型</td>
+<td><strong>框架性幻覺</strong>（AI 編造研究框架或理論脈絡）</td>
+<td><strong>事實性幻覺</strong>（捏造數據或文獻）</td>
+</tr>
+<tr>
+<td>對學位論文</td>
+<td>適合</td>
+<td>只適合前段資訊蒐集</td>
+</tr>
+</tbody>
+</table>
+<p><strong>兩者並不衝突。</strong> 理想的組合是：用人本方法論建立思維框架 → 用自動化工具擴大文獻覆蓋 → 用引用驗證工具檢查準確性。</p>
+<h3 id="15">1.5 一個所有工具都沒處理的缺口</h3>
+<p>GitHub 上的工具解決的是 <strong>"How to do research faster"</strong>，它們普遍假設「研究問題已經確定」，直接跳到文獻搜尋或報告生成。</p>
+<p>但在真實的學術研究中，<strong>研究問題的設計本身往往是最困難的部分</strong>。如何定義一個好的研究問題、如何避免範圍擴散、如何判斷哪些文獻真正相關？這是所有工具幾乎都沒有處理的面向，也是本站前三頁的主題。</p>
+<hr />
+<h2 id="ai">二、「降 AI 感」工具</h2>
+<h3 id="21">2.1 這類工具在做什麼</h3>
+<p>去 AI 味類工具的方法論高度重疊，核心邏輯大致可分為幾派：</p>
+<table>
+<thead>
+<tr>
+<th>派別</th>
+<th>核心邏輯</th>
+<th>適用情境</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>去味・去腔</td>
+<td>枚舉 AI 寫作的高頻信號 → 逐條改寫</td>
+<td>一般文件、部落格</td>
+</tr>
+<tr>
+<td>中文八股治理</td>
+<td>處理「首先其次」「賦能」「綜上所述」等模板句殼與假互動結尾</td>
+<td>中文技術文件、報告</td>
+</tr>
+<tr>
+<td>文風蒸餾</td>
+<td>從指定人物或自己過往文章萃取語氣與句式</td>
+<td>想固化個人寫作風格者</td>
+</tr>
+<tr>
+<td>檢測</td>
+<td>判斷文本是否為 AI 生成</td>
+<td>改寫後的自檢</td>
+</tr>
+<tr>
+<td>提示詞增強</td>
+<td>不即時改寫，而是打包一段系統提示詞</td>
+<td>輕量需求</td>
+</tr>
+</tbody>
+</table>
+<p><strong>它們的方法論本質上就是一份可執行的清單</strong>，而那份清單本站已經整理在<a href="style.html">學術中文寫作紀律</a>，不必安裝工具也能自行對照。</p>
+<h3 id="22">2.2 兩個必須知道的真相</h3>
+<p><strong>真相一：AI 偵測器本身不可靠。</strong>
+OpenAI 曾因準確率過低而下架自己的 AI Classifier。市面上的偵測工具至今仍存在對非母語寫作者的系統性誤判傾向。</p>
+<p><strong>真相二：降低機器味不等於能規避檢測。</strong>
+社群實測顯示，即使套用專門的改寫工具，各檢測平台的檢出率仍然很高。</p>
+<p><strong>這兩件事合起來的意思是</strong>：偵測不可靠 → 你可能被誤判；規避不管用 → 你也躲不掉。所以把賭注押在這個攻防上，是最差的策略。</p>
+<h3 id="23">2.3 界線必須劃清楚</h3>
+<table>
+<thead>
+<tr>
+<th>動機</th>
+<th>做什麼</th>
+<th>評價</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅ <strong>正當</strong></td>
+<td>把自己寫完的初稿改得更有觀點、更精確、更像自己的聲音</td>
+<td>這是文字品質的提升，是正當的寫作技巧</td>
+</tr>
+<tr>
+<td>❌ <strong>不當</strong></td>
+<td>用同義詞替換、打亂語法來刻意規避 AI 偵測或抄襲檢測</td>
+<td>多數學校視為學術不誠實</td>
+</tr>
+</tbody>
+</table>
+<h3 id="24">2.4 對學位論文的四點建議</h3>
+<ol>
+<li><strong>論文本文避免使用「刻意規避偵測」類工具。</strong> 多數大學的原創性聲明與 AIGC 使用規範，要求誠實揭露 AI 輔助範圍。用工具把 AI 產出偽裝成純人工寫作，一旦被追溯（工具紀錄、提示詞紀錄、修改軌跡都可能成為證據），風險遠高於效益。</li>
+<li><strong>可以用於「潤飾人類已完成的初稿」，而非「掩蓋 AI 生成的內容」。</strong></li>
+<li><strong>善用免費、可重複使用的檢查清單，而非依賴特定工具。</strong></li>
+<li><strong>主動查詢你所屬系所／期刊的 AI 使用揭露規定。</strong> 這件事沒有全國統一標準。</li>
+</ol>
+<div class="admonition danger">
+<p class="admonition-title">工具包不等於許可證</p>
+<p>這類 repo 的開發者，目標讀者是部落格作者、行銷文案、自媒體創作者，<strong>完全不是為了學位論文的誠信框架設計的</strong>。
+它們的 README 不會告訴你「這樣用會不會違反你學校的學術倫理規範」，因為作者根本不知道你在寫什麼、你的系所規定是什麼。
+<strong>把通用工具的「能做到什麼」直接等同於「我可以這樣用」，是最常見、也最危險的誤用邏輯。</strong></p>
+</div>
+<hr />
+<h2 id="_1">三、選用工具的判準</h2>
+<p>不要用星數選工具。問這五個問題：</p>
+<table>
+<thead>
+<tr>
+<th>問題</th>
+<th>為什麼重要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>它覆蓋研究流程的哪一段？</strong></td>
+<td>覆蓋範圍決定它能省多少事，也決定它的風險在哪</td>
+</tr>
+<tr>
+<td><strong>它的引用驗證機制是什麼？</strong></td>
+<td>沒有驗證機制的文獻工具，等於把幻覺直接寫進論文</td>
+</tr>
+<tr>
+<td><strong>人類可以在哪裡介入？</strong></td>
+<td>沒有介入點的工具，就是把判斷權交出去</td>
+</tr>
+<tr>
+<td><strong>資料會送到哪裡？</strong></td>
+<td>涉及受訪者資料、未公開文件時，這是資安與倫理問題</td>
+</tr>
+<tr>
+<td><strong>授權條款允許什麼用途？</strong></td>
+<td>部分專案是非商業授權；論文屬於學術用途通常沒問題，但仍應確認</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_2">四、中文學術生態的特殊需求</h2>
+<p>多數英文開源工具對下列需求的支援幾乎為零：</p>
+<ol>
+<li><strong>學術資料庫差異</strong>：中文研究者常用華藝線上圖書館、國家圖書館博碩士論文網、CNKI，而非只有 Web of Science 或 PubMed。</li>
+<li><strong>投稿場域差異</strong>：目標期刊可能以中文期刊為主，或有在地化的評審規範。</li>
+<li><strong>語言轉換需求</strong>：需要在中文思考框架與英文學術文獻之間頻繁切換。</li>
+<li><strong>繁簡用語問題</strong>：AI 生成的繁體中文極易混入大陸用語（見<a href="style.html">學術中文寫作紀律</a>）。</li>
+</ol>
+<p><strong>這也是為什麼「自己維護一份中文檢查清單」比「找一個萬能工具」更務實。</strong></p>
+<hr />
+<h2 id="_3">五、知識管理的缺口</h2>
+<p>多數深度研究工具輸出的是<strong>一次性的研究報告</strong>，不會主動幫你建立長期知識庫。每次研究都從零開始，沒有跨研究的知識累積機制。</p>
+<p>比較務實的做法是把 AI 產出接進自己的知識管理系統（Obsidian、Notion、Zotero 等），讓每一篇文獻筆記都成為日後研究的資產。要點：</p>
+<ul>
+<li><strong>每篇文獻筆記固定欄位</strong>：研究問題、理論、方法、樣本、主要結果、對我的意義、可引用的句子（含頁碼）</li>
+<li><strong>標記查核狀態</strong>：這篇我讀過原文了嗎？哪些句子是我親自確認過的？</li>
+<li><strong>保存原始 PDF</strong>，不要只留連結</li>
+</ul>
+<hr />
+<h2 id="_4">六、核心結論</h2>
+<ol>
+<li><strong>Auto Research 工具值得用，但只適合佔研究流程的前段資訊蒐集。</strong> 愈接近論文核心價值的環節（理論建構、資料詮釋、原創論證），人類介入程度應該愈高。</li>
+<li><strong>降 AI 感工具在學術寫作中是雙面刃。</strong> 用於提升自己已完成內容的可讀性是正當的；用於掩蓋 AI 生成痕跡以規避誠信審查則是風險行為，而且「AI 偵測器本身不可靠」並不能作為使用的正當理由。</li>
+<li><strong>社會科學研究的核心仍是研究者的思辨與判斷。</strong> 量化的嚴謹度與質性的深度都無法被 AI 取代。</li>
+<li><strong>誠信揭露優於事後補救。</strong> 規範因校而異、因期刊而異，主動查證並誠實說明，是風險最低的做法。</li>
+<li><strong>工具「能做什麼」與「你被允許做什麼」是兩件獨立的事。</strong> 判斷後者必須回到系所規範、指導教授意見與倫理審查機制，而不是工具的功能說明或 star 數。</li>
+</ol>
+<hr />
+<h2 id="_5">七、本頁重點回顧</h2>
+<ul>
+<li>工具包不是許可證；能做 ≠ 可以做。</li>
+<li>Auto Research 只覆蓋部分情境整理與產出工作，取代不了邊界判斷。</li>
+<li>沒有一個工具處理「研究問題怎麼設計」，那正是最難的部分。</li>
+<li>去 AI 感的方法論就是一份清單，你不需要安裝工具。</li>
+<li>偵測器不可靠 + 規避沒有用 = 不要把賭注押在這裡。</li>
+<li>選工具問五件事：覆蓋範圍、引用驗證、人類介入點、資料流向、授權。</li>
+<li>中文學術生態的需求，多數英文工具不處理。</li>
+</ul>
+<hr />
+<p><strong>來源說明</strong>：本頁的工具生態整理來自 2026 年 9 月的一次調查，星數與功能可能已變動，請自行確認現況。</p>
+<p><strong>延伸</strong>：<a href="tool-directory.html">AI 學術研究工具指南</a>｜<a href="ai-agents.html">AI 代理工具懶人包</a>｜<a href="ai-workflow.html">AI 輔助研究工作流</a>｜<a href="ethics.html">學術倫理與 AI 揭露</a></p>
+</article>
+<nav class="pager"><a class="prev" href="ai-agents.html">← AI 代理工具懶人包</a><a class="next" href="ethics.html">學術倫理與 AI 揭露 →</a></nav>
+<footer class="foot">
+<p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
+<p><a href="../pages/sources.html">延伸閱讀與資源指南</a></p>
+</footer>
+</main>
+<aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">
+<ul>
+<li><a href="#auto-research">一、自動化研究工具（Auto Research）</a><ul>
+<li><a href="#11">1.1 分層回答：它們重要嗎？</a></li>
+<li><a href="#12">1.2 生態概覽</a></li>
+<li><a href="#13">1.3 為什麼「重要」但不能「依賴」</a></li>
+<li><a href="#14-vs">1.4 人本 vs 自動化：兩種哲學</a></li>
+<li><a href="#15">1.5 一個所有工具都沒處理的缺口</a></li>
+</ul>
+</li>
+<li><a href="#ai">二、「降 AI 感」工具</a><ul>
+<li><a href="#21">2.1 這類工具在做什麼</a></li>
+<li><a href="#22">2.2 兩個必須知道的真相</a></li>
+<li><a href="#23">2.3 界線必須劃清楚</a></li>
+<li><a href="#24">2.4 對學位論文的四點建議</a></li>
+</ul>
+</li>
+<li><a href="#_1">三、選用工具的判準</a></li>
+<li><a href="#_2">四、中文學術生態的特殊需求</a></li>
+<li><a href="#_3">五、知識管理的缺口</a></li>
+<li><a href="#_4">六、核心結論</a></li>
+<li><a href="#_5">七、本頁重點回顧</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script src="../assets/site.js"></script>
+</body>
+</html>

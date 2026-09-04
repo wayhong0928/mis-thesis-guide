@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 學術研究工具指南｜研究方法與論文寫作知識網絡</title>
+<meta name="description" content="依研究階段分類：檢索、引文網絡、閱讀、SLR、分析">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128218;</text></svg>">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<button class="navtoggle" id="navtoggle" aria-label="開啟導覽">☰</button>
+<nav class="sidenav" id="sidenav" aria-label="全站導覽">
+<a class="brand" href="../index.html"><span class="brand-mark">◈</span><span class="brand-text">研究方法<br><small>知識網絡</small></span></a>
+<div class="navsearch"><input type="search" id="navfilter" placeholder="篩選頁面…" aria-label="篩選頁面"></div>
+<div class="navsec"><h2>研究的基礎</h2><ul>
+<li><a href="../pages/getting-started.html" data-title="從零開始：研究所的第一個月">從零開始：研究所的第一個月</a></li>
+<li><a href="../pages/research-basics.html" data-title="研究的本質、歷程與時程">研究的本質、歷程與時程</a></li>
+<li><a href="../pages/finding-reading.html" data-title="怎麼找、怎麼讀、怎麼選題目">怎麼找、怎麼讀、怎麼選題目</a></li>
+<li><a href="../pages/is-research.html" data-title="資訊管理研究的範疇與取向">資訊管理研究的範疇與取向</a></li>
+<li><a href="../pages/problem-design.html" data-title="研究問題、假說與研究架構">研究問題、假說與研究架構</a></li>
+<li><a href="../pages/literature.html" data-title="文獻回顧與批判性思考">文獻回顧與批判性思考</a></li>
+<li><a href="../pages/theory-building.html" data-title="理論的構成與評估">理論的構成與評估</a></li>
+<li><a href="../pages/theories.html" data-title="常用理論家族與選用原則">常用理論家族與選用原則</a></li>
+</ul></div>
+<div class="navsec"><h2>研究方法</h2><ul>
+<li><a href="../pages/methodology.html" data-title="方法論選擇地圖">方法論選擇地圖</a></li>
+<li><a href="../pages/method-survey.html" data-title="問卷調查法">問卷調查法</a></li>
+<li><a href="../pages/method-experiment.html" data-title="實驗法">實驗法</a></li>
+<li><a href="../pages/method-dsr.html" data-title="系統發展法與設計科學研究">系統發展法與設計科學研究</a></li>
+<li><a href="../pages/method-data.html" data-title="演算法、最佳化與資料分析">演算法、最佳化與資料分析</a></li>
+<li><a href="../pages/method-qualitative.html" data-title="質性研究方法">質性研究方法</a></li>
+</ul></div>
+<div class="navsec"><h2>論文寫作</h2><ul>
+<li><a href="../pages/writing.html" data-title="論文架構與各章寫作要領">論文架構與各章寫作要領</a></li>
+<li><a href="../pages/style.html" data-title="學術中文寫作紀律">學術中文寫作紀律</a></li>
+<li><a href="../pages/defense.html" data-title="計畫書、口試與簡報">計畫書、口試與簡報</a></li>
+</ul></div>
+<div class="navsec"><h2>AI 輔助研究</h2><ul>
+<li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流">AI 輔助研究工作流</a></li>
+<li class="active"><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南">AI 學術研究工具指南</a></li>
+<li><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包">AI 代理工具懶人包</a></li>
+<li><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險">AI 工具生態與風險</a></li>
+<li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露">學術倫理與 AI 揭露</a></li>
+</ul></div>
+<div class="navsec"><h2>工具箱</h2><ul>
+<li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫">文獻管理與知識庫</a></li>
+<li><a href="../pages/checklists.html" data-title="檢查清單">檢查清單</a></li>
+<li><a href="../pages/prompts.html" data-title="AI 提示詞範本">AI 提示詞範本</a></li>
+<li><a href="../pages/glossary.html" data-title="名詞與用語對照">名詞與用語對照</a></li>
+<li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南">延伸閱讀與資源指南</a></li>
+</ul></div>
+</nav>
+<div class="wrap">
+<main id="main">
+<p class="crumb"><a href="../index.html">首頁</a> ／ AI 輔助研究</p>
+<article class="doc">
+<h1>AI 學術研究工具指南</h1>
+<p class='lede'>依研究階段分類：檢索、引文網絡、閱讀、SLR、分析</p>
+<blockquote>
+<p>依研究階段分類的工具清單。重點不是「有哪些工具」，而是「哪一段流程值得交給工具，哪一段不能」。</p>
+</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">先讀這段再看清單</p>
+<p>這份清單只描述工具<strong>能做什麼</strong>，不代表你<strong>被允許用它做什麼</strong>。實際能否使用、使用到什麼程度與如何揭露，會因系所、指導教授、研究倫理審查與投稿單位而異，請逐一確認適用規範。</p>
+<p>另外：<strong>所有工具的功能、涵蓋範圍與收費方案都會變。</strong> 本頁的數字是 2026 年 9 月查詢官方網站當時的說法，使用前請自行到官網確認現況。</p>
+</div>
+<hr />
+<h2 id="_1">一、怎麼用這份清單</h2>
+<h3 id="11">1.1 三個層級，責任不同</h3>
+<table>
+<thead>
+<tr>
+<th>層級</th>
+<th>工具做什麼</th>
+<th>你必須做什麼</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>索引層</strong>（找得到）</td>
+<td>幫你找到論文的存在</td>
+<td>判斷相關性</td>
+</tr>
+<tr>
+<td><strong>理解層</strong>（讀得懂）</td>
+<td>摘要、翻譯、問答、視覺化</td>
+<td><strong>開原文確認它沒有講錯</strong></td>
+</tr>
+<tr>
+<td><strong>判斷層</strong>（用得對）</td>
+<td>工具不能代替判斷</td>
+<td>全部由你負責</td>
+</tr>
+</tbody>
+</table>
+<p>愈往下，工具能幫的愈少，你要負的責任愈大。這條線就是本站反覆講的那句話：<strong>AI 處理資訊密集但低判斷含量的工作。</strong></p>
+<h3 id="12">1.2 選工具的五個問題</h3>
+<ol>
+<li>它覆蓋研究流程的哪一段？</li>
+<li>它的引用驗證機制是什麼？</li>
+<li>人類可以在哪裡介入？</li>
+<li>資料會送到哪裡？（涉及受訪者資料時這是倫理問題）</li>
+<li>授權條款允許什麼用途？</li>
+</ol>
+<h3 id="13">1.3 通用資料治理核對框</h3>
+<ul>
+<li class="chk"><input type="checkbox"> <strong>隱私</strong>：上傳前已移除可識別個人或機構的資訊，且資料處理符合知情同意與倫理審查。</li>
+<li class="chk"><input type="checkbox"> <strong>保存</strong>：已確認服務是否保留輸入、保留多久，以及能否刪除；敏感資料另依研究計畫保存。</li>
+<li class="chk"><input type="checkbox"> <strong>授權</strong>：已確認輸入材料與輸出內容的使用條款，不上傳未獲授權的全文或資料。</li>
+<li class="chk"><input type="checkbox"> <strong>匯出</strong>：已實際測試原始資料、書目、註記與分析紀錄能否用可讀格式匯出。</li>
+</ul>
+<h3 id="14">1.4 一條不能妥協的紀律</h3>
+<blockquote>
+<p><strong>凡是要寫進論文的引用，都必須自己開過原文。</strong></p>
+</blockquote>
+<p>工具告訴你「這篇文獻存在」，跟「這篇文獻真的說了那句話」，是兩件事。<a href="literature.html">口試委員可能隨機抽問你引用的文獻內容</a>。</p>
+<hr />
+<h2 id="_2">二、階段一：題目探索與環境掃描</h2>
+<p>目標是<strong>建立領域地圖</strong>，不是找到定稿的文獻清單。這個階段容許「寬而淺」。</p>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>定位</th>
+<th>適合用在</th>
+<th>注意</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Perplexity</strong></td>
+<td>帶引用的網路搜尋</td>
+<td>快速摸清一個陌生名詞的輪廓</td>
+<td>來源包含大量非學術網頁</td>
+</tr>
+<tr>
+<td><strong>ChatGPT / Claude / Gemini 的深度研究模式</strong></td>
+<td>多輪搜尋後產出長篇報告</td>
+<td>環境掃描、跨領域術語橋接</td>
+<td>引用必須逐條查核</td>
+</tr>
+<tr>
+<td><strong>Elicit</strong></td>
+<td>學術論文的 AI 研究助理</td>
+<td>從研究問題直接找出相關實證研究</td>
+<td>見下節</td>
+</tr>
+<tr>
+<td><strong>Consensus</strong></td>
+<td>針對「某個主張是否成立」的學術搜尋</td>
+<td>快速看某個因果主張的文獻分布</td>
+<td>「多數研究支持」不等於「成立」</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">這個階段的正確心態</p>
+<p>你要的是<strong>版圖</strong>，不是答案。一個動不動就丟給你上百條文獻的報告，初看豐富，實則會讓你淹沒在資訊洪流裡。
+先寫好<a href="ai-workflow.html">納入與排除準則</a>，再啟動任何工具。</p>
+</div>
+<hr />
+<h2 id="_3">三、階段二：文獻檢索與發現</h2>
+<h3 id="31">3.1 基礎檢索</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>特性</th>
+<th>為什麼你需要它</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Google Scholar</strong></td>
+<td>涵蓋最廣，含灰色文獻與碩博士論文</td>
+<td>引文追蹤（"被引用次數"）與 Alert 功能</td>
+</tr>
+<tr>
+<td><strong>Semantic Scholar</strong></td>
+<td>Allen Institute for AI（AI2）維運的免費學術搜尋引擎，索引超過 2 億篇論文</td>
+<td>提供 TLDR 摘要、引文脈絡、Semantic Reader、開放 API 與 S2ORC 語料庫</td>
+</tr>
+<tr>
+<td><strong>Scopus / Web of Science</strong></td>
+<td>商業資料庫，收錄經篩選</td>
+<td>期刊分級、JCR/SJR 影響指標、系統性回顧的標準來源</td>
+</tr>
+<tr>
+<td><strong>華藝線上圖書館（airiti Library）</strong></td>
+<td>中文期刊與論文</td>
+<td>中文文獻不可繞過的一站</td>
+</tr>
+<tr>
+<td><strong>臺灣博碩士論文知識加值系統</strong></td>
+<td>全台碩博士論文</td>
+<td>看同領域學長姊怎麼做、抓研究缺口</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-ai">3.2 AI 輔助檢索</h3>
+<p><strong>Elicit</strong>（<a href="https://elicit.com/">elicit.com</a>）</p>
+<ul>
+<li>官網自述搜尋範圍超過 1.38 億篇學術論文與 54.5 萬筆臨床試驗</li>
+<li>核心功能：Research Agent（跨來源蒐證並產出帶引用的報告、表格、圖表）、論文搜尋、系統性回顧的自動化篩選與<strong>資料萃取</strong>（把一批論文的樣本數、方法、結果抽成表格）</li>
+<li>最有價值的用法：把「幫我找文獻」換成「幫我把這 30 篇的<strong>研究設計欄位</strong>抽成一張表」。這正是<a href="literature.html">文獻比較表</a>的半自動版本</li>
+<li>限制：抽取結果<strong>必須逐格核對原文</strong>；官網並未說明它不適用的情境</li>
+</ul>
+<p><strong>Consensus</strong>（<a href="https://consensus.app/">consensus.app</a>）</p>
+<ul>
+<li>定位是「科學研究的 AI 工作區」，2021 年創立，官網宣稱超過千萬名研究者、12,500 所以上大學使用</li>
+<li>特色是把一個問句對應到一批實證研究，並呈現這些研究的立場分布</li>
+<li><strong>最大的誤用風險</strong>：把「多數研究支持」當成「這件事成立」。研究數量不等於證據強度，而且發表偏誤（publication bias）會系統性地扭曲分布</li>
+</ul>
+<p><strong>Undermind、Scite Assistant 等</strong></p>
+<ul>
+<li>主打「深度搜尋」，用較長時間換較高的召回率</li>
+<li>適合已經確定研究問題、要做窮盡式搜尋時；不適合題目還在漂移的階段</li>
+</ul>
+<hr />
+<h2 id="_4">四、階段三：引文網絡與研究地圖</h2>
+<p>這一類工具解決一個具體問題：<strong>你怎麼知道自己漏了什麼？</strong></p>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>做什麼</th>
+<th>適合的時機</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Connected Papers</strong></td>
+<td>從一篇種子論文生成相似度圖譜，視覺化呈現該主題的論文群落</td>
+<td>剛進入一個新主題，想快速看見「有哪些聚落」</td>
+</tr>
+<tr>
+<td><strong>ResearchRabbit</strong></td>
+<td>引文網絡視覺化 + Collections + 推薦引擎；官網稱可存取超過 3.1 億篇論文，可與參考文獻管理工具連動、追蹤新論文</td>
+<td>需要<strong>持續</strong>維護一個文獻集合、並收到新文獻通知</td>
+</tr>
+<tr>
+<td><strong>Litmaps</strong></td>
+<td>以種子文獻為中心建立地圖並持續監看新增文獻</td>
+<td>論文寫作期間避免遺漏最新研究</td>
+</tr>
+<tr>
+<td><strong>Inciteful</strong></td>
+<td>建立論文網絡並找出關鍵節點</td>
+<td>想找出領域內的「必讀經典」</td>
+</tr>
+<tr>
+<td><strong>Open Knowledge Maps</strong></td>
+<td>依主題把搜尋結果分群成知識地圖</td>
+<td>主題還很寬、需要先分群</td>
+</tr>
+<tr>
+<td><strong>VOSviewer / CiteSpace</strong></td>
+<td>書目計量（bibliometrics）分析與視覺化</td>
+<td>要做<strong>書目計量研究</strong>本身，或想在文獻探討放一張正式的共被引圖</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">視覺化圖不是文獻回顧</p>
+<p>這些圖能告訴你「哪些論文彼此相關」，不能告訴你「哪一篇的理論框架適合我」。
+圖是<strong>搜尋的輔助</strong>，判斷仍然要靠<a href="literature.html">讀論文</a>。
+另外，這類工具通常建立在特定的引文資料庫上，冷門主題或非英文文獻的覆蓋率會明顯偏低。</p>
+</div>
+<hr />
+<h2 id="_5">五、階段四：引用脈絡與證據品質</h2>
+<p>找到文獻之後，下一個問題是：<strong>這篇後來有沒有被推翻？</strong></p>
+<p><strong>scite</strong>（<a href="https://scite.ai/">scite.ai</a>）</p>
+<ul>
+<li>核心是 <strong>Smart Citations</strong>：不只算「被引用幾次」，而是判斷後續研究<strong>怎麼引用</strong>它</li>
+<li>三種分類：</li>
+<li><strong>Supporting（支持）</strong>：後續研究證實該論文的發現</li>
+<li><strong>Contrasting（對照／質疑）</strong>：後續研究提出相反或質疑的證據</li>
+<li><strong>Mentioning（提及）</strong>：提及但未直接支持或質疑</li>
+<li>官網數據：索引超過 16 億筆引用陳述、3.17 億篇全文文章，與 35 家以上出版商有直接授權</li>
+<li><strong>對碩論最有用的一個動作</strong>：把你打算當作理論基礎的那幾篇經典論文丟進去，看看有沒有大量 Contrasting。有的話，那就是你<a href="literature.html">文獻矛盾切入點</a>的候選</li>
+</ul>
+<p><strong>其他品質檢查</strong></p>
+<ul>
+<li><strong>Retraction Watch / 期刊的 retraction 公告</strong>：確認你引用的論文沒有被撤稿</li>
+<li><strong>期刊本身的分級</strong>：JCR、SJR、以及所屬領域公認的期刊清單（資管領域常參考 AIS Senior Scholars' Basket）</li>
+<li><strong>預印本的處理</strong>：arXiv、SSRN 上的預印本<strong>未經同儕審查</strong>，引用時要標明並謹慎使用</li>
+</ul>
+<hr />
+<h2 id="_6">六、階段五：閱讀與理解</h2>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>做什麼</th>
+<th>風險</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Gemini Notebook</strong>（原 NotebookLM，Google 於 2026 年 7 月改名）</td>
+<td>只根據你<strong>上傳的來源</strong>回答並附出處，可產生摘要、大綱、問答</td>
+<td>仍會誤讀；出處要點開確認</td>
+</tr>
+<tr>
+<td><strong>SciSpace</strong></td>
+<td>PDF 逐段解釋、名詞解釋、跨論文比較</td>
+<td>摘要可能抹平原文的限制條件</td>
+</tr>
+<tr>
+<td><strong>ChatPDF / Humata</strong></td>
+<td>針對單一 PDF 的問答</td>
+<td>同上</td>
+</tr>
+<tr>
+<td><strong>Scholarcy</strong></td>
+<td>自動生成論文摘要卡片與關鍵詞</td>
+<td>摘要卡不能取代閱讀</td>
+</tr>
+<tr>
+<td><strong>Semantic Reader</strong></td>
+<td>在閱讀介面中內嵌引文脈絡</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition danger">
+<p class="admonition-title">摘要工具最危險的地方，不是它講錯，而是它講對但講不完</p>
+<p>AI 摘要傾向保留「結論」而丟掉「條件」。一篇論文寫「在 A 條件下、以 B 樣本、用 C 方法，X 正向預測 Y」，摘要常常只剩「X 正向預測 Y」。
+把那句話直接寫進文獻探討，就會扭曲原作者的主張範圍。這正是<a href="style.html">主張強度與證據強度匹配</a>那一節要防止的問題。</p>
+</div>
+<p><strong>限定來源型工具（如 Gemini Notebook）的一個優勢</strong>：它只根據你給的來源回答，因此主要風險會轉為誤讀既有文獻。原文就在手上，研究者較容易逐項核對。</p>
+<hr />
+<h2 id="_7">七、階段六：系統性文獻回顧</h2>
+<p>如果你的研究本身就是系統性文獻回顧（SLR）或 scoping review，這一組是專業工具。</p>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>定位</th>
+<th>特性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rayyan</strong>（<a href="https://www.rayyan.ai/">rayyan.ai</a>）</td>
+<td>證據合成平台</td>
+<td>完整流程：匯入 → 協作者分工 → 去重 → 題目摘要篩選 → 全文篩選與<strong>衝突解決</strong> → 資料萃取 → 偏誤風險評估 → 產出 PRISMA 流程圖；有免費方案</td>
+</tr>
+<tr>
+<td><strong>Covidence</strong></td>
+<td>同類商業平台</td>
+<td>醫學領域常見，多半由機構訂閱</td>
+</tr>
+<tr>
+<td><strong>ASReview</strong>（<a href="https://asreview.nl/">asreview.nl</a>）</td>
+<td><strong>開源</strong>，由荷蘭 Utrecht 大學協調</td>
+<td>以 <strong>active learning</strong> 加速標題與摘要篩選；官網稱可減少高達 95% 的篩選工作量，強調程式碼可驗證、使用者完全掌握資料與決策</td>
+</tr>
+<tr>
+<td><strong>PRISMA</strong></td>
+<td>不是工具，是<strong>報告準則</strong></td>
+<td>SLR 論文的標準骨架與流程圖規範</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">active learning 加速的是排序，不是決策</p>
+<p>ASReview 這類工具的做法是：你標記幾篇之後，它把「最可能相關」的排到前面，讓你更早看完該看的。
+但<strong>排序不是判斷</strong>。納入／排除的準則要你自己定，邊界個案要你自己決定，而且必須記錄下來寫進論文。工具只是改變閱讀順序。</p>
+</div>
+<hr />
+<h2 id="_8">八、階段七：文獻管理與知識累積</h2>
+<p>多數 AI 研究工具輸出的是<strong>一次性報告</strong>，不會幫你累積資產。這一段要靠自己。</p>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>角色</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Zotero</strong></td>
+<td>免費開源的文獻管理器；瀏覽器外掛一鍵抓取、自動產生引用格式、支援 APA 7 中文化樣式</td>
+</tr>
+<tr>
+<td><strong>Zotero 外掛</strong></td>
+<td>Better BibTeX（穩定的引用鍵）、ZotFile／Attanger（附件管理）、Zotero Style（視覺化補強）</td>
+</tr>
+<tr>
+<td><strong>Mendeley / EndNote</strong></td>
+<td>同類替代；EndNote 在台灣許多學校有校園授權</td>
+</tr>
+<tr>
+<td><strong>Obsidian</strong></td>
+<td>以 Markdown 為主的知識庫；適合把文獻筆記與寫作草稿放在同一個庫裡</td>
+</tr>
+<tr>
+<td><strong>Notion</strong></td>
+<td>資料庫式筆記，適合做文獻矩陣表</td>
+</tr>
+</tbody>
+</table>
+<h3 id="81">8.1 一份文獻筆記至少要有的欄位</h3>
+<pre><code>- 書目資訊（含 DOI）
+- 研究問題
+- 理論基礎
+- 研究方法 / 樣本 / 情境
+- 主要發現（含關鍵數值）
+- 研究限制（作者自己承認的）
+- 對我的研究的意義：補充什麼？留下什麼缺口？
+- 可引用的句子（含頁碼）
+- 查核狀態：我讀過原文了嗎？哪幾句是我親自確認過的？
+</code></pre>
+<p><strong>最後兩欄是整份筆記裡最重要的兩欄。</strong> 沒有它們，你三個月後會分不清哪些是你讀的、哪些是 AI 摘的。</p>
+<hr />
+<h2 id="_9">九、階段八：資料分析</h2>
+<table>
+<thead>
+<tr>
+<th>類型</th>
+<th>工具</th>
+<th>備註</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>量化・SEM</td>
+<td><strong>SmartPLS</strong>（PLS-SEM）、<strong>AMOS / LISREL / Mplus</strong>（CB-SEM）</td>
+<td>選哪個要有<a href="method-survey.html">方法論依據</a>，不是因為好操作</td>
+</tr>
+<tr>
+<td>量化・一般統計</td>
+<td><strong>SPSS</strong>、<strong>JASP</strong>、<strong>jamovi</strong>、<strong>R</strong>、<strong>Python (statsmodels / scipy)</strong></td>
+<td>JASP 與 jamovi 免費且介面友善，適合碩論</td>
+</tr>
+<tr>
+<td>質性</td>
+<td><strong>NVivo</strong>、<strong>ATLAS.ti</strong>、<strong>MAXQDA</strong>、<strong>Taguette</strong>（開源免費）</td>
+<td>編碼架構仍須研究者建立</td>
+</tr>
+<tr>
+<td>機器學習</td>
+<td><strong>scikit-learn</strong>、<strong>PyTorch</strong>、<strong>Weka</strong></td>
+<td>見<a href="method-data.html">演算法與資料分析</a></td>
+</tr>
+<tr>
+<td>檢力分析</td>
+<td><strong>G*Power</strong></td>
+<td>免費；實驗法應事前使用</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">AI 在這一段最實際的用途是寫程式碼</p>
+<p>AI 可以協助起草 R 或 Python 分析程式碼，<strong>但你必須看得懂每一行，而且能解釋分析邏輯</strong>。
+看不懂就跑，等於把整章結果建立在你無法防守的基礎上。</p>
+</div>
+<hr />
+<h2 id="_10">十、階段九：寫作與語言</h2>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>用途</th>
+<th>界線</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Writefull / Paperpal / Trinka</strong></td>
+<td>學術英文的文法與用語修飾</td>
+<td>屬語言協助；是否允許及如何揭露依投稿單位政策確認</td>
+</tr>
+<tr>
+<td><strong>Grammarly</strong></td>
+<td>一般英文文法檢查</td>
+<td>同上</td>
+</tr>
+<tr>
+<td><strong>DeepL</strong></td>
+<td>翻譯</td>
+<td>翻完必須自己逐句校對，術語尤其危險</td>
+</tr>
+<tr>
+<td><strong>Overleaf / LaTeX</strong></td>
+<td>排版（理工與部分期刊要求）</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Word 樣式與交互參照</strong></td>
+<td>中文碩論的主流</td>
+<td>目次、圖表編號、交互參照都用內建功能做，不要手打</td>
+</tr>
+</tbody>
+</table>
+<p><strong>中文寫作的關鍵風險</strong>在別的地方：AI 生成的繁體中文極易混入大陸用語，而這是口試委員與審稿人最容易挑出來的。對照表與 grep 指令在<a href="style.html">學術中文寫作紀律</a>。</p>
+<hr />
+<h2 id="_11">十一、階段十：投稿與誠信</h2>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Turnitin / iThenticate</strong></td>
+<td>原創性比對；多數學校有校園授權</td>
+</tr>
+<tr>
+<td><strong>期刊選擇工具</strong>（各出版社的 journal finder）</td>
+<td>用摘要比對合適的投稿標的</td>
+</tr>
+<tr>
+<td><strong>ORCID</strong></td>
+<td>研究者唯一識別碼，投稿與升等都會用到</td>
+</tr>
+<tr>
+<td><strong>各期刊的作者須知</strong></td>
+<td><strong>最終權威</strong>，包括 AI 使用政策</td>
+</tr>
+</tbody>
+</table>
+<p>見<a href="ethics.html">學術倫理與 AI 揭露</a>。</p>
+<hr />
+<h2 id="_12">十二、工具幻覺的三步查核</h2>
+<p>不管用哪一個工具，只要它產出了引用，就跑這三步：</p>
+<table>
+<thead>
+<tr>
+<th>步驟</th>
+<th>做什麼</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 資料提取</td>
+<td>從產出文字中抽出所有引用（作者、年份、標題、期刊、DOI）</td>
+</tr>
+<tr>
+<td>② 存在性查核</td>
+<td>用 Google Scholar／Semantic Scholar／DOI 解析確認它<strong>真的存在</strong>，並標示 ✅ 通過 / ⚠️ 資訊有誤 / ❌ 查無此文</td>
+</tr>
+<tr>
+<td>③ 內容查核</td>
+<td><strong>開原文</strong>，確認它真的說了那句話，而且條件與範圍一致</td>
+</tr>
+</tbody>
+</table>
+<p>第二步可以自動化，<strong>第三步不行</strong>。</p>
+<hr />
+<h2 id="_13">十三、一個最小可行組合</h2>
+<p>如果你不想一次學十個工具，這是負擔最小又足夠用的一組：</p>
+<pre><code>檢索      Google Scholar + Semantic Scholar + 華藝 + 臺灣博碩士論文網
+補漏      Connected Papers 或 ResearchRabbit（挑一個就好）
+品質      scite（只用在你的核心理論文獻上）
+閱讀      Gemini Notebook（只餵自己下載的 PDF）
+管理      Zotero + Obsidian
+分析      JASP 或 SmartPLS（依方法）
+寫作      系所規定的 Word 模板 + 本站的檢查清單
+</code></pre>
+<p><strong>先把這套跑順，再考慮加東西。</strong> 工具數量與研究品質沒有正相關。</p>
+<hr />
+<h2 id="_14">十四、本頁重點回顧</h2>
+<ul>
+<li>工具分三層：索引層（找得到）、理解層（讀得懂）、判斷層（用得對）。第三層工具做不到。</li>
+<li>凡是要寫進論文的引用，<strong>都必須自己開過原文</strong>。</li>
+<li>Elicit 最有價值的用法是<strong>資料萃取成表</strong>，不是找文獻。</li>
+<li>Consensus 的最大誤用風險是把「多數研究支持」當成「成立」。</li>
+<li>scite 的 Supporting／Contrasting 分類，是找研究矛盾最快的入口。</li>
+<li>摘要工具最危險的不是講錯，是<strong>講對但丟掉條件</strong>。</li>
+<li>SLR 工具（Rayyan、ASReview）加速的是排序與流程，不是納入排除的判斷。</li>
+<li>文獻筆記一定要有「對我的意義」與「查核狀態」兩欄。</li>
+<li>工具數量與研究品質沒有正相關；先把最小組合跑順。</li>
+</ul>
+<hr />
+<p><strong>來源說明</strong>：本頁功能描述取自各工具官方網站，查詢時間為 2026 年 9 月。功能、涵蓋範圍與收費方案都會變動，使用前請自行確認。</p>
+<p><strong>延伸</strong>：<a href="ai-workflow.html">AI 輔助研究工作流</a>｜<a href="ai-agents.html">AI 代理工具懶人包</a>｜<a href="ai-tools.html">AI 工具生態與風險</a>｜<a href="ethics.html">學術倫理與 AI 揭露</a></p>
+</article>
+<nav class="pager"><a class="prev" href="ai-workflow.html">← AI 輔助研究工作流</a><a class="next" href="ai-agents.html">AI 代理工具懶人包 →</a></nav>
+<footer class="foot">
+<p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
+<p><a href="../pages/sources.html">延伸閱讀與資源指南</a></p>
+</footer>
+</main>
+<aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">
+<ul>
+<li><a href="#_1">一、怎麼用這份清單</a><ul>
+<li><a href="#11">1.1 三個層級，責任不同</a></li>
+<li><a href="#12">1.2 選工具的五個問題</a></li>
+<li><a href="#13">1.3 通用資料治理核對框</a></li>
+<li><a href="#14">1.4 一條不能妥協的紀律</a></li>
+</ul>
+</li>
+<li><a href="#_2">二、階段一：題目探索與環境掃描</a></li>
+<li><a href="#_3">三、階段二：文獻檢索與發現</a><ul>
+<li><a href="#31">3.1 基礎檢索</a></li>
+<li><a href="#32-ai">3.2 AI 輔助檢索</a></li>
+</ul>
+</li>
+<li><a href="#_4">四、階段三：引文網絡與研究地圖</a></li>
+<li><a href="#_5">五、階段四：引用脈絡與證據品質</a></li>
+<li><a href="#_6">六、階段五：閱讀與理解</a></li>
+<li><a href="#_7">七、階段六：系統性文獻回顧</a></li>
+<li><a href="#_8">八、階段七：文獻管理與知識累積</a><ul>
+<li><a href="#81">8.1 一份文獻筆記至少要有的欄位</a></li>
+</ul>
+</li>
+<li><a href="#_9">九、階段八：資料分析</a></li>
+<li><a href="#_10">十、階段九：寫作與語言</a></li>
+<li><a href="#_11">十一、階段十：投稿與誠信</a></li>
+<li><a href="#_12">十二、工具幻覺的三步查核</a></li>
+<li><a href="#_13">十三、一個最小可行組合</a></li>
+<li><a href="#_14">十四、本頁重點回顧</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script src="../assets/site.js"></script>
+</body>
+</html>

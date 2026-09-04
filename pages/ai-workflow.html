@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 輔助研究工作流｜研究方法與論文寫作知識網絡</title>
+<meta name="description" content="三層架構、戰略聚焦單、各階段的能與不能">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128218;</text></svg>">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<button class="navtoggle" id="navtoggle" aria-label="開啟導覽">☰</button>
+<nav class="sidenav" id="sidenav" aria-label="全站導覽">
+<a class="brand" href="../index.html"><span class="brand-mark">◈</span><span class="brand-text">研究方法<br><small>知識網絡</small></span></a>
+<div class="navsearch"><input type="search" id="navfilter" placeholder="篩選頁面…" aria-label="篩選頁面"></div>
+<div class="navsec"><h2>研究的基礎</h2><ul>
+<li><a href="../pages/getting-started.html" data-title="從零開始：研究所的第一個月">從零開始：研究所的第一個月</a></li>
+<li><a href="../pages/research-basics.html" data-title="研究的本質、歷程與時程">研究的本質、歷程與時程</a></li>
+<li><a href="../pages/finding-reading.html" data-title="怎麼找、怎麼讀、怎麼選題目">怎麼找、怎麼讀、怎麼選題目</a></li>
+<li><a href="../pages/is-research.html" data-title="資訊管理研究的範疇與取向">資訊管理研究的範疇與取向</a></li>
+<li><a href="../pages/problem-design.html" data-title="研究問題、假說與研究架構">研究問題、假說與研究架構</a></li>
+<li><a href="../pages/literature.html" data-title="文獻回顧與批判性思考">文獻回顧與批判性思考</a></li>
+<li><a href="../pages/theory-building.html" data-title="理論的構成與評估">理論的構成與評估</a></li>
+<li><a href="../pages/theories.html" data-title="常用理論家族與選用原則">常用理論家族與選用原則</a></li>
+</ul></div>
+<div class="navsec"><h2>研究方法</h2><ul>
+<li><a href="../pages/methodology.html" data-title="方法論選擇地圖">方法論選擇地圖</a></li>
+<li><a href="../pages/method-survey.html" data-title="問卷調查法">問卷調查法</a></li>
+<li><a href="../pages/method-experiment.html" data-title="實驗法">實驗法</a></li>
+<li><a href="../pages/method-dsr.html" data-title="系統發展法與設計科學研究">系統發展法與設計科學研究</a></li>
+<li><a href="../pages/method-data.html" data-title="演算法、最佳化與資料分析">演算法、最佳化與資料分析</a></li>
+<li><a href="../pages/method-qualitative.html" data-title="質性研究方法">質性研究方法</a></li>
+</ul></div>
+<div class="navsec"><h2>論文寫作</h2><ul>
+<li><a href="../pages/writing.html" data-title="論文架構與各章寫作要領">論文架構與各章寫作要領</a></li>
+<li><a href="../pages/style.html" data-title="學術中文寫作紀律">學術中文寫作紀律</a></li>
+<li><a href="../pages/defense.html" data-title="計畫書、口試與簡報">計畫書、口試與簡報</a></li>
+</ul></div>
+<div class="navsec"><h2>AI 輔助研究</h2><ul>
+<li class="active"><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流">AI 輔助研究工作流</a></li>
+<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南">AI 學術研究工具指南</a></li>
+<li><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包">AI 代理工具懶人包</a></li>
+<li><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險">AI 工具生態與風險</a></li>
+<li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露">學術倫理與 AI 揭露</a></li>
+</ul></div>
+<div class="navsec"><h2>工具箱</h2><ul>
+<li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫">文獻管理與知識庫</a></li>
+<li><a href="../pages/checklists.html" data-title="檢查清單">檢查清單</a></li>
+<li><a href="../pages/prompts.html" data-title="AI 提示詞範本">AI 提示詞範本</a></li>
+<li><a href="../pages/glossary.html" data-title="名詞與用語對照">名詞與用語對照</a></li>
+<li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南">延伸閱讀與資源指南</a></li>
+</ul></div>
+</nav>
+<div class="wrap">
+<main id="main">
+<p class="crumb"><a href="../index.html">首頁</a> ／ AI 輔助研究</p>
+<article class="doc">
+<h1>AI 輔助研究工作流</h1>
+<p class='lede'>三層架構、戰略聚焦單、各階段的能與不能</p>
+<blockquote>
+<p>AI 改變的是執行工具，不是研究的靈魂。這一頁講怎麼把 AI 放在流程裡的正確位置，以及每個階段它能做什麼、不該做什麼。</p>
+</blockquote>
+<hr />
+<h2 id="ai">一、定位：AI 該站在流程的哪裡</h2>
+<p><a href="research-basics.html">研究者的四大核心能力</a>是文獻回顧、批判性思考、知識管理、邏輯表達。AI 能真正接手的，只有其中<strong>資訊密集而判斷含量低</strong>的那一段。</p>
+<p>這條線可以講得更具體：</p>
+<table>
+<thead>
+<tr>
+<th>工作的性質</th>
+<th>可以交出去嗎</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>機械、重複、可驗證</strong></td>
+<td>✅ 可以</td>
+<td>格式轉換、引用交叉核對、術語一致性檢查、資料清理</td>
+</tr>
+<tr>
+<td><strong>資訊密集但有標準答案</strong></td>
+<td>✅ 可以，但要查核</td>
+<td>找特定主題的文獻、把一批論文的方法欄位抽成表</td>
+</tr>
+<tr>
+<td><strong>需要專業判斷</strong></td>
+<td>⚠️ 只能當第二意見</td>
+<td>這篇文獻跟我的研究相關嗎？這個方法適合我的情境嗎？</td>
+</tr>
+<tr>
+<td><strong>決定研究的價值與方向</strong></td>
+<td>❌ 不能</td>
+<td>這個題目值不值得做？這個缺口該不該補？結果代表什麼？</td>
+</tr>
+</tbody>
+</table>
+<p>愈往下，你要負的責任愈重。<strong>論文的核心價值全部落在最後兩列。</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">速度不是學位論文的優勢指標</p>
+<p>有工具標榜「十分鐘產出兩萬字論文草稿」。對學位論文而言，這個速度是<strong>警訊而非優勢</strong>。碩博士論文的價值在於研究者花時間與文獻、資料反覆攻防，形成自己的觀點；被壓縮成十分鐘的產物，本質上只是資訊拼貼。</p>
+</div>
+<hr />
+<h2 id="ai_1">二、AI 在研究各階段的能與不能</h2>
+<table>
+<thead>
+<tr>
+<th>研究階段</th>
+<th>AI 可以做什麼</th>
+<th>AI 不該做什麼</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>題目探索</strong></td>
+<td>環境掃描、跨領域術語橋接、初步文獻地圖</td>
+<td>替你決定研究問題的價值判斷</td>
+</tr>
+<tr>
+<td><strong>文獻回顧</strong></td>
+<td>摘要、分類、缺口分析、事實查核輔助</td>
+<td>捏造或美化文獻內容；跳過查核直接引用</td>
+</tr>
+<tr>
+<td><strong>研究設計</strong></td>
+<td>協助操作化題項的初稿、量表用詞在地化</td>
+<td>決定信效度是否成立（仍需統計檢定與專家效度）</td>
+</tr>
+<tr>
+<td><strong>資料蒐集</strong></td>
+<td>問卷平台設定、逐字稿整理</td>
+<td><strong>生成假資料冒充真實樣本</strong></td>
+</tr>
+<tr>
+<td><strong>資料分析</strong></td>
+<td>統計程式碼協助、圖表生成、初步模式辨識</td>
+<td><strong>竄改分析結果以符合預期假設</strong></td>
+</tr>
+<tr>
+<td><strong>寫作</strong></td>
+<td>語言潤飾、邏輯斷鏈診斷、格式校對</td>
+<td>生成未經你本人理解與驗證的論述段落</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_1">三、什麼問題才值得動用深度研究</h2>
+<p>不是每個問題都需要動用長時間的多輪檢索。先過三關：</p>
+<pre><code>① 這是「找標準答案」的問題嗎？
+   → 是 → 這是搜尋，用一般搜尋引擎或資料庫就好
+
+② 這個問題已經「規格化」了嗎？
+   → 否 → 先自己想清楚要問什麼。這一步 AI 幫不了
+
+③ 需要「海量閱讀」才能回答嗎？
+   → 是 → 這才是深度檢索的主場
+</code></pre>
+<h3 id="31-vs">3.1 模糊提問 vs 規格化提問</h3>
+<table>
+<thead>
+<tr>
+<th>類型</th>
+<th>特徵</th>
+<th>範例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>❌ <strong>模糊</strong>（講感覺）</td>
+<td>沒有比較對象、沒有指標、沒有範圍</td>
+<td>「幫我研究一下哪種行銷方式比較好」</td>
+</tr>
+<tr>
+<td>✅ <strong>規格化</strong>（講指標）</td>
+<td>有明確的比較對象、指標與情境</td>
+<td>「比較短影音與長文章在高單價線上課程的轉換率與獲客成本差異」</td>
+</tr>
+</tbody>
+</table>
+<p><strong>規格化的四個要素</strong>：比較對象、績效指標、情境限定、時間範圍。</p>
+<p>這與研究本身的邏輯完全一致。<a href="problem-design.html">研究問題不能問「是否影響」</a>，而要問「效果為何」。對 AI 提問也是同一件事：<strong>問「哪個比較好」得到的是意見，問「在什麼指標上差多少」才得到證據。</strong></p>
+<hr />
+<h2 id="_2">四、提問的三個組成：情境、產出、邊界</h2>
+<p>一次認真的檢索或分析請求，應該包含三段。缺任何一段，得到的東西都會不能用。</p>
+<h3 id="41-context">4.1 情境（Context）</h3>
+<p>讓工具知道你站在哪裡。應寫入：</p>
+<ul>
+<li>研究目的與研究問題</li>
+<li>你目前已經知道的（避免它重複告訴你已知的事）</li>
+<li>你卡在哪裡</li>
+<li>指導教授的具體批註意見（如果有）</li>
+</ul>
+<p><strong>輸入愈精準，等於幫產出事先定義好搜尋方向與評估標準。</strong></p>
+<h3 id="42-output">4.2 產出（Output）</h3>
+<p>依研究階段給不同的規格：</p>
+<table>
+<thead>
+<tr>
+<th>階段</th>
+<th>產出規格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>題目探索</strong></td>
+<td>「寬而淺」的領域地圖，讓你看見版圖</td>
+</tr>
+<tr>
+<td><strong>框架建構</strong></td>
+<td>邏輯架構與文獻標記，幫助你建立研究架構圖</td>
+</tr>
+<tr>
+<td><strong>缺口補強</strong></td>
+<td>針對特定缺口的深挖，範圍要窄</td>
+</tr>
+</tbody>
+</table>
+<p>要指定：長度、結構、要不要表格、條列層級的上限。</p>
+<blockquote>
+<p>資訊過多或過少都不是好事。一份動不動就給你上百條文獻的報告，初看豐富，實則會讓你淹沒在資訊裡。</p>
+</blockquote>
+<h3 id="43-constraints">4.3 邊界（Constraints）</h3>
+<p>明列<strong>不准做的事</strong>：</p>
+<ul>
+<li>不確定的資訊必須標示，不得推測補全</li>
+<li>引用必須提供可查證的作者、年份、標題、期刊；查不到就說查不到</li>
+<li>使用台灣繁體中文的學術用語</li>
+<li>描述橫斷面研究時只能用「預測」「相關」，不得用因果動詞</li>
+<li>涉及研究倫理的限制（不得處理未去識別化的受訪者資料等）</li>
+</ul>
+<p><strong>這一段是工具最無法替你生成的部分，因為它取決於你的系所規範與研究倫理判斷。</strong> 可直接取用的完整範本見<a href="prompts.html">AI 提示詞範本</a>。</p>
+<hr />
+<h2 id="_3">五、界定檢索範圍：納入與排除準則</h2>
+<p>研究發散最常見的原因不是搜尋能力不足，是<strong>沒有事先講清楚什麼算數、什麼不算數</strong>。</p>
+<p>系統性文獻回顧對這件事有成熟的做法：在開始檢索之前先寫下<strong>納入準則（inclusion criteria）</strong>與<strong>排除準則（exclusion criteria）</strong>，並記錄每一階段篩掉多少篇。這正是 PRISMA 流程圖在做的事。</p>
+<p>同樣的紀律可以直接套用在任何檢索工作上：</p>
+<pre><code>【納入準則】
+  研究對象：⟨誰⟩
+  情境／場域：⟨什麼平台、什麼產業、什麼任務⟩
+  核心變項：⟨哪些構念⟩
+  文獻範圍：⟨年份區間、期刊等級、語言⟩
+  研究設計：⟨只要實證研究？含質性嗎？含預印本嗎？⟩
+
+【排除準則】
+  排除的干擾變項：⟨哪些不在本研究範圍內⟩
+  排除的族群或情境：⟨哪些不算數⟩
+  排除的文獻類型：⟨評論文章？會議摘要？未經同儕審查者？⟩
+</code></pre>
+<p><strong>一個具體的例子</strong>：現有量表只適用於單一服務接觸情境，未必能直接移到跨通路決策。把納入準則收斂到「特定服務流程 × 明確使用情境」，並列出排除的情境變項，檢索才會貼合問題，也才能在方法章交代文獻範圍。</p>
+<div class="admonition tip">
+<p class="admonition-title">這件事的雙重效益</p>
+<p>寫下納入排除準則，除了讓檢索收斂，還有一個直接好處：<strong>它就是你論文方法章要寫的內容</strong>。
+先寫準則再檢索，等於邊做邊寫論文；先檢索再回頭補準則，通常會發現自己說不清楚為什麼漏了某些文獻。</p>
+</div>
+<hr />
+<h2 id="_4">六、組織文獻：概念矩陣</h2>
+<p>找到文獻之後，下一個問題是怎麼組織它們。這裡有一個經典而且比任何工具都重要的區分：</p>
+<blockquote>
+<p><strong>以概念為中心（concept-centric），而不是以作者為中心（author-centric）。</strong>
+Webster &amp; Watson (2002), <em>MIS Quarterly</em> 26(2)</p>
+</blockquote>
+<p><strong>以作者為中心</strong>寫出來的文獻探討長這樣：「A 學者（2020）發現……。B 學者（2021）認為……。C 學者（2022）指出……。」這就是<a href="literature.html">只敘不評的流水帳</a>。</p>
+<p><strong>以概念為中心</strong>的做法是先建一張<strong>概念矩陣（concept matrix）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>文獻</th>
+<th>概念 A</th>
+<th>概念 B</th>
+<th>概念 C</th>
+<th>概念 D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>作者甲 (2021)</td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>作者乙 (2022)</td>
+<td>✓</td>
+<td></td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td>作者丙 (2023)</td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>本研究</strong></td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td><strong>?</strong></td>
+</tr>
+</tbody>
+</table>
+<p>然後<strong>依照欄（概念）而不是列（作者）來組織你的段落</strong>。</p>
+<h3 id="61">6.1 這張表怎麼用來找缺口</h3>
+<p>把維度換成你關心的面向，空格就是缺口的候選：</p>
+<ul>
+<li>核心變項（A → B 的關係）</li>
+<li>研究方法（質性／量化／混合）</li>
+<li>研究對象（學生／職場工作者／特定產業）</li>
+<li>理論基礎</li>
+<li>情境（產業別、平台別、國家地區）</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">空格不等於缺口</p>
+<p>有些格子是空的，是因為那個組合<strong>沒有研究價值</strong>，或<strong>前人做過但失敗了所以沒發表</strong>。
+找到空格之後，還必須論證「為什麼這個組合值得做」，以及「為什麼理論上預期會有不同的結果」。<strong>這一步 AI 幫不了你。</strong></p>
+</div>
+<h3 id="62-ai">6.2 AI 在這裡的角色</h3>
+<p>AI 最適合做的是<strong>把一批論文的欄位抽成表格</strong>：樣本、方法、理論、主要發現、研究限制。這是機械工作，交出去很划算。</p>
+<p>但<strong>欄位要抽哪些、矩陣的維度怎麼定、空格代不代表缺口</strong>，是你的判斷。</p>
+<p><strong>建議讀原文</strong>：Webster &amp; Watson (2002) 只有十來頁，是 IS 領域文獻回顧的方法論起點；2020 年有更新版（Watson &amp; Webster, <em>Journal of Decision Systems</em>）。連結見<a href="sources.html">延伸閱讀</a>。</p>
+<hr />
+<h2 id="_5">七、引用查核的三個步驟</h2>
+<p>AI 生成的引用<strong>必然要查</strong>，沒有例外。工具會一本正經地引一篇根本不存在的文獻，還附上聽起來合理的解釋。</p>
+<table>
+<thead>
+<tr>
+<th>步驟</th>
+<th>做什麼</th>
+<th>能自動化嗎</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① <strong>資料提取</strong></td>
+<td>從產出文字中抽出所有引用（作者、年份、標題、期刊、DOI）</td>
+<td>✅ 可以</td>
+</tr>
+<tr>
+<td>② <strong>存在性查核</strong></td>
+<td>用 Google Scholar／Semantic Scholar／DOI 解析確認它真的存在，標示 ✅ 通過 / ⚠️ 資訊有誤 / ❌ 查無此文</td>
+<td>✅ 可以（交給另一個工具或搜尋引擎）</td>
+</tr>
+<tr>
+<td>③ <strong>內容查核</strong></td>
+<td><strong>開原文</strong>，確認它真的說了那句話，而且條件與範圍一致</td>
+<td>❌ <strong>不行</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition danger">
+<p class="admonition-title">第二步和第三步是兩件事</p>
+<p>查核工具只能確認「這篇文獻<strong>存在</strong>」，不能確認「這篇文獻<strong>真的說了那句話</strong>」。
+AI 摘要傾向保留結論而丟掉條件。原文寫「在 A 條件下、以 B 樣本、用 C 方法，X 正向預測 Y」，摘要常常只剩「X 正向預測 Y」。你把那句話寫進文獻探討，就等於擴大了原作者的主張範圍。
+<strong>口試委員可能隨機抽問你引用的文獻內容。</strong> 每一篇被你引用的論文，至少要讀過跟引註有關的段落。</p>
+</div>
+<hr />
+<h2 id="_6">八、用指導教授的批註反推補強方向</h2>
+<p>這是效率最高的一種用法，因為它的輸入品質最好：<strong>教授的意見不只是挑毛病，它同時指出了最有效率的補強路線。</strong></p>
+<pre><code>論文草稿 + 教授的批註意見（原文照貼，不要自己改寫）
+   ↓
+① 概念診斷：每一則意見實際上在質疑什麼？
+   （概念定義不清？論證跳步？文獻不足？方法不合理？還是純表達問題？）
+   ↓
+② 補強診斷：針對每一則，我需要補什麼？
+   - 補文獻 → 要補哪一類？建議的搜尋關鍵字？
+   - 補論證 → 斷鏈在哪？需要補上什麼中間命題？
+   - 補資料 → 需要什麼證據？
+   ↓
+③ 產出：帶優先順序的補強清單
+</code></pre>
+<p><strong>關鍵在第一步</strong>。批註常常寫得很短（「這裡不夠清楚」「依據呢？」），把它翻譯成具體的問題類型，是這個流程的價值所在。</p>
+<hr />
+<h2 id="_7">九、依任務性質切分對話</h2>
+<p>用一個萬能助理處理所有事情，效果通常比不上把工作切開。原因是<strong>不同任務需要的立場是衝突的</strong>：協助你把論證寫好的那個角色，很難同時扮演攻擊你論證的角色。</p>
+<p>實務上至少切成三種：</p>
+<table>
+<thead>
+<tr>
+<th>角色</th>
+<th>立場</th>
+<th>典型任務</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>檢索與整理</strong></td>
+<td>中立、廣泛</td>
+<td>環境掃描、摘要、分類、抽表格、缺口清單</td>
+</tr>
+<tr>
+<td><strong>論證診斷</strong></td>
+<td>挑剔、只找問題</td>
+<td>抽取命題、檢測邏輯斷點、指出跳步與隱含前提</td>
+</tr>
+<tr>
+<td><strong>對抗式審查</strong></td>
+<td>嚴格、模擬口試委員</td>
+<td>針對研究設計提出具體且尖銳的質疑</td>
+</tr>
+</tbody>
+</table>
+<h3 id="91">9.1 論證診斷要找的四種斷鏈</h3>
+<table>
+<thead>
+<tr>
+<th>類型</th>
+<th>症狀</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>跳步（non sequitur）</strong></td>
+<td>推理過程中缺乏論證就直接跳過</td>
+</tr>
+<tr>
+<td><strong>隱含前提未交代</strong></td>
+<td>論述成立的條件未明確說明</td>
+</tr>
+<tr>
+<td><strong>概念漂移</strong></td>
+<td>同一名詞在不同段落指涉不一致</td>
+</tr>
+<tr>
+<td><strong>前後矛盾</strong></td>
+<td>前後段落論點彼此衝突</td>
+</tr>
+</tbody>
+</table>
+<p>診斷的五個動作：從文本抽取命題 → 分析命題間的推理關係 → 描述整體論證結構 → 標出斷點 → 提出具體修正建議。</p>
+<p><strong>要求它只診斷、不要改寫。</strong> 讓它改，你會失去對論證的掌握；讓它指出問題，你自己改，才會真的變成你的東西。</p>
+<h3 id="92">9.2 理論整合：找出連結機制</h3>
+<p><strong>症狀</strong>：素材很多但邏輯串不起來。兩個概念各有大量文獻，卻寫不出「為什麼」有關聯，讀起來像兩個不相干的主題硬湊在一起。</p>
+<p><strong>該問的問題</strong>：這兩個理論之間，<strong>連結機制</strong>是什麼？</p>
+<p>例如研究「資訊呈現方式」與「使用者判斷」時，連結機制可能是「注意力分配改變」。找到這個機制，論證才接得起來。</p>
+<div class="admonition warning">
+<p class="admonition-title">判斷是否縫合成功的標準</p>
+<p>AI 很擅長把兩個理論的文字兜在一起，但兜不出真正的因果邏輯。
+<strong>標準只有一個：你能不能用一句話說出兩者之間的機制？</strong> 說不出來就是還沒縫好，不管文字寫得多順。
+延伸見<a href="theories.html">常用理論家族</a>的「理論縫合的陷阱」。</p>
+</div>
+<hr />
+<h2 id="_8">十、卡關診斷：你站在哪個階段</h2>
+<p>一個常見但不易自覺的問題是<strong>站錯階段用錯工具</strong>。如果你發現工具給的回答總是隔靴搔癢，先做這個自我診斷：</p>
+<table>
+<thead>
+<tr>
+<th>症狀</th>
+<th>你在哪個階段</th>
+<th>該做什麼</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>說不清楚「本研究要解釋什麼結果」</td>
+<td>問題界定</td>
+<td>先確定依變數，這是人的工作</td>
+</tr>
+<tr>
+<td>說得清楚依變數，但畫不出架構圖</td>
+<td>框架建構</td>
+<td>補理論文獻，找連結機制</td>
+</tr>
+<tr>
+<td>架構圖畫得出來，但操作型定義還沒定</td>
+<td>研究設計</td>
+<td>找量表原文，處理情境遷移</td>
+</tr>
+<tr>
+<td>操作型定義有了，但不知道怎麼分析</td>
+<td>分析規劃</td>
+<td>讀方法論文獻，確認判準</td>
+</tr>
+</tbody>
+</table>
+<p><strong>工具在「框架建構」階段的邊際效益最高</strong>，因為那個階段需要的正是大量閱讀與跨文獻整合。在「問題界定」階段它幫不上忙，這需要你自己判斷。</p>
+<hr />
+<h2 id="_9">十一、一份可用的工作流</h2>
+<pre><code>第一站 界定
+  → 寫下納入與排除準則（這一段是人的工作）
+  → 規格化你的問題：比較對象、指標、情境、時間範圍
+
+第二站 檢索與組織
+  → 工具協助初篩與分類
+  → 三步查核：提取 → 存在性 → 內容（第三步只能自己做）
+  → 建立概念矩陣，依概念而非作者組織
+  → 人類論證「為什麼這個缺口值得補」
+
+第三站 設計與分析
+  → 工具協助操作化題項的語言、統計程式碼
+  → 人類主導理論邏輯、方法論選擇、共同方法變異的處理
+
+第四站 寫作與檢查
+  → 論證診斷（只診斷、不改寫）
+  → 用語與因果動詞紀律自檢
+  → 誠實揭露 AI 輔助的範圍
+</code></pre>
+<h3 id="111">11.1 把重複的工作固定下來</h3>
+<p>當你發現自己一直在貼同樣的指示，就該把它整理成可重用的提示詞範本或 skill。做法見<a href="ai-agents.html">AI 代理工具懶人包</a>。</p>
+<p><strong>一個實際的例子</strong>：本站的<a href="style.html">學術中文寫作紀律</a>整頁，本身就是一份可執行檢查清單的原料。</p>
+<h3 id="112">11.2 跨文獻整合當成週期性作業</h3>
+<p>把每週新讀的十篇文獻一併交給工具做跨文獻整合，輸出共同主題、方法差異、矛盾之處、共同的研究限制。</p>
+<p><strong>重點在於：那份輸出是「思辨的起點」，不是「思辨的結論」。</strong> 它告訴你哪裡有矛盾，判斷矛盾為什麼發生、值不值得追，是你的事。</p>
+<hr />
+<h2 id="_10">十二、本頁重點回顧</h2>
+<ul>
+<li>AI 只能接手<strong>資訊密集而判斷含量低</strong>的工作；論文的核心價值全在判斷那一端。</li>
+<li>三道關卡：是搜尋題就別用深度檢索；沒規格化就先自己想；要海量閱讀才啟動。</li>
+<li>提問的三個組成：<strong>情境、產出、邊界</strong>。邊界那段工具替你生不出來。</li>
+<li>先寫<strong>納入與排除準則</strong>再檢索，這些準則同時也是方法章的內容。</li>
+<li>文獻要<strong>以概念為中心</strong>組織，不是以作者為中心（Webster &amp; Watson, 2002）。</li>
+<li>概念矩陣的空格是缺口<strong>候選</strong>，不是缺口本身。</li>
+<li>引用查核三步驟，<strong>第三步（開原文）無法自動化</strong>。</li>
+<li>依任務切分對話：檢索、診斷、對抗式審查的立場互相衝突。</li>
+<li>論證診斷要求<strong>只診斷不改寫</strong>，否則你會失去對論證的掌握。</li>
+<li>卡關時先檢查自己站在哪個階段；站錯階段用錯工具最浪費時間。</li>
+</ul>
+<hr />
+<p><strong>延伸</strong>：<a href="tool-directory.html">AI 學術研究工具指南</a>｜<a href="ai-agents.html">AI 代理工具懶人包</a>｜<a href="ai-tools.html">AI 工具生態與風險</a>｜<a href="ethics.html">學術倫理與 AI 揭露</a>｜<a href="prompts.html">AI 提示詞範本</a></p>
+</article>
+<nav class="pager"><a class="prev" href="defense.html">← 計畫書、口試與簡報</a><a class="next" href="tool-directory.html">AI 學術研究工具指南 →</a></nav>
+<footer class="foot">
+<p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
+<p><a href="../pages/sources.html">延伸閱讀與資源指南</a></p>
+</footer>
+</main>
+<aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">
+<ul>
+<li><a href="#ai">一、定位：AI 該站在流程的哪裡</a></li>
+<li><a href="#ai_1">二、AI 在研究各階段的能與不能</a></li>
+<li><a href="#_1">三、什麼問題才值得動用深度研究</a><ul>
+<li><a href="#31-vs">3.1 模糊提問 vs 規格化提問</a></li>
+</ul>
+</li>
+<li><a href="#_2">四、提問的三個組成：情境、產出、邊界</a><ul>
+<li><a href="#41-context">4.1 情境（Context）</a></li>
+<li><a href="#42-output">4.2 產出（Output）</a></li>
+<li><a href="#43-constraints">4.3 邊界（Constraints）</a></li>
+</ul>
+</li>
+<li><a href="#_3">五、界定檢索範圍：納入與排除準則</a></li>
+<li><a href="#_4">六、組織文獻：概念矩陣</a><ul>
+<li><a href="#61">6.1 這張表怎麼用來找缺口</a></li>
+<li><a href="#62-ai">6.2 AI 在這裡的角色</a></li>
+</ul>
+</li>
+<li><a href="#_5">七、引用查核的三個步驟</a></li>
+<li><a href="#_6">八、用指導教授的批註反推補強方向</a></li>
+<li><a href="#_7">九、依任務性質切分對話</a><ul>
+<li><a href="#91">9.1 論證診斷要找的四種斷鏈</a></li>
+<li><a href="#92">9.2 理論整合：找出連結機制</a></li>
+</ul>
+</li>
+<li><a href="#_8">十、卡關診斷：你站在哪個階段</a></li>
+<li><a href="#_9">十一、一份可用的工作流</a><ul>
+<li><a href="#111">11.1 把重複的工作固定下來</a></li>
+<li><a href="#112">11.2 跨文獻整合當成週期性作業</a></li>
+</ul>
+</li>
+<li><a href="#_10">十二、本頁重點回顧</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script src="../assets/site.js"></script>
+</body>
+</html>

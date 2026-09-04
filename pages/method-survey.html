@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>問卷調查法｜研究方法與論文寫作知識網絡</title>
+<meta name="description" content="抽樣、信效度、PLS-SEM、共同方法變異">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128218;</text></svg>">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<button class="navtoggle" id="navtoggle" aria-label="開啟導覽">☰</button>
+<nav class="sidenav" id="sidenav" aria-label="全站導覽">
+<a class="brand" href="../index.html"><span class="brand-mark">◈</span><span class="brand-text">研究方法<br><small>知識網絡</small></span></a>
+<div class="navsearch"><input type="search" id="navfilter" placeholder="篩選頁面…" aria-label="篩選頁面"></div>
+<div class="navsec"><h2>研究的基礎</h2><ul>
+<li><a href="../pages/getting-started.html" data-title="從零開始：研究所的第一個月">從零開始：研究所的第一個月</a></li>
+<li><a href="../pages/research-basics.html" data-title="研究的本質、歷程與時程">研究的本質、歷程與時程</a></li>
+<li><a href="../pages/finding-reading.html" data-title="怎麼找、怎麼讀、怎麼選題目">怎麼找、怎麼讀、怎麼選題目</a></li>
+<li><a href="../pages/is-research.html" data-title="資訊管理研究的範疇與取向">資訊管理研究的範疇與取向</a></li>
+<li><a href="../pages/problem-design.html" data-title="研究問題、假說與研究架構">研究問題、假說與研究架構</a></li>
+<li><a href="../pages/literature.html" data-title="文獻回顧與批判性思考">文獻回顧與批判性思考</a></li>
+<li><a href="../pages/theory-building.html" data-title="理論的構成與評估">理論的構成與評估</a></li>
+<li><a href="../pages/theories.html" data-title="常用理論家族與選用原則">常用理論家族與選用原則</a></li>
+</ul></div>
+<div class="navsec"><h2>研究方法</h2><ul>
+<li><a href="../pages/methodology.html" data-title="方法論選擇地圖">方法論選擇地圖</a></li>
+<li class="active"><a href="../pages/method-survey.html" data-title="問卷調查法">問卷調查法</a></li>
+<li><a href="../pages/method-experiment.html" data-title="實驗法">實驗法</a></li>
+<li><a href="../pages/method-dsr.html" data-title="系統發展法與設計科學研究">系統發展法與設計科學研究</a></li>
+<li><a href="../pages/method-data.html" data-title="演算法、最佳化與資料分析">演算法、最佳化與資料分析</a></li>
+<li><a href="../pages/method-qualitative.html" data-title="質性研究方法">質性研究方法</a></li>
+</ul></div>
+<div class="navsec"><h2>論文寫作</h2><ul>
+<li><a href="../pages/writing.html" data-title="論文架構與各章寫作要領">論文架構與各章寫作要領</a></li>
+<li><a href="../pages/style.html" data-title="學術中文寫作紀律">學術中文寫作紀律</a></li>
+<li><a href="../pages/defense.html" data-title="計畫書、口試與簡報">計畫書、口試與簡報</a></li>
+</ul></div>
+<div class="navsec"><h2>AI 輔助研究</h2><ul>
+<li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流">AI 輔助研究工作流</a></li>
+<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南">AI 學術研究工具指南</a></li>
+<li><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包">AI 代理工具懶人包</a></li>
+<li><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險">AI 工具生態與風險</a></li>
+<li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露">學術倫理與 AI 揭露</a></li>
+</ul></div>
+<div class="navsec"><h2>工具箱</h2><ul>
+<li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫">文獻管理與知識庫</a></li>
+<li><a href="../pages/checklists.html" data-title="檢查清單">檢查清單</a></li>
+<li><a href="../pages/prompts.html" data-title="AI 提示詞範本">AI 提示詞範本</a></li>
+<li><a href="../pages/glossary.html" data-title="名詞與用語對照">名詞與用語對照</a></li>
+<li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南">延伸閱讀與資源指南</a></li>
+</ul></div>
+</nav>
+<div class="wrap">
+<main id="main">
+<p class="crumb"><a href="../index.html">首頁</a> ／ 研究方法</p>
+<article class="doc">
+<h1>問卷調查法</h1>
+<p class='lede'>抽樣、信效度、PLS-SEM、共同方法變異</p>
+<blockquote>
+<p>資管領域最常見、也最容易做得草率的方法。這一頁涵蓋問卷設計、抽樣、信效度、PLS-SEM 評估準則與共同方法變異。</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、方法特性與適用問題</h2>
+<p><strong>特性</strong>：標準化測量、高度結構化。所有受測者面對同一組題目、同一種尺度，因此答案可以被彙總、比較與統計。</p>
+<p><strong>適合的研究問題</strong>：</p>
+<ul>
+<li>變數之間的相關性</li>
+<li>變數之間的預測關係（含中介、調節）</li>
+<li>跨群體／跨情境的客觀量化比較</li>
+</ul>
+<p><strong>不適合的研究問題</strong>：</p>
+<ul>
+<li>「為什麼會這樣？」的深層機制（問卷答不出受訪者沒被問到的東西）</li>
+<li>尚未有成熟構念與量表的全新現象（此時應先做質性探索）</li>
+<li>需要主張明確因果方向的問題（橫斷面問卷做不到）</li>
+</ul>
+<hr />
+<h2 id="_2">二、執行流程</h2>
+<ol>
+<li>建立研究目的與研究架構</li>
+<li>界定構念的<strong>概念型定義</strong></li>
+<li>發展或改編題項，建立<strong>操作型定義</strong>（量測規則）</li>
+<li>決定抽樣方法與樣本框</li>
+<li><strong>預試</strong>與<strong>前測</strong>，修正題目</li>
+<li>正式資料蒐集</li>
+<li>資料清理與分析</li>
+<li>結果詮釋與撰寫</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">零程式與零 SEM 經驗怎麼開始</p>
+<p>先把研究問題、構念與資料欄位整理清楚，再用小型練習資料熟悉匯入、遺漏值檢查、描述統計與基本圖表。之後才進入測量模型與結構模型，並逐項理解每個指標回答什麼問題。圖形介面可以降低操作門檻，但不能取代統計概念；看不懂輸出時先回到課程、方法教材或統計諮詢，不要照著範例按完就把結果寫進論文。</p>
+</div>
+<h3 id="21-vs">2.1 預試 vs 前測：兩件不同的事</h3>
+<p>這兩者很容易混為一談，但它們檢驗的是不同的東西：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>目的</th>
+<th>做法</th>
+<th>可否省略</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>預試（看得懂嗎）</strong></td>
+<td>確保題目表達清楚，受測者能理解我們想問什麼</td>
+<td>找少數同學或目標族群試填，逐題問「你覺得這題在問什麼」</td>
+<td><strong>不可省略</strong></td>
+</tr>
+<tr>
+<td><strong>前測（測得準嗎）</strong></td>
+<td>真的做一次小型發放，回收後跑統計，確認信效度達標</td>
+<td>小樣本正式施測 + 信效度分析</td>
+<td>樣本取得極困難時可斟酌，但要在限制中說明</td>
+</tr>
+</tbody>
+</table>
+<p>順序是：<strong>預試通過 → 前測通過 → 才發正式問卷。</strong></p>
+<hr />
+<h2 id="_3">三、抽樣</h2>
+<h3 id="31-vs">3.1 機率抽樣 vs 非機率抽樣</h3>
+<p><strong>機率抽樣</strong>：母體中的每一個個體都有一個<strong>已知且不為零</strong>的機率被抽中。只有機率抽樣才能嚴謹地推論到母體。</p>
+<p><strong>非機率抽樣</strong>（碩論最常用，但要誠實承認限制）：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>做法</th>
+<th>主要偏誤</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>便利抽樣</td>
+<td>把問卷投放到 Dcard、FB、IG 等平台，誰看到、願意填就收誰</td>
+<td>平台族群偏誤、自選偏誤</td>
+</tr>
+<tr>
+<td>滾雪球抽樣</td>
+<td>找到幾位符合條件者填答後，請他們轉發給有相同特徵的親友</td>
+<td>同質性偏高、社會網絡偏誤</td>
+</tr>
+<tr>
+<td>立意（判斷）抽樣</td>
+<td>依研究目的刻意挑選特定條件的受訪者</td>
+<td>研究者主觀判斷</td>
+</tr>
+<tr>
+<td>配額抽樣</td>
+<td>依人口特徵設定各組配額後便利取樣</td>
+<td>組內仍非隨機</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">調查要找對人來查</p>
+<p><strong>樣本選擇是問卷調查法的首要關卡。</strong> 如果受訪者根本不具備你要研究的經驗（例如研究「行動銀行 App 的使用體驗」卻收到大量從未用過的人），後面的統計再完整也沒有意義。
+篩選題（screening question）與「使用經驗滿 X 個月以上」這類門檻，要寫進方法章並說明理由。</p>
+</div>
+<h3 id="32">3.2 樣本同質性的副作用</h3>
+<p>如果受訪者大多具有相近背景或經驗，樣本可能同質性過高。常見原因包括：</p>
+<ul>
+<li>招募管道集中在單一社群或機構</li>
+<li>納入條件過窄，使關鍵變項的分布受到壓縮</li>
+</ul>
+<p><strong>同質性高的樣本可能壓縮變異，進而影響關係估計與推論範圍。</strong> 這件事必須寫進研究限制。</p>
+<h3 id="33">3.3 正式發放前的樣本規劃</h3>
+<p>樣本數不能等到回收後才用「夠不夠跑軟體」判斷。研究者應在事前依研究設計、預計分析、效果大小假設與可接受誤差規劃樣本，並記錄估算依據。若採配額、分組或多群組分析，也要分別確認各組是否足以回答研究問題。</p>
+<p>資料品質與倫理同樣要先設計：規劃篩選題、重複填答與異常作答的判準，說明遺漏值與排除規則，並確認招募說明、知情同意、個資保存及退出方式。相關原則見<a href="ethics.html">學術倫理與 AI 揭露</a>。</p>
+<hr />
+<h2 id="_4">四、問卷設計三大核心原則</h2>
+<ol>
+<li><strong>題目設計明確、無歧異</strong>：一題只問一件事，不要出現雙管問題（double-barreled）</li>
+<li><strong>邏輯順序自然、心理流暢</strong>：從一般到特定、從中性到敏感</li>
+<li><strong>選項設計全面、避免誘導</strong>：不要有引導性措辭，選項要窮盡且互斥</li>
+</ol>
+<h3 id="41">4.1 尺度的選擇要有理由</h3>
+<p>李克特 5 點 vs 7 點沒有標準答案，但<strong>必須說明理由</strong>。常見的正當理由：</p>
+<ul>
+<li>「本研究採 5 點量表，因主要透過行動裝置填答，選項過多易造成誤觸與疲勞。」</li>
+<li>「本研究採 7 點量表，以與所參考之原量表（作者, 年）保持一致，便於比較。」</li>
+</ul>
+<h3 id="42">4.2 題項來源</h3>
+<ul>
+<li>優先<strong>沿用經過驗證的既有量表</strong>，並註明出處</li>
+<li>若必須改編，說明改編的理由與幅度（見<a href="problem-design.html">操作型定義</a>）</li>
+<li>全新自編題項要有專家審查與充分的效度證據</li>
+</ul>
+<hr />
+<h2 id="_5">五、信度與效度</h2>
+<h3 id="51-reliability">5.1 信度（reliability）：一致性與穩定性</h3>
+<p>測量結果的一致性與穩定性。<strong>通常要求大於 0.7。</strong></p>
+<table>
+<thead>
+<tr>
+<th>類型</th>
+<th>意思</th>
+<th>常用指標</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>內部一致性</td>
+<td>測量同一構念的題目，同一受測者的回答方向是否一致</td>
+<td>Cronbach's α</td>
+</tr>
+<tr>
+<td>組合信度（CR）</td>
+<td>同一份問卷中測量同一概念的多個題目，是否穩定可靠地測出該概念</td>
+<td>ρ_c（composite reliability）、ρ_a</td>
+</tr>
+<tr>
+<td>再測信度</td>
+<td>同一群人隔一段時間再測，結果是否穩定</td>
+<td>相關係數</td>
+</tr>
+</tbody>
+</table>
+<h3 id="52-validity">5.2 效度（validity）：測到它該測的東西的程度</h3>
+<table>
+<thead>
+<tr>
+<th>類型</th>
+<th>問什麼</th>
+<th>怎麼確認</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>表面效度</strong></td>
+<td>使用者看不看得懂這份問卷在問什麼</td>
+<td>找同學做預試</td>
+</tr>
+<tr>
+<td><strong>內容效度</strong></td>
+<td>題目有沒有涵蓋這個概念的所有重要面向</td>
+<td>領域專家審查（不是題目越多越好）</td>
+</tr>
+<tr>
+<td><strong>建構效度</strong></td>
+<td>題目是否真正反映構念，問卷是否如理論預期運作</td>
+<td>因素分析、後續兩項</td>
+</tr>
+<tr>
+<td><strong>收斂（聚合）效度</strong></td>
+<td>同一構念的題目彼此相關性夠高，聚在同一因子上</td>
+<td>因素負荷量、AVE</td>
+</tr>
+<tr>
+<td><strong>區辨（區別）效度</strong></td>
+<td>測量不同構念的題目界線清楚，相關性低</td>
+<td>Fornell–Larcker、交叉負荷、HTMT</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">從定義開始，不是從題目開始</p>
+<p>「所有的量測都從<strong>定義</strong>開始。」先把構念定義清楚，才能設計出真正測得到它的題目，也才能在效度檢驗時說得出「這一題為什麼屬於這個構念」。</p>
+</div>
+<hr />
+<h2 id="pls-sem-cb-sem">六、PLS-SEM 與 CB-SEM</h2>
+<h3 id="61">6.1 怎麼選</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>PLS-SEM</th>
+<th>CB-SEM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>目的</td>
+<td>預測、探索、理論延伸</td>
+<td>理論驗證、模型適配檢定</td>
+</tr>
+<tr>
+<td>樣本量</td>
+<td>相對寬鬆</td>
+<td>需求較大</td>
+</tr>
+<tr>
+<td>常態性假設</td>
+<td>不要求多變量常態</td>
+<td>通常要求</td>
+</tr>
+<tr>
+<td>模型複雜度</td>
+<td>可處理較複雜、含形成性構念</td>
+<td>反映性構念為主</td>
+</tr>
+<tr>
+<td>常見軟體</td>
+<td>SmartPLS</td>
+<td>AMOS、LISREL、Mplus</td>
+</tr>
+</tbody>
+</table>
+<p><strong>理由要寫在方法章</strong>，不能只寫「本研究採用 PLS-SEM」。常見的正當理由：本研究屬探索性、模型較複雜、樣本非常態、含形成性構念、以預測為導向。</p>
+<div class="admonition warning">
+<p class="admonition-title">不要因為軟體方便而選方法</p>
+<p>「因為 SmartPLS 比較好操作」不是方法論依據。口試委員問「你為什麼用 PLS 而不用 CB-SEM」時，仍須回答兩者與研究目的及資料條件的關係。</p>
+</div>
+<h3 id="62-vs">6.2 反映性 vs 形成性指標</h3>
+<ul>
+<li><strong>反映性指標</strong>：是潛在構念的<strong>表現或結果</strong>（構念 → 題項）。題項之間應高度相關，可以互換。</li>
+<li><strong>形成性指標</strong>：是<strong>構成或定義</strong>潛在構念的要素（題項 → 構念）。題項之間不必相關，也不可任意刪除。</li>
+</ul>
+<p>弄錯方向會導致整套效度檢驗的判準用錯。例如對形成性構念檢查 Cronbach's α 是沒有意義的。</p>
+<h3 id="63">6.3 常用評估準則</h3>
+<p>以下為 SmartPLS 官方文件所列的判準門檻（依 Hair 等人的建議），實際採用時仍應依研究背景、理論與樣本特性調整，並在論文中引用你所依據的版本：</p>
+<p><strong>測量模型（反映性）</strong></p>
+<table>
+<thead>
+<tr>
+<th>指標</th>
+<th>建議門檻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>外部負荷量（outer loading）</td>
+<td>≥ 0.70</td>
+</tr>
+<tr>
+<td>Cronbach's α</td>
+<td>≥ 0.70</td>
+</tr>
+<tr>
+<td>組合信度 ρ_a、ρ_c</td>
+<td>≥ 0.70（過高如 &gt; 0.95 反而可能是題項冗餘）</td>
+</tr>
+<tr>
+<td>平均變異抽取量 AVE</td>
+<td>≥ 0.50</td>
+</tr>
+<tr>
+<td>HTMT（區辨效度）</td>
+<td>≤ 0.85 為佳；0.85–0.90 需說明；&gt; 0.90 有問題</td>
+</tr>
+</tbody>
+</table>
+<p><strong>結構模型</strong></p>
+<table>
+<thead>
+<tr>
+<th>指標</th>
+<th>建議門檻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VIF（共線性）</td>
+<td>≤ 3.00 為佳；3.00–5.00 需留意；&gt; 5.00 有問題</td>
+</tr>
+<tr>
+<td>路徑係數顯著性</td>
+<td>Bootstrapping p ≤ 0.05</td>
+</tr>
+<tr>
+<td>效果量 f²</td>
+<td>≥ 0.02 小、≥ 0.15 中、≥ 0.35 大</td>
+</tr>
+<tr>
+<td>預測相關性 Q²_predict</td>
+<td>&gt; 0</td>
+</tr>
+<tr>
+<td>樣本外預測</td>
+<td>PLS-SEM 的 RMSE 應低於線性迴歸基準（LM）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>多群組分析</strong>：Permutation MGA p ≤ 0.05 表示群組間差異顯著；跑 MGA 前應先做 MICOM 測量不變性檢驗。</p>
+<h3 id="64">6.4 第四章的報告順序</h3>
+<p>順序不是排版問題，是<strong>論證問題</strong>：測量模型沒過就不能談結構模型，因為在一組不可靠的測量上算出來的路徑係數沒有意義。固定照這個順序寫：</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>報告什麼</th>
+<th>主要內容</th>
+<th>沒過的話</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>樣本描述</strong></td>
+<td>回收率、人口變項分布、關鍵行為變項（如使用頻率）</td>
+<td>說明無回應偏差怎麼處理</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>共同方法偏誤檢驗</strong></td>
+<td>Harman 單因子檢定、標記變數（marker variable）、完整共線性 VIF</td>
+<td>說明程序性控制做了什麼</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>測量模型</strong></td>
+<td>內部一致性、收斂效度（AVE、CR）、區別效度（HTMT、Fornell-Larcker）</td>
+<td><strong>停在這裡</strong>，刪題或重新界定構念，不要硬跑結構模型</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>結構模型</strong></td>
+<td>路徑係數與顯著性、R²、f²、Q²、共線性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>中介／調節效果</strong></td>
+<td>Bootstrap 信賴區間、直接／間接／序列效果</td>
+<td>—</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>假說彙整表</strong></td>
+<td>每條假說：編號、內容、係數、p 值、<strong>支持／不支持</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition danger">
+<p class="admonition-title">第 6 項一定要做</p>
+<p><strong>口試委員會反覆對照那張表。</strong> 沒有它，委員必須自己在第四章裡翻找每條假說的結果，體驗很差，而且會讓人懷疑你自己也沒有整理清楚。
+表格裡「未獲支持」的假說不要藏起來。它們可能來自可信的零結果、邊界條件或設計限制，應在第五章依證據討論（見<a href="writing.html">論文架構與各章寫作要領</a>第六節）。</p>
+</div>
+<p>門檻數值見 §6.3；<strong>判準會因領域與期刊而異，報告前請查最新版本的方法論文獻</strong>。</p>
+<h3 id="65">6.5 報告時的常見疏漏</h3>
+<ul>
+<li>只寫「顯著」而不給效果量</li>
+<li>沒有報告 R²、f²、Q²</li>
+<li>沒有說明 bootstrapping 的次數與設定</li>
+<li>沒有報告中介效果的間接效果係數與信賴區間</li>
+<li>沒有把顯著路徑標回研究架構圖</li>
+</ul>
+<hr />
+<h2 id="common-method-variance-cmv">七、共同方法變異（Common Method Variance, CMV）</h2>
+<p><strong>這是資管量化論文口試常被追問的弱點之一。</strong></p>
+<h3 id="71">7.1 它是什麼</h3>
+<p>當研究者用<strong>同一種測量方法</strong>（例如全部依賴受試者的主觀自陳問卷）同時收集自變數與依變數的資料時，可能因為測量工具本身的特性，或填答者當下的心理狀態與習慣，導致變數之間的相關性被人工放大或扭曲。這種因為「測量方法相同」而產生的系統性誤差，就是 CMV。</p>
+<h3 id="72">7.2 程序性控制（設計階段，最重要）</h3>
+<ul>
+<li>自變數與依變數<strong>分開時間點</strong>或<strong>分開來源</strong>收集</li>
+<li>保證匿名，降低社會期許偏誤</li>
+<li>打散題項順序，避免同一構念的題目連續出現</li>
+<li>中間插入不相關的題組（心理分隔）</li>
+<li>題目措辭避免引導、避免暗示研究假設</li>
+</ul>
+<h3 id="73">7.3 統計性控制（分析階段，補救性質）</h3>
+<ul>
+<li>Harman 單因子檢定（最常見，但也最受質疑；通過不代表沒有問題）</li>
+<li>共同方法因子法（在模型中加入一個方法因子）</li>
+<li>標記變數法（marker variable）</li>
+<li>全共線性檢定（PLS 中檢查所有 VIF）</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">AI 不能替你完成程序性控制</p>
+<p>AI 可以協助你依照標準做法檢查設計是否合理，但無法替你決定該不該分兩個時間點收資料、該不該找主管與部屬雙來源。這些決定牽涉成本與可行性，是研究者的責任。</p>
+</div>
+<hr />
+<h2 id="_6">八、優缺點（等於在講信效度）</h2>
+<p><strong>優點</strong></p>
+<ul>
+<li>成本效益高、可規模化</li>
+<li>量化優勢明確，能做統計推論與模型檢定</li>
+<li>匿名性與距離感有助於敏感題目的作答</li>
+<li>適應性強，可線上、紙本、混合施測</li>
+</ul>
+<p><strong>缺點</strong></p>
+<ul>
+<li><strong>資料缺乏深度</strong>，難以深入質性層面</li>
+<li><strong>填答過程不可控</strong>，無法確認受測者是否認真</li>
+<li><strong>受測者偏誤</strong>：社會期許、共同方法變異、回憶偏誤</li>
+<li><strong>抽樣與回收限制</strong>：非機率抽樣難以推論母體</li>
+<li><strong>橫斷面的主要限制</strong>：只能講相關與預測，不能講因果</li>
+</ul>
+<h3 id="81">8.1 橫斷面的主要限制與處理方式</h3>
+<p>問卷通常是<strong>橫斷面（cross-sectional）</strong>研究，只拍一張照片。標準的處理方式是：</p>
+<ol>
+<li>在<strong>研究限制</strong>中明確說明橫斷面無法建立因果的時序條件</li>
+<li>在<strong>未來研究建議</strong>中提出縱貫面（longitudinal）設計</li>
+<li>全篇的動詞紀律嚴守「預測／相關」，不用「導致／造成」</li>
+</ol>
+<hr />
+<h2 id="_7">九、常用理論家族速查</h2>
+<p>問卷法的模型幾乎都建立在既有理論之上。以下是資管領域最常見的幾組，詳細說明見<a href="theories.html">常用理論家族</a>。</p>
+<table>
+<thead>
+<tr>
+<th>理論</th>
+<th>核心主張</th>
+<th>常見依變數</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TRA 理性行為理論</td>
+<td>行為由行為意圖決定；意圖受態度與主觀規範影響</td>
+<td>行為意圖</td>
+</tr>
+<tr>
+<td>TPB 計畫行為理論</td>
+<td>在 TRA 上加入知覺行為控制</td>
+<td>行為意圖</td>
+</tr>
+<tr>
+<td>TAM 科技接受模式</td>
+<td>使用意圖受知覺有用性與知覺易用性影響</td>
+<td>使用意圖</td>
+</tr>
+<tr>
+<td>ECM 期望確認理論</td>
+<td>確認 → 滿意度 → 持續使用意圖</td>
+<td>持續使用意圖</td>
+</tr>
+<tr>
+<td>SOR 刺激—有機體—反應</td>
+<td>外部刺激 → 內在狀態 → 行為反應</td>
+<td>行為反應</td>
+</tr>
+<tr>
+<td>SDT 自我決定理論</td>
+<td>自主性、勝任感、關聯性三種心理需求</td>
+<td>內在動機</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">單一變數衡量結果是高風險的</p>
+<p>只用單一構念解釋最終依變數，可能遺漏其他重要前因。是否需要納入更多構念，應依研究問題、理論與情境判斷，不能把特定效果排序當成通則。</p>
+</div>
+<hr />
+<h2 id="_8">十、本頁重點回顧</h2>
+<ul>
+<li>問卷法擅長相關與預測，不擅長因果與深層機制。</li>
+<li>預試看「懂不懂」，前測看「準不準」，兩者都不能跳過。</li>
+<li>抽樣要「找對人來查」；非機率抽樣要誠實寫進限制。</li>
+<li>信度 &gt; 0.7；效度分表面、內容、建構、收斂、區辨。</li>
+<li>PLS 或 CB-SEM 要有方法論依據，不是因為軟體好用。</li>
+<li>報告 PLS 結果要給效果量與預測指標，不能只寫「顯著」。</li>
+<li>第四章順序＝論證順序：樣本 → CMV → <strong>測量模型（沒過就停）</strong> → 結構模型 → 中介 → <strong>假說彙整表</strong>。</li>
+<li>CMV 應優先在<strong>程序性控制</strong>處理，統計檢定只是補救。</li>
+<li>橫斷面的標準三件套：限制寫清楚、建議縱貫面、動詞守紀律。</li>
+</ul>
+<hr />
+<p><strong>延伸</strong>：<a href="method-experiment.html">實驗法</a>｜<a href="theories.html">常用理論家族</a>｜<a href="style.html">學術中文寫作紀律</a></p>
+</article>
+<nav class="pager"><a class="prev" href="methodology.html">← 方法論選擇地圖</a><a class="next" href="method-experiment.html">實驗法 →</a></nav>
+<footer class="foot">
+<p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
+<p><a href="../pages/sources.html">延伸閱讀與資源指南</a></p>
+</footer>
+</main>
+<aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">
+<ul>
+<li><a href="#_1">一、方法特性與適用問題</a></li>
+<li><a href="#_2">二、執行流程</a><ul>
+<li><a href="#21-vs">2.1 預試 vs 前測：兩件不同的事</a></li>
+</ul>
+</li>
+<li><a href="#_3">三、抽樣</a><ul>
+<li><a href="#31-vs">3.1 機率抽樣 vs 非機率抽樣</a></li>
+<li><a href="#32">3.2 樣本同質性的副作用</a></li>
+<li><a href="#33">3.3 正式發放前的樣本規劃</a></li>
+</ul>
+</li>
+<li><a href="#_4">四、問卷設計三大核心原則</a><ul>
+<li><a href="#41">4.1 尺度的選擇要有理由</a></li>
+<li><a href="#42">4.2 題項來源</a></li>
+</ul>
+</li>
+<li><a href="#_5">五、信度與效度</a><ul>
+<li><a href="#51-reliability">5.1 信度（reliability）：一致性與穩定性</a></li>
+<li><a href="#52-validity">5.2 效度（validity）：測到它該測的東西的程度</a></li>
+</ul>
+</li>
+<li><a href="#pls-sem-cb-sem">六、PLS-SEM 與 CB-SEM</a><ul>
+<li><a href="#61">6.1 怎麼選</a></li>
+<li><a href="#62-vs">6.2 反映性 vs 形成性指標</a></li>
+<li><a href="#63">6.3 常用評估準則</a></li>
+<li><a href="#64">6.4 第四章的報告順序</a></li>
+<li><a href="#65">6.5 報告時的常見疏漏</a></li>
+</ul>
+</li>
+<li><a href="#common-method-variance-cmv">七、共同方法變異（Common Method Variance, CMV）</a><ul>
+<li><a href="#71">7.1 它是什麼</a></li>
+<li><a href="#72">7.2 程序性控制（設計階段，最重要）</a></li>
+<li><a href="#73">7.3 統計性控制（分析階段，補救性質）</a></li>
+</ul>
+</li>
+<li><a href="#_6">八、優缺點（等於在講信效度）</a><ul>
+<li><a href="#81">8.1 橫斷面的主要限制與處理方式</a></li>
+</ul>
+</li>
+<li><a href="#_7">九、常用理論家族速查</a></li>
+<li><a href="#_8">十、本頁重點回顧</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script src="../assets/site.js"></script>
+</body>
+</html>

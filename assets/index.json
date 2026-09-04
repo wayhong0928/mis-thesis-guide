@@ -1,0 +1,164 @@
+[
+ {
+  "slug": "getting-started",
+  "title": "從零開始：研究所的第一個月",
+  "desc": "研究所與大學的差別、第一個月的五件事、兩年節奏感",
+  "section": "研究的基礎"
+ },
+ {
+  "slug": "research-basics",
+  "title": "研究的本質、歷程與時程",
+  "desc": "研究到底在做什麼、四大核心能力、兩年時間表",
+  "section": "研究的基礎"
+ },
+ {
+  "slug": "finding-reading",
+  "title": "怎麼找、怎麼讀、怎麼選題目",
+  "desc": "檢索管道與關鍵字、三遍閱讀法、缺口的五種類型",
+  "section": "研究的基礎"
+ },
+ {
+  "slug": "is-research",
+  "title": "資訊管理研究的範疇與取向",
+  "desc": "研究對象、行為科學與設計科學、方法取捨、研究策略",
+  "section": "研究的基礎"
+ },
+ {
+  "slug": "problem-design",
+  "title": "研究問題、假說與研究架構",
+  "desc": "從實務問題到可驗證的學術問題",
+  "section": "研究的基礎"
+ },
+ {
+  "slug": "literature",
+  "title": "文獻回顧與批判性思考",
+  "desc": "十倍速文獻回顧、剝洋蔥式閱讀、批判角度的彙整",
+  "section": "研究的基礎"
+ },
+ {
+  "slug": "theory-building",
+  "title": "理論的構成與評估",
+  "desc": "構念與假說、Gregor 五型、可否證性、概化的四種形式",
+  "section": "研究的基礎"
+ },
+ {
+  "slug": "theories",
+  "title": "常用理論家族與選用原則",
+  "desc": "TAM 家族、SOR／SDT、組織理論與理論索引",
+  "section": "研究的基礎"
+ },
+ {
+  "slug": "methodology",
+  "title": "方法論選擇地圖",
+  "desc": "六大方法的適用場合與相對優缺點",
+  "section": "研究方法"
+ },
+ {
+  "slug": "method-survey",
+  "title": "問卷調查法",
+  "desc": "抽樣、信效度、PLS-SEM、共同方法變異",
+  "section": "研究方法"
+ },
+ {
+  "slug": "method-experiment",
+  "title": "實驗法",
+  "desc": "操弄、控制、隨機化與內外部效度",
+  "section": "研究方法"
+ },
+ {
+  "slug": "method-dsr",
+  "title": "系統發展法與設計科學研究",
+  "desc": "Nunamaker、March &amp; Smith、Hevner 七大規範",
+  "section": "研究方法"
+ },
+ {
+  "slug": "method-data",
+  "title": "演算法、最佳化與資料分析",
+  "desc": "建模、訓練、評估指標與實驗驗證",
+  "section": "研究方法"
+ },
+ {
+  "slug": "method-qualitative",
+  "title": "質性研究方法",
+  "desc": "訪談、個案研究、紮根理論與信實度",
+  "section": "研究方法"
+ },
+ {
+  "slug": "writing",
+  "title": "論文架構與各章寫作要領",
+  "desc": "六大部分的功能、寫作次序與台灣碩論慣例",
+  "section": "論文寫作"
+ },
+ {
+  "slug": "style",
+  "title": "學術中文寫作紀律",
+  "desc": "因果動詞、台灣用語、APA 7、去 AI 感",
+  "section": "論文寫作"
+ },
+ {
+  "slug": "defense",
+  "title": "計畫書、口試與簡報",
+  "desc": "十二個考古題、八大核心能力、投影片架構",
+  "section": "論文寫作"
+ },
+ {
+  "slug": "ai-workflow",
+  "title": "AI 輔助研究工作流",
+  "desc": "三層架構、戰略聚焦單、各階段的能與不能",
+  "section": "AI 輔助研究"
+ },
+ {
+  "slug": "tool-directory",
+  "title": "AI 學術研究工具指南",
+  "desc": "依研究階段分類：檢索、引文網絡、閱讀、SLR、分析",
+  "section": "AI 輔助研究"
+ },
+ {
+  "slug": "ai-agents",
+  "title": "AI 代理工具懶人包",
+  "desc": "Claude Code、Skill／Plugin、Codex 與研究場景應用",
+  "section": "AI 輔助研究"
+ },
+ {
+  "slug": "ai-tools",
+  "title": "AI 工具生態與風險",
+  "desc": "Auto Research、去 AI 味工具的定位與紅線",
+  "section": "AI 輔助研究"
+ },
+ {
+  "slug": "ethics",
+  "title": "學術倫理與 AI 揭露",
+  "desc": "法規、期刊政策、揭露聲明範本",
+  "section": "AI 輔助研究"
+ },
+ {
+  "slug": "tools-knowledge",
+  "title": "文獻管理與知識庫",
+  "desc": "Zotero／EndNote、Obsidian／Notion、筆記欄位、備份策略",
+  "section": "工具箱"
+ },
+ {
+  "slug": "checklists",
+  "title": "檢查清單",
+  "desc": "提案、文獻、方法、寫作、口試的自檢表",
+  "section": "工具箱"
+ },
+ {
+  "slug": "prompts",
+  "title": "AI 提示詞範本",
+  "desc": "文獻、批判、方法檢核、寫作潤飾",
+  "section": "工具箱"
+ },
+ {
+  "slug": "glossary",
+  "title": "名詞與用語對照",
+  "desc": "統計術語、台灣／大陸用語、英中對照",
+  "section": "工具箱"
+ },
+ {
+  "slug": "sources",
+  "title": "延伸閱讀與資源指南",
+  "desc": "書籍導讀、經典論文、線上講座、開源專案與本站來源",
+  "section": "工具箱"
+ }
+]

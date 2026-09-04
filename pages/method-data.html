@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>演算法、最佳化與資料分析｜研究方法與論文寫作知識網絡</title>
+<meta name="description" content="建模、訓練、評估指標與實驗驗證">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128218;</text></svg>">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<button class="navtoggle" id="navtoggle" aria-label="開啟導覽">☰</button>
+<nav class="sidenav" id="sidenav" aria-label="全站導覽">
+<a class="brand" href="../index.html"><span class="brand-mark">◈</span><span class="brand-text">研究方法<br><small>知識網絡</small></span></a>
+<div class="navsearch"><input type="search" id="navfilter" placeholder="篩選頁面…" aria-label="篩選頁面"></div>
+<div class="navsec"><h2>研究的基礎</h2><ul>
+<li><a href="../pages/getting-started.html" data-title="從零開始：研究所的第一個月">從零開始：研究所的第一個月</a></li>
+<li><a href="../pages/research-basics.html" data-title="研究的本質、歷程與時程">研究的本質、歷程與時程</a></li>
+<li><a href="../pages/finding-reading.html" data-title="怎麼找、怎麼讀、怎麼選題目">怎麼找、怎麼讀、怎麼選題目</a></li>
+<li><a href="../pages/is-research.html" data-title="資訊管理研究的範疇與取向">資訊管理研究的範疇與取向</a></li>
+<li><a href="../pages/problem-design.html" data-title="研究問題、假說與研究架構">研究問題、假說與研究架構</a></li>
+<li><a href="../pages/literature.html" data-title="文獻回顧與批判性思考">文獻回顧與批判性思考</a></li>
+<li><a href="../pages/theory-building.html" data-title="理論的構成與評估">理論的構成與評估</a></li>
+<li><a href="../pages/theories.html" data-title="常用理論家族與選用原則">常用理論家族與選用原則</a></li>
+</ul></div>
+<div class="navsec"><h2>研究方法</h2><ul>
+<li><a href="../pages/methodology.html" data-title="方法論選擇地圖">方法論選擇地圖</a></li>
+<li><a href="../pages/method-survey.html" data-title="問卷調查法">問卷調查法</a></li>
+<li><a href="../pages/method-experiment.html" data-title="實驗法">實驗法</a></li>
+<li><a href="../pages/method-dsr.html" data-title="系統發展法與設計科學研究">系統發展法與設計科學研究</a></li>
+<li class="active"><a href="../pages/method-data.html" data-title="演算法、最佳化與資料分析">演算法、最佳化與資料分析</a></li>
+<li><a href="../pages/method-qualitative.html" data-title="質性研究方法">質性研究方法</a></li>
+</ul></div>
+<div class="navsec"><h2>論文寫作</h2><ul>
+<li><a href="../pages/writing.html" data-title="論文架構與各章寫作要領">論文架構與各章寫作要領</a></li>
+<li><a href="../pages/style.html" data-title="學術中文寫作紀律">學術中文寫作紀律</a></li>
+<li><a href="../pages/defense.html" data-title="計畫書、口試與簡報">計畫書、口試與簡報</a></li>
+</ul></div>
+<div class="navsec"><h2>AI 輔助研究</h2><ul>
+<li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流">AI 輔助研究工作流</a></li>
+<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南">AI 學術研究工具指南</a></li>
+<li><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包">AI 代理工具懶人包</a></li>
+<li><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險">AI 工具生態與風險</a></li>
+<li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露">學術倫理與 AI 揭露</a></li>
+</ul></div>
+<div class="navsec"><h2>工具箱</h2><ul>
+<li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫">文獻管理與知識庫</a></li>
+<li><a href="../pages/checklists.html" data-title="檢查清單">檢查清單</a></li>
+<li><a href="../pages/prompts.html" data-title="AI 提示詞範本">AI 提示詞範本</a></li>
+<li><a href="../pages/glossary.html" data-title="名詞與用語對照">名詞與用語對照</a></li>
+<li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南">延伸閱讀與資源指南</a></li>
+</ul></div>
+</nav>
+<div class="wrap">
+<main id="main">
+<p class="crumb"><a href="../index.html">首頁</a> ／ 研究方法</p>
+<article class="doc">
+<h1>演算法、最佳化與資料分析</h1>
+<p class='lede'>建模、訓練、評估指標與實驗驗證</p>
+<blockquote>
+<p>演算法處理「如何解題」，最佳化處理「如何讓結果更好」。兩者常被混為一談，但在論文的方法章裡，它們是兩組不同的設計決策。</p>
+</blockquote>
+<p>若尚未修過機器學習，先查閱<a href="glossary.html">核心名詞速查</a>再讀。本頁是協助選擇問題類型、方法與驗證方式的地圖，不是演算法實作教材。</p>
+<hr />
+<h2 id="_1">一、兩個概念的本質差異</h2>
+<p><strong>演算法</strong>處理的是「如何解題」：給定輸入，依照一組明確且可重複執行的步驟，得到輸出。這個步驟可以是決策樹的分支判斷、K-means 的距離計算，也可以是神經網路逐層的矩陣運算。只要流程確定，演算法就能執行。</p>
+<p><strong>最佳化</strong>要問的問題不一樣。它假設模型已經有了，但參數空間太大無法逐一嘗試，因此必須設計一種有效率的搜尋方式，在限制條件下找到讓<strong>目標函數</strong>最小（或最大）的參數組合。</p>
+<p>最簡單的對照：<strong>神經網路的架構是演算法，訓練它的梯度下降是最佳化。</strong></p>
+<div class="admonition note">
+<p class="admonition-title">為什麼這個區別對論文很重要</p>
+<p>當一篇論文說「採用 LSTM 模型」，這是<strong>建模選擇</strong>；當它進一步說明用 Adam 最佳化器、學習率設多少、跑幾個 epoch，這才進入<strong>最佳化</strong>的層次。
+兩個部分的設計決策都會影響結果，卻常常被混在一起描述，導致<strong>可重現性下降</strong>。方法章要把它們分開交代。</p>
+</div>
+<hr />
+<h2 id="_2">二、資料分析問題的類型</h2>
+<p>問題類型直接決定了方法的選擇方向，選錯類型就全錯。</p>
+<table>
+<thead>
+<tr>
+<th>類型</th>
+<th>目標</th>
+<th>資料要求</th>
+<th>典型資管應用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>分類（classification）</strong></td>
+<td>判斷一筆資料屬於哪一個類別</td>
+<td>有標籤</td>
+<td>虛假評論偵測、流失預測、風險分級</td>
+</tr>
+<tr>
+<td><strong>迴歸（regression）</strong></td>
+<td>預測連續數值</td>
+<td>有標籤</td>
+<td>銷售量預測、停留時間預測</td>
+</tr>
+<tr>
+<td><strong>分群（clustering）</strong></td>
+<td>讓演算法自行找出資料的內在結構</td>
+<td>無標籤</td>
+<td>客群分析、使用者類型區分</td>
+</tr>
+<tr>
+<td><strong>關聯規則</strong></td>
+<td>找出項目之間的共現關係</td>
+<td>交易紀錄</td>
+<td>購物籃分析、推薦</td>
+</tr>
+<tr>
+<td><strong>最佳化</strong></td>
+<td>在限制下找最好的組合或路徑</td>
+<td>目標函數與限制式</td>
+<td>排程規劃、路徑最短化、資源配置</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最佳化在這個框架中是獨立的一類問題</strong>，性質與分類、迴歸截然不同，選方法時不能混用。</p>
+<hr />
+<h2 id="_3">三、建模方法的三條路線</h2>
+<p>三條路線對應不同的資料條件與研究需求，<strong>不存在哪條路線「更好」的問題。</strong></p>
+<h3 id="31">3.1 監督式學習</h3>
+<p>需要標註好的訓練資料。常見方法：線性迴歸、邏輯迴歸、決策樹、隨機森林、支援向量機、整體學習（ensemble learning）。</p>
+<p><strong>整體學習的兩大路線</strong>：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Bagging（如隨機森林）</th>
+<th>Boosting（如 AdaBoost、XGBoost）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>做法</td>
+<td>對資料進行<strong>隨機重抽樣</strong>，多個模型平行訓練後投票</td>
+<td><strong>提高錯誤樣本的權重</strong>，讓後續模型專注學習困難資料，序列式訓練</td>
+</tr>
+<tr>
+<td>傾向</td>
+<td>降低變異，<strong>不容易過度擬合</strong></td>
+<td>降低偏誤，<strong>可能過度擬合</strong></td>
+</tr>
+<tr>
+<td>適合</td>
+<td>資料雜訊較多時</td>
+<td>資料乾淨、需要高準確率時</td>
+</tr>
+</tbody>
+</table>
+<p>方法選擇必須配合<strong>資料本身的雜訊程度與樣本分布</strong>，這一點要在方法章交代。</p>
+<h3 id="32">3.2 非監督式學習</h3>
+<p>不需要標籤，讓演算法自行找結構。</p>
+<p><strong>K-means 分群</strong>的四個步驟：</p>
+<ol>
+<li>初始化群中心</li>
+<li>將資料分配到最近的中心</li>
+<li>更新群中心</li>
+<li>重複直到收斂</li>
+</ol>
+<p>適合客群分析、使用者分型、個人化推薦的前置分群步驟。要注意 k 值的選擇必須有依據（肘部法、輪廓係數、理論考量），不能隨便設。</p>
+<h3 id="33">3.3 深度學習</h3>
+<table>
+<thead>
+<tr>
+<th>架構</th>
+<th>核心機制</th>
+<th>常見用途</th>
+<th>注意事項</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CNN</strong></td>
+<td>卷積層萃取局部特徵；池化層壓縮雜訊，保留最具代表性的特徵</td>
+<td>影像辨識、短文本分類</td>
+<td>對序列的長距離依賴處理有限</td>
+</tr>
+<tr>
+<td><strong>RNN</strong></td>
+<td>把前一次的計算結果與這次的輸入一起納入考量</td>
+<td>序列資料</td>
+<td><strong>梯度消失／爆炸</strong>會導致「失憶」</td>
+</tr>
+<tr>
+<td><strong>LSTM</strong></td>
+<td>用遺忘閘、輸入閘、輸出閘控制資訊流</td>
+<td>評論分析、情感分析、時間序列</td>
+<td>訓練成本較高</td>
+</tr>
+<tr>
+<td><strong>Transformer</strong></td>
+<td>自注意力機制，可平行處理長序列</td>
+<td>自然語言處理主流</td>
+<td>資料與算力需求大</td>
+</tr>
+</tbody>
+</table>
+<p>深度學習的優點是<strong>特徵萃取能力強，不需要人工設計特徵</strong>；代價是計算資源需求高，且<strong>可解釋性相對有限</strong>。在需要向管理層解釋預測依據的資管情境中，這是尚未完全解決的問題。</p>
+<h3 id="34">3.4 文字的向量表達</h3>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>原理</th>
+<th>特性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>詞袋模型（Bag of Words）</td>
+<td>統計詞頻，忽略順序</td>
+<td>簡單、可解釋，但語意資訊少</td>
+</tr>
+<tr>
+<td>n-gram</td>
+<td>把文字切成連續的 n 個字／詞為一單位</td>
+<td>保留局部順序，特徵維度爆炸</td>
+</tr>
+<tr>
+<td>TF-IDF</td>
+<td>加權詞頻，降低常見詞的權重</td>
+<td>常見基準線</td>
+</tr>
+<tr>
+<td>Word2Vec／GloVe</td>
+<td>學習詞的稠密向量表示，語意相近的詞距離近</td>
+<td>效果通常明顯優於詞袋</td>
+</tr>
+<tr>
+<td>預訓練語言模型嵌入</td>
+<td>上下文相依的向量</td>
+<td>效果最好，成本最高</td>
+</tr>
+</tbody>
+</table>
+<p>一個穩定的實證結論：<strong>詞袋模型效果通常較差，分散式向量表示（如 Word2Vec 以上）效果明顯較好。</strong> 但論文中仍應把詞袋當作基準線一起報告，讓改善幅度有對照。</p>
+<hr />
+<h2 id="_4">四、最佳化方法</h2>
+<h3 id="41">4.1 梯度類方法</h3>
+<p><strong>梯度下降法（Gradient Descent）</strong>：計算目標函數對每個參數的梯度，往梯度的反方向調整一小步，重複到損失函數夠小為止。</p>
+<p><strong>學習率是最關鍵的參數</strong>：設太大容易震盪不收斂，設太小收斂極慢。通常需要實驗反覆調整，而且<strong>調整過程要寫進論文</strong>。</p>
+<p><strong>Adam（自適應動量估計法）</strong>：根據歷史梯度資訊自動調整每個參數的學習率，收斂速度與訓練穩定性明顯優於基本梯度下降，是目前深度學習最廣泛使用的最佳化器之一。</p>
+<h3 id="42">4.2 啟發式最佳化</h3>
+<p>當問題<strong>不可微分、目標函數不連續、或限制條件極複雜</strong>時，梯度類方法就失效了。這時才需要啟發式方法。</p>
+<p><strong>遺傳演算法（Genetic Algorithm）</strong>的迭代循環：</p>
+<ol>
+<li>初始化族群</li>
+<li>計算適應度</li>
+<li>選擇</li>
+<li>交配</li>
+<li>突變</li>
+<li>重複迭代至收斂或達到終止條件</li>
+</ol>
+<p>適合：排程、路徑規劃、組合最佳化。
+優點：可處理大規模、非線性、複雜問題。
+代價：<strong>不保證找到全域最佳解</strong>，只能在可接受的計算資源內找到夠好的近似解，且計算成本明顯高於梯度下降類方法。</p>
+<p>其他常見的啟發式方法：模擬退火（Simulated Annealing）、粒子群最佳化（PSO）、蟻群演算法。邏輯各異，但共同點都是「不保證全域最佳、只求夠好」。</p>
+<hr />
+<h2 id="_5">五、實驗驗證的流程</h2>
+<p>方法選完之後，怎麼驗證它有沒有效，是方法論中同等重要的環節。</p>
+<pre><code>資料蒐集
+  → 前處理（清理、補值、去重、標準化）
+  → 特徵工程
+  → 資料切分（訓練集 / 驗證集 / 測試集）
+  → 模型設定與訓練
+  → 最佳化與調參（只能用驗證集）
+  → 測試集評估
+  → 結果分析與比較
+</code></pre>
+<h3 id="51">5.1 資料切分是防止過度擬合的關鍵</h3>
+<p><strong>測試集必須在整個訓練過程中完全隔離</strong>，不能在調參時「看到」它的表現，否則評估結果會高估模型的泛化能力。</p>
+<p>這件事在資管研究中並非總被嚴格處理。很多論文其實是用測試集調參，再回報測試集的成績。方法章要明確寫出切分比例、切分方式（隨機／分層／時間序），以及是否使用交叉驗證。</p>
+<div class="admonition warning">
+<p class="admonition-title">時間序列資料不能隨機切分</p>
+<p>預測未來的任務若隨機打散再切分，就會用到「未來的資訊」預測「過去」，造成資料洩漏（data leakage）。時間序列必須按時間順序切分。</p>
+</div>
+<h3 id="52">5.2 評估指標要配合問題類型</h3>
+<table>
+<thead>
+<tr>
+<th>問題類型</th>
+<th>常用指標</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分類</td>
+<td>Accuracy、Precision、Recall、F1-score、AUC、混淆矩陣</td>
+</tr>
+<tr>
+<td>迴歸</td>
+<td>RMSE、MAE、MAPE、R²</td>
+</tr>
+<tr>
+<td>分群</td>
+<td>輪廓係數、Davies–Bouldin 指數、群內／群間變異</td>
+</tr>
+<tr>
+<td>排序／推薦</td>
+<td>Precision@K、Recall@K、NDCG、MAP</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">類別不平衡時，Accuracy 會嚴重誤導</p>
+<p>如果真實資料中假評論只佔 5%，一個「全部判為真」的模型就有 95% 的 Accuracy。
+這種情況下應以 <strong>AUC 或 F1</strong> 作為主要判準，並同時報告 Precision 與 Recall，讓讀者看得出模型在少數類別上的表現。</p>
+</div>
+<h3 id="53">5.3 結果分析段落該寫什麼</h3>
+<ul>
+<li>明確說明使用的評估指標與計算方式</li>
+<li>與基準模型（baseline）的比較，而不只是列出自己的數字</li>
+<li><strong>模型之間的差異是否具有統計顯著性</strong>（多次執行取平均並報告標準差，或做統計檢定）</li>
+<li>錯誤分析：挑出典型的誤判案例，分析可能原因</li>
+<li>不要只列出數字並聲稱「效果更好」</li>
+</ul>
+<hr />
+<h2 id="_6">六、次級資料與大型資料庫研究</h2>
+<p>資管研究常使用既有的大型資料庫（政府開放資料、健保資料、平台交易紀錄、公開財報）。這類研究的方法章要特別交代：</p>
+<ul>
+<li><strong>資料來源與涵蓋期間</strong>、母體與樣本的關係</li>
+<li><strong>樣本篩選條件</strong>與各步驟的樣本數變化（建議畫流程圖）</li>
+<li><strong>變數如何從原始欄位建構</strong>出來（這是最容易被質疑的地方）</li>
+<li><strong>資料庫本身的限制</strong>：哪些欄位不存在、哪些是估計值、有無漏報</li>
+</ul>
+<h3 id="61-psm">6.1 傾向分數配對（PSM）</h3>
+<p>當資料是觀察性的、無法隨機分派時，PSM 是常用的準實驗手段：依據觀察到的共變數估計每個個體「進入處理組」的傾向分數，再把處理組與對照組配對，讓兩組在觀察到的特徵上盡量可比。</p>
+<p><strong>它的限制必須誠實寫出來</strong>：PSM 只能平衡<strong>觀察得到</strong>的共變數，無法處理未觀察到的干擾因子。因此配對後仍不等於隨機實驗。</p>
+<hr />
+<h2 id="_7">七、資管情境的三個提醒</h2>
+<p><strong>提醒一：預測準確率高不等於研究貢獻大。</strong>
+把準確率從 91% 提高到 92%，如果沒有理論或方法上的新意，學術貢獻有限。要說清楚「為什麼會更好」，而不只是「確實更好」。</p>
+<p><strong>提醒二：可解釋性在管理情境中是需求，不是加分。</strong>
+如果研究的最終使用者是管理者，一個黑箱模型的實務價值會大打折扣。考慮加入特徵重要性分析、SHAP 值或規則抽取。</p>
+<p><strong>提醒三：資料前處理的每一個決定都要交代。</strong>
+補值方式、離群值處理、去重規則、文字正規化，都會顯著影響結果，卻最常被省略。它們是可重現性的一部分。</p>
+<hr />
+<h2 id="_8">八、本頁重點回顧</h2>
+<ul>
+<li>演算法 = 如何解題；最佳化 = 如何把結果變好。方法章要分開交代。</li>
+<li>先確定問題類型（分類／迴歸／分群／最佳化），再選方法。</li>
+<li>Bagging 降變異、不易過擬合；Boosting 降偏誤、可能過擬合。</li>
+<li>深度學習特徵萃取強，但可解釋性弱、算力需求高。</li>
+<li><strong>測試集必須完全隔離</strong>；時間序列不能隨機切分。</li>
+<li>類別不平衡時用 AUC／F1，不要用 Accuracy。</li>
+<li>一定要有基準線比較，並說明差異是否具統計顯著性。</li>
+<li>前處理的每一個決定都要寫出來，這是可重現性的一部分。</li>
+</ul>
+<hr />
+<p><strong>延伸</strong>：<a href="methodology.html">方法論選擇地圖</a>｜<a href="method-dsr.html">系統發展法與設計科學研究</a>｜<a href="writing.html">論文架構與各章寫作要領</a></p>
+</article>
+<nav class="pager"><a class="prev" href="method-dsr.html">← 系統發展法與設計科學研究</a><a class="next" href="method-qualitative.html">質性研究方法 →</a></nav>
+<footer class="foot">
+<p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
+<p><a href="../pages/sources.html">延伸閱讀與資源指南</a></p>
+</footer>
+</main>
+<aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">
+<ul>
+<li><a href="#_1">一、兩個概念的本質差異</a></li>
+<li><a href="#_2">二、資料分析問題的類型</a></li>
+<li><a href="#_3">三、建模方法的三條路線</a><ul>
+<li><a href="#31">3.1 監督式學習</a></li>
+<li><a href="#32">3.2 非監督式學習</a></li>
+<li><a href="#33">3.3 深度學習</a></li>
+<li><a href="#34">3.4 文字的向量表達</a></li>
+</ul>
+</li>
+<li><a href="#_4">四、最佳化方法</a><ul>
+<li><a href="#41">4.1 梯度類方法</a></li>
+<li><a href="#42">4.2 啟發式最佳化</a></li>
+</ul>
+</li>
+<li><a href="#_5">五、實驗驗證的流程</a><ul>
+<li><a href="#51">5.1 資料切分是防止過度擬合的關鍵</a></li>
+<li><a href="#52">5.2 評估指標要配合問題類型</a></li>
+<li><a href="#53">5.3 結果分析段落該寫什麼</a></li>
+</ul>
+</li>
+<li><a href="#_6">六、次級資料與大型資料庫研究</a><ul>
+<li><a href="#61-psm">6.1 傾向分數配對（PSM）</a></li>
+</ul>
+</li>
+<li><a href="#_7">七、資管情境的三個提醒</a></li>
+<li><a href="#_8">八、本頁重點回顧</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script src="../assets/site.js"></script>
+</body>
+</html>

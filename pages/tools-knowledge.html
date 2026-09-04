@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>文獻管理與知識庫｜研究方法與論文寫作知識網絡</title>
+<meta name="description" content="Zotero／EndNote、Obsidian／Notion、筆記欄位、備份策略">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128218;</text></svg>">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<button class="navtoggle" id="navtoggle" aria-label="開啟導覽">☰</button>
+<nav class="sidenav" id="sidenav" aria-label="全站導覽">
+<a class="brand" href="../index.html"><span class="brand-mark">◈</span><span class="brand-text">研究方法<br><small>知識網絡</small></span></a>
+<div class="navsearch"><input type="search" id="navfilter" placeholder="篩選頁面…" aria-label="篩選頁面"></div>
+<div class="navsec"><h2>研究的基礎</h2><ul>
+<li><a href="../pages/getting-started.html" data-title="從零開始：研究所的第一個月">從零開始：研究所的第一個月</a></li>
+<li><a href="../pages/research-basics.html" data-title="研究的本質、歷程與時程">研究的本質、歷程與時程</a></li>
+<li><a href="../pages/finding-reading.html" data-title="怎麼找、怎麼讀、怎麼選題目">怎麼找、怎麼讀、怎麼選題目</a></li>
+<li><a href="../pages/is-research.html" data-title="資訊管理研究的範疇與取向">資訊管理研究的範疇與取向</a></li>
+<li><a href="../pages/problem-design.html" data-title="研究問題、假說與研究架構">研究問題、假說與研究架構</a></li>
+<li><a href="../pages/literature.html" data-title="文獻回顧與批判性思考">文獻回顧與批判性思考</a></li>
+<li><a href="../pages/theory-building.html" data-title="理論的構成與評估">理論的構成與評估</a></li>
+<li><a href="../pages/theories.html" data-title="常用理論家族與選用原則">常用理論家族與選用原則</a></li>
+</ul></div>
+<div class="navsec"><h2>研究方法</h2><ul>
+<li><a href="../pages/methodology.html" data-title="方法論選擇地圖">方法論選擇地圖</a></li>
+<li><a href="../pages/method-survey.html" data-title="問卷調查法">問卷調查法</a></li>
+<li><a href="../pages/method-experiment.html" data-title="實驗法">實驗法</a></li>
+<li><a href="../pages/method-dsr.html" data-title="系統發展法與設計科學研究">系統發展法與設計科學研究</a></li>
+<li><a href="../pages/method-data.html" data-title="演算法、最佳化與資料分析">演算法、最佳化與資料分析</a></li>
+<li><a href="../pages/method-qualitative.html" data-title="質性研究方法">質性研究方法</a></li>
+</ul></div>
+<div class="navsec"><h2>論文寫作</h2><ul>
+<li><a href="../pages/writing.html" data-title="論文架構與各章寫作要領">論文架構與各章寫作要領</a></li>
+<li><a href="../pages/style.html" data-title="學術中文寫作紀律">學術中文寫作紀律</a></li>
+<li><a href="../pages/defense.html" data-title="計畫書、口試與簡報">計畫書、口試與簡報</a></li>
+</ul></div>
+<div class="navsec"><h2>AI 輔助研究</h2><ul>
+<li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流">AI 輔助研究工作流</a></li>
+<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南">AI 學術研究工具指南</a></li>
+<li><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包">AI 代理工具懶人包</a></li>
+<li><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險">AI 工具生態與風險</a></li>
+<li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露">學術倫理與 AI 揭露</a></li>
+</ul></div>
+<div class="navsec"><h2>工具箱</h2><ul>
+<li class="active"><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫">文獻管理與知識庫</a></li>
+<li><a href="../pages/checklists.html" data-title="檢查清單">檢查清單</a></li>
+<li><a href="../pages/prompts.html" data-title="AI 提示詞範本">AI 提示詞範本</a></li>
+<li><a href="../pages/glossary.html" data-title="名詞與用語對照">名詞與用語對照</a></li>
+<li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南">延伸閱讀與資源指南</a></li>
+</ul></div>
+</nav>
+<div class="wrap">
+<main id="main">
+<p class="crumb"><a href="../index.html">首頁</a> ／ 工具箱</p>
+<article class="doc">
+<h1>文獻管理與知識庫</h1>
+<p class='lede'>Zotero／EndNote、Obsidian／Notion、筆記欄位、備份策略</p>
+<blockquote>
+<p>這一頁處理一件研究所第一個月就該解決、但幾乎沒有人教的事：<strong>你的檔案、文獻、筆記要放在哪裡，兩年後還找得到。</strong></p>
+<p>工具本身不會讓你變成好的研究者，但<strong>沒有系統會讓你在寫作階段付出巨大的代價</strong>。最典型的情況是第五章寫到一半，想不起某個關鍵論點出自哪一篇。</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、先分清楚三種東西</h2>
+<p>很多人的痛苦來自把三件事塞進同一個工具：</p>
+<table>
+<thead>
+<tr>
+<th>類型</th>
+<th>內容</th>
+<th>特性</th>
+<th>適合的工具</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>文獻庫</strong></td>
+<td>PDF、書目資料（作者、年份、期刊、DOI）</td>
+<td>結構化、要能一鍵產生引用格式</td>
+<td>文獻管理軟體（Zotero 等）</td>
+</tr>
+<tr>
+<td><strong>知識庫</strong></td>
+<td>你自己寫的筆記、概念、論證、想法之間的連結</td>
+<td>非結構化、要能長期演化</td>
+<td>筆記軟體（Obsidian 等）</td>
+</tr>
+<tr>
+<td><strong>產出檔</strong></td>
+<td>論文草稿、投影片、資料檔、程式碼</td>
+<td>有版本、有截止日</td>
+<td>文書軟體＋雲端硬碟＋（程式的話）Git</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">最小可行架構</p>
+<p><strong>一個文獻管理軟體 ＋ 一個筆記軟體 ＋ 一個雲端硬碟。</strong> 三個就夠了。工具愈多，同步與遷移的成本愈高。研究所兩年最不該花時間的地方，就是不斷更換工具。</p>
+</div>
+<hr />
+<h2 id="_2">二、文獻管理軟體</h2>
+<p>核心功能其實只有四項，其他都是加分：</p>
+<ol>
+<li><strong>抓取書目</strong>：在瀏覽器上按一下就把論文的作者、年份、期刊、DOI 與 PDF 存進資料庫。</li>
+<li><strong>產生引用</strong>：在文書軟體裡插入引用，並自動生成參考文獻清單，支援 APA 7 等格式。</li>
+<li><strong>全文搜尋</strong>：能搜尋 PDF 內文與自己的註記。</li>
+<li><strong>匯出與遷移</strong>：能匯出成 BibTeX／RIS，換工具時不會被綁死。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>授權</th>
+<th>特點</th>
+<th>要注意的地方</th>
+<th>官方網站</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Zotero</strong></td>
+<td>開放原始碼、免費</td>
+<td>社群外掛生態最完整；資料格式開放，最不容易被綁架</td>
+<td>雲端同步空間免費額度有限，可自行接 WebDAV 或自架儲存</td>
+<td><a href="https://www.zotero.org/">https://www.zotero.org/</a></td>
+</tr>
+<tr>
+<td><strong>Mendeley</strong></td>
+<td>免費（Elsevier）</td>
+<td>內建 PDF 註記與閱讀器</td>
+<td>屬於出版社生態系，功能與政策由該公司決定</td>
+<td><a href="https://www.mendeley.com/">https://www.mendeley.com/</a></td>
+</tr>
+<tr>
+<td><strong>EndNote</strong></td>
+<td>商業授權</td>
+<td>台灣許多大學圖書館有校園授權；期刊投稿的樣式檔最齊全</td>
+<td>授權綁學校，畢業後可能失效；先確認你的學校有沒有</td>
+<td><a href="https://endnote.com/">https://endnote.com/</a></td>
+</tr>
+<tr>
+<td><strong>Paperpile</strong></td>
+<td>訂閱制</td>
+<td>與 Google Docs 整合最順</td>
+<td>需付費；以雲端為中心</td>
+<td><a href="https://paperpile.com/">https://paperpile.com/</a></td>
+</tr>
+<tr>
+<td><strong>JabRef</strong></td>
+<td>開放原始碼、免費</td>
+<td>純 BibTeX 取向，適合寫 LaTeX 的人</td>
+<td>介面偏技術取向</td>
+<td><a href="https://www.jabref.org/">https://www.jabref.org/</a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">先去問圖書館</p>
+<p>幾乎每一所大學的圖書館都有文獻管理軟體的<strong>校園授權與教學講座</strong>，而且通常會教到「怎麼接你們系所的論文格式」。這是最快的起步方式，也是最少人利用的資源。<strong>在自己摸索之前，先花二十分鐘看看圖書館的資源頁。</strong></p>
+</div>
+<h3 id="21">2.1 不管用哪一套，這五件事一定要做</h3>
+<ul>
+<li class="chk"><input type="checkbox"> <strong>開一個資料庫就好</strong>，用資料夾／標籤分主題，不要開很多個資料庫。</li>
+<li class="chk"><input type="checkbox"> <strong>書目資料抓進來後手動校對一次</strong>：作者姓名順序、期刊名稱縮寫、年份、卷期頁碼。自動抓的資料錯誤率不低，錯了會一路錯到參考文獻清單。</li>
+<li class="chk"><input type="checkbox"> <strong>DOI 一定要填</strong>。它是唯一穩定的識別碼，換工具、查全文、給指導教授看都靠它。</li>
+<li class="chk"><input type="checkbox"> <strong>設定備份</strong>：資料庫本體＋PDF 目錄，一起放進雲端硬碟或定期匯出。</li>
+<li class="chk"><input type="checkbox"> <strong>確認匯出得出去</strong>：第一週就試著匯出一次 BibTeX，確保你隨時可以離開這個工具。</li>
+</ul>
+<h3 id="22">2.2 引用格式的鐵則</h3>
+<p><strong>不要手打參考文獻。</strong> 手打的清單一定會有格式不一致，而口試委員與期刊編輯一定看得出來。</p>
+<p>但也<strong>不要完全信任自動產生的結果</strong>：交稿前一定要人工核對一次，重點是中文文獻的排序、期刊名稱的斜體、以及 APA 7 對於超過 20 位作者、DOI 呈現方式的規則。格式細節見<a href="style.html">學術中文寫作紀律</a>。</p>
+<hr />
+<h2 id="_3">三、筆記與知識庫軟體</h2>
+<p>文獻管理軟體存的是「別人寫的東西」，筆記軟體存的是「你想的東西」。後者才是兩年後真正屬於你的資產。</p>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>資料存在哪</th>
+<th>特點</th>
+<th>適合誰</th>
+<th>官方網站</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Obsidian</strong></td>
+<td>本機的 Markdown 檔</td>
+<td>雙向連結、圖譜視圖、外掛生態豐富；檔案就是純文字，永遠可讀</td>
+<td>想要長期保存、不想被平台綁住的人</td>
+<td><a href="https://obsidian.md/">https://obsidian.md/</a></td>
+</tr>
+<tr>
+<td><strong>Notion</strong></td>
+<td>雲端資料庫</td>
+<td>資料庫視圖（表格／看板／日曆）強，適合管理進度與清單；協作方便</td>
+<td>需要跟人共用、需要管理待辦與進度的人</td>
+<td><a href="https://www.notion.com/">https://www.notion.com/</a></td>
+</tr>
+<tr>
+<td><strong>Heptabase</strong></td>
+<td>雲端＋本機</td>
+<td>白板式思考，可以把卡片攤在畫布上拉關係</td>
+<td>在「整理思緒」階段卡住、需要視覺化的人</td>
+<td><a href="https://heptabase.com/">https://heptabase.com/</a></td>
+</tr>
+<tr>
+<td><strong>Logseq</strong></td>
+<td>本機的 Markdown／Org 檔</td>
+<td>大綱（outliner）取向，適合每日流水帳式記錄</td>
+<td>習慣用條列思考的人</td>
+<td><a href="https://logseq.com/">https://logseq.com/</a></td>
+</tr>
+<tr>
+<td><strong>Zettlr</strong></td>
+<td>本機的 Markdown 檔</td>
+<td>專為學術寫作設計，內建引用與匯出</td>
+<td>想在同一個工具裡寫完論文的人</td>
+<td><a href="https://www.zettlr.com/">https://www.zettlr.com/</a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">選工具的唯一實用判準：資料能不能拿得出來</p>
+<p>研究所兩年、加上之後可能繼續讀博或工作，你的筆記要活十年以上。判準只有一個：<strong>這個工具倒了，我的東西還在不在？</strong>
+存成本機純文字（Markdown）的工具在這一點上有結構性的優勢；雲端型工具則要先確認匯出功能實際跑一次的結果長什麼樣（很多工具「可以匯出」，但匯出的東西連結全斷）。</p>
+</div>
+<h3 id="31">3.1 一篇論文一則，一個概念也一則</h3>
+<p>多數人只做前者，這是知識庫長不出來的主因。</p>
+<ul>
+<li><strong>文獻筆記</strong>：一篇論文一則。它處理的是「這篇說了什麼」。</li>
+<li><strong>概念筆記</strong>：一個概念一則。例如「知覺有用性」「共同方法變異」「區別效度」各一則，裡面連結到所有提到它的文獻筆記。</li>
+</ul>
+<p><strong>只有概念筆記會累積。</strong> 文獻筆記是線性增加的（讀十篇就有十則），概念筆記是<strong>收斂</strong>的（讀十篇之後，「區別效度」那一則變得更完整）。寫第二章時，你可以先打開概念筆記，查看定義的演變、各家爭議與自己的判斷，再回到原文組織段落。</p>
+<p>這正是<a href="literature.html">文獻回顧與批判性思考</a>裡「概念中心（concept-centric）」寫法在工具層次的落實。</p>
+<ul>
+<li>Webster, J., &amp; Watson, R. T. (2002). Analyzing the Past to Prepare for the Future: Writing a Literature Review. <em>MIS Quarterly</em>, 26(2), xiii–xxiii. <a href="https://aisel.aisnet.org/misq/vol26/iss2/3/">https://aisel.aisnet.org/misq/vol26/iss2/3/</a></li>
+</ul>
+<h3 id="32">3.2 建立範本，不要每次重想欄位</h3>
+<p>範本的作用不是好看，而是<strong>提醒你反覆檢查同一組問題</strong>。欄位空著，可能代表那件事還沒想清楚。下一節提供五種範本。</p>
+<hr />
+<h2 id="_4">四、五種筆記範本</h2>
+<p>一套夠用的知識庫由五種筆記構成。它們的分工是：</p>
+<table>
+<thead>
+<tr>
+<th>筆記類型</th>
+<th>一則對應什麼</th>
+<th>回答的問題</th>
+<th>誰引用誰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>文獻筆記</strong></td>
+<td>一篇論文</td>
+<td>這篇說了什麼、有什麼毛病</td>
+<td>被下面四種引用</td>
+</tr>
+<tr>
+<td><strong>變數／現象筆記</strong></td>
+<td>一個構念</td>
+<td>這個東西怎麼定義、怎麼量</td>
+<td>引用文獻筆記</td>
+</tr>
+<tr>
+<td><strong>理論筆記</strong></td>
+<td>一個理論</td>
+<td>它預測什麼、在哪失效</td>
+<td>引用文獻筆記</td>
+</tr>
+<tr>
+<td><strong>方法筆記</strong></td>
+<td>一種方法或指標</td>
+<td>怎麼做、擋掉什麼偏誤、門檻多少</td>
+<td>引用文獻筆記</td>
+</tr>
+<tr>
+<td><strong>命題筆記</strong></td>
+<td>一條假說</td>
+<td>為什麼 A 會影響 B</td>
+<td>引用上面三種</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">為什麼要分這麼細</p>
+<p>因為<strong>論文的每一節都對應其中一種</strong>：第二章來自變數與理論筆記，第三章來自方法筆記，假說推導來自命題筆記。
+分開寫的好處是，你寫論文時是在<strong>組裝</strong>，而不是從零開始寫。</p>
+</div>
+<p>下面五份範本可複製到 Obsidian、Notion 或其他 Markdown 工具，適合做個人研究筆記的起始架構，不是所有學科、方法或合作團隊都必須採用的標準。請依研究問題、資料型態、倫理要求與團隊分工調整欄位；空著的欄位可以提醒尚待釐清之處。</p>
+<h3 id="41">4.1 文獻筆記</h3>
+<pre><code class="language-markdown">---
+type: paper
+citekey:
+authors:
+year:
+journal:
+tier:            # 期刊層級，例如 SSCI Q1 / AIS 頂級期刊 / 一般會議
+method:          # Survey / Experiment / Case / DSR / Mixed
+context:         # 研究對象與任務情境
+---
+# 論文標題
+
+**[一句話結論]**：
+
+## 1. 研究模型與理論
+- **依變數（Y）**：
+- **自變數（X）**：
+- **中介／調節（M／W）**：
+- **核心理論**：
+- **模型推演邏輯**：為什麼挑這些變數？箭頭之間的因果基於什麼理論？
+- **關聯**：[[變數-…]]、[[理論-…]]
+
+## 2. 研究動機與缺口
+- **實務重要性**：
+- **學術有趣點**：它挑戰了什麼？解決了哪個矛盾？
+- **核心研究問題**：
+
+## 3. 方法與嚴謹度
+- **研究設計與任務情境**：
+- **操作型定義與量表來源**：主觀自評還是客觀表現？
+- **操弄檢核與偏誤防禦**：怎麼確認受試者真的感受到操弄？CMV 怎麼防？
+- **核心數值**：R²、關鍵路徑係數與 p 值、效果量
+
+## 4. 批判（惡魔的代言人）
+- **邏輯漏洞與限制**：樣本？橫斷面？測量？
+- **替代解釋**：有沒有未測量的變數也能解釋這個結果？
+
+## 5. 我的用處
+- **可引用的句型**：「⋯⋯」(p. XX)
+- **對我的研究的啟發**：我要在第幾章用它？借它的量表還是避開它的弱點？
+</code></pre>
+<p><strong>最後兩節是價值所在。</strong> 前四節 AI 幫得上忙；「批判」與「我的用處」只有你寫得出來，那是你的問題意識在運作。</p>
+<h3 id="42">4.2 變數／現象筆記</h3>
+<pre><code class="language-markdown">---
+type: variable
+aliases: [同義詞、英文縮寫]
+status: 🌱      # 🌱 剛建立 / 🌿 充實中 / 🌳 可直接寫進論文
+---
+# 變數 - 名稱
+
+**[一句話速記]**：用最直白的話描述這個構念的本質。
+
+## 1. 定義與構念邊界
+- **學術定義**：（引用權威文獻的正式定義）
+- **易混淆的鄰居**：（跟哪個概念常被搞混？差別在哪？）
+
+## 2. 文獻回顧草稿區
+*（用正式學術口吻寫，未來直接搬進第二章）*
+- **現有共識**：目前學界普遍認為⋯⋯（Author, Year）
+- **爭議與缺口**：然而在 ⟨某個面向⟩ 上，文獻存在分歧。一派主張⋯⋯（A, Year）；
+  另一派卻發現⋯⋯（B, Year）。此矛盾可能源自過去研究忽略了 ⟨某個情境或中介變數⟩。
+- **本研究的切入點**：為填補上述缺口，本研究將此構念置於 ⟨你的情境／理論⟩ 下重新檢視⋯⋯
+
+## 3. 操作化與測量防禦
+- **測量典範**：客觀表現型 vs. 主觀自評
+- **構面屬性**：單一構面還是多構面？
+- **具體題項範例**：
+- **偏誤防禦**：怎麼降低共同方法變異與社會期許偏誤？
+
+## 4. 核心文獻
+</code></pre>
+<div class="admonition tip">
+<p class="admonition-title">第 2 節是這份範本的重點</p>
+<p><strong>「共識 → 爭議 → 我的切入點」這三段，就是第二章每一小節的骨架。</strong>
+平常讀文獻時一句一句補進去，寫第二章時直接搬，這是把閱讀時間轉換成寫作進度最直接的方式。三層結構的完整說明見<a href="literature.html">文獻回顧與批判性思考</a>第五節。</p>
+</div>
+<h3 id="43">4.3 理論筆記</h3>
+<pre><code class="language-markdown">---
+type: theory
+aliases: [英文縮寫]
+status: 🌱
+---
+# 理論 - 名稱
+
+**[一句話速記]**：這個理論主要用來解釋或預測什麼？
+
+## 1. 核心預測與機制
+- **它最終在解釋什麼現象**（Outcome First）：
+- **運作機制**：拆解理論的齒輪（例如：雙路徑處理、資源消耗）
+
+## 2. 關鍵構念
+- **驅動變數**：[[變數-…]]
+- **中介／情境變數**：[[變數-…]]
+
+## 3. 邊界與競爭理論
+- **競爭理論**：這個現象還能用什麼理論解釋？為什麼本理論更適合我的情境？
+- **失效條件**：這個理論在什麼情況下不成立？
+
+## 4. 在我的研究裡怎麼映射
+- 理論中的 ⟨某個構念⟩ ＝ 本研究的 [[變數-…]]
+- **理論突破點**：我如何擴充或修正它在新情境下的適用性？
+
+## 5. 核心文獻
+</code></pre>
+<p><strong>第 3 節的「競爭理論」是口試題。</strong> 「你為什麼用這個理論不用那個？」答不出來，整章的正當性就垮了。相關判準見<a href="theory-building.html">理論的構成與評估</a>。</p>
+<h3 id="44">4.4 方法筆記</h3>
+<pre><code class="language-markdown">---
+type: methodology
+aliases: [英文縮寫]
+status: 🌱
+---
+# 方法 - 名稱
+
+**[一句話速記]**：這個方法的本質是什麼？用來迴避什麼地雷？
+
+## 1. 定義與操作程序
+- **標準程序**：第一步⋯⋯第二步⋯⋯
+- **資料蒐集與編碼**：怎麼把原始現象標準化？編碼簿怎麼規劃？
+
+## 2. 它解決的痛點與變異數控制
+- **防禦對象**：它摧毀了哪一種偏誤？
+- **最大化實驗變異**：怎麼讓自變數的操弄差異夠大？
+- **最小化誤差變異**：怎麼降低隨機誤差？
+- **控制干擾變數**：怎麼鎖住那些會影響 Y 但不是 X 的東西？
+
+## 3. 在我的研究裡的實作與門檻
+- **實作細節**：
+- **檢核指標與閾值**：（例如：區別效度 HTMT &lt; 0.85、共線性 VIF &lt; 3；**門檻依領域與期刊而異，引用前查最新來源**）
+
+## 4. 限制與備胎方案
+- **潛在風險**：實作上最容易失敗的地方？
+- **備胎方案**：如果操弄失敗或樣本不足，分析策略可以怎麼降階？
+
+## 5. 核心文獻
+</code></pre>
+<p>第 2 節那三個問題（最大化、最小化、控制）是實驗設計的通用檢核，也適用於問卷設計；細節見<a href="method-experiment.html">實驗法</a>與<a href="method-survey.html">問卷調查法</a>。</p>
+<h3 id="45">4.5 命題／假說推演筆記</h3>
+<pre><code class="language-markdown">---
+type: claim
+status: 🌱
+---
+# 假設推演：[[變數-A]] 如何影響 [[變數-B]]
+
+## 1. 理論推導邏輯
+*（用底層理論解釋「為什麼」A 與 B 之間預期有特定關係；這一段是假說的核心）*
+根據 [[理論-…]]，當個體具備較高的 [[變數-A]] 時，會啟動 ⟨某個機制⟩，
+進而導致 [[變數-B]] 增加／減少。
+
+## 2. 支持性實證
+- Author (Year) 在 ⟨某情境⟩ 下發現 A 對 B 有正向影響，效果量為⋯⋯
+- Author (Year) 的實驗證實⋯⋯
+
+## 3. 邊界條件與潛在干擾
+這個假設在什麼情況下可能不成立？（例如：在 ⟨某種壓力條件⟩ 下，
+A 對 B 的影響可能被削弱，因為⋯⋯）
+
+## 4. 假設草稿
+**H1**：在 ⟨情境⟩ 下，⟨變數 A⟩ 會顯著正向／負向影響 ⟨變數 B⟩。
+</code></pre>
+<div class="admonition danger">
+<p class="admonition-title">沒有第 1 節就只是相關性的堆疊</p>
+<p>「文獻指出 A 與 B 有正相關，因此提出 H1。」這種寫法在口試時通常仍須補充機制與邊界條件。
+<strong>每一條假說都欠一段「為什麼」，而那段「為什麼」必須來自某個理論機制。</strong> 詳見<a href="theory-building.html">理論的構成與評估</a>第六節。</p>
+</div>
+<hr />
+<h2 id="_5">五、把兩邊接起來</h2>
+<p>文獻庫與知識庫要能互相跳轉，否則你會在兩個系統之間重複輸入。常見的串接方式：</p>
+<table>
+<thead>
+<tr>
+<th>做法</th>
+<th>怎麼運作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>用引用鍵當共同語言</strong></td>
+<td>在文獻管理軟體裡固定一套引用鍵（如 <code>davis1989perceived</code>），筆記檔名與標題都用同一組鍵，兩邊靠這個對上。</td>
+</tr>
+<tr>
+<td><strong>在筆記裡放回連結</strong></td>
+<td>每則文獻筆記開頭放一個可以直接開啟該筆文獻的連結（多數工具支援自訂協定連結）。</td>
+</tr>
+<tr>
+<td><strong>匯出 BibTeX 給筆記工具讀</strong></td>
+<td>定期從文獻管理軟體匯出一份 <code>.bib</code>，讓筆記工具的外掛讀取，寫作時可直接插入引用。</td>
+</tr>
+<tr>
+<td><strong>PDF 註記匯入筆記</strong></td>
+<td>在 PDF 上畫的重點與註記可以匯出成 Markdown，貼進文獻筆記的「可引用句」欄位。</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">不要一開始就追求全自動</p>
+<p>串接是有維護成本的。第一個月請先做到「<strong>每讀完一篇就留下一則筆記</strong>」這件事本身。自動化留到你確定自己的流程穩定之後再做。</p>
+</div>
+<hr />
+<h2 id="_6">六、檔案與備份</h2>
+<p>這一節看起來很無聊，但<strong>每年都有人因為這一節出事</strong>。</p>
+<h3 id="61">6.1 資料夾結構</h3>
+<p>一套夠用的結構：</p>
+<pre><code>碩士論文/
+├── 00_行政/         系所表單、時程、口試相關文件
+├── 01_文獻/         PDF（若文獻管理軟體已代管，這裡只放例外）
+├── 02_筆記/         知識庫（若用 Obsidian，這就是 vault）
+├── 03_資料/
+│   ├── raw/         原始資料，唯讀，永遠不覆寫
+│   ├── clean/       清理後的資料
+│   └── scripts/     處理與分析程式
+├── 04_草稿/         論文各章草稿
+├── 05_投影片/       進度報告、計畫書、口試簡報
+└── 06_產出/         最終版 PDF、附錄
+</code></pre>
+<p><strong><code>raw/</code> 唯讀是鐵律。</strong> 所有清理都用程式從 <code>raw/</code> 讀進來、寫到 <code>clean/</code>，永遠不要就地修改原始資料。這樣任何一步做錯都可以重跑，而且第三章可以誠實地寫出資料處理流程。</p>
+<h3 id="62">6.2 檔名慣例</h3>
+<pre><code>2026-03-14_第二章_v03_指導教授回饋後.docx
+</code></pre>
+<ul>
+<li><strong>日期用 <code>YYYY-MM-DD</code></strong>（可以正確排序）</li>
+<li><strong>不要用「最終版」「真的最終版」「final_final」</strong></li>
+<li><strong>改動大的存新檔</strong>，不要覆蓋；硬碟很便宜，重寫一章很貴</li>
+</ul>
+<h3 id="63">6.3 三二一備份原則</h3>
+<ul>
+<li><strong>三份</strong>副本</li>
+<li>存在<strong>兩種</strong>不同的媒介（例如本機硬碟＋雲端）</li>
+<li>其中<strong>一份</strong>在異地（雲端硬碟即可）</li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">只放雲端不算備份</p>
+<p>同步（sync）不是備份（backup）。你在本機誤刪、誤覆寫的檔案，會被同步到雲端一起消失。所以要<strong>額外</strong>保留一份不會被自動同步覆蓋的版本，例如定期壓縮完整備份，存到另一個雲端帳號或外接硬碟。</p>
+</div>
+<h3 id="64">6.4 個資與敏感資料要分開放</h3>
+<p>如果你的研究會蒐集問卷、訪談錄音或任何可以識別到人的資料：</p>
+<ul>
+<li><strong>原始個資與研究資料分開存放</strong>，用代號串接（如 P01、P02）。</li>
+<li><strong>對應表另外加密保存</strong>，不要跟資料放在同一個資料夾，更不要放進 Git 版控或公開的雲端資料夾。</li>
+<li>訪談錄音檔轉譯完成後，依 IRB 核准的保存期限處理。</li>
+<li>詳見<a href="ethics.html">學術倫理與 AI 揭露</a>。</li>
+</ul>
+<hr />
+<h2 id="_7">七、第一週就該做完的設定</h2>
+<ul>
+<li class="chk"><input type="checkbox"> 選定一個文獻管理軟體，裝好瀏覽器外掛，抓進第一篇論文並校對書目</li>
+<li class="chk"><input type="checkbox"> 匯出一次 BibTeX，確認匯得出去</li>
+<li class="chk"><input type="checkbox"> 選定一個筆記軟體，把第四節的<strong>文獻筆記</strong>與<strong>變數筆記</strong>兩份範本先建起來（理論、方法、命題三份等用到時再加）</li>
+<li class="chk"><input type="checkbox"> 建好上面那套資料夾結構，並放進雲端硬碟</li>
+<li class="chk"><input type="checkbox"> 設定一個每月手動完整備份的行事曆提醒</li>
+<li class="chk"><input type="checkbox"> 去圖書館網站看一次校園授權與教學資源清單</li>
+</ul>
+<hr />
+<h2 id="_8">八、本頁重點回顧</h2>
+<ul>
+<li>分清楚<strong>文獻庫／知識庫／產出檔</strong>，不要塞進同一個工具。</li>
+<li>選工具的唯一實用判準是<strong>資料拿不拿得出來</strong>，先試一次匯出再投入。</li>
+<li>文獻筆記的價值在「<strong>對我的用處</strong>」與「<strong>批判</strong>」兩個欄位，那是 AI 寫不出來的部分。</li>
+<li><strong>概念筆記</strong>才是讓第二章寫得動的東西：文獻筆記線性增加，概念筆記會收斂。</li>
+<li>五種筆記各對應論文的一個部位：文獻／變數／理論／方法／命題。分開寫，寫論文時就是<strong>組裝</strong>而不是重寫。</li>
+<li>變數筆記的「共識 → 爭議 → 我的切入點」三段，就是第二章每一小節的骨架。</li>
+<li><code>raw/</code> 資料唯讀，所有處理都靠程式；檔名用日期，不要用「最終版」。</li>
+<li><strong>同步不是備份</strong>；個資與研究資料分開放，對應表另外加密。</li>
+</ul>
+<hr />
+<p><strong>延伸</strong>：<a href="finding-reading.html">怎麼找、怎麼讀、怎麼選題目</a>｜<a href="literature.html">文獻回顧與批判性思考</a>｜<a href="tool-directory.html">AI 學術研究工具指南</a>｜<a href="ethics.html">學術倫理與 AI 揭露</a></p>
+</article>
+<nav class="pager"><a class="prev" href="ethics.html">← 學術倫理與 AI 揭露</a><a class="next" href="checklists.html">檢查清單 →</a></nav>
+<footer class="foot">
+<p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
+<p><a href="../pages/sources.html">延伸閱讀與資源指南</a></p>
+</footer>
+</main>
+<aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">
+<ul>
+<li><a href="#_1">一、先分清楚三種東西</a></li>
+<li><a href="#_2">二、文獻管理軟體</a><ul>
+<li><a href="#21">2.1 不管用哪一套，這五件事一定要做</a></li>
+<li><a href="#22">2.2 引用格式的鐵則</a></li>
+</ul>
+</li>
+<li><a href="#_3">三、筆記與知識庫軟體</a><ul>
+<li><a href="#31">3.1 一篇論文一則，一個概念也一則</a></li>
+<li><a href="#32">3.2 建立範本，不要每次重想欄位</a></li>
+</ul>
+</li>
+<li><a href="#_4">四、五種筆記範本</a><ul>
+<li><a href="#41">4.1 文獻筆記</a></li>
+<li><a href="#42">4.2 變數／現象筆記</a></li>
+<li><a href="#43">4.3 理論筆記</a></li>
+<li><a href="#44">4.4 方法筆記</a></li>
+<li><a href="#45">4.5 命題／假說推演筆記</a></li>
+</ul>
+</li>
+<li><a href="#_5">五、把兩邊接起來</a></li>
+<li><a href="#_6">六、檔案與備份</a><ul>
+<li><a href="#61">6.1 資料夾結構</a></li>
+<li><a href="#62">6.2 檔名慣例</a></li>
+<li><a href="#63">6.3 三二一備份原則</a></li>
+<li><a href="#64">6.4 個資與敏感資料要分開放</a></li>
+</ul>
+</li>
+<li><a href="#_7">七、第一週就該做完的設定</a></li>
+<li><a href="#_8">八、本頁重點回顧</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script src="../assets/site.js"></script>
+</body>
+</html>
