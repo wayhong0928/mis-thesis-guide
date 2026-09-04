@@ -112,7 +112,13 @@ a:hover { border-bottom-color: var(--accent); }
 .navsec-toggle {
   display: flex; align-items: center; justify-content: space-between; gap: .5rem;
   width: 100%; padding: 0; border: 0; background: transparent; color: inherit;
-  font: inherit; letter-spacing: inherit; text-align: left; cursor: pointer;
+  text-align: left; cursor: pointer;
+  -webkit-appearance: none; appearance: none;
+  /* 部分瀏覽器對 <button> 的 font shorthand 繼承不完整，逐項明確指定，
+     確保跟收合前的 .navsec h2 文字樣式完全一致 */
+  font-family: inherit; font-size: inherit; font-weight: inherit;
+  font-style: inherit; line-height: inherit; letter-spacing: inherit;
+  text-transform: inherit;
 }
 .navsec-toggle::after { content: "\25B8"; font-size: .85rem; transition: transform .15s ease; }
 .navsec:not(.collapsed) > h2 .navsec-toggle::after { transform: rotate(90deg); }
