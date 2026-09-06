@@ -34,7 +34,7 @@
 <li><a href="../pages/method-dsr.html" data-title="系統發展法與設計科學研究" data-slug="method-dsr" data-updated="1788520745">系統發展法與設計科學研究</a></li>
 <li><a href="../pages/method-data.html" data-title="演算法、最佳化與資料分析" data-slug="method-data" data-updated="1788520745">演算法、最佳化與資料分析</a></li>
 <li><a href="../pages/method-secondary-data.html" data-title="次級資料分析與檔案研究" data-slug="method-secondary-data" data-updated="1788525613">次級資料分析與檔案研究</a></li>
-<li><a href="../pages/method-qualitative.html" data-title="質性研究方法" data-slug="method-qualitative" data-updated="1788520745">質性研究方法</a></li>
+<li><a href="../pages/method-qualitative.html" data-title="質性研究方法" data-slug="method-qualitative" data-updated="1788575042">質性研究方法</a></li>
 </ul></div>
 <div class="navsec"><h2>論文寫作</h2><ul>
 <li class="active"><a href="../pages/writing.html" data-title="論文架構與各章寫作要領" data-slug="writing" data-updated="1788528290">論文架構與各章寫作要領</a></li>
@@ -44,18 +44,22 @@
 </ul></div>
 <div class="navsec"><h2>AI 輔助研究</h2><ul>
 <li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流" data-slug="ai-workflow" data-updated="1788535117">AI 輔助研究工作流</a></li>
-<li><a href="../pages/claude-tools-overview.html" data-title="Claude 工具家族：Chat、Code 與 Cowork" data-slug="claude-tools-overview" data-updated="1788533251">Claude 工具家族：Chat、Code 與 Cowork</a></li>
-<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南" data-slug="tool-directory" data-updated="1788520745">AI 學術研究工具指南</a></li>
-<li><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包" data-slug="ai-agents" data-updated="1788533251">AI 代理工具懶人包</a></li>
 <li><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險" data-slug="ai-tools" data-updated="1788533251">AI 工具生態與風險</a></li>
 <li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露" data-slug="ethics" data-updated="1788520745">學術倫理與 AI 揭露</a></li>
 </ul></div>
+<div class="navsec"><h2>AI 工具與技術環境</h2><ul>
+<li><a href="../pages/claude-tools-overview.html" data-title="Claude 工具家族：介面與功能總覽" data-slug="claude-tools-overview" data-updated="1788533251">Claude 工具家族：介面與功能總覽</a></li>
+<li><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包" data-slug="ai-agents" data-updated="1788533251">AI 代理工具懶人包</a></li>
+<li><a href="../pages/skill-build.html" data-title="把教材做成可安裝的 SKILL" data-slug="skill-build" data-updated="1788705678">把教材做成可安裝的 SKILL</a></li>
+</ul></div>
 <div class="navsec"><h2>工具箱</h2><ul>
 <li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫" data-slug="tools-knowledge" data-updated="1788528290">文獻管理與知識庫</a></li>
+<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南" data-slug="tool-directory" data-updated="1788520745">AI 學術研究工具指南</a></li>
 <li><a href="../pages/checklists.html" data-title="檢查清單" data-slug="checklists" data-updated="1788520745">檢查清單</a></li>
 <li><a href="../pages/prompts.html" data-title="AI 提示詞範本" data-slug="prompts" data-updated="1788535117">AI 提示詞範本</a></li>
 <li><a href="../pages/glossary.html" data-title="名詞與用語對照" data-slug="glossary" data-updated="1788525613">名詞與用語對照</a></li>
 <li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南" data-slug="sources" data-updated="1788535575">延伸閱讀與資源指南</a></li>
+<li><a href="../pages/about.html" data-title="關於本站" data-slug="about" data-updated="1788705742">關於本站</a></li>
 </ul></div>
 </nav>
 <div class="wrap">
@@ -91,7 +95,7 @@
 <tr>
 <td>導論／緒論</td>
 <td>說服讀者這個主題重要，且本研究有必要</td>
-<td>文獻鳩占鵲巢；或把研究情境寫太死</td>
+<td>文獻篇幅蓋過本研究自身的主張；或把研究情境寫太死</td>
 </tr>
 <tr>
 <td>文獻探討</td>
@@ -258,27 +262,50 @@
 </ol>
 <hr />
 <h2 id="_7">四、緒論／導論的寫作要領</h2>
-<p>導論必須承載三大任務：</p>
+<div class="admonition note">
+<p class="admonition-title">想看更完整的版本</p>
+<p>這一節的三功能框架，對應到 Swales (1990) 提出的 <strong>CARS model</strong>（Create A Research Space，見 4.1）。坊間論文寫作指南對這個框架多有更完整的示範，本站只做通則式的重述（延伸資源見<a href="sources.html">延伸閱讀與資源指南</a>第二節與第四節）。</p>
+</div>
+<p>導論必須承載三大任務，對應到 CARS model 的三個 move：</p>
 <ol>
-<li><strong>介紹研究主題、背景及其在學術與應用上的重要性</strong>，讓讀者相信它值得被研究。</li>
-<li><strong>回顧學術界過去的研究</strong>，扼要評價得失，指出至今仍待解決的部分，並明確說明本研究如何跟既有文獻區隔、如何填補不足。</li>
-<li><strong>扼要敘述本研究擬採用的觀點、理論、方法與資料來源</strong>，以及它們相對於既有文獻的優點。</li>
+<li><strong>建立領域（establishing a territory）</strong>：介紹研究主題、背景及其在學術與應用上的重要性，讓讀者相信它值得被研究。</li>
+<li><strong>建立利基（establishing a niche）</strong>：回顧學術界過去的研究，扼要評價得失，指出至今仍待解決的部分，並明確說明本研究如何跟既有文獻區隔、如何填補不足。</li>
+<li><strong>佔據利基（occupying the niche）</strong>：扼要敘述本研究擬採用的觀點、理論、方法與資料來源，以及它們相對於既有文獻的優點。</li>
 </ol>
-<p>有些作者還會加上兩個功能：預告主要研究成果，以及簡介後續章節的內容與次序。</p>
-<h3 id="41">4.1 兩種常見的論述架構</h3>
-<p><strong>架構 A：從矛盾切入</strong>（適合「為既有問題提供更可靠答案」的研究）</p>
-<pre><code>① 突顯既有研究結果之間的矛盾
-② 指出造成矛盾的可能成因與既有方法的缺失
-③ 提出本研究的對策與特色
-</code></pre>
-<p><strong>架構 B：從技術缺口切入</strong>（適合「改良既有方法或技術」的研究）</p>
-<pre><code>① 扼要陳述研究主題的重要性
-② 分析既有方法（流派）的主要缺點與可能成因
-③ 提出本研究的對策與優點
-</code></pre>
+<p>有些作者還會加上兩個功能：預告主要研究成果，以及簡介後續章節的內容與次序——這兩項對應下方 move 3 底下的延伸步驟。</p>
+<blockquote>
+<p><strong>方法論依據</strong>：Swales, J. M. (1990). <em>Genre Analysis: English in Academic and Research Settings</em>. Cambridge University Press. 提出的 CARS（Create A Research Space）model 主張，學術論文導論依序完成三個 move 才算完整。獨立公開整理見 Wikipedia〈CARS model〉<a href="https://en.wikipedia.org/wiki/CARS_model">https://en.wikipedia.org/wiki/CARS_model</a> 與 USC Libraries〈The C.A.R.S. Model〉<a href="https://libguides.usc.edu/writingguide/CARS">https://libguides.usc.edu/writingguide/CARS</a>（查證日期 2026-09-06）。</p>
+</blockquote>
+<h3 id="41-cars-model-move">4.1 CARS model 三個 move 的具體步驟</h3>
+<table>
+<thead>
+<tr>
+<th>Move</th>
+<th>功能</th>
+<th>典型步驟</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 建立領域</td>
+<td>說服讀者這個主題重要</td>
+<td>主張主題的核心性、對現況做出概括性陳述、回顧既有研究</td>
+</tr>
+<tr>
+<td>② 建立利基</td>
+<td>指出研究空間</td>
+<td>反駁既有主張、指出知識缺口、提出未解決的問題、延續既有研究傳統的下一步——擇一或組合使用</td>
+</tr>
+<tr>
+<td>③ 佔據利基</td>
+<td>宣告本研究的貢獻</td>
+<td>說明研究目的、宣告研究方向、預告主要發現、說明後續章節結構</td>
+</tr>
+</tbody>
+</table>
 <h3 id="42">4.2 兩個關鍵紀律</h3>
 <p><strong>紀律一：檢視既有文獻的不足時，要聚焦在跟本研究貢獻相關的部分</strong>，而不是長篇大論臚列一堆本研究也無法解決的問題。</p>
-<p><strong>紀律二：導論的主角只有兩個</strong>，也就是研究主題的意義與價值，以及本研究在觀點、理論、證據與方法上的創新。既有文獻是佐證用的配角，不該鳩占鵲巢。</p>
+<p><strong>紀律二：導論的主角只有兩個</strong>，也就是研究主題的意義與價值，以及本研究在觀點、理論、證據與方法上的創新。既有文獻是佐證用的配角，篇幅不該蓋過主角。</p>
 <div class="admonition warning">
 <p class="admonition-title">第一印象決定大半評價</p>
 <p>研究顯示，很多審查委員在讀完摘要與導論之後就已經對論文有初步評價，而這個第一印象跟讀完全文後的評價常常相去不遠。
@@ -291,21 +318,24 @@
 <li><strong>研究方法（research method）</strong>：描述你<strong>如何（how）</strong>做，包括產出研究結果的方法、程序與步驟。</li>
 <li><strong>理論依據與方法論的考量（methodology）</strong>：論證你<strong>為何（why）</strong>這麼做，提出充分理由，把你的方法、策略與研究架構合理化。</li>
 </ul>
+<blockquote>
+<p><strong>方法論依據</strong>：method 描述「怎麼做」、methodology 論證「為何這麼做」的區分，是研究方法教學的標準內容。獨立公開來源：Enago,〈Difference Between Research Methodology and Methods〉<a href="https://www.enago.com/academy/difference-methods-and-methodology/">https://www.enago.com/academy/difference-methods-and-methodology/</a>；CASRAI,〈Method vs. Methodology〉<a href="https://casrai.org/guides/method-vs-methodology">https://casrai.org/guides/method-vs-methodology</a>（查證日期 2026-09-06）。</p>
+</blockquote>
 <h3 id="51">5.1 方法章的兩個任務</h3>
 <p><strong>任務一：讓人能複製。</strong>
-必須清晰交代整個研究的方法與步驟，讓同領域的專家能據以複製出相同的結果。至少要交代：</p>
+必須清晰交代整個研究的方法與步驟，讓同領域的專家能據以複製出相同的結果。這份清單的分類架構參考 APA Journal Article Reporting Standards（JARS-Quant）對量化研究方法章應報告項目的整理（見下方引註），至少要交代：</p>
 <ul>
-<li>原始資料的<strong>擷取環境</strong>（資料庫名稱與來源、設備、受訪者來源與徵集過程、觀察地點與情境）</li>
-<li><strong>時機</strong>（施測或採樣時間，以及可能影響結果的其他時空、心理、環境因素）</li>
-<li><strong>方法與步驟</strong>（抽樣準則、實驗程序、訪談情境與步驟）</li>
+<li><strong>參與者／資料特性與抽樣程序</strong>（樣本來源、招募或篩選方式、樣本數如何決定）</li>
+<li><strong>測量工具與變項操作化</strong>（量表、儀器、設備、編碼方式）</li>
+<li><strong>研究設計與情境</strong>（施測或採樣時間，以及觀察地點、環境或訪談情境）</li>
 <li><strong>資料的後處理與數據化程序</strong>（清理規則、不當資料的剔除、逐字稿編碼）</li>
-<li><strong>數據的處理與分析</strong>（統計方法、軟體、參數設定、分析步驟）</li>
+<li><strong>資料分析策略</strong>（統計方法、軟體、參數設定、分析步驟）</li>
 </ul>
-<p><strong>任務二：夾敘夾評，預先回答質疑。</strong>
-方法章不能只有敘述，還要有客觀的自我批判與評論。一邊敘述「我們這麼做」，一邊論述「為什麼這麼做、為什麼不採其他替代方案、我們知道有哪些潛在疑慮、為什麼它們不會影響主要結論」。</p>
 <blockquote>
-<p>讀者能想到的替代辦法，作者基本上都想到了，並且在論文中說明了不選擇它們的理由。</p>
+<p><strong>方法論依據</strong>：以上分類參考 APA,〈Journal Article Reporting Standards〉<a href="https://www.apa.org/pubs/journals/resources/apa-style-jars.html">https://www.apa.org/pubs/journals/resources/apa-style-jars.html</a> 與 APA Style,〈Quantitative research design (JARS–Quant)〉<a href="https://apastyle.apa.org/jars/quantitative">https://apastyle.apa.org/jars/quantitative</a>（查證日期 2026-09-06），僅取其分類架構，實際條目請以原文件為準。</p>
 </blockquote>
+<p><strong>任務二：預先回應可能的質疑。</strong>
+方法章不能只有敘述，還要有客觀的自我檢視。一邊敘述「我們這麼做」，一邊說明「為什麼這麼做、為什麼不採其他替代方案、有哪些潛在疑慮、為什麼它們不會影響主要結論」。</p>
 <h3 id="52">5.2 可重複性與可讀性的平衡</h3>
 <p>在追求可重複性的同時，必須維持論文的可讀性。原則是：</p>
 <ul>
@@ -329,7 +359,7 @@
 <li>呈現主要的結果（證據）</li>
 <li>跟既有文獻的發現相連結或比較異同</li>
 <li>根據這些證據進行分析與論證，逐步導向最終結論</li>
-<li>過程中夾敘夾評，闡述各項發現的得失、意義與價值</li>
+<li>過程中同時說明各項發現的得失、意義與價值，並預先回應可能的質疑</li>
 </ol>
 <h3 id="63">6.3 沒有明確結論的發現怎麼處理</h3>
 <p>研究過程往往會出現未曾預料的線索、證據或疑點，而且無法在結案時充分釐清。處理方式：</p>
@@ -421,10 +451,9 @@
   第四節　研究流程（或研究範圍與限制）
 
 第貳章　文獻探討
-  第一節　XX 理論與相關研究
-  第二節　XX 理論與相關研究
+  第一節　XX 理論與相關研究（節末點出本節的缺口）
+  第二節　XX 理論與相關研究（節末點出本節的缺口）
   …
-  末　節　研究缺口與小結
 
 第參章　研究方法（或研究設計與實施）
   第一節　研究架構（含架構圖）
@@ -432,7 +461,6 @@
   第三節　操作型定義與測量工具
   第四節　研究對象與抽樣方式
   第五節　資料分析方法
-  第六節　研究倫理
 
 第肆章　研究結果與討論（或分成兩章）
   第一節　敘述統計
@@ -451,7 +479,9 @@
 <ul>
 <li>章用國字大寫（壹貳參肆伍），節用一般中文數字（一二三四五）</li>
 <li>用「<strong>文獻探討</strong>」，不用「文獻回顧」或「文獻綜述」（後者偏大陸用法）</li>
+<li>台灣碩論的文獻探討章<strong>通常不會在整章最後獨立寫一節「研究缺口」來總結</strong>；研究缺口的陳述要分散在各小節結尾點出（每節談完一批文獻，就在該節末段交代這節留下什麼缺口），見<a href="literature.html">文獻回顧與批判性思考</a> §5.3、§5.4 的三層結構與四步論證鏈</li>
 <li>用「<strong>研究方法</strong>」，不用「研究方法論」（methodology 的層次留給博士論文討論）</li>
+<li>研究方法章<strong>通常不會另闢一節處理研究倫理或 AI 揭露</strong>；這類內容多半整合進送審流程或獨立聲明頁，對應<a href="ethics.html">學術倫理與 AI 揭露</a>，不代表它必然是研究方法章固定的某一節</li>
 <li>計畫書（proposal）通常只寫到第參章，加上預期貢獻與研究限制</li>
 </ul>
 <h3 id="91">9.1 各章的參考頁數（碩論）</h3>
@@ -522,7 +552,7 @@
 <li>寫作次序：導論初稿 → 方法 → 結果 → 回頭修導論 → 結論 → 摘要。</li>
 <li>下筆前先選定論述重點、建立論證層次、挑三五篇最近的參考論文。</li>
 <li>導論的主角是研究的價值與本研究的創新；文獻是配角。</li>
-<li>方法章要能被複製，也要夾敘夾評、預先回答質疑。</li>
+<li>方法章要能被複製，也要預先回應可能的質疑。</li>
 <li><strong>證據到哪裡，推論就到哪裡。</strong> 誠實是第一守則。</li>
 <li>比較基準與座標軸的選擇會決定數據講出什麼故事。</li>
 <li>摘要是廣告也是支票；結論的語氣要像公正的第三者。</li>
@@ -535,7 +565,7 @@
 <nav class="pager"><a class="prev" href="method-qualitative.html">← 質性研究方法</a><a class="next" href="style.html">學術中文寫作紀律 →</a></nav>
 <footer class="foot">
 <p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
-<p><a href="../pages/sources.html">延伸閱讀與資源指南</a></p>
+<p><a href="../pages/sources.html">延伸閱讀與資源指南</a>　·　<a href="../pages/about.html">關於本站</a></p>
 </footer>
 </main>
 <aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">
@@ -553,7 +583,7 @@
 </ul>
 </li>
 <li><a href="#_7">四、緒論／導論的寫作要領</a><ul>
-<li><a href="#41">4.1 兩種常見的論述架構</a></li>
+<li><a href="#41-cars-model-move">4.1 CARS model 三個 move 的具體步驟</a></li>
 <li><a href="#42">4.2 兩個關鍵紀律</a></li>
 </ul>
 </li>

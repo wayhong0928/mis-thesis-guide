@@ -153,6 +153,8 @@ my-research-kit/
 
 想安裝別人做好的，Anthropic 維護兩個公開市集：官方策展的 `claude-plugins-official`，以及社群審核後上架的 `claude-community`（用 `/plugin marketplace add anthropics/claude-plugins-community` 加入）。
 
+想看一次完整的「從教材到可安裝 SKILL」的實戰過程——架構決策、規則被實務經驗糾正的真實教訓、用官方工具做評測——見[把教材做成可安裝的 SKILL](skill-build.md)。
+
 ### 2.5 MCP：把外部工具接進來
 
 MCP（Model Context Protocol）讓 Claude Code 連到外部服務。研究情境常見的接法：

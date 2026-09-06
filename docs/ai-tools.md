@@ -33,13 +33,13 @@
 
 | 專案 | 定位 | 對學術研究的價值 | 限制／風險 |
 |---|---|---|---|
-| gpt-researcher | Plan→Search→Read→Reflect→Iterate→Synthesize 的全自動研究迴圈 | 快速產出帶引用的環境掃描報告，適合題目探索階段 | 引用來源仍需人工核對，深度不足以支撐理論建構 |
-| STORM / Co-STORM（史丹佛） | 視角引導提問 + 兩階段（先寫大綱再產出長文） | 生成帶引用的長篇結構性文章、文獻綜述初稿；Co-STORM 可人工介入 | 英文為主，對中文學術生態支援有限 |
-| Open Deep Research（LangChain） | 高度模組化、可配置的深度研究框架 | 適合想自建研究 pipeline 的開發者 | 需要程式能力與 API 金鑰 |
-| local-deep-research | 本地 LLM、隱私優先，整合多個學術資料庫 | 處理敏感研究資料時的選項 | 需要本地算力，設定門檻較高 |
-| PaperQA2 | 科學 PDF 的 RAG 問答，精確引用原文段落 | 在大量 PDF 中找答案、驗證引用來源 | 主要為生醫與自然科學設計 |
-| AI-Scientist / Agent Laboratory | 文獻 → 實驗 → 論文的全自動流程 | 展示了自動化的極限在哪 | 目前不適合人文社科；需要大量算力 |
-| 學術工作流電子書與 Skill 集 | 教學框架，常結合 Obsidian 等知識管理工具 | 提供中文學術情境的實作流程 | 社群規模與更新頻率差異大 |
+| [gpt-researcher](https://github.com/assafelovic/gpt-researcher) | Plan→Search→Read→Reflect→Iterate→Synthesize 的全自動研究迴圈 | 快速產出帶引用的環境掃描報告，適合題目探索階段 | 引用來源仍需人工核對，深度不足以支撐理論建構 |
+| [STORM](https://github.com/stanford-oval/storm) / Co-STORM（史丹佛） | 視角引導提問 + 兩階段（先寫大綱再產出長文） | 生成帶引用的長篇結構性文章、文獻綜述初稿；Co-STORM 可人工介入 | 英文為主，對中文學術生態支援有限 |
+| [Open Deep Research](https://github.com/langchain-ai/open_deep_research)（LangChain） | 高度模組化、可配置的深度研究框架 | 適合想自建研究 pipeline 的開發者 | 需要程式能力與 API 金鑰 |
+| [local-deep-research](https://github.com/LearningCircuit/local-deep-research) | 本地 LLM、隱私優先，整合多個學術資料庫 | 處理敏感研究資料時的選項 | 需要本地算力，設定門檻較高 |
+| [PaperQA2](https://github.com/Future-House/paper-qa) | 科學 PDF 的 RAG 問答，精確引用原文段落 | 在大量 PDF 中找答案、驗證引用來源 | 主要為生醫與自然科學設計 |
+| [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) / [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) | 文獻 → 實驗 → 論文的全自動流程 | 展示了自動化的極限在哪 | 目前不適合人文社科；需要大量算力 |
+| 學術工作流電子書與 Skill 集（見[延伸閱讀與資源指南](sources.md)第五節） | 教學框架，常結合 Obsidian 等知識管理工具 | 提供中文學術情境的實作流程 | 社群規模與更新頻率差異大 |
 
 ### 1.3 為什麼「重要」但不能「依賴」
 

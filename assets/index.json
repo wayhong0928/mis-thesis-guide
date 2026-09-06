@@ -138,24 +138,6 @@
   "section": "AI 輔助研究"
  },
  {
-  "slug": "claude-tools-overview",
-  "title": "Claude 工具家族：Chat、Code 與 Cowork",
-  "desc": "三種介面怎麼選、研究工作怎麼分配、權限與人工查核",
-  "section": "AI 輔助研究"
- },
- {
-  "slug": "tool-directory",
-  "title": "AI 學術研究工具指南",
-  "desc": "依研究階段分類：檢索、引文網絡、閱讀、SLR、分析",
-  "section": "AI 輔助研究"
- },
- {
-  "slug": "ai-agents",
-  "title": "AI 代理工具懶人包",
-  "desc": "Claude Code、Skill／Plugin、Codex 與研究場景應用",
-  "section": "AI 輔助研究"
- },
- {
   "slug": "ai-tools",
   "title": "AI 工具生態與風險",
   "desc": "Auto Research、去 AI 味工具的定位與紅線",
@@ -168,9 +150,33 @@
   "section": "AI 輔助研究"
  },
  {
+  "slug": "claude-tools-overview",
+  "title": "Claude 工具家族：介面與功能總覽",
+  "desc": "四種介面（Chat/Cowork/Code/Design）怎麼選、Projects 與 Artifacts 怎麼搭配、研究工作怎麼分配",
+  "section": "AI 工具與技術環境"
+ },
+ {
+  "slug": "ai-agents",
+  "title": "AI 代理工具懶人包",
+  "desc": "Claude Code、Skill／Plugin、Codex 與研究場景應用",
+  "section": "AI 工具與技術環境"
+ },
+ {
+  "slug": "skill-build",
+  "title": "把教材做成可安裝的 SKILL",
+  "desc": "從架構決策到 marketplace 上架：兩個 SKILL 的完整實作紀錄與可照抄的步驟",
+  "section": "AI 工具與技術環境"
+ },
+ {
   "slug": "tools-knowledge",
   "title": "文獻管理與知識庫",
   "desc": "Zotero／EndNote、Obsidian／Notion、筆記欄位、備份策略",
+  "section": "工具箱"
+ },
+ {
+  "slug": "tool-directory",
+  "title": "AI 學術研究工具指南",
+  "desc": "依研究階段分類：檢索、引文網絡、閱讀、SLR、分析",
   "section": "工具箱"
  },
  {
@@ -194,7 +200,13 @@
  {
   "slug": "sources",
   "title": "延伸閱讀與資源指南",
-  "desc": "書籍導讀、經典論文、線上講座、開源專案與本站來源",
+  "desc": "書籍導讀、經典論文、線上講座、開源專案與官方規範入口",
+  "section": "工具箱"
+ },
+ {
+  "slug": "about",
+  "title": "關於本站",
+  "desc": "內容來源、可靠性等級、不包含什麼、授權、回報錯誤與更新紀錄",
   "section": "工具箱"
  }
 ]

@@ -34,7 +34,7 @@
 <li><a href="../pages/method-dsr.html" data-title="系統發展法與設計科學研究" data-slug="method-dsr" data-updated="1788520745">系統發展法與設計科學研究</a></li>
 <li><a href="../pages/method-data.html" data-title="演算法、最佳化與資料分析" data-slug="method-data" data-updated="1788520745">演算法、最佳化與資料分析</a></li>
 <li><a href="../pages/method-secondary-data.html" data-title="次級資料分析與檔案研究" data-slug="method-secondary-data" data-updated="1788525613">次級資料分析與檔案研究</a></li>
-<li><a href="../pages/method-qualitative.html" data-title="質性研究方法" data-slug="method-qualitative" data-updated="1788520745">質性研究方法</a></li>
+<li><a href="../pages/method-qualitative.html" data-title="質性研究方法" data-slug="method-qualitative" data-updated="1788575042">質性研究方法</a></li>
 </ul></div>
 <div class="navsec"><h2>論文寫作</h2><ul>
 <li><a href="../pages/writing.html" data-title="論文架構與各章寫作要領" data-slug="writing" data-updated="1788528290">論文架構與各章寫作要領</a></li>
@@ -44,23 +44,27 @@
 </ul></div>
 <div class="navsec"><h2>AI 輔助研究</h2><ul>
 <li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流" data-slug="ai-workflow" data-updated="1788535117">AI 輔助研究工作流</a></li>
-<li><a href="../pages/claude-tools-overview.html" data-title="Claude 工具家族：Chat、Code 與 Cowork" data-slug="claude-tools-overview" data-updated="1788533251">Claude 工具家族：Chat、Code 與 Cowork</a></li>
-<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南" data-slug="tool-directory" data-updated="1788520745">AI 學術研究工具指南</a></li>
-<li class="active"><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包" data-slug="ai-agents" data-updated="1788533251">AI 代理工具懶人包</a></li>
 <li><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險" data-slug="ai-tools" data-updated="1788533251">AI 工具生態與風險</a></li>
 <li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露" data-slug="ethics" data-updated="1788520745">學術倫理與 AI 揭露</a></li>
 </ul></div>
+<div class="navsec"><h2>AI 工具與技術環境</h2><ul>
+<li><a href="../pages/claude-tools-overview.html" data-title="Claude 工具家族：介面與功能總覽" data-slug="claude-tools-overview" data-updated="1788533251">Claude 工具家族：介面與功能總覽</a></li>
+<li class="active"><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包" data-slug="ai-agents" data-updated="1788533251">AI 代理工具懶人包</a></li>
+<li><a href="../pages/skill-build.html" data-title="把教材做成可安裝的 SKILL" data-slug="skill-build" data-updated="1788705678">把教材做成可安裝的 SKILL</a></li>
+</ul></div>
 <div class="navsec"><h2>工具箱</h2><ul>
 <li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫" data-slug="tools-knowledge" data-updated="1788528290">文獻管理與知識庫</a></li>
+<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南" data-slug="tool-directory" data-updated="1788520745">AI 學術研究工具指南</a></li>
 <li><a href="../pages/checklists.html" data-title="檢查清單" data-slug="checklists" data-updated="1788520745">檢查清單</a></li>
 <li><a href="../pages/prompts.html" data-title="AI 提示詞範本" data-slug="prompts" data-updated="1788535117">AI 提示詞範本</a></li>
 <li><a href="../pages/glossary.html" data-title="名詞與用語對照" data-slug="glossary" data-updated="1788525613">名詞與用語對照</a></li>
 <li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南" data-slug="sources" data-updated="1788535575">延伸閱讀與資源指南</a></li>
+<li><a href="../pages/about.html" data-title="關於本站" data-slug="about" data-updated="1788705742">關於本站</a></li>
 </ul></div>
 </nav>
 <div class="wrap">
 <main id="main">
-<p class="crumb"><a href="../index.html">首頁</a> ／ AI 輔助研究</p>
+<p class="crumb"><a href="../index.html">首頁</a> ／ AI 工具與技術環境</p>
 <article class="doc" data-updated="1788533251">
 <h1>AI 代理工具懶人包</h1>
 <p class='lede'>Claude Code、Skill／Plugin、Codex 與研究場景應用</p>
@@ -266,6 +270,7 @@ description: 檢查繁體中文學術寫作的用語與因果動詞紀律。當�
 <li>plugin 的 skill 一律加上命名空間，叫做 <code>/my-research-kit:tw-style-check</code>，避免和別人的同名 skill 撞名。</li>
 </ol>
 <p>想安裝別人做好的，Anthropic 維護兩個公開市集：官方策展的 <code>claude-plugins-official</code>，以及社群審核後上架的 <code>claude-community</code>（用 <code>/plugin marketplace add anthropics/claude-plugins-community</code> 加入）。</p>
+<p>想看一次完整的「從教材到可安裝 SKILL」的實戰過程——架構決策、規則被實務經驗糾正的真實教訓、用官方工具做評測——見<a href="skill-build.html">把教材做成可安裝的 SKILL</a>。</p>
 <h3 id="25-mcp">2.5 MCP：把外部工具接進來</h3>
 <p>MCP（Model Context Protocol）讓 Claude Code 連到外部服務。研究情境常見的接法：</p>
 <ul>
@@ -565,10 +570,10 @@ description: 檢查繁體中文學術寫作的用語與因果動詞紀律。當�
 <p><strong>來源說明</strong>：Claude Code 的 plugin 與 skill 機制取自 <a href="https://code.claude.com/docs/en/plugins">Claude Code 官方文件</a>；Claude Cowork 的定位取自 <a href="https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork">Anthropic 官方說明</a>；Codex 的介面與 AGENTS.md 取自 <a href="https://developers.openai.com/codex/">OpenAI Codex 官方文件</a>。查詢日期為 2026 年 9 月 4 日，功能可能已更新。</p>
 <p><strong>延伸</strong>：<a href="tool-directory.html">AI 學術研究工具指南</a>｜<a href="ai-workflow.html">AI 輔助研究工作流</a>｜<a href="prompts.html">AI 提示詞範本</a>｜<a href="ethics.html">學術倫理與 AI 揭露</a></p>
 </article>
-<nav class="pager"><a class="prev" href="tool-directory.html">← AI 學術研究工具指南</a><a class="next" href="ai-tools.html">AI 工具生態與風險 →</a></nav>
+<nav class="pager"><a class="prev" href="claude-tools-overview.html">← Claude 工具家族：介面與功能總覽</a><a class="next" href="skill-build.html">把教材做成可安裝的 SKILL →</a></nav>
 <footer class="foot">
 <p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
-<p><a href="../pages/sources.html">延伸閱讀與資源指南</a></p>
+<p><a href="../pages/sources.html">延伸閱讀與資源指南</a>　·　<a href="../pages/about.html">關於本站</a></p>
 </footer>
 </main>
 <aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">

@@ -1,6 +1,6 @@
-# Claude 工具家族：Chat、Code 與 Cowork 怎麼選
+# Claude 工具家族：介面怎麼選、功能怎麼搭配
 
-> 三者都叫 Claude，差別不在回答能力，而在它能否接觸你的檔案、執行工作，以及你願意用什麼方式交付任務。
+> 都叫 Claude，差別不在回答能力，而在它能不能接觸你的檔案、用什麼方式產生畫面，以及你願意用對話、終端機還是畫布來交付任務。
 
 ---
 
@@ -13,12 +13,15 @@
 | 單純問答、腦力激盪、討論一段文字 | Claude Chat | 開啟即能對話，適合把問題想清楚 |
 | 要整理多個檔案，但不想操作終端機 | Claude Cowork | 以一般介面交付多步驟文書工作，仍可隨時檢視與調整 |
 | 要跨檔批次處理、重跑流程，並保留版本控制 | Claude Code | 可在專案資料夾內讀寫檔案、執行指令，工作可重複驗證 |
+| 要做視覺設計、互動原型、簡報或一頁式頁面 | Claude Design | 以對話生成可點擊的畫面，能讀取既有設計系統再套用（研究預覽階段） |
 
 這個選擇不是能力高低。研究者需要的是能掌握的工作方式；小問題用對話解決，反而最省時間。
 
+Projects 與 Artifacts 不在這張表裡，因為它們不是要在四個介面之間二選一的選項，而是疊加在上面的功能：Projects 決定「同一批脈絡要不要持續帶著走」，Artifacts 決定「這次產出要不要變成一個可以獨立檢視、分享的頁面」。兩者的細節見第三節。
+
 ---
 
-## 二、三種 Claude 的工作邊界
+## 二、四種 Claude 的工作邊界
 
 ### 2.1 Claude Chat：把對話當成思考工作臺
 
@@ -38,9 +41,41 @@ Claude Cowork 讓使用者從 Claude 的桌面、網頁等介面交付多步驟�
 
 Cowork 的介面、可用方案與本機檔案授權流程仍可能調整。官方目前說明的本機檔案存取需由已開啟且連線的 Claude Desktop 支援；網頁與行動裝置的工作階段則以雲端執行為主。跨平台的資料夾選取介面與可存取範圍未在這份說明中逐一固定，使用前應以畫面和官方文件為準（待查證）。
 
+**Cowork 側邊欄裡還有三個名詞，容易被誤認成獨立產品，這裡先釐清定位：**
+
+- **Scheduled（排程任務）**：讓 Cowork 依你設定的頻率（每小時、每天、每週、工作日或單次）自動重跑同一個提示，例如定期整理某個雲端資料夾、彙整已連接工具的資訊。任務在遠端執行，就算桌面 App 沒開也會照排程跑，但官方文件註明排程任務**不能綁定你電腦本機的資料夾**，只能處理雲端檔案與已連接的服務。開放 Pro、Max、Team、Enterprise 方案；桌面版完整支援，網頁與行動版仍在測試中。對研究工作來說，這類似「定期文獻掃描」的自動化，但產出仍要人工複核，不能當成無人值守的正式流程。
+- **Dispatch**：讓使用者從手機傳訊息，指揮已開啟且連線中的桌面版 Claude 執行任務——Claude 會自行判斷該用 Claude Code 還是 Cowork 執行，並把結果回報到手機端，同一個對話脈絡在桌面與手機同步。目前為 Pro、Max 方案的有限測試（beta），且要求桌面電腦維持喚醒狀態、Claude Desktop 保持開啟連線，是一種「遠端遙控你電腦上的 Cowork／Code」的機制，而非另一個獨立產品。
+- **Customize**：這不是一個獨立功能，而是 Cowork 側邊欄裡管理 Plugins（外掛）、Skills（技能）與 Connectors（連接器）的設定選單入口——官方說明稱它「把外掛、技能與連接器整合在同一個地方」。看到「Customize」時，理解成「設定/管理中心」即可，不必當成第四個要學的產品。
+
+### 2.4 Claude Design：用對話產生可互動的畫面
+
+Claude Design 是 Anthropic Labs 推出的對話式設計工具，讓使用者透過與 Claude 對話來產生設計稿、互動原型、簡報與一頁式頁面。介面是左側對話、右側畫布：描述需求後 Claude 先生成一版，接著可用對話、行內留言或直接在畫布上編輯來反覆修改。它能讀取你的程式碼庫或 Figma 檔案，抽取既有的設計系統後套用到新產出上；設計完成後也能交給 Claude Code 接手，從既有稿件繼續而不必從截圖重新開始。
+
+對研究工作來說，Design 較適合用在口試簡報的視覺稿、海報、一頁式研究摘要這類「需要排版與視覺判斷」的產出；文字論證與引用查核仍不屬於它的工作範圍，產出後一樣要人工核對內容與格式規範。
+
+官方說明目前的限制：Claude Design 仍在研究預覽（research preview）階段，開放 Pro、Max、Team、Enterprise 方案，但 Enterprise 方案預設關閉，需管理員另外啟用；已知問題包括留言偶爾無法保存、大型程式碼庫可能延遲、對話出錯需開新分頁，以及多人協作編輯不穩定。它與 Chat、Code、Cowork 共用同一個用量額度，沒有獨立的用量上限。
+
 ---
 
-## 三、研究工作怎麼分配
+## 三、兩個跨工具的輔助功能：Projects 與 Artifacts
+
+Projects 與 Artifacts 不是獨立產品，而是可以疊加在 Chat、Code、Cowork、Design 之上的兩個功能：一個管「脈絡怎麼留」，一個管「產出怎麼呈現」。
+
+### 3.1 Projects：把同一個研究主題的脈絡固定下來
+
+Project 是一個自帶對話紀錄與知識庫的獨立工作空間。你可以上傳文獻、寫作規範、指導教授意見等參考檔案，並設定專案指示（project instructions）調整 Claude 回應的語氣與立場；同一個 project 底下的每次新對話都會自動帶入這些設定，不必每次重貼。免費方案最多可建立 5 個 project；付費方案（Pro／Max／Team／Enterprise）無上限，且以 RAG（檢索增強生成）方式讓知識庫容量擴大約 10 倍。Team／Enterprise 方案還能把 project 分享給特定成員或整個組織。
+
+對一篇論文而言，可行的用法是整篇論文開一個 project，把文獻筆記、格式規範、指導教授的回饋都放進去，往後每次討論同一份研究就不必重新提供脈絡——但知識庫內容仍要自己維護更新，Claude 不會主動去查核上傳文件是否為最新版本。
+
+### 3.2 Artifacts：把單次產出變成可獨立檢視、分享的頁面
+
+Artifacts 是 Claude 在對話旁另開的獨立視窗，用來放置篇幅較長、可自成一體的內容（官方說明通常指超過 15 行、使用者可能想編輯或重複使用的內容），例如文件、程式碼、網頁、SVG 圖像或互動元件。使用者可以直接修改內容或透過對話要求調整，並在不同版本之間切換，也可以把完成的 artifact 公開發布或在組織內分享。
+
+方案別的可用範圍不同：Free／Pro／Max 可在 Claude 網頁與桌面版使用 Artifacts；Claude Code 目前僅 Team／Enterprise 方案支援；Claude Cowork 則 Pro／Max／Team／Enterprise 皆可用。它與 Claude Design 的差別在於：Artifacts 是任何介面單次對話都可能產出的一份成品，Design 則是把類似的「畫布」體驗延伸成一整套對話式設計流程，中間可以持續來回修改。
+
+---
+
+## 四、研究工作怎麼分配
 
 | 研究情境 | 較適合的工具 | 優點 | 要留意的限制 |
 |---|---|---|---|
@@ -53,7 +88,7 @@ Cowork 的介面、可用方案與本機檔案授權流程仍可能調整。官�
 
 ---
 
-## 四、Claude Code 與「去 AI 感」檢查
+## 五、Claude Code 與「去 AI 感」檢查
 
 Claude Code 可透過 skill 把初步檢查固定成流程，例如找出重複套話、歐化句法、破折號濫用或術語不一致。這類檢查只會標出值得回看的地方，不能判定一份文字是否「像 AI」，更不能代替作者的最後判斷。
 
@@ -64,12 +99,14 @@ Claude Code 可透過 skill 把初步檢查固定成流程，例如找出重複�
 ## 本頁重點回顧
 
 - 問答、腦力激盪與小段潤飾，先用 Claude Chat。
-- 不想操作終端機，卻要整理檔案與初稿，可評估 Claude Cowork 的當前權限與平台限制。
+- 不想操作終端機，卻要整理檔案與初稿，可評估 Claude Cowork 的當前權限與平台限制；Cowork 裡的 Scheduled、Dispatch 是排程與遠端遙控功能，Customize 只是設定選單，不是要另外學的產品。
+- 要做視覺設計、原型或簡報排版，可評估仍在研究預覽階段的 Claude Design。
 - 要批次處理、可重跑流程與版本控制，Claude Code 的工作方式較合適。
-- 三者都不能取代文獻查證、研究判斷與作者責任。
+- 需要長期保留同一份研究的脈絡，用 Projects；需要把單次產出變成可獨立檢視、分享的頁面，看 Artifacts。
+- 以上工具都不能取代文獻查證、研究判斷與作者責任。
 
 ---
 
-**來源說明**：Claude Cowork 的介面、可用性與本機檔案存取限制，依 [Anthropic 官方說明](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork)整理，查詢日期為 2026 年 9 月 4 日。產品功能與方案可能更新。
+**來源說明**：Claude Cowork 的介面、可用性與本機檔案存取限制，依 [Anthropic 官方說明](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork)整理，查詢日期為 2026 年 9 月 4 日。Claude Design 依[官方說明](https://support.claude.com/en/articles/14604416-get-started-with-claude-design)整理，查詢日期為 2026 年 9 月 6 日。Projects 依[官方說明](https://support.claude.com/en/articles/9517075-what-are-projects)整理，Artifacts 依[官方說明](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them)整理，查詢日期均為 2026 年 9 月 6 日。Scheduled 依[官方說明](https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork)整理，Dispatch 依[官方說明](https://support.claude.com/en/articles/13947068-assign-tasks-from-anywhere-in-claude-cowork)整理，Customize 依[官方說明](https://support.claude.com/en/articles/13837440-use-plugins-in-claude)整理，查詢日期均為 2026 年 9 月 6 日。產品功能與方案可能更新，尤其 Design、Dispatch 仍在研究預覽／測試階段，變動機率更高。
 
 **延伸**：[AI 輔助研究工作流](ai-workflow.md)｜[AI 代理工具懶人包](ai-agents.md)｜[AI 工具生態與風險](ai-tools.md)｜[學術中文寫作紀律](style.md#ai)

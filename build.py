@@ -48,18 +48,22 @@ NAV = [
     ]),
     ("AI 輔助研究", [
         ("ai-workflow", "AI 輔助研究工作流", "三層架構、戰略聚焦單、各階段的能與不能"),
-        ("claude-tools-overview", "Claude 工具家族：Chat、Code 與 Cowork", "三種介面怎麼選、研究工作怎麼分配、權限與人工查核"),
-        ("tool-directory", "AI 學術研究工具指南", "依研究階段分類：檢索、引文網絡、閱讀、SLR、分析"),
-        ("ai-agents", "AI 代理工具懶人包", "Claude Code、Skill／Plugin、Codex 與研究場景應用"),
         ("ai-tools", "AI 工具生態與風險", "Auto Research、去 AI 味工具的定位與紅線"),
         ("ethics", "學術倫理與 AI 揭露", "法規、期刊政策、揭露聲明範本"),
     ]),
+    ("AI 工具與技術環境", [
+        ("claude-tools-overview", "Claude 工具家族：介面與功能總覽", "四種介面（Chat/Cowork/Code/Design）怎麼選、Projects 與 Artifacts 怎麼搭配、研究工作怎麼分配"),
+        ("ai-agents", "AI 代理工具懶人包", "Claude Code、Skill／Plugin、Codex 與研究場景應用"),
+        ("skill-build", "把教材做成可安裝的 SKILL", "從架構決策到 marketplace 上架：兩個 SKILL 的完整實作紀錄與可照抄的步驟"),
+    ]),
     ("工具箱", [
         ("tools-knowledge", "文獻管理與知識庫", "Zotero／EndNote、Obsidian／Notion、筆記欄位、備份策略"),
+        ("tool-directory", "AI 學術研究工具指南", "依研究階段分類：檢索、引文網絡、閱讀、SLR、分析"),
         ("checklists", "檢查清單", "提案、文獻、方法、寫作、口試的自檢表"),
         ("prompts", "AI 提示詞範本", "文獻、批判、方法檢核、寫作潤飾"),
         ("glossary", "名詞與用語對照", "統計術語、台灣／大陸用語、英中對照"),
-        ("sources", "延伸閱讀與資源指南", "書籍導讀、經典論文、線上講座、開源專案與本站來源"),
+        ("sources", "延伸閱讀與資源指南", "書籍導讀、經典論文、線上講座、開源專案與官方規範入口"),
+        ("about", "關於本站", "內容來源、可靠性等級、不包含什麼、授權、回報錯誤與更新紀錄"),
     ]),
 ]
 
@@ -148,7 +152,7 @@ TEMPLATE = """<!DOCTYPE html>
 <nav class="pager">{pager}</nav>
 <footer class="foot">
 <p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
-<p><a href="../pages/sources.html">延伸閱讀與資源指南</a></p>
+<p><a href="../pages/sources.html">延伸閱讀與資源指南</a>　·　<a href="../pages/about.html">關於本站</a></p>
 </footer>
 </main>
 <aside class="toc" id="toc"><h2>本頁目錄</h2>{toc}</aside>
@@ -164,6 +168,7 @@ SEC_DESC = {
     "研究方法": "從倫理與資料規劃，到證據綜整、量化基礎與各種研究設計。",
     "論文寫作": "從章節架構、用字紀律與口試，到修訂、典藏與結案。",
     "AI 輔助研究": "把 AI 放在流程中的正確位置，以及不能越過的界線。",
+    "AI 工具與技術環境": "認識 Claude、Codex 等 AI 工具本身的功能與技術環境，不涉及研究方法判斷。",
     "工具箱": "可以直接拿來用的清單、範本、速查表與延伸閱讀。",
 }
 
@@ -225,7 +230,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 
 <footer class="foot">
 <p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
-<p><a href="pages/sources.html">延伸閱讀與資源指南</a>　·　最後更新：2026-09</p>
+<p><a href="pages/sources.html">延伸閱讀與資源指南</a>　·　<a href="pages/about.html">關於本站</a>　·　最後更新：2026-09</p>
 </footer>
 
 </main>
