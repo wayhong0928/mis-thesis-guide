@@ -22,6 +22,7 @@ NAV = [
         ("getting-started", "從零開始：研究所的第一個月", "研究所與大學的差別、第一個月的五件事、兩年節奏感"),
         ("research-basics", "研究的本質、歷程與時程", "研究到底在做什麼、四大核心能力、兩年時間表"),
         ("finding-reading", "怎麼找、怎麼讀、怎麼選題目", "檢索管道與關鍵字、三遍閱讀法、缺口的五種類型"),
+        ("venues", "期刊與研討會清單", "AIS Basket、各子領域 Q1 期刊、國際研討會、台灣本地期刊與研討會，可當選題目錄用"),
         ("is-research", "資訊管理研究的範疇與取向", "研究對象、行為科學與設計科學、方法取捨、研究策略"),
         ("problem-design", "研究問題、假說與研究架構", "從實務問題到可驗證的學術問題"),
         ("literature", "文獻回顧與批判性思考", "十倍速文獻回顧、剝洋蔥式閱讀、批判角度的彙整"),
@@ -54,7 +55,7 @@ NAV = [
     ("AI 工具與技術環境", [
         ("claude-tools-overview", "Claude 工具家族：介面與功能總覽", "四種介面（Chat/Cowork/Code/Design）怎麼選、Projects 與 Artifacts 怎麼搭配、研究工作怎麼分配"),
         ("ai-agents", "AI 代理工具懶人包", "Claude Code、Skill／Plugin、Codex 與研究場景應用"),
-        ("skill-build", "把教材做成可安裝的 SKILL", "從架構決策到 marketplace 上架：兩個 SKILL 的完整實作紀錄與可照抄的步驟"),
+        ("skill-build", "把教材做成可安裝的 SKILL", "從架構決策到 marketplace 上架：三個 SKILL 的完整實作紀錄與可照抄的步驟"),
     ]),
     ("工具箱", [
         ("tools-knowledge", "文獻管理與知識庫", "Zotero／EndNote、Obsidian／Notion、筆記欄位、備份策略"),

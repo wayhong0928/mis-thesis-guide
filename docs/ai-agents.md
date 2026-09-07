@@ -19,10 +19,10 @@
 
 | 類型 | 代表 | 能碰到什麼 | 適合的任務 |
 |---|---|---|---|
-| **聊天介面** | ChatGPT、Claude、Gemini 的網頁版 | 只有你貼進去的內容 | 問答、腦力激盪、改一段文字 |
+| **聊天介面** | [ChatGPT](https://chatgpt.com/)、[Claude](https://claude.ai/)、[Gemini](https://gemini.google.com/) 的網頁版 | 只有你貼進去的內容 | 問答、腦力激盪、改一段文字 |
 | **深度研究模式** | 各家的 Deep Research | 網路 + 你上傳的檔案 | 環境掃描、帶引用的長篇報告 |
-| **知識工作代理** | Claude Cowork | 你授權的檔案與工具，不需操作終端機 | 整理筆記、跨檔比對、草擬文件與其他多步驟文書作業 |
-| **代理型 CLI／IDE 工具** | Claude Code、OpenAI Codex、Gemini CLI、Cursor | **你的整個資料夾**：讀檔、寫檔、跑指令、多步驟自主執行 | 跨檔案的批次作業、可重複的流程、資料處理 |
+| **知識工作代理** | [Claude Cowork](https://claude.com/product/cowork) | 你授權的檔案與工具，不需操作終端機 | 整理筆記、跨檔比對、草擬文件與其他多步驟文書作業 |
+| **代理型 CLI／IDE 工具** | [Claude Code](https://claude.com/product/claude-code)、[OpenAI Codex](https://openai.com/codex/)、[Gemini CLI](https://github.com/google-gemini/gemini-cli)、[Cursor](https://cursor.com/) | **你的整個資料夾**：讀檔、寫檔、跑指令、多步驟自主執行 | 跨檔案的批次作業、可重複的流程、資料處理 |
 
 後兩類的關鍵差異只有一句話：
 
@@ -234,10 +234,10 @@ Codex 用 `AGENTS.md` 作為專案層級的代理設定檔，角色類似 Claude
 
 | 工具 | 定位 | 研究情境的用法 |
 |---|---|---|
-| **Gemini CLI** | Google 的終端機代理 | 與 Google 生態（Drive、Docs）整合較順 |
-| **Cursor / Windsurf** | AI 優先的編輯器 | 適合習慣圖形介面、需要看 diff 才安心的人 |
-| **GitHub Copilot** | 編輯器內的補完與對話 | 寫分析腳本時的即時輔助 |
-| **Jupyter + AI 擴充** | 資料分析筆記本 | 統計分析與圖表生成 |
+| **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** | Google 的終端機代理 | 與 Google 生態（Drive、Docs）整合較順 |
+| **[Cursor](https://cursor.com/) / Windsurf** | AI 優先的編輯器 | 適合習慣圖形介面、需要看 diff 才安心的人 |
+| **[GitHub Copilot](https://github.com/features/copilot)** | 編輯器內的補完與對話 | 寫分析腳本時的即時輔助 |
+| **[Jupyter](https://jupyter.org/) + AI 擴充** | 資料分析筆記本 | 統計分析與圖表生成 |
 
 **選哪一個不重要，重要的是三件事**：能不能限定它的工作範圍、能不能看到它改了什麼、能不能還原。
 

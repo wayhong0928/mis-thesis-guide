@@ -10,10 +10,10 @@
 
 | 你眼前的工作 | 優先選擇 | 為什麼 |
 |---|---|---|
-| 單純問答、腦力激盪、討論一段文字 | Claude Chat | 開啟即能對話，適合把問題想清楚 |
-| 要整理多個檔案，但不想操作終端機 | Claude Cowork | 以一般介面交付多步驟文書工作，仍可隨時檢視與調整 |
-| 要跨檔批次處理、重跑流程，並保留版本控制 | Claude Code | 可在專案資料夾內讀寫檔案、執行指令，工作可重複驗證 |
-| 要做視覺設計、互動原型、簡報或一頁式頁面 | Claude Design | 以對話生成可點擊的畫面，能讀取既有設計系統再套用（研究預覽階段） |
+| 單純問答、腦力激盪、討論一段文字 | [Claude Chat](https://claude.ai/) | 開啟即能對話，適合把問題想清楚 |
+| 要整理多個檔案，但不想操作終端機 | [Claude Cowork](https://claude.com/product/cowork) | 以一般介面交付多步驟文書工作，仍可隨時檢視與調整 |
+| 要跨檔批次處理、重跑流程，並保留版本控制 | [Claude Code](https://claude.com/product/claude-code) | 可在專案資料夾內讀寫檔案、執行指令，工作可重複驗證 |
+| 要做視覺設計、互動原型、簡報或一頁式頁面 | [Claude Design](https://claude.com/product/design) | 以對話生成可點擊的畫面，能讀取既有設計系統再套用（研究預覽階段） |
 
 這個選擇不是能力高低。研究者需要的是能掌握的工作方式；小問題用對話解決，反而最省時間。
 
@@ -79,10 +79,10 @@ Artifacts 是 Claude 在對話旁另開的獨立視窗，用來放置篇幅較�
 
 | 研究情境 | 較適合的工具 | 優點 | 要留意的限制 |
 |---|---|---|---|
-| 文獻查找 | Claude Chat | 可協助拆解關鍵字、比較研究問題與擬定檢索式 | 不可把生成的書目或摘要當成資料庫結果，需回到原始論文與索引資料庫核對 |
-| 文獻筆記整理 | Claude Cowork 或 Claude Code | 可依既定欄位整理你已取得的筆記，減少重複搬移 | 先備份原檔；只授權需要的資料夾，並人工抽查整理結果 |
-| 文獻管理 | 專用文獻管理工具為主，Claude Chat 輔助規劃 | 可討論欄位、標籤與命名規則 | Claude 不是文獻庫的正式紀錄來源；匯入、去重與引用格式仍應在文獻管理工具中核對 |
-| 草稿撰寫 | Claude Chat 或 Claude Cowork；跨檔檢查可用 Claude Code | Chat 適合逐段討論，Cowork 適合整理初稿，Code 適合一致性與格式檢查 | 初稿不能取代作者的論證；每項事實、引文與研究主張都要由作者確認 |
+| 文獻查找 | [Claude Chat](https://claude.ai/) | 可協助拆解關鍵字、比較研究問題與擬定檢索式 | 不可把生成的書目或摘要當成資料庫結果，需回到原始論文與索引資料庫核對 |
+| 文獻筆記整理 | [Claude Cowork](https://claude.com/product/cowork) 或 [Claude Code](https://claude.com/product/claude-code) | 可依既定欄位整理你已取得的筆記，減少重複搬移 | 先備份原檔；只授權需要的資料夾，並人工抽查整理結果 |
+| 文獻管理 | 專用文獻管理工具為主，[Claude Chat](https://claude.ai/) 輔助規劃 | 可討論欄位、標籤與命名規則 | Claude 不是文獻庫的正式紀錄來源；匯入、去重與引用格式仍應在文獻管理工具中核對 |
+| 草稿撰寫 | [Claude Chat](https://claude.ai/) 或 [Claude Cowork](https://claude.com/product/cowork)；跨檔檢查可用 [Claude Code](https://claude.com/product/claude-code) | Chat 適合逐段討論，Cowork 適合整理初稿，Code 適合一致性與格式檢查 | 初稿不能取代作者的論證；每項事實、引文與研究主張都要由作者確認 |
 
 工具之間可以接力，但不要把責任交接出去。例如先用 Chat 釐清段落意圖，再用 Cowork 整理一批既有筆記；最後若要批次檢查 Markdown 或引用清單，才以 Code 建立可重跑的規則。
 

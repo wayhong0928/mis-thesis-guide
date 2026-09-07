@@ -50,10 +50,10 @@
 
 | 工具 | 定位 | 適合用在 | 注意 |
 |---|---|---|---|
-| **Perplexity** | 帶引用的網路搜尋 | 快速摸清一個陌生名詞的輪廓 | 來源包含大量非學術網頁 |
+| **Perplexity**（[perplexity.ai](https://www.perplexity.ai/)） | 帶引用的網路搜尋 | 快速摸清一個陌生名詞的輪廓 | 來源包含大量非學術網頁 |
 | **ChatGPT / Claude / Gemini 的深度研究模式** | 多輪搜尋後產出長篇報告 | 環境掃描、跨領域術語橋接 | 引用必須逐條查核 |
-| **Elicit** | 學術論文的 AI 研究助理 | 從研究問題直接找出相關實證研究 | 見下節 |
-| **Consensus** | 針對「某個主張是否成立」的學術搜尋 | 快速看某個因果主張的文獻分布 | 「多數研究支持」不等於「成立」 |
+| **Elicit**（[elicit.com](https://elicit.com/)） | 學術論文的 AI 研究助理 | 從研究問題直接找出相關實證研究 | 見下節 |
+| **Consensus**（[consensus.app](https://consensus.app/)） | 針對「某個主張是否成立」的學術搜尋 | 快速看某個因果主張的文獻分布 | 「多數研究支持」不等於「成立」 |
 
 !!! tip "這個階段的正確心態"
     你要的是**版圖**，不是答案。一個動不動就丟給你上百條文獻的報告，初看豐富，實則會讓你淹沒在資訊洪流裡。
@@ -67,11 +67,11 @@
 
 | 工具 | 特性 | 為什麼你需要它 |
 |---|---|---|
-| **Google Scholar** | 涵蓋最廣，含灰色文獻與碩博士論文 | 引文追蹤（"被引用次數"）與 Alert 功能 |
-| **Semantic Scholar** | Allen Institute for AI（AI2）維運的免費學術搜尋引擎，索引超過 2 億篇論文 | 提供 TLDR 摘要、引文脈絡、Semantic Reader、開放 API 與 S2ORC 語料庫 |
-| **Scopus / Web of Science** | 商業資料庫，收錄經篩選 | 期刊分級、JCR/SJR 影響指標、系統性回顧的標準來源 |
-| **華藝線上圖書館（airiti Library）** | 中文期刊與論文 | 中文文獻不可繞過的一站 |
-| **臺灣博碩士論文知識加值系統** | 全台碩博士論文 | 看同領域學長姊怎麼做、抓研究缺口 |
+| **Google Scholar**（[scholar.google.com](https://scholar.google.com/)） | 涵蓋最廣，含灰色文獻與碩博士論文 | 引文追蹤（"被引用次數"）與 Alert 功能 |
+| **Semantic Scholar**（[semanticscholar.org](https://www.semanticscholar.org/)） | Allen Institute for AI（AI2）維運的免費學術搜尋引擎，索引超過 2 億篇論文 | 提供 TLDR 摘要、引文脈絡、Semantic Reader、開放 API 與 S2ORC 語料庫 |
+| **Scopus**（[scopus.com](https://www.scopus.com/)） / **Web of Science**（[clarivate.com](https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/)） | 商業資料庫，收錄經篩選 | 期刊分級、JCR/SJR 影響指標、系統性回顧的標準來源 |
+| **華藝線上圖書館（airiti Library）**（[airitilibrary.com](https://www.airitilibrary.com/)） | 中文期刊與論文 | 中文文獻不可繞過的一站 |
+| **臺灣博碩士論文知識加值系統**（[ndltd.ncl.edu.tw](https://ndltd.ncl.edu.tw/)） | 全台碩博士論文 | 看同領域學長姊怎麼做、抓研究缺口 |
 
 ### 3.2 AI 輔助檢索
 
@@ -103,12 +103,12 @@
 
 | 工具 | 做什麼 | 適合的時機 |
 |---|---|---|
-| **Connected Papers** | 從一篇種子論文生成相似度圖譜，視覺化呈現該主題的論文群落 | 剛進入一個新主題，想快速看見「有哪些聚落」 |
-| **ResearchRabbit** | 引文網絡視覺化 + Collections + 推薦引擎；官網稱可存取超過 3.1 億篇論文，可與參考文獻管理工具連動、追蹤新論文 | 需要**持續**維護一個文獻集合、並收到新文獻通知 |
-| **Litmaps** | 以種子文獻為中心建立地圖並持續監看新增文獻 | 論文寫作期間避免遺漏最新研究 |
-| **Inciteful** | 建立論文網絡並找出關鍵節點 | 想找出領域內的「必讀經典」 |
-| **Open Knowledge Maps** | 依主題把搜尋結果分群成知識地圖 | 主題還很寬、需要先分群 |
-| **VOSviewer / CiteSpace** | 書目計量（bibliometrics）分析與視覺化 | 要做**書目計量研究**本身，或想在文獻探討放一張正式的共被引圖 |
+| **Connected Papers**（[connectedpapers.com](https://www.connectedpapers.com/)） | 從一篇種子論文生成相似度圖譜，視覺化呈現該主題的論文群落 | 剛進入一個新主題，想快速看見「有哪些聚落」 |
+| **ResearchRabbit**（[researchrabbit.ai](https://www.researchrabbit.ai/)） | 引文網絡視覺化 + Collections + 推薦引擎；官網稱可存取超過 3.1 億篇論文，可與參考文獻管理工具連動、追蹤新論文 | 需要**持續**維護一個文獻集合、並收到新文獻通知 |
+| **Litmaps**（[litmaps.com](https://www.litmaps.com/)） | 以種子文獻為中心建立地圖並持續監看新增文獻 | 論文寫作期間避免遺漏最新研究 |
+| **Inciteful**（[incitefulmed.com](https://incitefulmed.com/academic/)） | 建立論文網絡並找出關鍵節點 | 想找出領域內的「必讀經典」 |
+| **Open Knowledge Maps**（[openknowledgemaps.org](https://openknowledgemaps.org/)） | 依主題把搜尋結果分群成知識地圖 | 主題還很寬、需要先分群 |
+| **VOSviewer**（[vosviewer.com](https://www.vosviewer.com/)） / **CiteSpace** | 書目計量（bibliometrics）分析與視覺化 | 要做**書目計量研究**本身，或想在文獻探討放一張正式的共被引圖 |
 
 !!! note "視覺化圖不是文獻回顧"
     這些圖能告訴你「哪些論文彼此相關」，不能告訴你「哪一篇的理論框架適合我」。
@@ -143,11 +143,11 @@
 
 | 工具 | 做什麼 | 風險 |
 |---|---|---|
-| **Gemini Notebook**（原 NotebookLM，Google 於 2026 年 7 月改名） | 只根據你**上傳的來源**回答並附出處，可產生摘要、大綱、問答 | 仍會誤讀；出處要點開確認 |
-| **SciSpace** | PDF 逐段解釋、名詞解釋、跨論文比較 | 摘要可能抹平原文的限制條件 |
-| **ChatPDF / Humata** | 針對單一 PDF 的問答 | 同上 |
-| **Scholarcy** | 自動生成論文摘要卡片與關鍵詞 | 摘要卡不能取代閱讀 |
-| **Semantic Reader** | 在閱讀介面中內嵌引文脈絡 | — |
+| **Gemini Notebook**（原 NotebookLM，Google 於 2026 年 7 月改名）（[notebook.google](https://notebook.google/)） | 只根據你**上傳的來源**回答並附出處，可產生摘要、大綱、問答 | 仍會誤讀；出處要點開確認 |
+| **SciSpace**（[scispace.com](https://scispace.com/)） | PDF 逐段解釋、名詞解釋、跨論文比較 | 摘要可能抹平原文的限制條件 |
+| **ChatPDF**（[chatpdf.com](https://www.chatpdf.com/)） / **Humata**（[humata.ai](https://www.humata.ai/)） | 針對單一 PDF 的問答 | 同上 |
+| **Scholarcy**（[scholarcy.com](https://www.scholarcy.com/)） | 自動生成論文摘要卡片與關鍵詞 | 摘要卡不能取代閱讀 |
+| **Semantic Reader**（[semanticscholar.org/product/semantic-reader](https://www.semanticscholar.org/product/semantic-reader)） | 在閱讀介面中內嵌引文脈絡 | — |
 
 !!! danger "摘要工具最危險的地方，不是它講錯，而是它講對但講不完"
     AI 摘要傾向保留「結論」而丟掉「條件」。一篇論文寫「在 A 條件下、以 B 樣本、用 C 方法，X 正向預測 Y」，摘要常常只剩「X 正向預測 Y」。
@@ -164,9 +164,9 @@
 | 工具 | 定位 | 特性 |
 |---|---|---|
 | **Rayyan**（[rayyan.ai](https://www.rayyan.ai/)） | 證據合成平台 | 完整流程：匯入 → 協作者分工 → 去重 → 題目摘要篩選 → 全文篩選與**衝突解決** → 資料萃取 → 偏誤風險評估 → 產出 PRISMA 流程圖；有免費方案 |
-| **Covidence** | 同類商業平台 | 醫學領域常見，多半由機構訂閱 |
+| **Covidence**（[covidence.org](https://www.covidence.org/)） | 同類商業平台 | 醫學領域常見，多半由機構訂閱 |
 | **ASReview**（[asreview.nl](https://asreview.nl/)） | **開源**，由荷蘭 Utrecht 大學協調 | 以 **active learning** 加速標題與摘要篩選；官網稱可減少高達 95% 的篩選工作量，強調程式碼可驗證、使用者完全掌握資料與決策 |
-| **PRISMA** | 不是工具，是**報告準則** | SLR 論文的標準骨架與流程圖規範 |
+| **PRISMA**（[prisma-statement.org](https://www.prisma-statement.org/)） | 不是工具，是**報告準則** | SLR 論文的標準骨架與流程圖規範 |
 
 !!! warning "active learning 加速的是排序，不是決策"
     ASReview 這類工具的做法是：你標記幾篇之後，它把「最可能相關」的排到前面，讓你更早看完該看的。
@@ -184,11 +184,11 @@
 
 | 類型 | 工具 | 備註 |
 |---|---|---|
-| 量化・SEM | **SmartPLS**（PLS-SEM）、**AMOS / LISREL / Mplus**（CB-SEM） | 選哪個要有[方法論依據](method-survey.md)，不是因為好操作 |
-| 量化・一般統計 | **SPSS**、**JASP**、**jamovi**、**R**、**Python (statsmodels / scipy)** | JASP 與 jamovi 免費且介面友善，適合碩論 |
-| 質性 | **NVivo**、**ATLAS.ti**、**MAXQDA**、**Taguette**（開源免費） | 編碼架構仍須研究者建立 |
-| 機器學習 | **scikit-learn**、**PyTorch**、**Weka** | 見[演算法與資料分析](method-data.md) |
-| 檢力分析 | **G\*Power** | 免費；實驗法應事前使用 |
+| 量化・SEM | **SmartPLS**（[smartpls.com](https://www.smartpls.com/)）（PLS-SEM）、**AMOS**（[ibm.com](https://www.ibm.com/products/structural-equation-modeling-sem)） / **LISREL**（[ssilive.com/lisrel](https://ssilive.com/lisrel)） / **Mplus**（[statmodel.com](https://www.statmodel.com/)）（CB-SEM） | 選哪個要有[方法論依據](method-survey.md)，不是因為好操作 |
+| 量化・一般統計 | **SPSS**（[ibm.com](https://www.ibm.com/products/spss-statistics)）、**JASP**（[jasp-stats.org](https://jasp-stats.org/)）、**jamovi**（[jamovi.org](https://www.jamovi.org/)）、**R**（[r-project.org](https://www.r-project.org/)）、**Python**（[python.org](https://www.python.org/)）**(statsmodels / scipy)** | JASP 與 jamovi 免費且介面友善，適合碩論 |
+| 質性 | **NVivo**（[lumivero.com/products/nvivo](https://lumivero.com/products/nvivo/)）、**ATLAS.ti**（[atlasti.com](https://atlasti.com/)）、**MAXQDA**（[maxqda.com](https://www.maxqda.com/)）、**Taguette**（[taguette.org](https://www.taguette.org/)）（開源免費） | 編碼架構仍須研究者建立 |
+| 機器學習 | **scikit-learn**（[scikit-learn.org](https://scikit-learn.org/)）、**PyTorch**（[pytorch.org](https://pytorch.org/)）、**Weka**（[ml.cms.waikato.ac.nz/weka](https://ml.cms.waikato.ac.nz/weka/)） | 見[演算法與資料分析](method-data.md) |
+| 檢力分析 | **G\*Power**（[gpower.hhu.de](https://www.gpower.hhu.de/)） | 免費；實驗法應事前使用 |
 
 !!! tip "AI 在這一段最實際的用途是寫程式碼"
     AI 可以協助起草 R 或 Python 分析程式碼，**但你必須看得懂每一行，而且能解釋分析邏輯**。
@@ -200,10 +200,10 @@
 
 | 工具 | 用途 | 界線 |
 |---|---|---|
-| **Writefull / Paperpal / Trinka** | 學術英文的文法與用語修飾 | 屬語言協助；是否允許及如何揭露依投稿單位政策確認 |
-| **Grammarly** | 一般英文文法檢查 | 同上 |
-| **DeepL** | 翻譯 | 翻完必須自己逐句校對，術語尤其危險 |
-| **Overleaf / LaTeX** | 排版（理工與部分期刊要求） | — |
+| **Writefull**（[writefull.com](https://www.writefull.com/)） / **Paperpal**（[paperpal.com](https://paperpal.com/)） / **Trinka**（[trinka.ai](https://www.trinka.ai/)） | 學術英文的文法與用語修飾 | 屬語言協助；是否允許及如何揭露依投稿單位政策確認 |
+| **Grammarly**（[grammarly.com](https://www.grammarly.com/)） | 一般英文文法檢查 | 同上 |
+| **DeepL**（[deepl.com](https://www.deepl.com/)） | 翻譯 | 翻完必須自己逐句校對，術語尤其危險 |
+| **Overleaf**（[overleaf.com](https://www.overleaf.com/)） / **LaTeX**（[latex-project.org](https://www.latex-project.org/)） | 排版（理工與部分期刊要求） | — |
 | **Word 樣式與交互參照** | 中文碩論的主流 | 目次、圖表編號、交互參照都用內建功能做，不要手打 |
 
 **中文寫作的關鍵風險**在別的地方：AI 生成的繁體中文極易混入大陸用語，而這是口試委員與審稿人最容易挑出來的。對照表與 grep 指令在[學術中文寫作紀律](style.md)。
@@ -214,9 +214,9 @@
 
 | 工具 | 用途 |
 |---|---|
-| **Turnitin / iThenticate** | 原創性比對；多數學校有校園授權 |
+| **Turnitin**（[turnitin.com](https://www.turnitin.com/)） / **iThenticate**（[ithenticate.com](https://www.ithenticate.com/)） | 原創性比對；多數學校有校園授權 |
 | **期刊選擇工具**（各出版社的 journal finder） | 用摘要比對合適的投稿標的 |
-| **ORCID** | 研究者唯一識別碼，投稿與升等都會用到 |
+| **ORCID**（[orcid.org](https://orcid.org/)） | 研究者唯一識別碼，投稿與升等都會用到 |
 | **各期刊的作者須知** | **最終權威**，包括 AI 使用政策 |
 
 見[學術倫理與 AI 揭露](ethics.md)。

@@ -29,17 +29,17 @@ skills/research-question-audit/
     └── audit-checklist.md
 ```
 
-**觸發機制的關鍵是 `description`**，而且運作方式是分層展開的（progressive disclosure）：對話一開始，Claude 只會先讀進所有已安裝 SKILL 的 `name` 與 `description` 這種輕量摘要，不會整份 `SKILL.md` 都先塞進脈絡；只有判斷目前任務跟某個 `description` 描述的情境相符，才會把那份 `SKILL.md` 的完整內容展開讀進來；再往下，`SKILL.md` 裡如果指到 `references/` 底下的補充檔案，也是等真的需要引用時才展開讀取。這也是這次兩個 SKILL 都能把完整的判準表、例句庫、檢查清單整份放進 `references/` 的原因——平常這些內容完全不佔用對話的脈絡空間，只有真的用到的那一份才會被讀進來。
+**觸發機制的關鍵是 `description`**，而且運作方式是分層展開的（progressive disclosure）：對話一開始，Claude 只會先讀進所有已安裝 SKILL 的 `name` 與 `description` 這種輕量摘要，不會整份 `SKILL.md` 都先塞進脈絡；只有判斷目前任務跟某個 `description` 描述的情境相符，才會把那份 `SKILL.md` 的完整內容展開讀進來；再往下，`SKILL.md` 裡如果指到 `references/` 底下的補充檔案，也是等真的需要引用時才展開讀取。這也是這次幾個 SKILL 都能把完整的判準表、例句庫、檢查清單整份放進 `references/` 的原因——平常這些內容完全不佔用對話的脈絡空間，只有真的用到的那一份才會被讀進來。
 
 `description` 寫得好不好，直接決定 Claude 會不會在對的時機自動叫用這個 SKILL、會不會在不該用的時候誤觸發。這也是後面第六節要專門跑評測的原因之一。
 
 ### 2.2 Plugin：把多個 SKILL 包起來，變成可安裝、可分享的單位
 
-一個 SKILL 只是本機資料夾，別人沒辦法直接「安裝」它。要讓它可以被安裝、可以版本控制、可以分享出去，就要包成 plugin——一個 `.claude-plugin/plugin.json` 加上放在根目錄的 `skills/`（欄位與資料夾配置見 [AI 代理工具懶人包](ai-agents.md#23-skill)的 Plugin 一節）。這裡只需要記住一件事：**一個 plugin 底下可以放不只一個 SKILL**，這次的案例就是同一個 plugin（`thesis-toolkit`）底下放了 `research-question-audit` 與 `academic-writing-discipline` 兩個 SKILL 資料夾。
+一個 SKILL 只是本機資料夾，別人沒辦法直接「安裝」它。要讓它可以被安裝、可以版本控制、可以分享出去，就要包成 plugin——一個 `.claude-plugin/plugin.json` 加上放在根目錄的 `skills/`（欄位與資料夾配置見 [AI 代理工具懶人包](ai-agents.md#23-skill)的 Plugin 一節）。這裡只需要記住一件事：**一個 plugin 底下可以放不只一個 SKILL**，這次的案例就是同一個 plugin（`thesis-toolkit`）底下放了 `research-direction-finding`、`research-question-audit` 與 `academic-writing-discipline` 三個 SKILL 資料夾。
 
 **要讓同學裝得到，還需要再包一層：marketplace。** Marketplace 是一個獨立的 repo，裡面 `.claude-plugin/marketplace.json` 列出這個 marketplace 收錄哪些 plugin、各自的原始碼在哪裡。使用者的安裝流程分兩步：先把 marketplace 加進自己的 Claude Code（`/plugin marketplace add <repo擁有者>/<marketplace repo>`），再從這個 marketplace 裡挑要裝的 plugin（`/plugin install <plugin名稱>@<marketplace名稱>`）。
 
-這次實際的案例，就是開一個獨立的 marketplace repo，裡面用 `plugins/` 子目錄放一個 plugin（`thesis-toolkit`），這個 plugin 底下的 `skills/` 子目錄放了兩個 SKILL 資料夾。層層往下：**marketplace 裝 plugin，plugin 裝 SKILL，SKILL 裝判準與參考資料。**
+這次實際的案例，就是開一個獨立的 marketplace repo，裡面用 `plugins/` 子目錄放一個 plugin（`thesis-toolkit`），這個 plugin 底下的 `skills/` 子目錄放了三個 SKILL 資料夾。層層往下：**marketplace 裝 plugin，plugin 裝 SKILL，SKILL 裝判準與參考資料。**
 
 ---
 
@@ -110,7 +110,7 @@ skills/research-question-audit/
 
 ## 八、最終產出：同學怎麼安裝
 
-完成的東西是一個獨立的 marketplace repo——[wayhong0928/mis-thesis-skills](https://github.com/wayhong0928/mis-thesis-skills)（MIT 授權，公開）——裡面放一個 plugin（`thesis-toolkit`），plugin 底下有兩個 SKILL：研究問題稽核，跟學術寫作品質稽核。兩個 SKILL 可以先後套用在同一份草稿上，互不重疊。
+完成的東西是一個獨立的 marketplace repo——[wayhong0928/mis-thesis-skills](https://github.com/wayhong0928/mis-thesis-skills)（MIT 授權，公開）——裡面放一個 plugin（`thesis-toolkit`），plugin 底下有三個 SKILL：研究方向收斂、研究問題稽核，跟學術寫作品質稽核。三個 SKILL 可以先後套用在同一份草稿上，互不重疊。
 
 不同介面的安裝方式不一樣，因為不是每個介面都支援 plugin marketplace 這套格式：
 
@@ -165,7 +165,7 @@ skills/research-question-audit/
 - 起點是網站自己早就提過的一句話：連續貼第三次同樣的提示詞，就該包成 SKILL。這次是親自示範一次完整的過程。
 - SKILL 是資料夾＋`SKILL.md`，靠 `description` 決定觸發時機，用 progressive disclosure 分層展開內容，平常不佔用對話脈絡；Plugin 是把多個 SKILL 包起來、可安裝可分享的單位；Marketplace 是收錄多個 plugin 的獨立 repo，同學要先加 marketplace 再裝 plugin。
 - 架構決策先做窄後做寬：單一階段起步，用 plugin marketplace 格式，未來加階段只是加資料夾，不用重新設計。
-- 兩個 SKILL 分工清楚：一個管研究設計邏輯站不站得住腳，一個管文字與論證品質，互不重疊，也各自從不同頁面提煉素材。
+- 三個 SKILL 的分工清楚：一個管還沒有方向的人怎麼收出一個方向，一個管研究設計邏輯站不站得住腳，一個管文字與格式品質，互不重疊，也各自從不同的來源提煉。
 - 規則寫得太死一樣會出錯：因果動詞規則被使用者的實務經驗糾正，教訓是規則要留有條件允許的空間，不是非黑即白的禁用詞清單。
 - 評測不能省，而且要誠實面對「差異不大」這種結果——SKILL 的價值常常是一致性與覆蓋率，不是能力升級；評測也真的抓到一個輸出格式的缺口並修好。
 - 稽核報告只列問題清單還不夠，主動邀請、同意才進入的逐項引導模式，是把「知道有問題」帶到「解決問題」的關鍵一步。

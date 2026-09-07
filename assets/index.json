@@ -18,6 +18,12 @@
   "section": "研究的基礎"
  },
  {
+  "slug": "venues",
+  "title": "期刊與研討會清單",
+  "desc": "AIS Basket、各子領域 Q1 期刊、國際研討會、台灣本地期刊與研討會，可當選題目錄用",
+  "section": "研究的基礎"
+ },
+ {
   "slug": "is-research",
   "title": "資訊管理研究的範疇與取向",
   "desc": "研究對象、行為科學與設計科學、方法取捨、研究策略",
@@ -164,7 +170,7 @@
  {
   "slug": "skill-build",
   "title": "把教材做成可安裝的 SKILL",
-  "desc": "從架構決策到 marketplace 上架：兩個 SKILL 的完整實作紀錄與可照抄的步驟",
+  "desc": "從架構決策到 marketplace 上架：三個 SKILL 的完整實作紀錄與可照抄的步驟",
   "section": "AI 工具與技術環境"
  },
  {
