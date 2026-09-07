@@ -162,4 +162,4 @@ Berthon 等人的關鍵論點是：這三者不是「等級」，而是**一個�
 
 ---
 
-**延伸**：[理論的構成與評估](theory-building.md)｜[方法論選擇地圖](methodology.md)｜[研究問題、假說與研究架構](problem-design.md)
+**延伸**：[期刊與研討會清單](venues.md)｜[理論的構成與評估](theory-building.md)｜[方法論選擇地圖](methodology.md)｜[研究問題、假說與研究架構](problem-design.md)

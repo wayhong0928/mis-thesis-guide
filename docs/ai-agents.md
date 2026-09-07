@@ -348,4 +348,4 @@ thesis/
 
 **來源說明**：Claude Code 的 plugin 與 skill 機制取自 [Claude Code 官方文件](https://code.claude.com/docs/en/plugins)；Claude Cowork 的定位取自 [Anthropic 官方說明](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork)；Codex 的介面與 AGENTS.md 取自 [OpenAI Codex 官方文件](https://developers.openai.com/codex/)。查詢日期為 2026 年 9 月 4 日，功能可能已更新。
 
-**延伸**：[AI 學術研究工具指南](tool-directory.md)｜[AI 輔助研究工作流](ai-workflow.md)｜[AI 提示詞範本](prompts.md)｜[學術倫理與 AI 揭露](ethics.md)
+**延伸**：[AI 代理的環境設計與驗證分級](harness.md)｜[AI 學術研究工具指南](tool-directory.md)｜[AI 輔助研究工作流](ai-workflow.md)｜[AI 提示詞範本](prompts.md)｜[學術倫理與 AI 揭露](ethics.md)

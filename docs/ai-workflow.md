@@ -397,4 +397,4 @@ status: 🌱
 
 ---
 
-**延伸**：[AI 學術研究工具指南](tool-directory.md)｜[Claude 工具家族](claude-tools-overview.md)｜[AI 代理工具懶人包](ai-agents.md)｜[AI 工具生態與風險](ai-tools.md)｜[學術倫理與 AI 揭露](ethics.md)｜[AI 提示詞範本](prompts.md)
+**延伸**：[AI 代理的環境設計與驗證分級](harness.md)｜[AI 學術研究工具指南](tool-directory.md)｜[Claude 工具家族](claude-tools-overview.md)｜[AI 代理工具懶人包](ai-agents.md)｜[AI 工具生態與風險](ai-tools.md)｜[學術倫理與 AI 揭露](ethics.md)｜[AI 提示詞範本](prompts.md)

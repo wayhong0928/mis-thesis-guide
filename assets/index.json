@@ -168,6 +168,12 @@
   "section": "AI 工具與技術環境"
  },
  {
+  "slug": "harness",
+  "title": "AI 代理的環境設計與驗證分級",
+  "desc": "官方 harness 指引怎麼說：什麼該交給誰做、產出怎麼驗、指令為什麼不能越寫越長",
+  "section": "AI 工具與技術環境"
+ },
+ {
   "slug": "skill-build",
   "title": "把教材做成可安裝的 SKILL",
   "desc": "從架構決策到 marketplace 上架：三個 SKILL 的完整實作紀錄與可照抄的步驟",

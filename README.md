@@ -36,11 +36,11 @@
 
 | 區塊 | 內容 |
 |---|---|
-| 研究的基礎 | 從零開始的第一個月、研究的本質與時程、怎麼找／怎麼讀／怎麼選題目、資訊管理研究的範疇、研究問題與假說、文獻回顧與批判性思考、理論的構成與評估、常用理論家族 |
+| 研究的基礎 | 從零開始的第一個月、研究的本質與時程、怎麼找／怎麼讀／怎麼選題目、期刊與研討會清單、資訊管理研究的範疇、研究問題與假說、文獻回顧與批判性思考、理論的構成與評估、常用理論家族 |
 | 研究方法 | 方法選擇地圖、研究倫理與資料管理、系統性／範疇回顧、量化分析規劃與資料處理、問卷調查法、實驗法、系統發展法／DSR、演算法與資料分析、次級資料／檔案研究、質性研究 |
 | 論文寫作 | 論文架構與各章要領、學術中文寫作紀律、計畫書與口試簡報、口試後修訂／典藏／結案 |
 | AI 輔助研究 | 工作流與三層架構、AI 工具生態與風險、學術倫理與 AI 揭露——放方法論判斷與紅線 |
-| AI 工具與技術環境 | Claude 工具家族（Chat／Cowork／Code／Design）、AI 代理工具懶人包（Claude Code／Skill／Plugin／Codex）、把教材做成可安裝的 SKILL——放工具本身的功能與技術環境 |
+| AI 工具與技術環境 | Claude 工具家族（Chat／Cowork／Code／Design）、AI 代理工具懶人包（Claude Code／Skill／Plugin／Codex）、AI 代理的環境設計與驗證分級、把教材做成可安裝的 SKILL——放工具本身的功能與技術環境 |
 | 工具箱 | 文獻管理與知識庫、AI 學術研究工具指南、檢查清單、AI 提示詞範本、名詞與用語對照、延伸閱讀與資源指南、關於本站 |
 
 ## 這不是什麼
@@ -65,6 +65,7 @@
 │   ├── getting-started.md
 │   ├── research-basics.md
 │   ├── finding-reading.md
+│   ├── venues.md
 │   ├── is-research.md
 │   ├── problem-design.md
 │   ├── literature.md
@@ -88,6 +89,8 @@
 │   ├── claude-tools-overview.md
 │   ├── tool-directory.md
 │   ├── ai-agents.md
+│   ├── harness.md
+│   ├── skill-build.md
 │   ├── ai-tools.md
 │   ├── ethics.md
 │   ├── tools-knowledge.md
