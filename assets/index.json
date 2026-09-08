@@ -175,8 +175,8 @@
  },
  {
   "slug": "skill-build",
-  "title": "把教材做成可安裝的 SKILL",
-  "desc": "從架構決策到 marketplace 上架：三個 SKILL 的完整實作紀錄與可照抄的步驟",
+  "title": "把教材做成 SKILL：安裝版與手動版",
+  "desc": "從架構決策到 marketplace 上架：三個 SKILL 的完整實作紀錄、可照抄的步驟，以及沒有 Claude Code／Codex 時的手動使用法",
   "section": "AI 工具與技術環境"
  },
  {

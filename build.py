@@ -56,7 +56,7 @@ NAV = [
         ("claude-tools-overview", "Claude 工具家族：介面與功能總覽", "四種介面（Chat/Cowork/Code/Design）怎麼選、Projects 與 Artifacts 怎麼搭配、研究工作怎麼分配"),
         ("ai-agents", "AI 代理工具懶人包", "Claude Code、Skill／Plugin、Codex 與研究場景應用"),
         ("harness", "AI 代理的環境設計與驗證分級", "官方 harness 指引怎麼說：什麼該交給誰做、產出怎麼驗、指令為什麼不能越寫越長"),
-        ("skill-build", "把教材做成可安裝的 SKILL", "從架構決策到 marketplace 上架：三個 SKILL 的完整實作紀錄與可照抄的步驟"),
+        ("skill-build", "把教材做成 SKILL：安裝版與手動版", "從架構決策到 marketplace 上架：三個 SKILL 的完整實作紀錄、可照抄的步驟，以及沒有 Claude Code／Codex 時的手動使用法"),
     ]),
     ("工具箱", [
         ("tools-knowledge", "文獻管理與知識庫", "Zotero／EndNote、Obsidian／Notion、筆記欄位、備份策略"),
