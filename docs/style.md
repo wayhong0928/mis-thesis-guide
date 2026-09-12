@@ -2,6 +2,8 @@
 
 > 你的研究設計能說什麼，文字就只能說什麼。這一頁處理五件事：因果動詞的紀律、句子的構句原則、台灣學術用語、APA 7 中文化，以及常見的機械式寫作問題。
 
+> **跟 Claude Code SKILL 的關係**：本頁判準與 [mis-thesis-skills](https://github.com/wayhong0928/mis-thesis-skills) 這個 plugin 裡的 `academic-writing-discipline` SKILL 內容大量重疊，兩邊各自維護、沒有自動同步機制。SKILL 那邊額外多了「論證鏈四步」「文獻對話四測試」等文獻回顧專用判準（本頁沒有涵蓋），且持續在跑真實評測、抓到問題會更新——沒有 Claude Code 的同學可參考本頁；有 Claude Code 的同學建議直接裝 SKILL，判準更完整也更新得比較勤（安裝方式見[把教材做成可安裝的 SKILL](skill-build.md)）。
+
 ---
 
 ## 一、因果動詞紀律
