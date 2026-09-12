@@ -39,7 +39,7 @@
 </ul></div>
 <div class="navsec"><h2>論文寫作</h2><ul>
 <li><a href="../pages/writing.html" data-title="論文架構與各章寫作要領" data-slug="writing" data-updated="1788705875">論文架構與各章寫作要領</a></li>
-<li><a href="../pages/style.html" data-title="學術中文寫作紀律" data-slug="style" data-updated="1788705875">學術中文寫作紀律</a></li>
+<li><a href="../pages/style.html" data-title="學術中文寫作紀律" data-slug="style" data-updated="1789186630">學術中文寫作紀律</a></li>
 <li><a href="../pages/defense.html" data-title="計畫書、口試與簡報" data-slug="defense" data-updated="1788705875">計畫書、口試與簡報</a></li>
 <li><a href="../pages/post-defense.html" data-title="口試後修訂、典藏與結案" data-slug="post-defense" data-updated="1788525613">口試後修訂、典藏與結案</a></li>
 </ul></div>
@@ -52,7 +52,7 @@
 <li><a href="../pages/claude-tools-overview.html" data-title="Claude 工具家族：介面與功能總覽" data-slug="claude-tools-overview" data-updated="1788780848">Claude 工具家族：介面與功能總覽</a></li>
 <li><a href="../pages/ai-agents.html" data-title="AI 代理工具懶人包" data-slug="ai-agents" data-updated="1788780848">AI 代理工具懶人包</a></li>
 <li><a href="../pages/harness.html" data-title="AI 代理的環境設計與驗證分級" data-slug="harness" data-updated="1788780848">AI 代理的環境設計與驗證分級</a></li>
-<li><a href="../pages/skill-build.html" data-title="把教材做成 SKILL：安裝版與手動版" data-slug="skill-build" data-updated="1788857195">把教材做成 SKILL：安裝版與手動版</a></li>
+<li><a href="../pages/skill-build.html" data-title="把教材做成 SKILL：安裝版與手動版" data-slug="skill-build" data-updated="1789186630">把教材做成 SKILL：安裝版與手動版</a></li>
 </ul></div>
 <div class="navsec"><h2>工具箱</h2><ul>
 <li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫" data-slug="tools-knowledge" data-updated="1788763905">文獻管理與知識庫</a></li>
@@ -404,6 +404,10 @@
 <tr>
 <td>2026-09-07</td>
 <td><strong>新增兩頁</strong>：<code>venues.md</code>（期刊與研討會清單）整理 AIS Senior Scholars' Basket（並標明官網現列 11 本，不是傳統說法的 8 本）、依 ICIS 2026 官方 track 分的 12 個子領域 Q1 期刊、國際主要研討會，台灣本地期刊與研討會獨立成章；查證過程抓到三個要提醒讀者的現況——NCS 已併入 TANET 不再獨立徵稿、CSIM 官網 SSL 憑證過期（研討會本身沒停辦）、Computers &amp; Security 暫停收以 AI／ML 為主的投稿。<code>harness.md</code>（AI 代理的環境設計與驗證分級）依 12 篇 Anthropic 官方文件整理：harness 的定義、七個讓工作環境可靠的原則（做事的人不驗自己、驗收者只看結果不看推理、找到的問題不必照單全收、探索交給子代理、說明檔太長規則反而被忽略、該強制的事交給機制、拿證據不要斷言）、驗證強度四級、動態即時決定與事先寫死規則的取捨、多代理協作約 15 倍 token 的代價、說明檔與記憶檔的篇幅上限。<br><strong>第三個 SKILL 上線</strong>：<code>research-direction-finding</code>（研究方向收斂）發布，<code>thesis-toolkit</code> plugin 升到 0.2.0，並在真實環境實測 marketplace 更新與 plugin 安裝、重啟後確認三個 SKILL 都能被載入。<code>skill-build.md</code> 新增第四節記錄它的建置過程，含三件值得寫下來的事——這個 SKILL 的定位是研究問題稽核<strong>自己留下的接口</strong>（它的前置檢查早就指名了收斂漏斗這個方法，卻沒有給工具）、三條起步策略裡「延伸老師的計畫」刻意跳過整個漏斗（那是可行性判斷不是興趣判斷）、以及一個建置機制的教訓（<code>assets/index.json</code> 是建置產出物不是頁面註冊表，手動改不會生效還會被覆寫）。全站三個 SKILL 的敘述同步，並誠實標明第三個的評測案例已備妥、尚未實跑。<br><strong>既有頁面補強</strong>：<code>tools-knowledge.md</code> 新增 2.3 節 Zotero 實戰教學（圖書館帳戶登入、華藝／ResearchGate／期刊官網三管道、Connector 擷取、Better BibTeX 安裝、DOI 匯入、日期格式與 citekey 的關係、Word 引用）；<code>tool-directory.md</code>／<code>claude-tools-overview.md</code>／<code>ai-agents.md</code> 共補上 48 個工具的官方網址，查證中發現三個網址真的搬家（<code>inciteful.xyz</code>、<code>notebooklm.google</code>、Web of Science 的轉址鏈），CiteSpace 與 Windsurf 因來源互相矛盾或產品已改名而暫時保留不連。<code>finding-reading.md</code> 收斂漏斗一節與 <code>is-research.md</code> 連向新的期刊清單頁，<code>ai-agents.md</code>／<code>ai-workflow.md</code>／<code>claude-tools-overview.md</code> 連向新的環境設計頁。</td>
+</tr>
+<tr>
+<td>2026-09-12</td>
+<td><strong>第三個 SKILL 補跑評測、發布 v0.2.0</strong>：<code>research-direction-finding</code> 首次完成 with/without SKILL 對照評測，5 個案例整體通過率差距約三成，最大差距的一題是「使用者答不出方向時該不該繼續追問」——有 SKILL 引導時正確判斷該停下來送去讀文獻，沒有引導時則是換個問法繼續追問。<code>thesis-toolkit</code> plugin 打 tag 並用 <code>gh release create</code> 正式發布 v0.2.0（此前版本號雖已改成 0.2.0，但一直沒發過正式 release）。<br><strong>抓到並修正一個真實的 SKILL 缺陷</strong>：學術寫作品質稽核的文獻回顧判準（「關係詞測試」）原本只檢查兩篇文獻有沒有好好對話，沒檢查對話內容撐不撐得住結論句的宣稱強度，導致一段刻意設計成有缺陷的文獻回顧（兩篇文獻只證明現象普遍存在，卻被拿去論證某理論機制適用）完全沒被抓到，反而是沒有這套判準的基準版靠一般批判性閱讀抓到了問題，甚至 SKILL 版本還稱讚了那句有問題的整合句。找到根因後補上「陳述強度核對」，重跑同一案例即精準命中。這個案例連同前面兩輪評測的完整發現，已同步進 <code>skill-build.md</code> 第七節。<br><strong><code>skill-build.md</code> 新增 Claude Code 三種安裝方式的逐步說明</strong>（指令法、互動選單、請 Claude Code 代勞），查證官方文件後撰寫，選單按鈕文字官方未逐字記載的部分不硬猜，只寫分頁名稱與操作順序。<code>style.md</code> 補一段跟 <code>academic-writing-discipline</code> SKILL 的關係說明，兩邊內容重疊但各自維護、無自動同步機制。<br><strong>清理</strong>：刪除內容已抄錄過的施工筆記 <code>_cleanup-plan.md</code> 與已無用途的舊打包檔 <code>_site-bundle.tar.gz</code>（兩者皆未受版控）。</td>
 </tr>
 </tbody>
 </table>
