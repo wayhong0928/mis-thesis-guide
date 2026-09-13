@@ -69,7 +69,9 @@
 |---|---|---|
 | **Google Scholar**（[scholar.google.com](https://scholar.google.com/)） | 涵蓋最廣，含灰色文獻與碩博士論文 | 引文追蹤（"被引用次數"）與 Alert 功能 |
 | **Semantic Scholar**（[semanticscholar.org](https://www.semanticscholar.org/)） | Allen Institute for AI（AI2）維運的免費學術搜尋引擎，索引超過 2 億篇論文 | 提供 TLDR 摘要、引文脈絡、Semantic Reader、開放 API 與 S2ORC 語料庫 |
+| **OpenAlex**（[openalex.org](https://openalex.org/)） | 免費開放的著作資料庫，收錄超過 2 億筆著作紀錄，資料完全開放且可查 API | 沒有校方帳號權限時，作為 Scopus／Web of Science 的免費替代或補充；也可用來核對兩邊資料庫的收錄差異 |
 | **Scopus**（[scopus.com](https://www.scopus.com/)） / **Web of Science**（[clarivate.com](https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/)） | 商業資料庫，收錄經篩選 | 期刊分級、JCR/SJR 影響指標、系統性回顧的標準來源 |
+| **SSRN**（[ssrn.com](https://www.ssrn.com/)） | 經濟、財金、法律、管理領域的工作論文（working paper）預印本平台 | 找最新、尚未正式發表的實證研究；財金／消費者行為取向的題目（例如信用卡、支付、消費者切換行為）尤其容易在這裡找到比期刊版更早的版本——**注意是預印本，未經同儕審查，引用時要標明並謹慎使用** |
 | **華藝線上圖書館（airiti Library）**（[airitilibrary.com](https://www.airitilibrary.com/)） | 中文期刊與論文 | 中文文獻不可繞過的一站 |
 | **臺灣博碩士論文知識加值系統**（[ndltd.ncl.edu.tw](https://ndltd.ncl.edu.tw/)） | 全台碩博士論文 | 看同領域學長姊怎麼做、抓研究缺口 |
 
