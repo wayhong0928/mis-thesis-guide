@@ -17,7 +17,7 @@
 <div class="navsec"><h2>研究的基礎</h2><ul>
 <li><a href="../pages/getting-started.html" data-title="從零開始：研究所的第一個月" data-slug="getting-started" data-updated="1788520745">從零開始：研究所的第一個月</a></li>
 <li><a href="../pages/research-basics.html" data-title="研究的本質、歷程與時程" data-slug="research-basics" data-updated="1788705875">研究的本質、歷程與時程</a></li>
-<li><a href="../pages/finding-reading.html" data-title="怎麼找、怎麼讀、怎麼選題目" data-slug="finding-reading" data-updated="1788780848">怎麼找、怎麼讀、怎麼選題目</a></li>
+<li><a href="../pages/finding-reading.html" data-title="怎麼找、怎麼讀、怎麼選題目" data-slug="finding-reading" data-updated="1789273293">怎麼找、怎麼讀、怎麼選題目</a></li>
 <li><a href="../pages/venues.html" data-title="期刊與研討會清單" data-slug="venues" data-updated="1788763905">期刊與研討會清單</a></li>
 <li><a href="../pages/is-research.html" data-title="資訊管理研究的範疇與取向" data-slug="is-research" data-updated="1788780848">資訊管理研究的範疇與取向</a></li>
 <li><a href="../pages/problem-design.html" data-title="研究問題、假說與研究架構" data-slug="problem-design" data-updated="1788705875">研究問題、假說與研究架構</a></li>
@@ -56,7 +56,7 @@
 </ul></div>
 <div class="navsec"><h2>工具箱</h2><ul>
 <li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫" data-slug="tools-knowledge" data-updated="1788763905">文獻管理與知識庫</a></li>
-<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南" data-slug="tool-directory" data-updated="1788763905">AI 學術研究工具指南</a></li>
+<li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南" data-slug="tool-directory" data-updated="1789273293">AI 學術研究工具指南</a></li>
 <li><a href="../pages/checklists.html" data-title="檢查清單" data-slug="checklists" data-updated="1788705875">檢查清單</a></li>
 <li class="active"><a href="../pages/prompts.html" data-title="AI 提示詞範本" data-slug="prompts" data-updated="1788705875">AI 提示詞範本</a></li>
 <li><a href="../pages/glossary.html" data-title="名詞與用語對照" data-slug="glossary" data-updated="1788525613">名詞與用語對照</a></li>
@@ -560,7 +560,7 @@
 <hr />
 <h2 id="claude-code-skill">九、把常用提示詞包成自己的 Claude Code skill</h2>
 <p>當你對同一類任務連續第三次貼上相同提示詞，就值得把它包成 skill。例如「檢查橫斷面研究的因果動詞是否越線」或「檢查文獻矩陣格式」，規則穩定、操作重複，打包後比每次複製貼上省事。</p>
-<p>skill 的最小結構、frontmatter 要寫哪些欄位、<code>description</code> 為什麼決定觸發時機，統一寫在<a href="ai-agents.html#23-skill">AI 代理工具懶人包的「Skill 的最小結構」</a>，這裡不重複規格。本節只做一件事：把本頁的靜態提示詞改寫成可以直接存檔的 <code>SKILL.md</code> 骨架。</p>
+<p>skill 的最小結構、frontmatter 要寫哪些欄位、<code>description</code> 為什麼決定觸發時機，統一寫在新站的<a href="https://wayhong0928.github.io/ai-agent-notes/pages/extensions.html">SKILL、Plugin、MCP 與 Subagent</a>（原<a href="ai-agents.html">AI 代理工具懶人包</a>已於 2026-09-17 遷移至該站），這裡不重複規格。本節只做一件事：把本頁的靜態提示詞改寫成可以直接存檔的 <code>SKILL.md</code> 骨架。</p>
 <ul>
 <li><code>SKILL.md</code> 本體放檢查邏輯、提示詞內容與規則。你可以直接拿本頁某一段範本改寫，但要刪掉只適用單次工作的背景資料。</li>
 <li>如果工作需要機械化檢查，例如用 <code>grep</code> 找出特定詞彙，可以把腳本放在同一個 skill 資料夾，並在 <code>SKILL.md</code> 寫清楚何時執行、如何判讀結果。</li>
@@ -587,9 +587,9 @@ description: 檢查橫斷面研究文字是否把相關或預測結果誤寫成�
 用表格列出：位置、原句、問題、建議用詞、判斷依據。
 </code></pre>
 <p>skill 是 Claude Code 或其他明確支援 skill 的 Claude 介面所用的機制。如果你平常使用 ChatGPT、Gemini，或不支援 skill 的純網頁對話，本頁的靜態提示詞仍是最泛用的做法，不必勉強轉換。</p>
-<p>完整案例見<a href="skill-build.html">把教材做成可安裝的 SKILL</a>——記錄一次真的把網站內容包成兩個可安裝 SKILL 的完整過程，包含規則被實務經驗糾正的真實教訓。</p>
+<p>完整案例見新站的<a href="https://wayhong0928.github.io/ai-agent-notes/pages/skill-build.html">把教材做成 SKILL</a>（原本收錄在本站<a href="skill-build.html">把教材做成可安裝的 SKILL</a>，已於 2026-09-17 遷移）——記錄一次真的把網站內容包成可安裝 SKILL 的完整過程，包含規則被實務經驗糾正的真實教訓。</p>
 <hr />
-<p><strong>延伸</strong>：<a href="ai-workflow.html">AI 輔助研究工作流</a>｜<a href="tool-directory.html">AI 學術研究工具指南</a>｜<a href="ai-agents.html">AI 代理工具懶人包</a>｜<a href="ethics.html">學術倫理與 AI 揭露</a>｜<a href="checklists.html">檢查清單</a></p>
+<p><strong>延伸</strong>：<a href="ai-workflow.html">AI 輔助研究工作流</a>｜<a href="tool-directory.html">AI 學術研究工具指南</a>｜<a href="ai-agents.html">AI 代理工具懶人包</a>（已遷移，本站僅留導引）｜<a href="ethics.html">學術倫理與 AI 揭露</a>｜<a href="checklists.html">檢查清單</a></p>
 </article>
 <nav class="pager"><a class="prev" href="checklists.html">← 檢查清單</a><a class="next" href="glossary.html">名詞與用語對照 →</a></nav>
 <footer class="foot">

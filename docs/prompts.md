@@ -556,7 +556,7 @@
 
 當你對同一類任務連續第三次貼上相同提示詞，就值得把它包成 skill。例如「檢查橫斷面研究的因果動詞是否越線」或「檢查文獻矩陣格式」，規則穩定、操作重複，打包後比每次複製貼上省事。
 
-skill 的最小結構、frontmatter 要寫哪些欄位、`description` 為什麼決定觸發時機，統一寫在[AI 代理工具懶人包的「Skill 的最小結構」](ai-agents.md#23-skill)，這裡不重複規格。本節只做一件事：把本頁的靜態提示詞改寫成可以直接存檔的 `SKILL.md` 骨架。
+skill 的最小結構、frontmatter 要寫哪些欄位、`description` 為什麼決定觸發時機，統一寫在新站的[SKILL、Plugin、MCP 與 Subagent](https://wayhong0928.github.io/ai-agent-notes/pages/extensions.html)（原[AI 代理工具懶人包](ai-agents.md)已於 2026-09-17 遷移至該站），這裡不重複規格。本節只做一件事：把本頁的靜態提示詞改寫成可以直接存檔的 `SKILL.md` 骨架。
 
 - `SKILL.md` 本體放檢查邏輯、提示詞內容與規則。你可以直接拿本頁某一段範本改寫，但要刪掉只適用單次工作的背景資料。
 - 如果工作需要機械化檢查，例如用 `grep` 找出特定詞彙，可以把腳本放在同一個 skill 資料夾，並在 `SKILL.md` 寫清楚何時執行、如何判讀結果。
@@ -587,8 +587,8 @@ description: 檢查橫斷面研究文字是否把相關或預測結果誤寫成�
 
 skill 是 Claude Code 或其他明確支援 skill 的 Claude 介面所用的機制。如果你平常使用 ChatGPT、Gemini，或不支援 skill 的純網頁對話，本頁的靜態提示詞仍是最泛用的做法，不必勉強轉換。
 
-完整案例見[把教材做成可安裝的 SKILL](skill-build.md)——記錄一次真的把網站內容包成兩個可安裝 SKILL 的完整過程，包含規則被實務經驗糾正的真實教訓。
+完整案例見新站的[把教材做成 SKILL](https://wayhong0928.github.io/ai-agent-notes/pages/skill-build.html)（原本收錄在本站[把教材做成可安裝的 SKILL](skill-build.md)，已於 2026-09-17 遷移）——記錄一次真的把網站內容包成可安裝 SKILL 的完整過程，包含規則被實務經驗糾正的真實教訓。
 
 ---
 
-**延伸**：[AI 輔助研究工作流](ai-workflow.md)｜[AI 學術研究工具指南](tool-directory.md)｜[AI 代理工具懶人包](ai-agents.md)｜[學術倫理與 AI 揭露](ethics.md)｜[檢查清單](checklists.md)
+**延伸**：[AI 輔助研究工作流](ai-workflow.md)｜[AI 學術研究工具指南](tool-directory.md)｜[AI 代理工具懶人包](ai-agents.md)（已遷移，本站僅留導引）｜[學術倫理與 AI 揭露](ethics.md)｜[檢查清單](checklists.md)

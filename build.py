@@ -53,10 +53,10 @@ NAV = [
         ("ethics", "學術倫理與 AI 揭露", "法規、期刊政策、揭露聲明範本"),
     ]),
     ("AI 工具與技術環境", [
-        ("claude-tools-overview", "Claude 工具家族：介面與功能總覽", "四種介面（Chat/Cowork/Code/Design）怎麼選、Projects 與 Artifacts 怎麼搭配、研究工作怎麼分配"),
-        ("ai-agents", "AI 代理工具懶人包", "Claude Code、Skill／Plugin、Codex 與研究場景應用"),
-        ("harness", "AI 代理的環境設計與驗證分級", "官方 harness 指引怎麼說：什麼該交給誰做、產出怎麼驗、指令為什麼不能越寫越長"),
-        ("skill-build", "把教材做成 SKILL：安裝版與手動版", "從架構決策到 marketplace 上架：三個 SKILL 的完整實作紀錄、可照抄的步驟，以及沒有 Claude Code／Codex 時的手動使用法"),
+        ("claude-tools-overview", "Claude 工具家族：介面與功能總覽", "已搬到 ai-agent-notes 新站，本頁保留導引"),
+        ("ai-agents", "AI 代理工具懶人包", "已搬到 ai-agent-notes 新站，本頁保留導引"),
+        ("harness", "AI 代理的環境設計與驗證分級", "已搬到 ai-agent-notes 新站，本頁保留導引"),
+        ("skill-build", "把教材做成 SKILL：安裝版與手動版", "已搬到 ai-agent-notes 新站，本頁保留導引"),
     ]),
     ("工具箱", [
         ("tools-knowledge", "文獻管理與知識庫", "Zotero／EndNote、Obsidian／Notion、筆記欄位、備份策略"),
@@ -170,7 +170,7 @@ SEC_DESC = {
     "研究方法": "從倫理與資料規劃，到證據綜整、量化基礎與各種研究設計。",
     "論文寫作": "從章節架構、用字紀律與口試，到修訂、典藏與結案。",
     "AI 輔助研究": "把 AI 放在流程中的正確位置，以及不能越過的界線。",
-    "AI 工具與技術環境": "認識 Claude、Codex 等 AI 工具本身的功能與技術環境，不涉及研究方法判斷。",
+    "AI 工具與技術環境": "這一區已外移到 ai-agent-notes 新站（追蹤 AI 工具與代理生態），這裡的 4 頁只保留導引連結。",
     "工具箱": "可以直接拿來用的清單、範本、速查表與延伸閱讀。",
 }
 

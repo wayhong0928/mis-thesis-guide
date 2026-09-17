@@ -14,7 +14,7 @@
 
 !!! note "這一頁講「該不該用」，工具清單在別頁"
     想找**依研究階段分類的具體工具**（Elicit、Consensus、scite、Zotero、Rayyan 等），看[AI 學術研究工具指南](tool-directory.md)。
-    想了解 **Claude Code、Skill／Plugin、Codex 這類代理型工具**怎麼用在研究上，看[AI 代理工具懶人包](ai-agents.md)。
+    想了解 **Claude Code、Skill／Plugin、Codex 這類代理型工具**本身怎麼運作，看新站的[AI Agent 怎麼運作](https://wayhong0928.github.io/ai-agent-notes/pages/agent-basics.html)與[SKILL、Plugin、MCP 與 Subagent](https://wayhong0928.github.io/ai-agent-notes/pages/extensions.html)（原[AI 代理工具懶人包](ai-agents.md)已於 2026-09-17 遷移至該站）。
     這一頁處理的是它們共同的定位問題與紅線。
 
 ---

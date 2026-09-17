@@ -370,7 +370,7 @@ status: 🌱
 
 ### 11.2 把重複的工作固定下來
 
-當你發現自己一直在貼同樣的指示，就該把它整理成可重用的提示詞範本或 skill。做法見[AI 代理工具懶人包](ai-agents.md)。
+當你發現自己一直在貼同樣的指示，就該把它整理成可重用的提示詞範本或 skill。SKILL 機制本身怎麼運作見新站的[SKILL、Plugin、MCP 與 Subagent](https://wayhong0928.github.io/ai-agent-notes/pages/extensions.html)，實際把教材做成 SKILL 的步驟見[把教材做成可安裝的 SKILL](https://wayhong0928.github.io/ai-agent-notes/pages/skill-build.html)（原[AI 代理工具懶人包](ai-agents.md)已於 2026-09-17 遷移至該站）。
 
 **一個實際的例子**：本站的[學術中文寫作紀律](style.md)整頁，本身就是一份可執行檢查清單的原料。
 
