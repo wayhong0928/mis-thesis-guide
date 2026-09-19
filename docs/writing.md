@@ -195,6 +195,14 @@
     研究顯示，很多審查委員在讀完摘要與導論之後就已經對論文有初步評價，而這個第一印象跟讀完全文後的評價常常相去不遠。
     如果導論遺漏重要文獻，表示見識淺薄；論述雜亂無章，表示囫圇吞棗；只是流水帳臚列而沒有一針見血的得失評價，表示欠缺洞見與批判力。
 
+!!! tip "緒論三功能與方法章 How／Why 的檢查已包進 SKILL"
+    `academic-writing-discipline` SKILL（[mis-thesis-skills](https://github.com/wayhong0928/mis-thesis-skills) plugin `thesis-toolkit`）的章節結構判準，會核對緒論是否走完 CARS model 三個 move、方法章是否同時交代 How 與 Why，也會抓常見誤解（例如把文獻缺口誤放成獨立總結節）。貼一段緒論或方法章草稿進去就能跑，安裝方式：
+
+    ```
+    /plugin marketplace add wayhong0928/mis-thesis-skills
+    /plugin install thesis-toolkit@mis-thesis-skills
+    ```
+
 ---
 
 ## 五、理論依據與研究方法

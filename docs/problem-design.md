@@ -110,6 +110,14 @@
 | 質性問題預先指定唯一原因 | 把探索寫成驗證，封閉了負例與意外發現 | 改問參與者如何理解、過程如何形成與條件為何 |
 | 設計問題只問「系統能否做出來」 | 工程完成不等於研究貢獻 | 加入效用評估與可轉移設計知識 |
 
+!!! tip "研究問題想好之後，可以直接用 SKILL 稽核一輪"
+    如果你已經寫得出一句話的研究問題或研究想法，[mis-thesis-skills](https://github.com/wayhong0928/mis-thesis-skills) plugin `thesis-toolkit` 裡的 `research-question-audit` SKILL 會依七個檢查點（研究缺口分類、收斂程度、題目定案六問、壞題目長相比對、句型與常見錯誤、一致性檢查鏈、對抗式審查）一次跑完，輸出結構化稽核報告與預期質詢清單，比逐條對照本頁表格更快抓出邏輯漏洞。如果連一句話的研究想法都還沒有，改用前一個 SKILL `research-direction-finding`（見[怎麼找、怎麼讀、怎麼選題目](finding-reading.md)）。安裝方式：
+
+    ```
+    /plugin marketplace add wayhong0928/mis-thesis-skills
+    /plugin install thesis-toolkit@mis-thesis-skills
+    ```
+
 ---
 
 ## 四、研究假說：研究問題的學術版本

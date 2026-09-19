@@ -298,6 +298,14 @@
 研究問題 + 假說（見 problem-design）
 ```
 
+!!! tip "這個漏斗已經做成 Claude Code SKILL"
+    如果你在用 Claude Code，`research-direction-finding` SKILL（[mis-thesis-skills](https://github.com/wayhong0928/mis-thesis-skills) plugin `thesis-toolkit`）會把上面這個漏斗做成一次推進一層的引導流程：先判斷你是完全沒方向、有粗略興趣、還是題目來自老師的計畫，再依序問問題，每一輪把結論寫進一份進度筆記，讓你關掉對話後還能接續。收斂出一句話的研究想法之後，它會直接交棒給下一個 SKILL `research-question-audit` 去稽核這個想法站不站得住腳（見[研究問題、假說與研究架構](problem-design.md)）。安裝方式：
+
+    ```
+    /plugin marketplace add wayhong0928/mis-thesis-skills
+    /plugin install thesis-toolkit@mis-thesis-skills
+    ```
+
 每往下一階，都要能回答「**為什麼要窄到這裡**」。窄不下去，通常是文獻讀得還不夠。
 
 !!! tip "第一階卡住的時候，去翻分類目錄"
