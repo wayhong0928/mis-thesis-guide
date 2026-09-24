@@ -191,7 +191,17 @@ repo 內已放置 `.nojekyll`，讓 GitHub Pages 直接輸出檔案，不經過 
 
 ## 隱私與內容檢查
 
-推送前建議跑一次：
+推送前建議跑一次檢查腳本（只用 Python 標準函式庫，Windows 與 Linux 皆可執行）：
+
+```bash
+python scripts/precheck.py                 # 檢查 docs/ 底下所有 .md
+python scripts/precheck.py docs/style.md   # 指定其他檔案或目錄
+python scripts/precheck.py --warn-only     # 只列出命中，不讓結束碼變成 1
+```
+
+腳本會依「個資」與「大陸用語」兩組列出命中的 `路徑:行號: 命中的詞 | 該行內容`，最後印出各組筆數。沒有命中時結束碼為 0，有命中為 1（加 `--warn-only` 則一律為 0），路徑不存在或檔案無法以 UTF-8 讀取時為 2，可以接進 pre-push hook。關鍵字清單放在 `scripts/precheck.py` 開頭的常數，依自己的需要增減。
+
+沒有 Python 時，可以改用以下兩道 grep 手動檢查，結果與腳本相同：
 
 ```bash
 # 檢查有沒有殘留的個人研究資訊（依自己的關鍵字調整）
