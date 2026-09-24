@@ -26,6 +26,9 @@ MAINLAND_TERMS = [
     "用戶", "算法", "數據庫", "優化", "場景", "默認", "受眾",
 ]
 
+# 前面接這個字時不算命中：「演算法」是台灣用法
+SKIP_PREFIX = {"算法": "演"}
+
 # (組名, 關鍵字, re 旗標)
 RULES = [
     ("個資", PRIVACY_TERMS, re.IGNORECASE),
@@ -80,7 +83,11 @@ def main():
     for p in missing:
         print(f"找不到路徑：{p}", file=sys.stderr)
 
-    patterns = [(name, re.compile("|".join(map(re.escape, terms)), flags))
+    def term_regex(term):
+        prefix = SKIP_PREFIX.get(term)
+        return (f"(?<!{re.escape(prefix)})" if prefix else "") + re.escape(term)
+
+    patterns = [(name, re.compile("|".join(map(term_regex, terms)), flags))
                 for name, terms, flags in RULES]
     hits = {name: [] for name, _ in patterns}
 
