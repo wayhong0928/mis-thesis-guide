@@ -53,7 +53,7 @@
 | 醫療資訊／健康資訊系統 | 研究電子病歷、醫院資訊系統、遠距醫療等醫療場域裡的資訊科技應用 | Journal of the American Medical Informatics Association (JAMIA) | <https://academic.oup.com/jamia/pages/About> | — |
 | 數位學習／教育科技 | 研究線上學習平台、數位教材、學習分析等教育場域的科技應用效果 | Computers & Education | <https://www.sciencedirect.com/journal/computers-and-education> | — |
 | 知識管理 | 研究組織怎麼蒐集、保存、分享內部知識，讓知識不會隨員工離職而流失 | Journal of Knowledge Management | <https://www.emerald.com/jkm> | — |
-| 跨領域資訊系統前沿 | 研究 IT 怎麼跟通訊、醫療、製造、經濟等領域交叉出新的應用場景（如物聯網、行動運算） | Information Systems Frontiers | <https://link.springer.com/journal/10796/aims-and-scope> | — |
+| 跨領域資訊系統前沿 | 研究 IT 怎麼跟通訊、醫療、製造、經濟等領域交叉出新的應用情境（如物聯網、行動運算） | Information Systems Frontiers | <https://link.springer.com/journal/10796/aims-and-scope> | — |
 | 組織導入與變革 | 研究一個新系統導入組織後，員工與部門怎麼調整工作方式、組織怎麼跟著改變 | Information and Organization | 見上一節「Basket」的擴編說明 | 2023 年新併入 AIS 基本清單 |
 
 ---
@@ -88,8 +88,8 @@
 | 名稱 | 主辦單位 | 官方網站 | 看主題分類的網址 | 投稿時程 |
 |---|---|---|---|---|
 | ICIM（國際資訊管理學術研討會）2026，第 37 屆 | 中華民國資訊管理學會（CSIM） | 學會：<https://www.csim.org.tw/>；本屆：<https://icim2026.com/> | [學會研討會頁](https://www.csim.org.tw/conference) | 2026 年徵稿主題「數位轉型驅動跨域整合與協作治理創新」，徵稿 2026/3/8 起、截稿延長至 2026/4/10，會議 2026/5/16（國立臺北科技大學）。第 38 屆會在明年開放徵稿 |
-| TANET（台灣網際網路研討會）暨全國計算機會議 2026 | 每年輪值不同大學主辦，2026 年為國立臺北護理健康大學 | <https://tanet2026.ntunhs.edu.tw/> | 官網「投稿主題」區塊，列出 9 大研究方向（含 AI 與應用、生成式 AI、機器學習、深度學習、資訊安全與隱私、網路通訊與雲端運算、智慧醫療應用、教育科技與多媒體等） | 投稿截止 2026/9/7（另有兩個優惠截止 2026/8/15、2026/8/31），投稿系統 2026/6/30 開放，會議 2026/10/29–31 |
-| NCS（全國計算機會議） | 中華民國電腦學會（CSROC） | <http://www.csroc.org.tw/ncs.php> | 已併入下方 TANET | 近年 NCS 已與 TANET 合併為「TANET 暨全國計算機會議」聯合舉辦，**不再單獨徵稿**。查資料時如果看到 NCS，直接改用 TANET 的資訊，不要當成兩個各自獨立的投稿管道 |
+| TANET 2026（臺灣網際網路研討會）暨 ICS（國際計算機會議） | 每年輪值不同大學主辦，2026 年為國立臺北護理健康大學 | <https://tanet2026.ntunhs.edu.tw/> | 官網「投稿主題」區塊，列出 9 大研究方向（含 AI 與應用、生成式 AI、機器學習、深度學習、資訊安全與隱私、網路通訊與雲端運算、智慧醫療應用、教育科技與多媒體等） | 投稿系統 2026/6/30 開放；徵稿截止分兩階段，第一階段 2026/9/20、第二階段 2026/10/9（官網 2026 年 9 月更新後的時程）；會議 2026/10/29–31 |
+| NCS（全國計算機會議） | 中華民國電腦學會（CSROC） | <http://www.csroc.org.tw/ncs.php> | 見上一列 TANET | 2021、2023、2025 年都與 TANET 合辦為「TANET 暨 NCS」，**沒有單獨徵稿**。2026 年 TANET 改與國際計算機會議（ICS）合辦，官網沒有提到 NCS。查資料時看到 NCS，以當年 TANET 官網公告的合辦會議為準，不要當成另一個獨立的投稿管道 |
 
 !!! warning "csim.org.tw 打開時顯示「不安全」，是真的"
     中華民國資訊管理學會官網的 SSL 憑證已過期，瀏覽器會跳出警告。這是學會網站本身沒更新憑證，**不代表 ICIM 研討會停辦**——它已連續舉辦超過 30 屆。打不開就改查本屆網站（如 icim2026.com），或直接搜尋「ICIM 資訊管理學術研討會」找最新一屆。
@@ -116,7 +116,7 @@
 - AIS 官方清單現在是 **11 本**，不是傳統認知的 8 本；本頁的 Basket 表列的是原始 8 本。
 - 子領域分類跟著 **ICIS 官方 track** 走，之後投稿會用到同一套分類。
 - 台灣本地期刊與研討會是碩士論文**實際的投稿落點**，國際頂級期刊多半是文獻回顧要讀的對象。
-- 個別已知問題：CSIM 官網 SSL 憑證過期（研討會沒停辦）、NCS 已併入 TANET（不再獨立徵稿）、Computers & Security 暫停收 AI/ML 為主的投稿。
+- 個別已知問題：CSIM 官網 SSL 憑證過期（研討會沒停辦）、NCS 近年與 TANET 合辦、不單獨徵稿（2026 年 TANET 改與 ICS 合辦）、Computers & Security 暫停收 AI/ML 為主的投稿。
 - 網址會壞是常態，打不開就搜尋全名，不用懷疑期刊或研討會本身消失了。
 
 ---

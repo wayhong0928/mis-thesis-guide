@@ -194,7 +194,7 @@
 
 | 來源 | 用途 |
 |---|---|
-| [教育部〈大學校園因應生成式 AI 之指引及教學建議〉](https://ethics.moe.edu.tw/resource/epaper/html/21/) | 大學校園使用生成式 AI 的官方原則 |
+| [教育部學術倫理電子報（2023-08）：大學校園因應生成式 AI 之指引及教學建議](https://ethics.moe.edu.tw/resource/epaper/html/21/) | 彙整國內七所大學的生成式 AI 指引（電子報主題文章，不是教育部的正式指引） |
 | [臺灣學術倫理教育資源中心](https://ethics-s.moe.edu.tw/) | 學術倫理的政府規範與政策；多數學校要求修習其課程並取得證書 |
 | [全國法規資料庫《人工智慧基本法》](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=H0160093)／[立法院三讀通過（中央社，2025-12-23）](https://www.cna.com.tw/news/aipl/202512230036.aspx)／[數位發展部新聞發布](https://moda.gov.tw/press/press-releases/18316) | 我國 AI 治理的法規框架，2026-01-14 公布施行，主管機關為國科會 |
 | [陽明交大圖書館：搞懂「AI 貢獻聲明」](https://news.lib.nycu.edu.tw/researches/%E7%94%A8ai%E5%AF%AB%E8%AB%96%E6%96%87%E6%9C%83%E8%A2%AB%E9%80%80%E7%A8%BF%E5%97%8E-%E6%90%9E%E6%87%82%E3%80%8Cai-%E8%B2%A2%E7%8D%BB%E8%81%B2%E6%98%8E%E3%80%8D%EF%BC%8C%E5%88%A5%E8%B8%A9%E5%AD%B8/) | 各大出版社的 AI 揭露規定整理，投稿前必看 |

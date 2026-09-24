@@ -270,7 +270,6 @@ Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user accep
 | DOI 格式 | doi:10.xxx | https://doi.org/10.xxx |
 | 出版地 | 需列出 | 不需列出 |
 | "Retrieved from" | 需要 | 不需要（直接附 URL） |
-| 期刊卷期 | 卷號粗體 | 卷號斜體，期號不斜體 |
 
 **各系所可能有自己的格式規定，一律以系所公告為準。**
 
