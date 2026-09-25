@@ -191,6 +191,11 @@
 | 質性 | **NVivo**（[lumivero.com/products/nvivo](https://lumivero.com/products/nvivo/)）、**ATLAS.ti**（[atlasti.com](https://atlasti.com/)）、**MAXQDA**（[maxqda.com](https://www.maxqda.com/)）、**Taguette**（[taguette.org](https://www.taguette.org/)）（開源免費） | 編碼架構仍須研究者建立 |
 | 機器學習 | **scikit-learn**（[scikit-learn.org](https://scikit-learn.org/)）、**PyTorch**（[pytorch.org](https://pytorch.org/)）、**Weka**（[ml.cms.waikato.ac.nz/weka](https://ml.cms.waikato.ac.nz/weka/)） | 見[演算法與資料分析](method-data.md) |
 | 檢力分析 | **G\*Power**（[gpower.hhu.de](https://www.gpower.hhu.de/)） | 免費；實驗法應事前使用 |
+| 程式環境・筆記本 | **Jupyter**（[jupyter.org](https://jupyter.org/)）（JupyterLab／Jupyter Notebook） | 開源免費。同一份筆記本保存程式碼、說明文字與執行結果，官網說明支援 Python、R 等 40 多種語言。筆記本會連同輸出一起存檔，分享或上傳前先清掉含受訪者資料的輸出 |
+| 程式環境・R | **RStudio**（[posit.co](https://posit.co/products/open-source/rstudio/)） | R 的整合開發環境，由 Posit（前身為 RStudio, PBC）開發。開源版免費；付費的 RStudio Desktop Pro 差在商業授權與技術支援。另可付費加購 Posit AI，它會讀取你載入的變數與資料框，處理研究資料前先對照[資料治理核對框](#13) |
+| 資料視覺化 | **Tableau Public**（[public.tableau.com](https://public.tableau.com/)） | 免費，但**發布到 Tableau Public 的作品與資料不是私人的，任何人都能檢視，也能下載活頁簿與資料來源**。未公開的研究資料、受訪者資料不能發布到這裡。官方說明另有免費的 Tableau Desktop Public Edition 可把活頁簿存在本機，但它僅限非商業用途；要連線 Tableau Cloud／Server 發布與分享內容，則需付費授權 |
+
+*程式環境與資料視覺化三列於 2026-09-25 查證官方網站。*
 
 !!! tip "AI 在這一段最實際的用途是寫程式碼"
     AI 可以協助起草 R 或 Python 分析程式碼，**但你必須看得懂每一行，而且能解釋分析邏輯**。
@@ -205,6 +210,7 @@
 | **Writefull**（[writefull.com](https://www.writefull.com/)） / **Paperpal**（[paperpal.com](https://paperpal.com/)） / **Trinka**（[trinka.ai](https://www.trinka.ai/)） | 學術英文的文法與用語修飾 | 屬語言協助；是否允許及如何揭露依投稿單位政策確認 |
 | **Grammarly**（[grammarly.com](https://www.grammarly.com/)） | 一般英文文法檢查 | 同上 |
 | **DeepL**（[deepl.com](https://www.deepl.com/)） | 翻譯 | 翻完必須自己逐句校對，術語尤其危險 |
+| **QuillBot**（[quillbot.com](https://quillbot.com/)） | 英文改寫（paraphrasing） | 免費版每次可改寫的字數與可用模式有限，付費版放寬字數並開放更多模式（依[官方說明中心](https://help.quillbot.com/hc/en-us/articles/35855733045143-What-is-the-difference-between-free-and-Premium-in-the-Quillbot-Paraphraser)，2026-09-25 查證）。**用它改寫自己的文字，多數學校與期刊要求揭露 AI 使用；拿它改寫別人的文字，即使換了措辭仍然算抄襲。** 揭露寫法見[學術倫理與 AI 揭露](ethics.md#ai)；未公開的研究資料不要貼上 |
 | **Overleaf**（[overleaf.com](https://www.overleaf.com/)） / **LaTeX**（[latex-project.org](https://www.latex-project.org/)） | 排版（理工與部分期刊要求） | — |
 | **Word 樣式與交互參照** | 中文碩論的主流 | 目次、圖表編號、交互參照都用內建功能做，不要手打 |
 
