@@ -17,7 +17,7 @@
 <div class="navsec"><h2>研究的基礎</h2><ul>
 <li><a href="../pages/getting-started.html" data-title="從零開始：研究所的第一個月" data-slug="getting-started" data-updated="1789789004">從零開始：研究所的第一個月</a></li>
 <li><a href="../pages/research-basics.html" data-title="研究的本質、歷程與時程" data-slug="research-basics" data-updated="1788705875">研究的本質、歷程與時程</a></li>
-<li><a href="../pages/finding-reading.html" data-title="怎麼找、怎麼讀、怎麼選題目" data-slug="finding-reading" data-updated="1789791652">怎麼找、怎麼讀、怎麼選題目</a></li>
+<li><a href="../pages/finding-reading.html" data-title="怎麼找、怎麼讀、怎麼選題目" data-slug="finding-reading" data-updated="1790486101">怎麼找、怎麼讀、怎麼選題目</a></li>
 <li><a href="../pages/venues.html" data-title="期刊與研討會清單" data-slug="venues" data-updated="1790260517">期刊與研討會清單</a></li>
 <li><a href="../pages/is-research.html" data-title="資訊管理研究的範疇與取向" data-slug="is-research" data-updated="1788780848">資訊管理研究的範疇與取向</a></li>
 <li><a href="../pages/problem-design.html" data-title="研究問題、假說與研究架構" data-slug="problem-design" data-updated="1789791652">研究問題、假說與研究架構</a></li>
@@ -44,7 +44,7 @@
 <li><a href="../pages/post-defense.html" data-title="口試後修訂、典藏與結案" data-slug="post-defense" data-updated="1788525613">口試後修訂、典藏與結案</a></li>
 </ul></div>
 <div class="navsec"><h2>AI 輔助研究</h2><ul>
-<li class="active"><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流" data-slug="ai-workflow" data-updated="1789789004">AI 輔助研究工作流</a></li>
+<li class="active"><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流" data-slug="ai-workflow" data-updated="1790494388">AI 輔助研究工作流</a></li>
 <li><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險" data-slug="ai-tools" data-updated="1790431778">AI 工具生態與風險</a></li>
 <li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露" data-slug="ethics" data-updated="1790260517">學術倫理與 AI 揭露</a></li>
 </ul></div>
@@ -55,10 +55,10 @@
 <li><a href="../pages/skill-build.html" data-title="把教材做成 SKILL：安裝版與手動版" data-slug="skill-build" data-updated="1789618575">把教材做成 SKILL：安裝版與手動版</a></li>
 </ul></div>
 <div class="navsec"><h2>工具箱</h2><ul>
-<li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫" data-slug="tools-knowledge" data-updated="1789789004">文獻管理與知識庫</a></li>
+<li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫" data-slug="tools-knowledge" data-updated="1790486101">文獻管理與知識庫</a></li>
 <li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南" data-slug="tool-directory" data-updated="1790340063">AI 學術研究工具指南</a></li>
 <li><a href="../pages/checklists.html" data-title="檢查清單" data-slug="checklists" data-updated="1788705875">檢查清單</a></li>
-<li><a href="../pages/prompts.html" data-title="AI 提示詞範本" data-slug="prompts" data-updated="1789791652">AI 提示詞範本</a></li>
+<li><a href="../pages/prompts.html" data-title="AI 提示詞範本" data-slug="prompts" data-updated="1790486101">AI 提示詞範本</a></li>
 <li><a href="../pages/glossary.html" data-title="名詞與用語對照" data-slug="glossary" data-updated="1788525613">名詞與用語對照</a></li>
 <li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南" data-slug="sources" data-updated="1790260517">延伸閱讀與資源指南</a></li>
 <li><a href="../pages/about.html" data-title="關於本站" data-slug="about" data-updated="1790340063">關於本站</a></li>
@@ -67,7 +67,7 @@
 <div class="wrap">
 <main id="main">
 <p class="crumb"><a href="../index.html">首頁</a> ／ AI 輔助研究</p>
-<article class="doc" data-updated="1789789004">
+<article class="doc" data-updated="1790494388">
 <h1>AI 輔助研究工作流</h1>
 <p class='lede'>三層架構、戰略聚焦單、各階段的能與不能</p>
 <blockquote>
@@ -553,29 +553,16 @@ AI 摘要傾向保留結論而丟掉條件。原文寫「在 A 條件下、以 B
 ④ 整理成 Obsidian 筆記
    查證過的內容依固定模板寫進筆記，重點是「結構固定＋深度依文獻類型調整」：
 </code></pre>
-<p>一個可以直接套用的文獻筆記模板骨架：</p>
-<pre><code class="language-yaml">---
-type: paper
-citekey: [文獻管理工具給的識別碼，跟 Zotero 一致]
-authors: [作者全名]
-year: [年份]
-journal: [期刊或會議名稱]
-method: [Survey / Experiment / Review / Mixed 擇一]
-供稿去向:
-  - &quot;[[對應的構念或主題筆記]]&quot;
-status: 🌱
----
-</code></pre>
-<pre><code>   實證論文（Survey／Experiment／Mixed）：深度區全填，含方法詳析、
-     信效度批判、寫作素材、與自身研究的連結。
-   Review／理論／書籍：跳過方法詳析，其餘照填（批判改為對論點的批判）。
+<p>文獻筆記依論文性質分三型（實證型／理論型／方法型），完整的三份模板、frontmatter 欄位怎麼填、以及怎麼挑，見<a href="tools-knowledge.html">文獻管理與知識庫</a>第 4.1 節，這裡不重複貼骨架，只講這一步在整條流程裡的位置：</p>
+<pre><code>   實證型深度區全填，含方法詳析、信效度批判、寫作素材、與自身研究的連結。
+   理論型與方法型跳過方法詳析，其餘照填（批判改為對論點或做法的批判）。
 
    兩條紀律：
-   - 欄位判斷不出來就填「待查證」，不猜；欄位對這篇文獻本質上不適用才填「不適用」，兩者意義不同。
+   - 欄位判斷不出來填 TBD（待查證），不猜；欄位對這篇文獻本質上不適用填 N/A（不適用），兩者意義不同。
    - 原文不能直接複製貼上，一律改寫成自己的話；需要逐字引用時要明確標示成引文，不能混在改寫段落裡。
 
-   **每篇筆記都連回一張中央的「概念卡」或「主題卡」**（Obsidian wikilink），
-   而不是各自獨立、互不相連。文獻多了以後，這些連結本身就是一張概念地圖：
+   **每篇筆記都用 Obsidian wikilink 連回中央的「概念筆記」**，
+   不要讓每篇各自獨立、互不相連。文獻多了以後，這些連結本身就是一張概念地圖：
    哪個概念被很多文獻支持、哪個概念只有一兩篇在談，一眼就看得出來。
 
 ⑤ 定期彙整
