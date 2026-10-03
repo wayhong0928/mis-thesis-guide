@@ -97,6 +97,19 @@
 
 這一類工具都要你自己輸入檢索式、自己判讀回傳的清單。要把「請 AI 產檢索式 → 自己貼到工具跑 → 把結果貼回來請 AI 分類」串成固定流程，可套用[AI 提示詞範本的「檢索式產生與搜尋結果接力」](prompts.md#22)，該則附有「AI 並未實際搜尋、判斷只根據貼回去的文字」的誠實條款。
 
+**接進 Claude Code（MCP）**
+
+Consensus、Elicit、Perplexity 都有官方遠端 MCP，接上後可以在 Claude Code 對話裡直接搜尋。MCP 的概念與安裝方式見 [ai-agent-notes 的 MCP 專篇](https://wayhong0928.github.io/ai-agent-notes/pages/mcp.html)；以下指令語法依 [Claude Code 官方文件](https://code.claude.com/docs/en/mcp)。
+
+- **Consensus**：`claude mcp add --transport http consensus https://mcp.consensus.app/mcp`。
+  用 OAuth 登入 Consensus 帳號，第一次使用會自動開瀏覽器，也可以在 Claude Code 輸入 `/mcp` 授權。不登入也能試用，額度較低；免費帳號每月有 30 次 API 與 MCP 呼叫額度，不必先訂閱付費方案（2026-10 查詢）。見[官方 MCP 文件](https://docs.consensus.app/consensus-mcp)、[官方 README](https://github.com/Consensus-NLP/consensus-mcp)與[方案說明](https://help.consensus.app/en/articles/10087865-subscription-plans)。
+- **Elicit**：`claude mcp add --transport http elicit https://elicit.com/api/mcp`。
+  加入後輸入 `/mcp`，選 `elicit` 再按 Authenticate，用 Elicit 帳號登入授權。MCP 與 API 都要 Pro 以上付費方案，Basic／Plus 不能用（2026-10 查詢）。見[官方 MCP 範例](https://github.com/elicit/api-examples/tree/main/integrations/mcp)與[官方 API 文件](https://docs.elicit.com/#mcp-server)。
+- **Perplexity**：`claude mcp add --transport http perplexity https://api.perplexity.ai/mcp`。
+  加入後輸入 `/mcp` 登入 Perplexity 帳號，帳號必須是能支付 API 費用的組織管理員。也可改用 API key，在加入指令末加上 `--header "Authorization: Bearer YOUR_API_KEY"`（以自己的 key 取代佔位文字）。MCP 按 API 用量計費，例如標準 Search API 每 1,000 次請求 US$5，其他工具另依 API 價目計費（2026-10 查詢）。見[官方 MCP 文件](https://docs.perplexity.ai/docs/getting-started/integrations/mcp-server)與[API 價目](https://docs.perplexity.ai/docs/getting-started/pricing)。
+
+本頁的題目探索與基本文獻搜尋，先用三家的免費網頁版即可（2026-10 查詢；見 [Consensus](https://help.consensus.app/en/articles/10087865-subscription-plans)、[Elicit](https://elicit.com/pricing)、[Perplexity](https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you) 官方方案說明）。如果你目前沒有付費，不必為了 MCP 去升級。接上後查到的結果，一樣要照本頁「工具幻覺的三步查核」核對。
+
 ---
 
 ## 四、階段三：引文網絡與研究地圖
