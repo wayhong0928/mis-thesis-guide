@@ -144,6 +144,12 @@
   "section": "AI 輔助研究"
  },
  {
+  "slug": "ai-case-study",
+  "title": "實例：一個碩士生的 AI 研究流程",
+  "desc": "六個階段的實際做法、提示詞範本與 AI 犯過的錯",
+  "section": "AI 輔助研究"
+ },
+ {
   "slug": "ai-tools",
   "title": "AI 工具生態與風險",
   "desc": "Auto Research、去 AI 味工具的定位與紅線",
