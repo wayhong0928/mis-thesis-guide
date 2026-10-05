@@ -445,7 +445,7 @@ grep -nE "進行(討論|分析|探討|訪談|檢定|驗證)|予以|加以.{0,4}(
 
 !!! tip "延伸方法論來源"
     - 臺大寫作教學中心（AWEC）蔡柏盈〈[學術寫作的構句原則與技巧](https://awec.ntu.edu.tw/%E5%B0%88%E9%A1%8C1%EF%BC%9A%E5%AD%B8%E8%A1%93%E5%AF%AB%E4%BD%9C%E7%9A%84%E6%A7%8B%E5%8F%A5%E5%8E%9F%E5%89%87%E8%88%87%E6%8A%80%E5%B7%A7/?lang=en)〉——以簡御繁、話題—陳述、中間肥大的原始出處。
-    - 余光中〈[怎樣改進英式中文？](https://language.chinadaily.com.cn/2015-09/01/content_21765083.htm)〉——弱動詞、「存在」濫用、抽象名詞化主語、冗詞的病句範例原文。
+    - 余光中〈[怎樣改進英式中文？](https://web.archive.org/web/20210410224558/https://language.chinadaily.com.cn/2015-09/01/content_21765083.htm)〉——弱動詞、「存在」濫用、抽象名詞化主語、冗詞的病句範例原文（原轉載頁已失效，連結是網頁典藏站 2021 年的存檔）。
     - 維基百科〈[歐化中文](https://zh.wikipedia.org/zh-tw/%E6%AD%90%E5%8C%96%E4%B8%AD%E6%96%87)〉、〈[Wikipedia:翻譯腔](https://zh.wikipedia.org/zh-tw/Wikipedia:%E7%BF%BB%E8%AD%AF%E8%85%94)〉——概念界定與補充例句。
 
 ---

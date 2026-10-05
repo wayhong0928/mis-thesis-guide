@@ -81,7 +81,7 @@
 | 名稱 | 主辦單位 | 官方網址 | 投稿時程／出版頻率 | 備註 |
 |---|---|---|---|---|
 | 資訊管理學報（Journal of Information Management, JIM） | 中華民國資訊管理學會 | 官網：<https://jim-tw.com/>；編輯部：<https://eclab.nkust.edu.tw/>（國立高雄科技大學）；[投稿說明 PDF](https://eclab.nkust.edu.tw/submitjim/JIM_Call_for_Paper.pdf) | TSSCI 收錄，每年 1、4、7、10 月出刊（季刊），雙匿名審查，第一輪約 4 個月，投稿信箱 submit.jim@gmail.com | 編輯部網站憑證鏈較舊，瀏覽器可能顯示「不安全」警告——這是網站本身的問題，不代表期刊停辦；期刊確實仍在正常發行（2025 年五年影響係數 0.333，TSSCI 收錄） |
-| 電子商務學報（Journal of e-Business） | 中華企業資源規劃學會（CERPS） | <http://jeb.cerps.org.tw/readme.php> | TSSCI 收錄（自 2006 年起），每年 6 月底、12 月底出刊（半年刊），中英文皆可投 | — |
+| 電子商務學報（Journal of e-Business） | 中華企業資源規劃學會（CERPS） | <https://www.ipress.tw/J0284>（華藝 iPress 投稿平台，舊網址 jeb.cerps.org.tw 已轉到這裡） | TSSCI 收錄（自 2006 年起），每年 6 月底、12 月底出刊（半年刊），中英文皆可投 | — |
 
 ### 研討會
 
