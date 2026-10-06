@@ -150,6 +150,12 @@
   "section": "AI 輔助研究"
  },
  {
+  "slug": "ai-quickstart-agent",
+  "title": "一小時上手：用 Claude Code 或 Codex 建立你的論文助手",
+  "desc": "建研究資料夾、寫指示檔、裝 thesis-toolkit，用研究問題稽核檢查自己的題目",
+  "section": "AI 輔助研究"
+ },
+ {
   "slug": "ai-workflow",
   "title": "AI 輔助研究工作流",
   "desc": "三層架構、戰略聚焦單、各階段的能與不能",

@@ -50,6 +50,7 @@ NAV = [
     ("AI 輔助研究", [
         ("ai-workflow-map", "論文 AI 工作流全圖", "地基加六站流程，對到網頁版與 Claude Code／Codex 兩條路線，每站標出回原文核對的地方"),
         ("ai-quickstart", "一小時上手：用網頁版 AI 建立你的論文助手", "建專案、填指示、做第一份文獻筆記，練習抓出 AI 的錯"),
+        ("ai-quickstart-agent", "一小時上手：用 Claude Code 或 Codex 建立你的論文助手", "建研究資料夾、寫指示檔、裝 thesis-toolkit，用研究問題稽核檢查自己的題目"),
         ("ai-workflow", "AI 輔助研究工作流", "三層架構、戰略聚焦單、各階段的能與不能"),
         ("ai-case-study", "實例：一個碩士生的 AI 研究流程", "六個階段的實際做法、提示詞範本與 AI 犯過的錯"),
         ("ai-tools", "AI 工具生態與風險", "Auto Research、去 AI 味工具的定位與紅線"),
