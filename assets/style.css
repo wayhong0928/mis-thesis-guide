@@ -20,6 +20,8 @@
   --ok-rule: #7fa06f;
   --ok-ink: #58734c;
   --code-bg: #f2efe8;
+  --lane-web: #2f6a86;
+  --lane-cli: #6e4b8f;
   --nav-w: 268px;
   --toc-w: 220px;
   --serif: "Noto Serif TC", "Source Han Serif TC", "PingFang TC", "Songti TC", Georgia, serif;
@@ -48,6 +50,8 @@
     --ok-rule: #5f7a52;
     --ok-ink: #779866;
     --code-bg: #232220;
+    --lane-web: #86b9d3;
+    --lane-cli: #bfa0dc;
   }
 }
 
@@ -58,6 +62,7 @@
   --accent: #d9a173; --accent-soft: #2e2620; --accent-ink: #e8bd94;
   --mark: #4b3f19; --warn-bg: #2c231a; --warn-rule: #a8763a; --warn-ink: #b98240;
   --ok-bg: #1e2a1e; --ok-rule: #5f7a52; --ok-ink: #779866; --code-bg: #232220;
+  --lane-web: #86b9d3; --lane-cli: #bfa0dc;
 }
 
 * { box-sizing: border-box; }
@@ -364,3 +369,33 @@ li.chk input { margin-right: .5rem; transform: translateY(1px); accent-color: va
   .doc table, .admonition, blockquote { break-inside: avoid; }
   a { color: #000; border: 0; }
 }
+
+/* ---------- 論文 AI 工作流全圖（ai-workflow-map） ---------- */
+.wfmap { display: flex; flex-direction: column; gap: 1.1rem; margin: 1rem 0 2rem; }
+.wfmap ul { margin: 0; padding-left: 1.1em; display: flex; flex-direction: column; gap: .35rem; }
+.wfmap li, .wfmap p { margin: 0; line-height: 1.7; }
+.wf-legend { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; font-size: .88rem; color: var(--ink-soft); }
+.wf-legend span { display: inline-flex; align-items: center; gap: .4rem; }
+.wf-tag { display: inline-block; font-style: normal; font-size: .72rem; font-weight: 700; letter-spacing: .05em;
+  padding: 0 .5em; border: 1px solid currentColor; border-radius: 999px; white-space: nowrap; margin-left: .25em; vertical-align: 1px; }
+.wf-legend .wf-tag { margin-left: 0; }
+.wf-tag.live { color: var(--ok-ink); }
+.wf-tag.soon { color: var(--warn-ink); }
+.wf-strip { list-style: none; margin: 0; padding: 0 !important; display: flex !important; flex-direction: row !important; flex-wrap: wrap; gap: .45rem; }
+.wf-strip li { display: flex; align-items: center; gap: .45rem; }
+.wf-strip li:not(:last-child)::after { content: "→"; color: var(--ink-faint); }
+.wf-strip a { display: inline-flex; align-items: baseline; gap: .35rem; padding: .25rem .7rem; border: 1px solid var(--rule);
+  border-radius: 6px; background: var(--panel); color: var(--ink); font-weight: 500; }
+.wf-strip a:hover, .wf-strip a:focus-visible { border-color: var(--accent); }
+.wf-strip b { font-family: var(--mono); font-size: .78rem; color: var(--ink-faint); font-weight: 500; }
+.wf-stage { border-top: 1px solid var(--rule); padding-top: .9rem; scroll-margin-top: 1.5rem; }
+.doc .wf-title { margin: 0 0 .6rem; font-size: 1.12rem; }
+.wf-title small { display: block; font-family: var(--sans); font-size: .76rem; font-weight: 500; letter-spacing: .06em; color: var(--ink-faint); }
+.wf-cells { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: .7rem; }
+.wf-cell { min-width: 0; background: var(--panel); border: 1px solid var(--rule); border-top: 3px solid var(--lane); border-radius: 6px;
+  padding: .7rem .9rem; font-size: .93rem; display: flex; flex-direction: column; gap: .4rem; }
+.wf-cell.web { --lane: var(--lane-web); }
+.wf-cell.cli { --lane: var(--lane-cli); }
+.wf-cell.chk { --lane: var(--accent); background: var(--accent-soft); border-color: transparent; border-top-color: var(--accent); }
+.wf-lane { font-size: .74rem !important; font-weight: 700; letter-spacing: .08em; color: var(--lane); }
+.wf-base .wf-cell.web, .wf-base .wf-cell.cli { background: var(--bg-soft); }

@@ -138,6 +138,12 @@
   "section": "論文寫作"
  },
  {
+  "slug": "ai-workflow-map",
+  "title": "論文 AI 工作流全圖",
+  "desc": "地基加六站流程，對到網頁版與 Claude Code／Codex 兩條路線，每站標出回原文核對的地方",
+  "section": "AI 輔助研究"
+ },
+ {
   "slug": "ai-quickstart",
   "title": "一小時上手：用網頁版 AI 建立你的論文助手",
   "desc": "建專案、填指示、做第一份文獻筆記，練習抓出 AI 的錯",
