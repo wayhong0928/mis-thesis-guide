@@ -133,6 +133,24 @@ Zotero 安裝時通常會自動裝好 Word 外掛（[官方安裝說明](https:/
 !!! warning "定稿前才做 Unlink Citations，而且不可逆"
     Word 裡的 Zotero 引用其實是內嵌的欄位代碼（field code），不是純文字，所以千萬不要用手直接改引用的文字，要改就回到 Add/Edit Citation 重新選。真的要投稿或口試繳交、確定不會再改文獻時，才用 Zotero 分頁裡的「**Unlink Citations**」把整份文件的引用與書目轉成純文字——這個動作官方文件明講不可逆，做之前先另存一份備份（[官方說明](https://www.zotero.org/support/kb/unlinking_citations)）。
 
+#### 2.3.8 中文文獻：作者姓名與語言欄
+
+Zotero 的作者欄有兩種模式：姓、名分兩欄，或整個名字放一欄。[官方說明](https://www.zotero.org/support/adding_items_to_zotero)的建議是人名用兩欄、機構名用單欄，作者欄右側的按鈕可以切換。中文名照這個建議分兩欄，APA 7 印出來會是下表這樣。表中作者是虛構的，輸出是用 Zotero 採用的引用引擎 citeproc-js 加上官方 APA 7 樣式實跑的結果。
+
+| 作者欄 | 正文引用 | 參考文獻 |
+|---|---|---|
+| 兩欄（姓「王」、名「小明」） | (王, 2022) | 王小明. (2022). |
+| 單欄（「王小明」） | (王小明, 2022) | 王小明. (2022). |
+
+參考文獻兩種都對，差在正文引用。中文文獻的正文引用要寫全名（見[學術中文寫作紀律](style.md)的 APA 7 中文化慣例），兩欄只會印出姓。選哪一種，看你怎麼插入引用：
+
+- **用 Word 外掛插入引用**：中文作者改成單欄，正文才會印全名。
+- **正文引用自己手打，Zotero 只拿來管書目和產生參考文獻**：兩欄也可以，citekey 比較短。站主的文獻庫用公式 `auth.capitalize + year`，實際產生的 key 是：兩欄只取姓的拼音加年份，單欄是全名每個字的拼音加年份。換成虛構的王小明，就是 `Wang2022` 和 `WangXiaoMing2022`。
+
+不管哪一種，Zotero 印出來的標點都是英文半形，三位以上的中文作者也會印成「et al.」，例如「(王小明 et al., 2024)」。引用語言改成繁體中文會印「等」，但引用語言是整份文件一起設定（[Word 外掛說明](https://www.zotero.org/support/word_processor_plugin_usage)的 Document Preferences），英文文獻也會跟著印成「(Smith等, 2021)」。中英混排的論文，定稿前要逐筆核對中文引用的標點和「等」。
+
+**語言（Language）欄**：中文文獻填 `zh-TW`。[官方說明](https://www.zotero.org/support/kb/item_types_and_fields)建議填 ISO 語言碼，這一欄會決定引用樣式要不要把標題轉成英文的大小寫規則。
+
 ---
 
 ## 三、筆記與知識庫軟體

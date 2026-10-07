@@ -45,7 +45,7 @@
 </ul></div>
 <div class="navsec"><h2>AI 輔助研究</h2><ul>
 <li><a href="../pages/ai-workflow-map.html" data-title="論文 AI 工作流全圖" data-slug="ai-workflow-map" data-updated="1791265286">論文 AI 工作流全圖</a></li>
-<li><a href="../pages/ai-quickstart.html" data-title="一小時上手：用網頁版 AI 建立你的論文助手" data-slug="ai-quickstart" data-updated="1791265286">一小時上手：用網頁版 AI 建立你的論文助手</a></li>
+<li><a href="../pages/ai-quickstart.html" data-title="一小時上手：用網頁版 AI 建立你的論文助手" data-slug="ai-quickstart" data-updated="1791358804">一小時上手：用網頁版 AI 建立你的論文助手</a></li>
 <li><a href="../pages/ai-quickstart-agent.html" data-title="一小時上手：用 Claude Code 或 Codex 建立你的論文助手" data-slug="ai-quickstart-agent" data-updated="1791265286">一小時上手：用 Claude Code 或 Codex 建立你的論文助手</a></li>
 <li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流" data-slug="ai-workflow" data-updated="1791263384">AI 輔助研究工作流</a></li>
 <li><a href="../pages/ai-case-study.html" data-title="實例：一個碩士生的 AI 研究流程" data-slug="ai-case-study" data-updated="1791199752">實例：一個碩士生的 AI 研究流程</a></li>
@@ -59,8 +59,8 @@
 <li><a href="../pages/skill-build.html" data-title="把教材做成 SKILL：安裝版與手動版" data-slug="skill-build" data-updated="1789618575">把教材做成 SKILL：安裝版與手動版</a></li>
 </ul></div>
 <div class="navsec"><h2>工具箱</h2><ul>
-<li class="active"><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫" data-slug="tools-knowledge" data-updated="1790486101">文獻管理與知識庫</a></li>
-<li><a href="../pages/thesis-notes-template.html" data-title="論文筆記庫範本" data-slug="thesis-notes-template" data-updated="1791358755">論文筆記庫範本</a></li>
+<li class="active"><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫" data-slug="tools-knowledge" data-updated="1791358804">文獻管理與知識庫</a></li>
+<li><a href="../pages/thesis-notes-template.html" data-title="論文筆記庫範本" data-slug="thesis-notes-template" data-updated="1791358804">論文筆記庫範本</a></li>
 <li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南" data-slug="tool-directory" data-updated="1791036151">AI 學術研究工具指南</a></li>
 <li><a href="../pages/checklists.html" data-title="檢查清單" data-slug="checklists" data-updated="1791199752">檢查清單</a></li>
 <li><a href="../pages/prompts.html" data-title="AI 提示詞範本" data-slug="prompts" data-updated="1791265286">AI 提示詞範本</a></li>
@@ -72,7 +72,7 @@
 <div class="wrap">
 <main id="main">
 <p class="crumb"><a href="../index.html">首頁</a> ／ 工具箱</p>
-<article class="doc" data-updated="1790486101">
+<article class="doc" data-updated="1791358804">
 <h1>文獻管理與知識庫</h1>
 <p class='lede'>Zotero／EndNote、Obsidian／Notion、筆記欄位、備份策略</p>
 <blockquote>
@@ -278,6 +278,36 @@
 <p class="admonition-title">定稿前才做 Unlink Citations，而且不可逆</p>
 <p>Word 裡的 Zotero 引用其實是內嵌的欄位代碼（field code），不是純文字，所以千萬不要用手直接改引用的文字，要改就回到 Add/Edit Citation 重新選。真的要投稿或口試繳交、確定不會再改文獻時，才用 Zotero 分頁裡的「<strong>Unlink Citations</strong>」把整份文件的引用與書目轉成純文字——這個動作官方文件明講不可逆，做之前先另存一份備份（<a href="https://www.zotero.org/support/kb/unlinking_citations">官方說明</a>）。</p>
 </div>
+<h4 id="238">2.3.8 中文文獻：作者姓名與語言欄</h4>
+<p>Zotero 的作者欄有兩種模式：姓、名分兩欄，或整個名字放一欄。<a href="https://www.zotero.org/support/adding_items_to_zotero">官方說明</a>的建議是人名用兩欄、機構名用單欄，作者欄右側的按鈕可以切換。中文名照這個建議分兩欄，APA 7 印出來會是下表這樣。表中作者是虛構的，輸出是用 Zotero 採用的引用引擎 citeproc-js 加上官方 APA 7 樣式實跑的結果。</p>
+<table>
+<thead>
+<tr>
+<th>作者欄</th>
+<th>正文引用</th>
+<th>參考文獻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>兩欄（姓「王」、名「小明」）</td>
+<td>(王, 2022)</td>
+<td>王小明. (2022).</td>
+</tr>
+<tr>
+<td>單欄（「王小明」）</td>
+<td>(王小明, 2022)</td>
+<td>王小明. (2022).</td>
+</tr>
+</tbody>
+</table>
+<p>參考文獻兩種都對，差在正文引用。中文文獻的正文引用要寫全名（見<a href="style.html">學術中文寫作紀律</a>的 APA 7 中文化慣例），兩欄只會印出姓。選哪一種，看你怎麼插入引用：</p>
+<ul>
+<li><strong>用 Word 外掛插入引用</strong>：中文作者改成單欄，正文才會印全名。</li>
+<li><strong>正文引用自己手打，Zotero 只拿來管書目和產生參考文獻</strong>：兩欄也可以，citekey 比較短。站主的文獻庫用公式 <code>auth.capitalize + year</code>，實際產生的 key 是：兩欄只取姓的拼音加年份，單欄是全名每個字的拼音加年份。換成虛構的王小明，就是 <code>Wang2022</code> 和 <code>WangXiaoMing2022</code>。</li>
+</ul>
+<p>不管哪一種，Zotero 印出來的標點都是英文半形，三位以上的中文作者也會印成「et al.」，例如「(王小明 et al., 2024)」。引用語言改成繁體中文會印「等」，但引用語言是整份文件一起設定（<a href="https://www.zotero.org/support/word_processor_plugin_usage">Word 外掛說明</a>的 Document Preferences），英文文獻也會跟著印成「(Smith等, 2021)」。中英混排的論文，定稿前要逐筆核對中文引用的標點和「等」。</p>
+<p><strong>語言（Language）欄</strong>：中文文獻填 <code>zh-TW</code>。<a href="https://www.zotero.org/support/kb/item_types_and_fields">官方說明</a>建議填 ISO 語言碼，這一欄會決定引用樣式要不要把標題轉成英文的大小寫規則。</p>
 <hr />
 <h2 id="_3">三、筆記與知識庫軟體</h2>
 <p>文獻管理軟體存的是「別人寫的東西」，筆記軟體存的是「你想的東西」。後者才是兩年後真正屬於你的資產。</p>

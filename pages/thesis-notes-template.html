@@ -45,7 +45,7 @@
 </ul></div>
 <div class="navsec"><h2>AI 輔助研究</h2><ul>
 <li><a href="../pages/ai-workflow-map.html" data-title="論文 AI 工作流全圖" data-slug="ai-workflow-map" data-updated="1791265286">論文 AI 工作流全圖</a></li>
-<li><a href="../pages/ai-quickstart.html" data-title="一小時上手：用網頁版 AI 建立你的論文助手" data-slug="ai-quickstart" data-updated="1791265286">一小時上手：用網頁版 AI 建立你的論文助手</a></li>
+<li><a href="../pages/ai-quickstart.html" data-title="一小時上手：用網頁版 AI 建立你的論文助手" data-slug="ai-quickstart" data-updated="1791358804">一小時上手：用網頁版 AI 建立你的論文助手</a></li>
 <li><a href="../pages/ai-quickstart-agent.html" data-title="一小時上手：用 Claude Code 或 Codex 建立你的論文助手" data-slug="ai-quickstart-agent" data-updated="1791265286">一小時上手：用 Claude Code 或 Codex 建立你的論文助手</a></li>
 <li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流" data-slug="ai-workflow" data-updated="1791263384">AI 輔助研究工作流</a></li>
 <li><a href="../pages/ai-case-study.html" data-title="實例：一個碩士生的 AI 研究流程" data-slug="ai-case-study" data-updated="1791199752">實例：一個碩士生的 AI 研究流程</a></li>
@@ -59,8 +59,8 @@
 <li><a href="../pages/skill-build.html" data-title="把教材做成 SKILL：安裝版與手動版" data-slug="skill-build" data-updated="1789618575">把教材做成 SKILL：安裝版與手動版</a></li>
 </ul></div>
 <div class="navsec"><h2>工具箱</h2><ul>
-<li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫" data-slug="tools-knowledge" data-updated="1790486101">文獻管理與知識庫</a></li>
-<li class="active"><a href="../pages/thesis-notes-template.html" data-title="論文筆記庫範本" data-slug="thesis-notes-template" data-updated="1791358755">論文筆記庫範本</a></li>
+<li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫" data-slug="tools-knowledge" data-updated="1791358804">文獻管理與知識庫</a></li>
+<li class="active"><a href="../pages/thesis-notes-template.html" data-title="論文筆記庫範本" data-slug="thesis-notes-template" data-updated="1791358804">論文筆記庫範本</a></li>
 <li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南" data-slug="tool-directory" data-updated="1791036151">AI 學術研究工具指南</a></li>
 <li><a href="../pages/checklists.html" data-title="檢查清單" data-slug="checklists" data-updated="1791199752">檢查清單</a></li>
 <li><a href="../pages/prompts.html" data-title="AI 提示詞範本" data-slug="prompts" data-updated="1791265286">AI 提示詞範本</a></li>
@@ -72,11 +72,11 @@
 <div class="wrap">
 <main id="main">
 <p class="crumb"><a href="../index.html">首頁</a> ／ 工具箱</p>
-<article class="doc" data-updated="1791358755">
+<article class="doc" data-updated="1791358804">
 <h1>論文筆記庫範本</h1>
 <p class='lede'>下載就能用的 Obsidian 筆記庫：五種模板、填寫規則、文獻矩陣、寫筆記與核對筆記的提示詞</p>
 <blockquote>
-<p>這頁介紹 <a href="https://github.com/wayhong0928/thesis-notes-template">thesis-notes-template</a>：一個下載解壓縮、用 Obsidian 打開就能用的論文筆記庫。裡面有五種筆記的模板、文獻筆記的填寫規則、一張文獻矩陣表，和五段可以直接貼給 AI 的提示詞。</p>
+<p>這頁介紹 <a href="https://github.com/wayhong0928/thesis-notes-template">thesis-notes-template</a>：一個下載解壓縮、用 Obsidian 打開就能用的論文筆記庫。裡面有五種筆記的模板、文獻筆記的填寫規則、一張文獻矩陣表，和可以直接貼給 AI 的提示詞（一段幫你安裝工具，五段用在寫筆記的各個階段）。範本另有一頁<a href="https://wayhong0928.github.io/thesis-notes-template/">介紹頁</a>。</p>
 <p>範本的模板以<a href="tools-knowledge.html">文獻管理與知識庫</a>第四節的五種筆記為底，再加上一份碩士論文實際做下來踩過的坑。repo 裡沒有任何 AI 工具的設定檔，提示詞只是文字，設計上不依賴特定 AI 工具；實際測過哪些，見第七節。</p>
 </blockquote>
 <hr />
@@ -109,7 +109,7 @@
 <tr>
 <td>提示詞</td>
 <td>一段寫筆記的提示詞</td>
-<td>五段，每段有網頁版和 CLI 版</td>
+<td>安裝一段（CLI 版），工作五段各有網頁版和 CLI 版</td>
 </tr>
 <tr>
 <td>適合</td>
@@ -121,6 +121,8 @@
 <p>兩者不衝突。先用一小時上手的模板寫幾篇，覺得欄位不夠用了再換範本，舊筆記照新模板補欄位就好。</p>
 <hr />
 <h2 id="_2">二、下載與開啟</h2>
+<p><strong>用 AI 安裝</strong>：有 Claude Code 或 Codex 的話，把第六節 6.0 那段貼給它。它會裝好 Zotero、Obsidian、Python 和 PyMuPDF，下載範本，再一步一步帶你點完 Better BibTeX 和 Obsidian 的設定。</p>
+<p><strong>自己來</strong>：</p>
 <ol>
 <li>到 <a href="https://github.com/wayhong0928/thesis-notes-template">thesis-notes-template</a> 按綠色的 <strong>Code</strong> → <strong>Download ZIP</strong>，解壓縮到你放論文檔案的地方。</li>
 <li>打開 Obsidian，選「開啟資料夾作為儲存庫」（Open folder as vault），選剛解壓縮的資料夾。</li>
@@ -154,8 +156,8 @@
 <td>自己寫或請 AI 寫筆記都照這份</td>
 </tr>
 <tr>
-<td><code>00_總覽/提示詞.md</code></td>
-<td>第六節的五段提示詞</td>
+<td><code>00_總覽/prompt.md</code></td>
+<td>第六節的提示詞（安裝一段、工作五段）</td>
 </tr>
 <tr>
 <td><code>00_總覽/文獻矩陣.base</code></td>
@@ -234,9 +236,31 @@
 <p><code>Davis1989</code> 是先用第六節第 2 段請 Claude Code 寫、再用第 3 段核對並回 PDF 逐項修正的版本。除了 <code>[[PEOU_知覺易用性]]</code> 故意留成斷掉的連結（示範文獻矩陣怎麼抓），每一欄都照規則填了，也示範幾種容易漏的寫法：原文找不到的欄位填 TBD、原文自己前後對不上時兩個版本並列、範例研究的推論跟原文的發現分開寫。用第六節第 2 段請 AI 寫筆記後，可以拿它對照 AI 的產出。</p>
 </div>
 <hr />
-<h2 id="_6">六、五段提示詞</h2>
-<p>下面跟 repo 裡的 <code>00_總覽/提示詞.md</code> 內容相同。網頁版一次處理一篇，PDF 自己上傳；CLI 版在筆記庫資料夾開 Claude Code 或 Codex，給一份 citekey 清單就能一篇接一篇處理。CLI 版會讀寫你電腦上的檔案，第一次用之前先看<a href="ai-quickstart-agent.html">Claude Code／Codex 一小時上手</a>第三節的權限設定。</p>
+<h2 id="_6">六、提示詞：安裝一段、工作五段</h2>
+<p>下面跟 repo 裡的 <code>00_總覽/prompt.md</code> 內容相同。第 0 段幫你裝工具、下載範本，第 1 到 5 段對應筆記庫的五個工作。網頁版一次處理一篇，PDF 自己上傳；CLI 版在筆記庫資料夾開 Claude Code 或 Codex，給一份 citekey 清單就能一篇接一篇處理。CLI 版會讀寫你電腦上的檔案，第一次用之前先看<a href="ai-quickstart-agent.html">Claude Code／Codex 一小時上手</a>第三節的權限設定。</p>
+<p>CLI 版直接讀 Zotero 裡的 PDF，不用另外複製或改名：AI 透過 Better BibTeX 用 citekey 查出 PDF 在哪裡，所以跑第 2、3 段時 Zotero 要開著。PDF 轉出的分頁文字檔放在 <code>_text/</code>，這個資料夾已經寫進 <code>.gitignore</code>，不要放到公開的地方，論文內容大多有版權。</p>
 <p><code>⟨ ⟩</code> 裡的字換成你自己的內容。</p>
+<h3 id="60-cli">6.0 安裝與匯入（只有 CLI 版）</h3>
+<p><strong>什麼時候用</strong>：第一次使用，電腦上還沒有 Zotero、Obsidian 或這個範本。在任何資料夾開 Claude Code 或 Codex 都可以。</p>
+<pre><code class="language-text">請幫我在這台電腦裝好論文筆記庫要用的工具，並下載範本。每一步先說你要做什麼、要跑什麼指令，等我同意再做；已經裝好的就跳過。
+1. 判斷作業系統。Windows 用 winget，Mac 用 Homebrew（Mac 沒有 Homebrew 就先停下來告訴我）。
+2. 檢查並安裝：
+   - Zotero（winget：DigitalScholar.Zotero；brew：--cask zotero）
+   - Obsidian（winget：Obsidian.Obsidian；brew：--cask obsidian）
+   - Python 3（已經有 3.9 以上就跳過；winget：Python.Python.3.12；brew：python）
+3. 用 python -m pip install pymupdf 裝 PyMuPDF，裝完 import 一次確認。
+4. 問我範本要放在哪個資料夾，把 https://github.com/wayhong0928/thesis-notes-template 下載到那裡。有 git 就用 git clone，沒有就下載 main 分支的 ZIP 解壓縮。
+5. 查 https://api.github.com/repos/retorquere/zotero-better-bibtex/releases/latest ，把 .xpi 檔下載到我的「下載」資料夾。下載完核對檔案大小跟 GitHub 上列的一樣，不一樣就刪掉重新下載。告訴我檔案位置。
+6. 接下來要在畫面上點的步驟，一次只給我一步，我說「好了」再給下一步：
+   a. 開 Zotero，選「工具 → 外掛程式」，點右上角齒輪的「從檔案安裝外掛程式」，選第 5 步的 .xpi，裝完重開 Zotero。
+   b. 開 Zotero 的設定（Windows 在「編輯 → 設定」，Mac 在「Zotero → 設定」），到 Better BibTeX 的 Citation keys 分頁，把 Citation key formula 改成 auth.capitalize + year。
+   c. 在瀏覽器裝 Zotero Connector：https://www.zotero.org/download/connectors
+   d. 開 Obsidian，選「開啟資料夾作為儲存庫」，選第 4 步的範本資料夾。
+7. Zotero 開著的狀態下，用 Python 的 urllib 對 http://127.0.0.1:23119/better-bibtex/json-rpc 送 POST，內容是 {&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;api.ready&quot;,&quot;params&quot;:[]}。回傳裡有 betterbibtex 的版本號，就代表 Better BibTeX 可以用了。
+8. 最後回報：哪些是這次裝的、哪些原本就有、哪一步失敗或被我跳過。
+不要修改 Zotero 或 Obsidian 的設定檔，設定都由我在畫面上操作。
+</code></pre>
+<p><strong>AI 回來後你要檢查</strong>：在 Zotero 的文獻清單上按右鍵，選單裡有 Better BibTeX；Obsidian 左側看得到 <code>00_總覽</code> 到 <code>07_模板</code> 八個資料夾。接著讀 <code>00_總覽/開始使用.md</code>，再看 README 的「Zotero 怎麼接」，日期和中文作者姓名怎麼填寫在那裡。</p>
 <h3 id="61">6.1 快速設定：從計畫書填出術語表和研究設計速查</h3>
 <p><strong>什麼時候用</strong>：剛建好筆記庫，手上有計畫書草稿（哪怕很粗）。</p>
 <p><strong>網頁版</strong>：</p>
@@ -274,19 +298,22 @@
 </code></pre>
 <p><strong>CLI 版</strong>：</p>
 <pre><code class="language-text">你在一個 Obsidian 論文筆記庫的根目錄。請依序為下列 citekey 各寫一份文獻筆記：
-⟨citekey，一行一個⟩
+⟨citekey，一行一個；還沒決定寫哪幾篇就寫「先列給我挑」⟩
 
 先讀 00_總覽/文獻筆記填寫規則.md、00_總覽/術語表.md、00_總覽/研究設計速查.md。
+下面說的「送 JSON-RPC」，都是用 Python 的 urllib 對 http://127.0.0.1:23119/better-bibtex/json-rpc 送 POST（Content-Type: application/json）。Zotero 要開著；連不上就停下來告訴我。
+如果我寫的是「先列給我挑」：送 {&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;item.search&quot;,&quot;params&quot;:[&quot;&quot;]}，列出 03_文獻筆記/ 裡還沒有筆記的文獻（citekey、第一作者、年份、標題），等我挑完再開始。
 每一篇照這個流程：
-1. PDF 在 _pdf/{citekey}.pdf。如果 _pdf/{citekey}.txt 還不存在，用 Python 的 PyMuPDF（pip install pymupdf）把 PDF 轉成純文字，每頁開頭加一行「===== PDF p. N =====」（N 從 1 起算），存成 _pdf/{citekey}.txt。
-2. 讀完整份文字檔再動筆，不能只讀摘要和結論。表格在文字檔裡看不懂時，回去看那一頁 PDF。
-3. 依規則第一節選模板，照 07_模板/ 對應檔案的結構寫到 03_文獻筆記/{citekey}.md。{{title}} 換成論文標題，模板裡的 HTML 註解刪掉。
-4. 頁碼一律用文字檔的分頁標記數，標之前回文字檔確認那句話在哪一頁，不要憑大概位置標。
-5. 「對我的研究的用處」那一節（實證型第八節、理論型第九節，方法型是第六節「在本研究的用法」），以及實證型變項表的「對應本研究構念」欄，依研究設計速查寫成草稿，每句開頭標〔推論〕。
-6. 不要寫我研究的假說編號。verified 欄留空，要等另一個對話核對後才填。
-7. 照規則第六節自我核對。
+1. 送 {&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;item.attachments&quot;,&quot;params&quot;:[&quot;{citekey}&quot;]}，回傳裡副檔名是 .pdf 的 path 就是 Zotero 裡的 PDF。直接讀這個檔案，不要複製、搬移或改名。查不到 PDF、或有好幾個 PDF 不知道用哪個，就停下來問我。
+2. 如果 _text/{citekey}.txt 還不存在，用 Python 的 PyMuPDF 把 PDF 轉成純文字，每頁開頭加一行「===== PDF p. N =====」（N 從 1 起算），存成 _text/{citekey}.txt。
+3. 讀完整份文字檔再動筆，不能只讀摘要和結論。表格在文字檔裡看不懂時，回去看那一頁 PDF。
+4. 依規則第一節選模板，照 07_模板/ 對應檔案的結構寫到 03_文獻筆記/{citekey}.md。{{title}} 換成論文標題，模板裡的 HTML 註解刪掉。
+5. 頁碼一律用文字檔的分頁標記數，標之前回文字檔確認那句話在哪一頁，不要憑大概位置標。
+6. 「對我的研究的用處」那一節（實證型第八節、理論型第九節，方法型是第六節「在本研究的用法」），以及實證型變項表的「對應本研究構念」欄，依研究設計速查寫成草稿，每句開頭標〔推論〕。
+7. 不要寫我研究的假說編號。verified 欄留空，要等另一個對話核對後才填。
+8. 照規則第六節自我核對。
 處理完全部之後回報，每篇一段：用了哪一型模板、實際讀到的 PDF 頁碼範圍、填了 TBD 的欄位、你不確定的地方。
-只建立或修改 03_文獻筆記/ 和 _pdf/ 裡的檔案。不要用你記得的內容補原文沒寫的東西。
+只建立或修改 03_文獻筆記/ 和 _text/ 裡的檔案，Zotero 裡的檔案一律不動。不要用你記得的內容補原文沒寫的東西。
 </code></pre>
 <p><strong>AI 回來後你要檢查</strong>：頁碼範圍是不是涵蓋全文；〔推論〕的句子逐句自己改寫或刪掉，改完把〔推論〕拿掉；然後跑第 3 段核對。</p>
 <h3 id="63">6.3 核對文獻筆記（一定要開新對話）</h3>
@@ -304,7 +331,7 @@
 最後列出你建議修改的地方，由我決定要不要改。
 </code></pre>
 <p><strong>CLI 版</strong>：</p>
-<pre><code class="language-text">請核對 03_文獻筆記/⟨citekey⟩.md，對照 _pdf/⟨citekey⟩.txt（PDF 轉出的文字，「===== PDF p. N =====」是分頁標記）。只做核對，不要修改任何檔案。
+<pre><code class="language-text">請核對 03_文獻筆記/⟨citekey⟩.md，對照 _text/⟨citekey⟩.txt（PDF 轉出的文字，「===== PDF p. N =====」是分頁標記）。文字檔不存在、或要看表格原貌時，照 00_總覽/prompt.md 第 2 段 CLI 版的第 1、2 步找到 Zotero 裡的 PDF 原檔（Zotero 要開著），文字檔不存在就照同樣格式產生。只做核對，除了 _text/ 裡的文字檔，不要建立或修改任何檔案。
 先讀 00_總覽/文獻筆記填寫規則.md。逐條檢查，每條回報「通過／不通過」，不通過要寫出筆記原句、PDF 原句和頁碼。下面用的是實證型筆記的章節名稱；理論型、方法型就找對應的那一節，沒有對應的項目回報「不適用」。
 1. 抽 10 個數字回文字檔對，要一字不差（數字少於 10 個就全查）。
 2. 研究結果表的列數，是否等於原論文檢驗的假說或路徑數；速覽的成立數是否和表格一致。
@@ -367,6 +394,12 @@
 <li><strong>第 2 段（寫筆記）</strong>：Claude Code 和 Codex 各跑一次。兩份筆記的章節都齊全，沒有寫進假說編號。兩邊都自己找到原文兩處前後不一致：同一個相關係數，摘要和表 8 寫 .59、討論段寫 .69；另一個相關係數，內文標 p&lt;.001、表 8 標 **。</li>
 <li><strong>第 3 段（核對）</strong>：用 Claude Code 開新對話，核對 Claude Code 寫的那一份（Codex 那份沒有跑核對）。它只讀不改，抽 13 組數字回原文對都一致，另外找出結果表漏列了 4 項檢驗。</li>
 </ul>
+<p>這兩次試跑時，PDF 是另外複製到筆記庫的。後來加了第 0 段，第 2、3 段也改成直接讀 Zotero 裡的 PDF，又在 Windows 上補測了兩項：</p>
+<ul>
+<li><strong>第 2 段新增的三步</strong>：列出還沒寫筆記的文獻、用 citekey 找到 Zotero 裡的 PDF、轉成分頁文字檔。Claude Code 和 Codex 各跑一次，都通過。寫筆記的其餘步驟沒有改。</li>
+<li><strong>第 0 段（安裝）</strong>：在 Zotero、Obsidian、Python 都已裝好的電腦上，用 Claude Code 從第 1 步跑到第 8 步，由另一個 AI 扮演使用者回答。已裝的工具都有跳過。Better BibTeX 的 .xpi 第一次下載到一半斷線，AI 自己重新下載，之後提示詞第 5 步加上了核對檔案大小。第 7 步確認 Better BibTeX 有回應。要在畫面上點的步驟，扮演者只回「好了」，沒有真的去點。從零安裝和 Mac 都還沒測。</li>
+</ul>
+<p>第 3 段改成讀 Zotero 的 PDF 之後沒有重跑。</p>
 <p>網頁版，以及第 1、4、5 段，都還沒實測。AI 寫的筆記照樣會漏東西，所以第 3 段核對完、你自己也回 PDF 看過，才把 <code>verified</code> 填上日期。</p>
 </article>
 <nav class="pager"><a class="prev" href="tools-knowledge.html">← 文獻管理與知識庫</a><a class="next" href="tool-directory.html">AI 學術研究工具指南 →</a></nav>
@@ -382,7 +415,8 @@
 <li><a href="#_3">三、裡面有什麼</a></li>
 <li><a href="#_4">四、幾個設計決定，以及背後的理由</a></li>
 <li><a href="#_5">五、文獻筆記填寫規則重點</a></li>
-<li><a href="#_6">六、五段提示詞</a><ul>
+<li><a href="#_6">六、提示詞：安裝一段、工作五段</a><ul>
+<li><a href="#60-cli">6.0 安裝與匯入（只有 CLI 版）</a></li>
 <li><a href="#61">6.1 快速設定：從計畫書填出術語表和研究設計速查</a></li>
 <li><a href="#62">6.2 寫文獻筆記</a></li>
 <li><a href="#63">6.3 核對文獻筆記（一定要開新對話）</a></li>
