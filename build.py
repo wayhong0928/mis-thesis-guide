@@ -64,6 +64,7 @@ NAV = [
     ]),
     ("工具箱", [
         ("tools-knowledge", "文獻管理與知識庫", "Zotero／EndNote、Obsidian／Notion、筆記欄位、備份策略"),
+        ("thesis-notes-template", "論文筆記庫範本", "下載就能用的 Obsidian 筆記庫：五種模板、填寫規則、文獻矩陣、寫筆記與核對筆記的提示詞"),
         ("tool-directory", "AI 學術研究工具指南", "依研究階段分類：檢索、引文網絡、閱讀、SLR、分析"),
         ("checklists", "檢查清單", "提案、文獻、方法、寫作、口試的自檢表"),
         ("prompts", "AI 提示詞範本", "文獻、批判、方法檢核、寫作潤飾"),

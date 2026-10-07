@@ -210,6 +210,12 @@
   "section": "工具箱"
  },
  {
+  "slug": "thesis-notes-template",
+  "title": "論文筆記庫範本",
+  "desc": "下載就能用的 Obsidian 筆記庫：五種模板、填寫規則、文獻矩陣、寫筆記與核對筆記的提示詞",
+  "section": "工具箱"
+ },
+ {
   "slug": "tool-directory",
   "title": "AI 學術研究工具指南",
   "desc": "依研究階段分類：檢索、引文網絡、閱讀、SLR、分析",
