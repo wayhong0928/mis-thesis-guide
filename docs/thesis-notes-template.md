@@ -34,6 +34,12 @@
 
 範本不需要裝任何 Obsidian 外掛。文獻矩陣用的是核心外掛 Bases，Obsidian 版本太舊會打不開，先更新到最新版。
 
+想從 Zotero 一鍵建立筆記或匯入 PDF 標註，可以另外裝社群外掛，但先看維護狀況（2026-10 查）：
+
+- Zotero Integration：最新版 3.2.1 停在 2024-08，原作者的 repo 已轉到 `community-archive` 組織。
+- Citations：最新版 0.4.5 停在 2022-09。
+- ZotLit：還在更新（2.1.4，2026-09），需要另外在 Zotero 裝它的 companion 外掛；授權是 AGPL-3.0。站主沒有實測過。
+
 ---
 
 ## 三、裡面有什麼
@@ -120,7 +126,7 @@ CLI 版直接讀 Zotero 裡的 PDF，不用另外複製或改名：AI 透過 Bet
 不要修改 Zotero 或 Obsidian 的設定檔，設定都由我在畫面上操作。
 ```
 
-**AI 回來後你要檢查**：在 Zotero 的文獻清單上按右鍵，選單裡有 Better BibTeX；Obsidian 左側看得到 `00_總覽` 到 `07_模板` 八個資料夾。接著讀 `00_總覽/開始使用.md`，再看 README 的「Zotero 怎麼接」，日期和中文作者姓名怎麼填寫在那裡。
+**AI 回來後你要檢查**：在 Zotero 的文獻清單上按右鍵，選單裡有 Better BibTeX；Obsidian 左側看得到 `00_總覽` 到 `07_模板` 八個資料夾。接著讀 `00_總覽/開始使用.md`，再看 README 的「Zotero 怎麼接」，citekey 規則寫在那裡；日期格式和中文作者姓名怎麼填，看 mis-thesis-guide 文獻管理頁的 2.3.6、2.3.8 節。
 
 ### 6.1 快速設定：從計畫書填出術語表和研究設計速查
 

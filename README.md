@@ -2,33 +2,21 @@
 
 社會科學／資訊管理取向的研究方法知識庫。把學習筆記、方法論書籍、公開規範與 AI 輔助研究的實務，整理成一個可以反覆查閱的靜態網站與一組 Markdown 文件。
 
-**線上入口**：`index.html`（GitHub Pages 啟用後即為站台首頁）
+**網站**：<https://wayhong0928.github.io/mis-thesis-guide/>
 
----
+本站是個人學習筆記，撰寫時使用 AI 工具協助蒐集資料與草擬文字，內容由作者審定。不是官方規範，實際要求以系所規定與指導教授為準；需要引用時請回到原始文獻。
 
 ## 預設讀者
 
 本站以**社會科學取向的資訊管理研究**為預設情境，主要讀者是研究所學生。統計判準、章節慣例與寫作規範都有領域限定，其他領域請以自身系所規範為準。
 
-## AI 使用揭露
+## 從哪裡開始
 
-本站內容由作者規劃、篩選與審定，撰寫過程使用 AI 工具協助蒐集資料、查證出處與草擬文字。
-
-站內引用的卷期、DOI 與連結均經工具查證並標明查證日期，但作者**尚未逐篇取得原文核對**。因此：
-
-> **請勿直接引用本站的整理。** 需要引用時，一律回到 `docs/about.md` 列出的原始文獻，自行取得原文、確認內容後再引用。
-
-作者對本站公開的內容負責：發現錯誤請回報，作者會更正或撤下。
-
-## 免責聲明
-
-本站不是官方規範。實際要求一律以下列順序為準：
-
-> 系所規定 → 指導教授意見 → 研究倫理審查委員會 → 投稿單位作者須知
-
-站內的判準門檻（信效度、統計指標、格式慣例）會因領域與期刊而異，引用前請自行查證最新版本。
-
----
+| 資源 | 適合誰 |
+|---|---|
+| [一小時上手](https://wayhong0928.github.io/mis-thesis-guide/pages/ai-quickstart.html) | 只用 ChatGPT、Claude、Gemini 網頁版，想在一小時內建好論文助手（另有 [Claude Code、Codex 版](https://wayhong0928.github.io/mis-thesis-guide/pages/ai-quickstart-agent.html)） |
+| [thesis-notes-template](https://github.com/wayhong0928/thesis-notes-template) | 想用 Obsidian 做文獻筆記，要現成的模板和填寫規則 |
+| [mis-thesis-skills](https://github.com/wayhong0928/mis-thesis-skills) | 用 Claude Code 或 Codex，想讓 AI 照固定判準檢查題目與寫作 |
 
 ## 這是什麼
 
@@ -40,180 +28,29 @@
 | 研究方法 | 方法選擇地圖、研究倫理與資料管理、系統性／範疇回顧、量化分析規劃與資料處理、問卷調查法、實驗法、系統發展法／DSR、演算法與資料分析、次級資料／檔案研究、質性研究 |
 | 論文寫作 | 論文架構與各章要領、學術中文寫作紀律、計畫書與口試簡報、口試後修訂／典藏／結案 |
 | AI 輔助研究 | 工作流與三層架構、AI 工具生態與風險、學術倫理與 AI 揭露——放方法論判斷與紅線 |
-| AI 工具與技術環境 | **2026-09-17 已外移**：4 頁內容遷移至新站 [ai-agent-notes](https://wayhong0928.github.io/ai-agent-notes/)，原頁（`claude-tools-overview.md`／`ai-agents.md`／`harness.md`／`skill-build.md`）改為導引頁 |
+| AI 工具與技術環境 | AI 工具本身怎麼設定、怎麼選，放在 [ai-agent-notes](https://wayhong0928.github.io/ai-agent-notes/)，本站只留導引頁 |
 | 工具箱 | 文獻管理與知識庫、AI 學術研究工具指南、檢查清單、AI 提示詞範本、名詞與用語對照、延伸閱讀與資源指南、關於本站 |
 
 ## 這不是什麼
 
-- **不是官方規範**（見上方免責聲明）。
+- **不是官方規範**（見開頭的聲明）。
 - **不包含任何特定研究的題目、架構或構念。** 所有寫作範例都是通用的教科書級範例。
 - **不包含他人論文報告的內容摘要**，也**不重製參考書籍或講座的內容**——只列書目、連結與導讀評價。詳見 `docs/about.md`。
 
----
-
-## 目錄結構
+## 檔案配置
 
 ```
-.
-├── index.html            首頁（知識地圖入口，由 build.py 產生）
-├── build.py              從 docs/*.md 產生 pages/*.html 與 index.html
-├── assets/
-│   ├── style.css         共用樣式（含深色模式與列印樣式）
-│   ├── site.js           導覽開合、篩選、目錄標示、檢查清單狀態
-│   └── index.json        頁面索引（由 build.py 產生）
-├── docs/                 ★ 內容來源，可直接在 Obsidian 開啟閱讀
-│   ├── getting-started.md
-│   ├── research-basics.md
-│   ├── finding-reading.md
-│   ├── venues.md
-│   ├── is-research.md
-│   ├── problem-design.md
-│   ├── literature.md
-│   ├── theory-building.md
-│   ├── theories.md
-│   ├── methodology.md
-│   ├── research-ethics-data.md
-│   ├── systematic-review.md
-│   ├── quant-analysis-basics.md
-│   ├── method-survey.md
-│   ├── method-experiment.md
-│   ├── method-dsr.md
-│   ├── method-data.md
-│   ├── method-secondary-data.md
-│   ├── method-qualitative.md
-│   ├── writing.md
-│   ├── style.md
-│   ├── defense.md
-│   ├── post-defense.md
-│   ├── ai-workflow.md
-│   ├── claude-tools-overview.md  （2026-09-17 起為導引頁，內容見 ai-agent-notes 新站）
-│   ├── tool-directory.md
-│   ├── ai-agents.md              （同上，導引頁）
-│   ├── harness.md                （同上，導引頁）
-│   ├── skill-build.md            （同上，導引頁）
-│   ├── ai-tools.md
-│   ├── ethics.md
-│   ├── tools-knowledge.md
-│   ├── checklists.md
-│   ├── prompts.md
-│   ├── glossary.md
-│   ├── sources.md        延伸閱讀與資源指南（外部書籍、論文、課程、專案、官方規範）
-│   └── about.md          關於本站（內容來源、可靠性等級、授權、回報、更新紀錄）
-└── pages/                產生出來的 HTML（不要手動編輯）
+docs/      內容來源（Markdown，可以直接在 Obsidian 開啟閱讀）
+pages/     由 build.py 產生的 HTML，不要手動編輯
+assets/    共用樣式與網頁腳本
+build.py   從 docs/ 產生 pages/ 與 index.html
 ```
 
-**`docs/` 是唯一的內容來源（single source of truth）。** `pages/` 底下的 HTML 全部由 `build.py` 產生，手動改了下次重建就會被覆蓋。
+想修改內容、新增頁面或自己架一份，見 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
----
+## 回報問題與更新
 
-## 怎麼修改內容
-
-1. 編輯 `docs/` 底下對應的 `.md` 檔（可以直接在 Obsidian 裡改）
-2. 重新產生 HTML：
-
-```bash
-pip install markdown        # 只需要一次
-python3 build.py
-```
-
-> **Windows 使用者注意**：主控台預設編碼（cp950）下直接執行可能在印出進度訊息時噴 `UnicodeEncodeError` 而中斷——檔案通常已經正確寫完，只是腳本印訊息時掛掉，不代表資料流失。建議先設定環境變數再執行：`set PYTHONIOENCODING=utf-8`（cmd）或 `$env:PYTHONIOENCODING="utf-8"`（PowerShell）。
-
-3. commit 並 push
-
-### 新增一頁
-
-1. 在 `docs/` 建立 `新頁面.md`
-2. 在 `build.py` 的 `NAV` 清單中，找到對應的區塊加入一列：
-   `("新頁面", "頁面標題", "一句話說明")`
-3. 執行 `python3 build.py`
-
-導覽列、首頁卡片、上一頁／下一頁都會自動更新。
-
----
-
-## Markdown 慣例
-
-`build.py` 使用 Python-Markdown 的 `extra`、`toc`、`sane_lists`、`admonition` 擴充。
-
-**提示框**：
-
-```markdown
-!!! warning "標題"
-    內容需縮排四個空格。
-
-!!! tip "標題"
-!!! note "標題"
-!!! danger "標題"
-```
-
-**可勾選的清單**：
-
-```markdown
-- [ ] 這一項會變成網頁上可以勾選的核取方塊
-- [x] 預設打勾
-```
-
-勾選狀態存在瀏覽器的 `localStorage`，只在該裝置的該瀏覽器有效，清除網站資料就會消失。
-
-**頁面之間的連結**：直接寫 `.md` 的相對連結，建置時會自動轉成 `.html`。
-
-```markdown
-見[文獻回顧](literature.md)
-```
-
-**每頁的 H1 會被移除**，標題統一由 `build.py` 的 `NAV` 提供，所以 `.md` 開頭的 `# 標題` 只是給 Obsidian 看的。
-
----
-
-## 在本機預覽
-
-直接用瀏覽器開 `index.html` 就可以（沒有用到任何需要伺服器的功能）。若想用本機伺服器：
-
-```bash
-python3 -m http.server 8000
-# 然後開 http://localhost:8000
-```
-
----
-
-## 部署到 GitHub Pages
-
-1. 把整個資料夾推到 GitHub repo
-2. Repository → **Settings** → **Pages**
-3. Source 選 **Deploy from a branch**，branch 選 `main`、資料夾選 `/ (root)`
-4. 等待部署完成後即可透過 Pages 網址存取
-
-> **關於公開範圍**：GitHub Pages 在免費方案下，即使 repo 是 private，發布出去的站台仍是**公開可存取**的。若需要限制存取，需使用付費方案的 private Pages，或改用其他有存取控制的靜態站台服務。**部署前請確認站內沒有不該公開的內容。**
-
-repo 內已放置 `.nojekyll`，讓 GitHub Pages 直接輸出檔案，不經過 Jekyll 處理。
-
----
-
-## 隱私與內容檢查
-
-推送前建議跑一次檢查腳本（只用 Python 標準函式庫，Windows 與 Linux 皆可執行）：
-
-```bash
-python scripts/precheck.py                 # 檢查 docs/ 底下所有 .md
-python scripts/precheck.py docs/style.md   # 指定其他檔案或目錄
-python scripts/precheck.py --warn-only     # 只列出命中，不讓結束碼變成 1
-```
-
-腳本會依「個資」與「大陸用語」兩組列出命中的 `路徑:行號: 命中的詞 | 該行內容`，最後印出各組筆數。沒有命中時結束碼為 0，有命中為 1（加 `--warn-only` 則一律為 0），路徑不存在或檔案無法以 UTF-8 讀取時為 2。關鍵字清單放在 `scripts/precheck.py` 開頭的常數，依自己的需要增減；「演算法」不會被當成「算法」命中。
-
-`style.md`、`glossary.md`、`checklists.md`、`prompts.md` 本來就列了這些詞當反例，所以結束碼現在一定是 1。看的方法是逐筆確認命中處是刻意寫的反例，不是要把結束碼壓到 0；要接進 pre-push hook，得先把這幾頁排除或改成 `--warn-only`。
-
-沒有 Python 時，可以改用以下兩道 grep 手動檢查，結果與腳本相同：
-
-```bash
-# 檢查有沒有殘留的個人研究資訊（依自己的關鍵字調整）
-grep -rniE "我的論文|本研究的構念|學號|真實姓名" docs/
-
-# 檢查大陸用語
-grep -rnE "被試|數據收集|信息|回歸分析|結果表明|人工智能|用戶|(^|[^演])算法|數據庫|優化|場景|默認|受眾" docs/
-```
-
----
+內容有錯請到 [Issues](https://github.com/wayhong0928/mis-thesis-guide/issues) 回報，作者會更正或撤下。法規與期刊政策每學期查核一次（上一輪是 2026-09）；各頁改了什麼，見[關於本站](https://wayhong0928.github.io/mis-thesis-guide/pages/about.html)的更新紀錄。
 
 ## 授權與引用
 
@@ -227,11 +64,3 @@ grep -rnE "被試|數據收集|信息|回歸分析|結果表明|人工智能|用
 - 本站是個人學習筆記，供自己與同儕參考。
 - 引用自書籍、論文與官方文件的部分，著作權屬於原作者與原出版單位，不受本站授權條款影響。
 - 若要引用站內整理的觀念，請追溯到 `docs/about.md` 列出的原始出處引用。
-
----
-
-## 待辦
-
-- [ ] 依系所的最新論文格式規定，核對「台灣碩論章節慣例」一節
-- [ ] 投稿目標期刊確定後，補上該期刊的 AI 使用政策
-- [ ] 定期回頭確認法規與期刊政策是否更新（建議每學期一次）
