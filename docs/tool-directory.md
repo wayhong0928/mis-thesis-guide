@@ -95,7 +95,7 @@
 - 主打「深度搜尋」，用較長時間換較高的召回率
 - 適合已經確定研究問題、要做窮盡式搜尋時；不適合題目還在漂移的階段
 
-這一類工具都要你自己輸入檢索式、自己判讀回傳的清單。要把「請 AI 產檢索式 → 自己貼到工具跑 → 把結果貼回來請 AI 分類」串成固定流程，可套用[AI 提示詞範本的「檢索式產生與搜尋結果接力」](prompts.md#22)，該則附有「AI 並未實際搜尋、判斷只根據貼回去的文字」的誠實條款。
+這一類工具都要你自己輸入檢索式、自己判讀回傳的清單。要把「請 AI 產檢索式 → 自己貼到工具跑 → 把結果貼回來請 AI 分類」串成固定流程，可套用[AI 提示詞範本的「檢索式產生與搜尋結果接力」](prompts.md#22-檢索式產生與搜尋結果接力)，該則附有「AI 並未實際搜尋、判斷只根據貼回去的文字」的誠實條款。
 
 **接進 Claude Code（MCP）**
 
@@ -205,7 +205,7 @@ Consensus、Elicit、Perplexity 都有官方遠端 MCP，接上後可以在 Clau
 | 機器學習 | **scikit-learn**（[scikit-learn.org](https://scikit-learn.org/)）、**PyTorch**（[pytorch.org](https://pytorch.org/)）、**Weka**（[ml.cms.waikato.ac.nz/weka](https://ml.cms.waikato.ac.nz/weka/)） | 見[演算法與資料分析](method-data.md) |
 | 檢力分析 | **G\*Power**（[gpower.hhu.de](https://www.gpower.hhu.de/)） | 免費；實驗法應事前使用 |
 | 程式環境・筆記本 | **Jupyter**（[jupyter.org](https://jupyter.org/)）（JupyterLab／Jupyter Notebook） | 開源免費。同一份筆記本保存程式碼、說明文字與執行結果，官網說明支援 Python、R 等 40 多種語言。筆記本會連同輸出一起存檔，分享或上傳前先清掉含受訪者資料的輸出 |
-| 程式環境・R | **RStudio**（[posit.co](https://posit.co/products/open-source/rstudio/)） | R 的整合開發環境，由 Posit（前身為 RStudio, PBC）開發。開源版免費；付費的 RStudio Desktop Pro 差在商業授權與技術支援。另可付費加購 Posit AI，它會讀取你載入的變數與資料框，處理研究資料前先對照[資料治理核對框](#13) |
+| 程式環境・R | **RStudio**（[posit.co](https://posit.co/products/open-source/rstudio/)） | R 的整合開發環境，由 Posit（前身為 RStudio, PBC）開發。開源版免費；付費的 RStudio Desktop Pro 差在商業授權與技術支援。另可付費加購 Posit AI，它會讀取你載入的變數與資料框，處理研究資料前先對照[資料治理核對框](#13-通用資料治理核對框) |
 | 資料視覺化 | **Tableau Public**（[public.tableau.com](https://public.tableau.com/)） | 免費，但**發布到 Tableau Public 的作品與資料不是私人的，任何人都能檢視，也能下載活頁簿與資料來源**。未公開的研究資料、受訪者資料不能發布到這裡。官方說明另有免費的 Tableau Desktop Public Edition 可把活頁簿存在本機，但它僅限非商業用途；要連線 Tableau Cloud／Server 發布與分享內容，則需付費授權 |
 
 *程式環境與資料視覺化三列於 2026-09-25 查證官方網站。*
@@ -223,7 +223,7 @@ Consensus、Elicit、Perplexity 都有官方遠端 MCP，接上後可以在 Clau
 | **Writefull**（[writefull.com](https://www.writefull.com/)） / **Paperpal**（[paperpal.com](https://paperpal.com/)） / **Trinka**（[trinka.ai](https://www.trinka.ai/)） | 學術英文的文法與用語修飾 | 屬語言協助；是否允許及如何揭露依投稿單位政策確認 |
 | **Grammarly**（[grammarly.com](https://www.grammarly.com/)） | 一般英文文法檢查 | 同上 |
 | **DeepL**（[deepl.com](https://www.deepl.com/)） | 翻譯 | 翻完必須自己逐句校對，術語尤其危險 |
-| **QuillBot**（[quillbot.com](https://quillbot.com/)） | 英文改寫（paraphrasing） | 免費版每次可改寫的字數與可用模式有限，付費版放寬字數並開放更多模式（依[官方說明中心](https://help.quillbot.com/hc/en-us/articles/35855733045143-What-is-the-difference-between-free-and-Premium-in-the-Quillbot-Paraphraser)，2026-09-25 查證）。**用它改寫自己的文字，多數學校與期刊要求揭露 AI 使用；拿它改寫別人的文字，即使換了措辭仍然算抄襲。** 揭露寫法見[學術倫理與 AI 揭露](ethics.md#ai)；未公開的研究資料不要貼上 |
+| **QuillBot**（[quillbot.com](https://quillbot.com/)） | 英文改寫（paraphrasing） | 免費版每次可改寫的字數與可用模式有限，付費版放寬字數並開放更多模式（依[官方說明中心](https://help.quillbot.com/hc/en-us/articles/35855733045143-What-is-the-difference-between-free-and-Premium-in-the-Quillbot-Paraphraser)，2026-09-25 查證）。**用它改寫自己的文字，多數學校與期刊要求揭露 AI 使用；拿它改寫別人的文字，即使換了措辭仍然算抄襲。** 揭露寫法見[學術倫理與 AI 揭露](ethics.md#四怎麼寫-ai-揭露聲明)；未公開的研究資料不要貼上 |
 | **Overleaf**（[overleaf.com](https://www.overleaf.com/)） / **LaTeX**（[latex-project.org](https://www.latex-project.org/)） | 排版（理工與部分期刊要求） | — |
 | **Word 樣式與交互參照** | 中文碩論的主流 | 目次、圖表編號、交互參照都用內建功能做，不要手打 |
 

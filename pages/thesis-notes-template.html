@@ -60,7 +60,7 @@
 </ul></div>
 <div class="navsec"><h2>工具箱</h2><ul>
 <li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫" data-slug="tools-knowledge" data-updated="1791361403">文獻管理與知識庫</a></li>
-<li class="active"><a href="../pages/thesis-notes-template.html" data-title="論文筆記庫範本" data-slug="thesis-notes-template" data-updated="1791361403">論文筆記庫範本</a></li>
+<li class="active"><a href="../pages/thesis-notes-template.html" data-title="論文筆記庫範本" data-slug="thesis-notes-template" data-updated="1791475427">論文筆記庫範本</a></li>
 <li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南" data-slug="tool-directory" data-updated="1791036151">AI 學術研究工具指南</a></li>
 <li><a href="../pages/checklists.html" data-title="檢查清單" data-slug="checklists" data-updated="1791199752">檢查清單</a></li>
 <li><a href="../pages/prompts.html" data-title="AI 提示詞範本" data-slug="prompts" data-updated="1791265286">AI 提示詞範本</a></li>
@@ -72,7 +72,7 @@
 <div class="wrap">
 <main id="main">
 <p class="crumb"><a href="../index.html">首頁</a> ／ 工具箱</p>
-<article class="doc" data-updated="1791361403">
+<article class="doc" data-updated="1791475427">
 <h1>論文筆記庫範本</h1>
 <p class='lede'>下載就能用的 Obsidian 筆記庫：五種模板、填寫規則、文獻矩陣、寫筆記與核對筆記的提示詞</p>
 <blockquote>
@@ -80,7 +80,7 @@
 <p>範本的模板以<a href="tools-knowledge.html">文獻管理與知識庫</a>第四節的五種筆記為底，再加上一份碩士論文實際做下來踩過的坑。repo 裡沒有任何 AI 工具的設定檔，提示詞只是文字，設計上不依賴特定 AI 工具；實際測過哪些，見第七節。</p>
 </blockquote>
 <hr />
-<h2 id="_1">一、跟一小時上手的模板有什麼不同</h2>
+<h2 id="一跟一小時上手的模板有什麼不同">一、跟一小時上手的模板有什麼不同</h2>
 <p><a href="ai-quickstart.html">網頁版一小時上手</a>第五節有一份精簡的文獻筆記模板，適合第一週先試試看。這個範本是完整版，差別如下：</p>
 <table>
 <thead>
@@ -120,7 +120,7 @@
 </table>
 <p>兩者不衝突。先用一小時上手的模板寫幾篇，覺得欄位不夠用了再換範本，舊筆記照新模板補欄位就好。</p>
 <hr />
-<h2 id="_2">二、下載與開啟</h2>
+<h2 id="二下載與開啟">二、下載與開啟</h2>
 <p><strong>用 AI 安裝</strong>：有 Claude Code 或 Codex 的話，把第六節 6.0 那段貼給它。它會裝好 Zotero、Obsidian、Python 和 PyMuPDF，下載範本，再一步一步帶你點完 Better BibTeX 和 Obsidian 的設定。</p>
 <p><strong>自己來</strong>：</p>
 <ol>
@@ -136,7 +136,7 @@
 <li>ZotLit：還在更新（2.1.4，2026-09），需要另外在 Zotero 裝它的 companion 外掛；授權是 AGPL-3.0。站主沒有實測過。</li>
 </ul>
 <hr />
-<h2 id="_3">三、裡面有什麼</h2>
+<h2 id="三裡面有什麼">三、裡面有什麼</h2>
 <table>
 <thead>
 <tr>
@@ -181,7 +181,7 @@
 </table>
 <p>命名規則：構念卡用 <code>縮寫_中文名</code>（<code>PU_知覺有用性</code>），理論卡用 <code>序號_理論名</code>，文獻筆記用 Zotero 的 citekey（<code>Davis1989</code>），推演卡用關係命名（<code>知覺有用性→使用意圖</code>）。</p>
 <hr />
-<h2 id="_4">四、幾個設計決定，以及背後的理由</h2>
+<h2 id="四幾個設計決定以及背後的理由">四、幾個設計決定，以及背後的理由</h2>
 <p>這些設計都來自實際寫論文時出過的問題。</p>
 <table>
 <thead>
@@ -227,7 +227,7 @@
 </table>
 <p>寫第二章時照 repo <code>00_總覽/開始使用.md</code> 開頭的一句話原則：讀的時候面對論文卡，寫的時候面對構念卡。</p>
 <hr />
-<h2 id="_5">五、文獻筆記填寫規則重點</h2>
+<h2 id="五文獻筆記填寫規則重點">五、文獻筆記填寫規則重點</h2>
 <p>完整規則在 repo 的 <code>00_總覽/文獻筆記填寫規則.md</code>，最常用到的是這幾條：</p>
 <ul>
 <li><strong>頁碼</strong>：每個數字、定義、作者主張都附 <code>（PDF p. 5）</code>，指 PDF 檔的第幾頁，不是期刊印的頁碼。</li>
@@ -242,11 +242,11 @@
 <p><code>Davis1989</code> 是先用第六節第 2 段請 Claude Code 寫、再用第 3 段核對並回 PDF 逐項修正的版本。除了 <code>[[PEOU_知覺易用性]]</code> 故意留成斷掉的連結（示範文獻矩陣怎麼抓），每一欄都照規則填了，也示範幾種容易漏的寫法：原文找不到的欄位填 TBD、原文自己前後對不上時兩個版本並列、範例研究的推論跟原文的發現分開寫。用第六節第 2 段請 AI 寫筆記後，可以拿它對照 AI 的產出。</p>
 </div>
 <hr />
-<h2 id="_6">六、提示詞：安裝一段、工作五段</h2>
+<h2 id="六提示詞安裝一段工作五段">六、提示詞：安裝一段、工作五段</h2>
 <p>下面跟 repo 裡的 <code>00_總覽/prompt.md</code> 內容相同。第 0 段幫你裝工具、下載範本，第 1 到 5 段對應筆記庫的五個工作。網頁版一次處理一篇，PDF 自己上傳；CLI 版在筆記庫資料夾開 Claude Code 或 Codex，給一份 citekey 清單就能一篇接一篇處理。CLI 版會讀寫你電腦上的檔案，第一次用之前先看<a href="ai-quickstart-agent.html">Claude Code／Codex 一小時上手</a>第三節的權限設定。</p>
 <p>CLI 版直接讀 Zotero 裡的 PDF，不用另外複製或改名：AI 透過 Better BibTeX 用 citekey 查出 PDF 在哪裡，所以跑第 2、3 段時 Zotero 要開著。PDF 轉出的分頁文字檔放在 <code>_text/</code>，這個資料夾已經寫進 <code>.gitignore</code>，不要放到公開的地方，論文內容大多有版權。</p>
 <p><code>⟨ ⟩</code> 裡的字換成你自己的內容。</p>
-<h3 id="60-cli">6.0 安裝與匯入（只有 CLI 版）</h3>
+<h3 id="60-安裝與匯入只有-cli-版">6.0 安裝與匯入（只有 CLI 版）</h3>
 <p><strong>什麼時候用</strong>：第一次使用，電腦上還沒有 Zotero、Obsidian 或這個範本。在任何資料夾開 Claude Code 或 Codex 都可以。</p>
 <pre><code class="language-text">請幫我在這台電腦裝好論文筆記庫要用的工具，並下載範本。每一步先說你要做什麼、要跑什麼指令，等我同意再做；已經裝好的就跳過。
 1. 判斷作業系統。Windows 用 winget，Mac 用 Homebrew（Mac 沒有 Homebrew 就先停下來告訴我）。
@@ -267,7 +267,7 @@
 不要修改 Zotero 或 Obsidian 的設定檔，設定都由我在畫面上操作。
 </code></pre>
 <p><strong>AI 回來後你要檢查</strong>：在 Zotero 的文獻清單上按右鍵，選單裡有 Better BibTeX；Obsidian 左側看得到 <code>00_總覽</code> 到 <code>07_模板</code> 八個資料夾。接著讀 <code>00_總覽/開始使用.md</code>，再看 README 的「Zotero 怎麼接」，citekey 規則寫在那裡；日期格式和中文作者姓名怎麼填，看 mis-thesis-guide 文獻管理頁的 2.3.6、2.3.8 節。</p>
-<h3 id="61">6.1 快速設定：從計畫書填出術語表和研究設計速查</h3>
+<h3 id="61-快速設定從計畫書填出術語表和研究設計速查">6.1 快速設定：從計畫書填出術語表和研究設計速查</h3>
 <p><strong>什麼時候用</strong>：剛建好筆記庫，手上有計畫書草稿（哪怕很粗）。</p>
 <p><strong>網頁版</strong>：</p>
 <pre><code class="language-text">附件是我的論文計畫書草稿，還有兩份空白表格：術語表.md、研究設計速查.md。
@@ -288,7 +288,7 @@
 - 只改這兩個檔案。
 </code></pre>
 <p><strong>AI 回來後你要檢查</strong>：每個構念的英文原名和量表來源，回計畫書對一次；「待確認」清單逐條自己決定。</p>
-<h3 id="62">6.2 寫文獻筆記</h3>
+<h3 id="62-寫文獻筆記">6.2 寫文獻筆記</h3>
 <p><strong>什麼時候用</strong>：讀完（或至少讀過一遍）一篇論文，要留下筆記。</p>
 <p><strong>網頁版</strong>：</p>
 <pre><code class="language-text">附件是一篇論文的 PDF。請照專案檔案裡的「文獻筆記填寫規則」寫一份文獻筆記：
@@ -322,7 +322,7 @@
 只建立或修改 03_文獻筆記/ 和 _text/ 裡的檔案，Zotero 裡的檔案一律不動。不要用你記得的內容補原文沒寫的東西。
 </code></pre>
 <p><strong>AI 回來後你要檢查</strong>：頁碼範圍是不是涵蓋全文；〔推論〕的句子逐句自己改寫或刪掉，改完把〔推論〕拿掉；然後跑第 3 段核對。</p>
-<h3 id="63">6.3 核對文獻筆記（一定要開新對話）</h3>
+<h3 id="63-核對文獻筆記一定要開新對話">6.3 核對文獻筆記（一定要開新對話）</h3>
 <p><strong>什麼時候用</strong>：AI 寫完一份筆記之後。寫的那個對話看不出自己的錯，要換一個新對話，最好換一個模型。</p>
 <p><strong>網頁版</strong>：</p>
 <pre><code class="language-text">附件是一篇論文的 PDF，以及別人根據它寫的文獻筆記。請只做核對，不要改寫筆記。
@@ -350,7 +350,7 @@
 最後列出建議修改的地方，由我決定要不要改。
 </code></pre>
 <p><strong>AI 回來後你要檢查</strong>：不通過的項目自己回 PDF 看一次再改（核對的 AI 也會看錯）。全部處理完，把筆記的 <code>verified</code> 填上今天日期。</p>
-<h3 id="64">6.4 收料進構念卡</h3>
+<h3 id="64-收料進構念卡">6.4 收料進構念卡</h3>
 <p><strong>什麼時候用</strong>：某個構念累積了幾張論文卡，要開始整理第二章那一節。</p>
 <p><strong>網頁版</strong>：</p>
 <pre><code class="language-text">下面貼的是幾份文獻筆記，都跟「⟨構念名稱⟩」有關。請整理成構念卡的草稿：
@@ -373,7 +373,7 @@
 只修改這張構念卡。
 </code></pre>
 <p><strong>AI 回來後你要檢查</strong>：隨機點 3 個 <code>[[citekey]]</code> 回筆記看那句話是不是真的在裡面；共識和爭議是不是只靠一兩篇撐。</p>
-<h3 id="65">6.5 推演卡健檢</h3>
+<h3 id="65-推演卡健檢">6.5 推演卡健檢</h3>
 <p><strong>什麼時候用</strong>：寫完一張推演卡，或要去跟老師討論假說之前。</p>
 <p><strong>網頁版</strong>：</p>
 <pre><code class="language-text">下面是一張假說推演卡，以及它引用的文獻筆記。請檢查：
@@ -394,7 +394,7 @@
 </code></pre>
 <p><strong>AI 回來後你要檢查</strong>：「跳步」那一項自己想一次能不能補；補不起來的，帶去問老師。</p>
 <hr />
-<h2 id="_7">七、這些提示詞測過哪些</h2>
+<h2 id="七這些提示詞測過哪些">七、這些提示詞測過哪些</h2>
 <p>2026 年 10 月用 Davis（1989）實際跑過 CLI 版。筆記庫是把 repo 複製一份、刪掉三份示範，另外留一張還沒填的 <code>PU_知覺有用性</code> 構念卡。試跑用的提示詞末尾都另外加了一句「不要開子代理」：</p>
 <ul>
 <li><strong>第 2 段（寫筆記）</strong>：Claude Code 和 Codex 各跑一次。兩份筆記的章節都齊全，沒有寫進假說編號。兩邊都自己找到原文兩處前後不一致：同一個相關係數，摘要和表 8 寫 .59、討論段寫 .69；另一個相關係數，內文標 p&lt;.001、表 8 標 **。</li>
@@ -416,25 +416,26 @@
 </main>
 <aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">
 <ul>
-<li><a href="#_1">一、跟一小時上手的模板有什麼不同</a></li>
-<li><a href="#_2">二、下載與開啟</a></li>
-<li><a href="#_3">三、裡面有什麼</a></li>
-<li><a href="#_4">四、幾個設計決定，以及背後的理由</a></li>
-<li><a href="#_5">五、文獻筆記填寫規則重點</a></li>
-<li><a href="#_6">六、提示詞：安裝一段、工作五段</a><ul>
-<li><a href="#60-cli">6.0 安裝與匯入（只有 CLI 版）</a></li>
-<li><a href="#61">6.1 快速設定：從計畫書填出術語表和研究設計速查</a></li>
-<li><a href="#62">6.2 寫文獻筆記</a></li>
-<li><a href="#63">6.3 核對文獻筆記（一定要開新對話）</a></li>
-<li><a href="#64">6.4 收料進構念卡</a></li>
-<li><a href="#65">6.5 推演卡健檢</a></li>
+<li><a href="#一跟一小時上手的模板有什麼不同">一、跟一小時上手的模板有什麼不同</a></li>
+<li><a href="#二下載與開啟">二、下載與開啟</a></li>
+<li><a href="#三裡面有什麼">三、裡面有什麼</a></li>
+<li><a href="#四幾個設計決定以及背後的理由">四、幾個設計決定，以及背後的理由</a></li>
+<li><a href="#五文獻筆記填寫規則重點">五、文獻筆記填寫規則重點</a></li>
+<li><a href="#六提示詞安裝一段工作五段">六、提示詞：安裝一段、工作五段</a><ul>
+<li><a href="#60-安裝與匯入只有-cli-版">6.0 安裝與匯入（只有 CLI 版）</a></li>
+<li><a href="#61-快速設定從計畫書填出術語表和研究設計速查">6.1 快速設定：從計畫書填出術語表和研究設計速查</a></li>
+<li><a href="#62-寫文獻筆記">6.2 寫文獻筆記</a></li>
+<li><a href="#63-核對文獻筆記一定要開新對話">6.3 核對文獻筆記（一定要開新對話）</a></li>
+<li><a href="#64-收料進構念卡">6.4 收料進構念卡</a></li>
+<li><a href="#65-推演卡健檢">6.5 推演卡健檢</a></li>
 </ul>
 </li>
-<li><a href="#_7">七、這些提示詞測過哪些</a></li>
+<li><a href="#七這些提示詞測過哪些">七、這些提示詞測過哪些</a></li>
 </ul>
 </div>
 </aside>
 </div>
 <script src="../assets/site.js"></script>
+<script>(function(){var m={"_1":"一跟一小時上手的模板有什麼不同","_2":"二下載與開啟","_3":"三裡面有什麼","_4":"四幾個設計決定以及背後的理由","_5":"五文獻筆記填寫規則重點","_6":"六提示詞安裝一段工作五段","60-cli":"60-安裝與匯入只有-cli-版","61":"61-快速設定從計畫書填出術語表和研究設計速查","62":"62-寫文獻筆記","63":"63-核對文獻筆記一定要開新對話","64":"64-收料進構念卡","65":"65-推演卡健檢","_7":"七這些提示詞測過哪些"};function f(){var h=decodeURIComponent(location.hash.slice(1));if(h&&m[h]&&!document.getElementById(h)){var n=m[h];history.replaceState(null,"","#"+encodeURIComponent(n));var g=function(){var e=document.getElementById(n);if(e)e.scrollIntoView();};document.readyState==="complete"?g():addEventListener("load",g);}}f();addEventListener("hashchange",f);})();</script>
 </body>
 </html>

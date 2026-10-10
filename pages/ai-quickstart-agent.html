@@ -60,7 +60,7 @@
 </ul></div>
 <div class="navsec"><h2>工具箱</h2><ul>
 <li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫" data-slug="tools-knowledge" data-updated="1791361403">文獻管理與知識庫</a></li>
-<li><a href="../pages/thesis-notes-template.html" data-title="論文筆記庫範本" data-slug="thesis-notes-template" data-updated="1791361403">論文筆記庫範本</a></li>
+<li><a href="../pages/thesis-notes-template.html" data-title="論文筆記庫範本" data-slug="thesis-notes-template" data-updated="1791475427">論文筆記庫範本</a></li>
 <li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南" data-slug="tool-directory" data-updated="1791036151">AI 學術研究工具指南</a></li>
 <li><a href="../pages/checklists.html" data-title="檢查清單" data-slug="checklists" data-updated="1791199752">檢查清單</a></li>
 <li><a href="../pages/prompts.html" data-title="AI 提示詞範本" data-slug="prompts" data-updated="1791265286">AI 提示詞範本</a></li>
@@ -81,13 +81,13 @@
 </blockquote>
 <p>下面的工具事實都對照官方說明，查證日期是 2026-10-06。這兩個工具更新很快，畫面或指令跟這頁不一樣時，以官方說明為準。</p>
 <hr />
-<h2 id="_1">一、開始之前</h2>
+<h2 id="一開始之前">一、開始之前</h2>
 <ul>
 <li>先做完<a href="ai-quickstart.html">網頁版一小時上手</a>。這頁的指示檔沿用那頁第三節的範本，回原文核對的練習也在那頁。</li>
 <li>兩個工具都要付費方案。Claude Code 要 Claude 的 Pro、Max、Team、Enterprise 方案，或 Claude Console 帳號（<a href="https://code.claude.com/docs/en/quickstart">Quickstart</a>）。Codex 的官方方案頁把終端機版本（Codex CLI）列在 ChatGPT Plus 以上的方案，Free 和 Go 只寫到桌面 app（<a href="https://learn.chatgpt.com/docs/pricing">Pricing</a>）。兩者也都可以改用 API key 登入，依 API 用量另外計費。</li>
 <li>沒用過終端機的話，Claude Code 官方有一頁<a href="https://code.claude.com/docs/en/terminal-guide">終端機入門</a>，教你怎麼打開終端機、怎麼貼上指令。</li>
 </ul>
-<h2 id="_2">二、一小時時間表</h2>
+<h2 id="二一小時時間表">二、一小時時間表</h2>
 <table>
 <thead>
 <tr>
@@ -131,7 +131,7 @@
 </table>
 <p>第七節接 Consensus、Elicit 是選用的，有付費帳號或想多試的人再做。</p>
 <hr />
-<h2 id="_3">三、安裝、登入、看懂權限</h2>
+<h2 id="三安裝登入看懂權限">三、安裝、登入、看懂權限</h2>
 <h3 id="31-claude-code">3.1 Claude Code</h3>
 <ol>
 <li>照官方 <a href="https://code.claude.com/docs/en/quickstart">Quickstart</a> 的 Step 1，依作業系統複製那一行安裝指令到終端機執行。Windows 的 PowerShell 和 CMD 用的指令不同，貼錯會出現錯誤訊息，官方頁面上寫了怎麼分辨。官方也建議 Windows 先裝 <a href="https://git-scm.com/downloads/win">Git for Windows</a>。</li>
@@ -143,7 +143,7 @@
 <li>照官方 <a href="https://learn.chatgpt.com/docs/codex/cli">Codex CLI</a> 的「Install Codex」段落，macOS／Linux、Windows（PowerShell）、npm、Homebrew 四種方式擇一。</li>
 <li>在資料夾裡輸入 <code>codex</code>，第一次執行時選「Sign in with ChatGPT」，用你的 ChatGPT 帳號登入。</li>
 </ol>
-<h3 id="33">3.3 權限：第一次先看懂再按</h3>
+<h3 id="33-權限第一次先看懂再按">3.3 權限：第一次先看懂再按</h3>
 <p>這類工具會直接讀你的檔案、改你的檔案、在你的電腦上跑指令。剛開始用，先讓它每一步都問過你。</p>
 <ul>
 <li>Claude Code：v2.1.283 起，終端機的互動 session 預設是 auto 模式，背景有分類器先審過動作，大部分動作不會再問你（<a href="https://code.claude.com/docs/en/permission-modes">Permission modes</a>）。剛開始建議改用 Manual 模式，每個動作都先問你：啟動時輸入 <code>claude --permission-mode manual</code>，或在 session 裡按 <code>Shift+Tab</code> 切換，下方狀態列顯示 <code>manual mode on</code> 就對了。</li>
@@ -151,7 +151,7 @@
 </ul>
 <p>不管用哪一個，跳出確認時先看清楚它要讀哪個檔、改哪個檔、跑什麼指令。看不懂就先拒絕，再問它這一步要做什麼、為什麼要做。</p>
 <hr />
-<h2 id="_4">四、建研究資料夾</h2>
+<h2 id="四建研究資料夾">四、建研究資料夾</h2>
 <p>在電腦上開一個資料夾，例如叫 <code>我的論文</code>，裡面再開三個子資料夾：</p>
 <pre><code class="language-text">我的論文/
 ├── 文獻/      放核心文獻的 PDF
@@ -163,7 +163,7 @@
 <p>會用 Git 的話，可以在這個資料夾執行 <code>git init</code>，每次請 AI 改檔前後各 commit 一次，改壞了可以還原。不會用 Git 也沒關係，改檔前自己先複製一份備份就好。</p>
 <p>用 Codex 的人要多注意一件事：官方建議有版本控制的資料夾用 Auto，沒有的用 read-only，而且 Codex 可能先以唯讀模式啟動，等你確認信任這個資料夾。如果 Codex 寫不進 <code>筆記/</code>，先看 <code>/permissions</code> 目前是哪一種；想讓它寫檔，建議先 <code>git init</code>，再用 <code>/permissions</code> 切換。</p>
 <hr />
-<h2 id="_5">五、寫指示檔</h2>
+<h2 id="五寫指示檔">五、寫指示檔</h2>
 <p>指示檔的作用跟網頁版的專案指示一樣：每次開新 session，AI 都會先讀它。</p>
 <ul>
 <li>Claude Code 讀資料夾根目錄的 <code>CLAUDE.md</code>（<a href="https://code.claude.com/docs/en/memory">Memory</a>）。</li>
@@ -173,7 +173,7 @@
 <p>做法：</p>
 <ol>
 <li>在 <code>我的論文/</code> 建一個純文字檔，檔名照上面取。用記事本或任何文字編輯器都可以，存檔時確認副檔名是 <code>.md</code>，不是 <code>.md.txt</code>。</li>
-<li>把網頁版<a href="ai-quickstart.html#_3">第三節的專案指示範本</a>整段貼進去，<code>⟨⟩</code> 換成你的內容。</li>
+<li>把網頁版<a href="ai-quickstart.html#三專案指示範本">第三節的專案指示範本</a>整段貼進去，<code>⟨⟩</code> 換成你的內容。</li>
 <li>紅線第 1 條的「上傳到這個專案的文獻」改成「<code>文獻/</code> 資料夾裡的 PDF」，再在紅線最後加上下面三條：</li>
 </ol>
 <pre><code class="language-text">8. 不要修改、搬移或刪除 文獻/ 資料夾裡的任何檔案。
@@ -185,16 +185,16 @@
 </ol>
 <p>第 8 到 10 條 AI 不一定每次都照做。能確實攔下動作的是第 3.3 節的權限設定，所以跳出確認時還是要自己看。</p>
 <hr />
-<h2 id="thesis-toolkit">六、安裝 thesis-toolkit</h2>
+<h2 id="六安裝-thesis-toolkit">六、安裝 thesis-toolkit</h2>
 <p>thesis-toolkit 是站主整理的三個 SKILL：研究方向收斂（<code>research-direction-finding</code>）、研究問題稽核（<code>research-question-audit</code>）、學術寫作檢查（<code>academic-writing-discipline</code>）。原始檔在 <a href="https://github.com/wayhong0928/mis-thesis-skills">mis-thesis-skills</a>。</p>
-<h3 id="61-claude-code-plugin">6.1 Claude Code：用 plugin 安裝</h3>
+<h3 id="61-claude-code用-plugin-安裝">6.1 Claude Code：用 plugin 安裝</h3>
 <p>在 Claude Code 裡依序輸入下面兩行：</p>
 <pre><code class="language-text">/plugin marketplace add wayhong0928/mis-thesis-skills
 /plugin install thesis-toolkit@mis-thesis-skills
 </code></pre>
 <p>第二行不會直接安裝，會先打開這個 plugin 的說明畫面，讓你選安裝範圍（scope）。選 user，你在這台電腦的每個資料夾都能用；選 local，只有目前這個資料夾能用（<a href="https://code.claude.com/docs/en/discover-plugins">Discover plugins</a>）。</p>
 <p>裝好以後，你提到相關任務時 Claude 會自己啟用對應的 SKILL。也可以直接指定，例如輸入 <code>/thesis-toolkit:research-question-audit</code>（<a href="https://code.claude.com/docs/en/skills">Skills</a>）。</p>
-<h3 id="62-codex-skill">6.2 Codex：把 SKILL 資料夾複製進去</h3>
+<h3 id="62-codex把-skill-資料夾複製進去">6.2 Codex：把 SKILL 資料夾複製進去</h3>
 <p>thesis-toolkit 是照 Claude Code 的 plugin 格式打包的，Codex 這邊改成直接放 SKILL 資料夾，Codex 讀得懂同樣格式的 SKILL（<a href="https://learn.chatgpt.com/docs/build-skills">Build skills</a>）。</p>
 <ol>
 <li>打開 <a href="https://github.com/wayhong0928/mis-thesis-skills">mis-thesis-skills</a>，點綠色的「Code」按鈕，選「Download ZIP」，下載後解壓縮。會用 Git 的話，用 <code>git clone</code> 也可以。</li>
@@ -204,8 +204,8 @@
 </ol>
 <p>SKILL 之後會改版。Claude Code 從第三方市集裝的 plugin 預設不會自動更新，要在 <code>/plugin</code> 的 Marketplaces 分頁選這個市集，開啟自動更新；Codex 要自己重新下載，再覆蓋那三個資料夾。各版改了什麼，寫在 repo 的 CHANGELOG。</p>
 <hr />
-<h2 id="consensuselicit">七、選用：接上 Consensus、Elicit</h2>
-<p>Consensus 和 Elicit 都有官方的 MCP 伺服器。MCP 是讓 AI 工具連上外部服務的標準做法，接上以後，可以在 Claude Code 或 Codex 的對話裡直接搜尋文獻。不接也沒關係，兩者的免費網頁版就能做基本搜尋，兩者的差別和方案見<a href="tool-directory.html#32-ai">工具指南 3.2 節</a>。</p>
+<h2 id="七選用接上-consensuselicit">七、選用：接上 Consensus、Elicit</h2>
+<p>Consensus 和 Elicit 都有官方的 MCP 伺服器。MCP 是讓 AI 工具連上外部服務的標準做法，接上以後，可以在 Claude Code 或 Codex 的對話裡直接搜尋文獻。不接也沒關係，兩者的免費網頁版就能做基本搜尋，兩者的差別和方案見<a href="tool-directory.html#32-ai-輔助檢索">工具指南 3.2 節</a>。</p>
 <p><strong>Consensus</strong>（<a href="https://github.com/Consensus-NLP/consensus-mcp">官方說明</a>）：官方說明寫，多數用戶端第一次連線時會要你用 Consensus 帳號登入，Claude 與 ChatGPT 不登入也能用，但額度較低；每月能搜尋幾次依方案而定。</p>
 <ul>
 <li>Claude Code：在終端機執行 <code>claude mcp add --transport http consensus https://mcp.consensus.app/mcp</code>。</li>
@@ -218,7 +218,7 @@
 </ul>
 <p>搜尋結果裡的摘要不能當原文引用。看起來相關的論文，一樣要下載原文，放進 <code>文獻/</code> 再讀。</p>
 <hr />
-<h2 id="_6">八、第一個任務：稽核自己的題目</h2>
+<h2 id="八第一個任務稽核自己的題目">八、第一個任務：稽核自己的題目</h2>
 <p>在 <code>我的論文/</code> 啟動工具，輸入下面這段。Codex 的話，把開頭換成 <code>$research-question-audit</code>。</p>
 <pre><code class="language-text">請用 research-question-audit 稽核我的研究想法：
 ⟨一句話研究想法或研究問題；有的話也附上研究目的、假說、研究設計⟩
@@ -236,17 +236,17 @@
 <p>報告的格式和七個檢查點，跟網頁簡版（<a href="prompts.html#skill-lite-audit">提示詞範本 10.2 節</a>）一樣。兩者差在完整版會參考 references 裡的詳細判準，也能直接讀你資料夾裡的文獻。</p>
 <p>時間還夠的話，可以再挑 <code>草稿/</code> 裡的一段文字，用 <code>academic-writing-discipline</code> 檢查一次。</p>
 <hr />
-<h2 id="_7">九、資料安全</h2>
+<h2 id="九資料安全">九、資料安全</h2>
 <ul>
-<li>工具讀到的檔案內容，會送到 Anthropic 或 OpenAI 的模型處理，跟網頁版上傳檔案一樣，所以網頁版<a href="ai-quickstart.html#_4">第四節</a>的規則照樣適用。</li>
+<li>工具讀到的檔案內容，會送到 Anthropic 或 OpenAI 的模型處理，跟網頁版上傳檔案一樣，所以網頁版<a href="ai-quickstart.html#四該上傳和不該上傳的">第四節</a>的規則照樣適用。</li>
 <li>受試者的原始資料（問卷回覆、訪談逐字稿、錄音）不要放進研究資料夾，就算刪掉姓名也一樣，見<a href="research-ethics-data.html">研究倫理與資料管理</a>第七節。要分析這類資料時，先對照倫理審查核准的計畫書，再問指導教授。</li>
 <li>指示檔的紅線靠 AI 自己遵守，權限設定才會在動作執行前攔下來。auto 模式和 <code>bypassPermissions</code> 這類跳過確認的設定，等你熟悉工具、知道它平常會做哪些事以後再考慮。</li>
 </ul>
 <hr />
-<h2 id="_8">十、下一步</h2>
+<h2 id="十下一步">十、下一步</h2>
 <ol>
 <li><a href="ai-workflow-map.html">論文 AI 工作流全圖</a>：從找方向到口試，每一站在 Claude Code／Codex 這條路線用什麼。</li>
-<li><a href="ai-case-study.html">實例：一個碩士生的 AI 研究流程</a>：站主自己的 Claude Code 設定在<a href="ai-case-study.html#claude-code">第五節</a>。</li>
+<li><a href="ai-case-study.html">實例：一個碩士生的 AI 研究流程</a>：站主自己的 Claude Code 設定在<a href="ai-case-study.html#五進階claude-code-設定">第五節</a>。</li>
 <li><a href="https://wayhong0928.github.io/ai-agent-notes/">ai-agent-notes</a>：工具本身的設定，包括權限、MCP、SKILL、plugin，整理在那個站。</li>
 </ol>
 </article>
@@ -258,29 +258,30 @@
 </main>
 <aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">
 <ul>
-<li><a href="#_1">一、開始之前</a></li>
-<li><a href="#_2">二、一小時時間表</a></li>
-<li><a href="#_3">三、安裝、登入、看懂權限</a><ul>
+<li><a href="#一開始之前">一、開始之前</a></li>
+<li><a href="#二一小時時間表">二、一小時時間表</a></li>
+<li><a href="#三安裝登入看懂權限">三、安裝、登入、看懂權限</a><ul>
 <li><a href="#31-claude-code">3.1 Claude Code</a></li>
 <li><a href="#32-codex">3.2 Codex</a></li>
-<li><a href="#33">3.3 權限：第一次先看懂再按</a></li>
+<li><a href="#33-權限第一次先看懂再按">3.3 權限：第一次先看懂再按</a></li>
 </ul>
 </li>
-<li><a href="#_4">四、建研究資料夾</a></li>
-<li><a href="#_5">五、寫指示檔</a></li>
-<li><a href="#thesis-toolkit">六、安裝 thesis-toolkit</a><ul>
-<li><a href="#61-claude-code-plugin">6.1 Claude Code：用 plugin 安裝</a></li>
-<li><a href="#62-codex-skill">6.2 Codex：把 SKILL 資料夾複製進去</a></li>
+<li><a href="#四建研究資料夾">四、建研究資料夾</a></li>
+<li><a href="#五寫指示檔">五、寫指示檔</a></li>
+<li><a href="#六安裝-thesis-toolkit">六、安裝 thesis-toolkit</a><ul>
+<li><a href="#61-claude-code用-plugin-安裝">6.1 Claude Code：用 plugin 安裝</a></li>
+<li><a href="#62-codex把-skill-資料夾複製進去">6.2 Codex：把 SKILL 資料夾複製進去</a></li>
 </ul>
 </li>
-<li><a href="#consensuselicit">七、選用：接上 Consensus、Elicit</a></li>
-<li><a href="#_6">八、第一個任務：稽核自己的題目</a></li>
-<li><a href="#_7">九、資料安全</a></li>
-<li><a href="#_8">十、下一步</a></li>
+<li><a href="#七選用接上-consensuselicit">七、選用：接上 Consensus、Elicit</a></li>
+<li><a href="#八第一個任務稽核自己的題目">八、第一個任務：稽核自己的題目</a></li>
+<li><a href="#九資料安全">九、資料安全</a></li>
+<li><a href="#十下一步">十、下一步</a></li>
 </ul>
 </div>
 </aside>
 </div>
 <script src="../assets/site.js"></script>
+<script>(function(){var m={"_1":"一開始之前","_2":"二一小時時間表","_3":"三安裝登入看懂權限","33":"33-權限第一次先看懂再按","_4":"四建研究資料夾","_5":"五寫指示檔","thesis-toolkit":"六安裝-thesis-toolkit","61-claude-code-plugin":"61-claude-code用-plugin-安裝","62-codex-skill":"62-codex把-skill-資料夾複製進去","consensuselicit":"七選用接上-consensuselicit","_6":"八第一個任務稽核自己的題目","_7":"九資料安全","_8":"十下一步"};function f(){var h=decodeURIComponent(location.hash.slice(1));if(h&&m[h]&&!document.getElementById(h)){var n=m[h];history.replaceState(null,"","#"+encodeURIComponent(n));var g=function(){var e=document.getElementById(n);if(e)e.scrollIntoView();};document.readyState==="complete"?g():addEventListener("load",g);}}f();addEventListener("hashchange",f);})();</script>
 </body>
 </html>

@@ -85,7 +85,7 @@
 做法：
 
 1. 在 `我的論文/` 建一個純文字檔，檔名照上面取。用記事本或任何文字編輯器都可以，存檔時確認副檔名是 `.md`，不是 `.md.txt`。
-2. 把網頁版[第三節的專案指示範本](ai-quickstart.md#_3)整段貼進去，`⟨⟩` 換成你的內容。
+2. 把網頁版[第三節的專案指示範本](ai-quickstart.md#三專案指示範本)整段貼進去，`⟨⟩` 換成你的內容。
 3. 紅線第 1 條的「上傳到這個專案的文獻」改成「`文獻/` 資料夾裡的 PDF」，再在紅線最後加上下面三條：
 
 ```text
@@ -132,7 +132,7 @@ SKILL 之後會改版。Claude Code 從第三方市集裝的 plugin 預設不會
 
 ## 七、選用：接上 Consensus、Elicit
 
-Consensus 和 Elicit 都有官方的 MCP 伺服器。MCP 是讓 AI 工具連上外部服務的標準做法，接上以後，可以在 Claude Code 或 Codex 的對話裡直接搜尋文獻。不接也沒關係，兩者的免費網頁版就能做基本搜尋，兩者的差別和方案見[工具指南 3.2 節](tool-directory.md#32-ai)。
+Consensus 和 Elicit 都有官方的 MCP 伺服器。MCP 是讓 AI 工具連上外部服務的標準做法，接上以後，可以在 Claude Code 或 Codex 的對話裡直接搜尋文獻。不接也沒關係，兩者的免費網頁版就能做基本搜尋，兩者的差別和方案見[工具指南 3.2 節](tool-directory.md#32-ai-輔助檢索)。
 
 **Consensus**（[官方說明](https://github.com/Consensus-NLP/consensus-mcp)）：官方說明寫，多數用戶端第一次連線時會要你用 Consensus 帳號登入，Claude 與 ChatGPT 不登入也能用，但額度較低；每月能搜尋幾次依方案而定。
 
@@ -175,7 +175,7 @@ Consensus 和 Elicit 都有官方的 MCP 伺服器。MCP 是讓 AI 工具連上�
 
 ## 九、資料安全
 
-- 工具讀到的檔案內容，會送到 Anthropic 或 OpenAI 的模型處理，跟網頁版上傳檔案一樣，所以網頁版[第四節](ai-quickstart.md#_4)的規則照樣適用。
+- 工具讀到的檔案內容，會送到 Anthropic 或 OpenAI 的模型處理，跟網頁版上傳檔案一樣，所以網頁版[第四節](ai-quickstart.md#四該上傳和不該上傳的)的規則照樣適用。
 - 受試者的原始資料（問卷回覆、訪談逐字稿、錄音）不要放進研究資料夾，就算刪掉姓名也一樣，見[研究倫理與資料管理](research-ethics-data.md)第七節。要分析這類資料時，先對照倫理審查核准的計畫書，再問指導教授。
 - 指示檔的紅線靠 AI 自己遵守，權限設定才會在動作執行前攔下來。auto 模式和 `bypassPermissions` 這類跳過確認的設定，等你熟悉工具、知道它平常會做哪些事以後再考慮。
 
@@ -184,5 +184,5 @@ Consensus 和 Elicit 都有官方的 MCP 伺服器。MCP 是讓 AI 工具連上�
 ## 十、下一步
 
 1. [論文 AI 工作流全圖](ai-workflow-map.md)：從找方向到口試，每一站在 Claude Code／Codex 這條路線用什麼。
-2. [實例：一個碩士生的 AI 研究流程](ai-case-study.md)：站主自己的 Claude Code 設定在[第五節](ai-case-study.md#claude-code)。
+2. [實例：一個碩士生的 AI 研究流程](ai-case-study.md)：站主自己的 Claude Code 設定在[第五節](ai-case-study.md#五進階claude-code-設定)。
 3. [ai-agent-notes](https://wayhong0928.github.io/ai-agent-notes/)：工具本身的設定，包括權限、MCP、SKILL、plugin，整理在那個站。

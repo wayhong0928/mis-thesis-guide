@@ -60,7 +60,7 @@
 </ul></div>
 <div class="navsec"><h2>工具箱</h2><ul>
 <li><a href="../pages/tools-knowledge.html" data-title="文獻管理與知識庫" data-slug="tools-knowledge" data-updated="1791361403">文獻管理與知識庫</a></li>
-<li><a href="../pages/thesis-notes-template.html" data-title="論文筆記庫範本" data-slug="thesis-notes-template" data-updated="1791361403">論文筆記庫範本</a></li>
+<li><a href="../pages/thesis-notes-template.html" data-title="論文筆記庫範本" data-slug="thesis-notes-template" data-updated="1791475427">論文筆記庫範本</a></li>
 <li><a href="../pages/tool-directory.html" data-title="AI 學術研究工具指南" data-slug="tool-directory" data-updated="1791036151">AI 學術研究工具指南</a></li>
 <li><a href="../pages/checklists.html" data-title="檢查清單" data-slug="checklists" data-updated="1791199752">檢查清單</a></li>
 <li><a href="../pages/prompts.html" data-title="AI 提示詞範本" data-slug="prompts" data-updated="1791265286">AI 提示詞範本</a></li>
@@ -79,7 +79,7 @@
 <p>這張圖先打地基，再把論文從找方向到口試分成六站，每一步都列出兩條路線各用什麼。只用網頁版 AI 的人，用專案功能（Projects、Gems）加提示詞；願意開終端機的人，用 Claude Code 或 Codex，再裝上站主整理的 thesis-toolkit SKILL。每站最右欄是要回原文核對的地方，這一欄兩條路線都一樣。圖裡的項目都連到本站對應的節次。</p>
 </blockquote>
 <hr />
-<h2 id="_1">一、全圖</h2>
+<h2 id="一全圖">一、全圖</h2>
 <div class="wfmap">
 <p class="wf-legend"><span><i class="wf-tag live">已上線</i>點進去就是那一節</span><span><i class="wf-tag soon">尚未上線</i>正在寫，寫好會換成連結</span></p>
 <ol class="wf-strip" aria-label="地基加六站流程">
@@ -95,12 +95,12 @@
 <h3 class="wf-title"><small>第 0 站・一次設定</small>地基</h3>
 <div class="wf-cells">
 <div class="wf-cell web"><p class="wf-lane">網頁版</p><ul>
-<li>開專案，貼上專案指示：研究背景、構念中英對照、七條紅線（<a href="ai-quickstart.html#_2">一小時上手第二、三節</a>）<i class="wf-tag live">已上線</i></li>
-<li>上傳三篇核心文獻、系所格式規範、計畫草稿（<a href="ai-quickstart.html#_4">第四節</a>）<i class="wf-tag live">已上線</i></li>
+<li>開專案，貼上專案指示：研究背景、構念中英對照、七條紅線（<a href="ai-quickstart.html#二建立專案">一小時上手第二、三節</a>）<i class="wf-tag live">已上線</i></li>
+<li>上傳三篇核心文獻、系所格式規範、計畫草稿（<a href="ai-quickstart.html#四該上傳和不該上傳的">第四節</a>）<i class="wf-tag live">已上線</i></li>
 <li>三個 SKILL 的網頁簡版提示詞，ChatGPT、Claude、Gemini 都能用（<a href="prompts.html#skill-lite">提示詞範本第十節</a>）<i class="wf-tag live">已上線</i></li>
 </ul></div>
 <div class="wf-cell cli"><p class="wf-lane">Claude Code／Codex</p><ul>
-<li>指示檔：Claude Code 讀 <code>CLAUDE.md</code>，Codex 讀 <code>AGENTS.md</code>，紅線跟網頁版同一套。站主的設定見<a href="ai-case-study.html#claude-code">實例第五節</a> <i class="wf-tag live">已上線</i></li>
+<li>指示檔：Claude Code 讀 <code>CLAUDE.md</code>，Codex 讀 <code>AGENTS.md</code>，紅線跟網頁版同一套。站主的設定見<a href="ai-case-study.html#五進階claude-code-設定">實例第五節</a> <i class="wf-tag live">已上線</i></li>
 <li>安裝 thesis-toolkit：Claude Code 用 plugin，Codex 把 SKILL 資料夾複製到 <code>.agents/skills/</code>（<a href="https://github.com/wayhong0928/mis-thesis-skills#安裝方式">安裝說明</a>）<i class="wf-tag live">已上線</i></li>
 <li>一步一步自己設定的 <a href="ai-quickstart-agent.html">Claude Code／Codex 一小時上手</a> <i class="wf-tag live">已上線</i></li>
 </ul></div>
@@ -113,8 +113,8 @@
 <h3 class="wf-title"><small>第 1 站</small>找方向</h3>
 <div class="wf-cells">
 <div class="wf-cell web"><p class="wf-lane">網頁版</p><ul>
-<li>可以直接貼給 AI 的提示詞（<a href="getting-started.html#ai">從零開始最後一節</a>）<i class="wf-tag live">已上線</i></li>
-<li>環境掃描（<a href="prompts.html#11">提示詞範本 1.1</a>）<i class="wf-tag live">已上線</i></li>
+<li>可以直接貼給 AI 的提示詞（<a href="getting-started.html#九完全沒有頭緒把這段貼給-ai">從零開始最後一節</a>）<i class="wf-tag live">已上線</i></li>
+<li>環境掃描（<a href="prompts.html#11-環境掃描">提示詞範本 1.1</a>）<i class="wf-tag live">已上線</i></li>
 <li>研究方向收斂的簡版提示詞（<a href="prompts.html#skill-lite-direction">提示詞範本 10.1</a>）<i class="wf-tag live">已上線</i></li>
 </ul></div>
 <div class="wf-cell cli"><p class="wf-lane">Claude Code／Codex</p><ul>
@@ -129,16 +129,16 @@
 <h3 class="wf-title"><small>第 2 站</small>找文獻</h3>
 <div class="wf-cells">
 <div class="wf-cell web"><p class="wf-lane">網頁版</p><ul>
-<li>Consensus、Elicit 這類 AI 輔助檢索（<a href="tool-directory.html#32-ai">工具指南 3.2</a>）<i class="wf-tag live">已上線</i></li>
-<li>資料庫的檢索管道與關鍵字（<a href="finding-reading.html#paper">怎麼找 paper</a>）<i class="wf-tag live">已上線</i></li>
-<li>納入排除準則與檢索式（<a href="prompts.html#21">提示詞範本 2.1</a>、<a href="prompts.html#22">2.2</a>）<i class="wf-tag live">已上線</i></li>
+<li>Consensus、Elicit 這類 AI 輔助檢索（<a href="tool-directory.html#32-ai-輔助檢索">工具指南 3.2</a>）<i class="wf-tag live">已上線</i></li>
+<li>資料庫的檢索管道與關鍵字（<a href="finding-reading.html#二怎麼找-paper">怎麼找 paper</a>）<i class="wf-tag live">已上線</i></li>
+<li>納入排除準則與檢索式（<a href="prompts.html#21-把模糊方向收斂成納入排除準則">提示詞範本 2.1</a>、<a href="prompts.html#22-檢索式產生與搜尋結果接力">2.2</a>）<i class="wf-tag live">已上線</i></li>
 </ul></div>
 <div class="wf-cell cli"><p class="wf-lane">Claude Code／Codex</p><ul>
-<li>Consensus、Elicit 的官方 MCP，接上以後在 Claude Code 裡直接搜尋。加入指令和方案條件見<a href="tool-directory.html#32-ai">工具指南 3.2</a> <i class="wf-tag live">已上線</i></li>
+<li>Consensus、Elicit 的官方 MCP，接上以後在 Claude Code 裡直接搜尋。加入指令和方案條件見<a href="tool-directory.html#32-ai-輔助檢索">工具指南 3.2</a> <i class="wf-tag live">已上線</i></li>
 <li>資料庫檢索的方法跟網頁版相同 <i class="wf-tag live">已上線</i></li>
 </ul></div>
 <div class="wf-cell chk"><p class="wf-lane">回原文核對</p>
-<p>每篇先確認文獻存在（<a href="prompts.html#31">提示詞範本 3.1</a>），再下載原文。搜尋工具給的摘要不能當原文引用。</p>
+<p>每篇先確認文獻存在（<a href="prompts.html#31-文獻事實查核三步查核的第二步">提示詞範本 3.1</a>），再下載原文。搜尋工具給的摘要不能當原文引用。</p>
 </div>
 </div>
 </section>
@@ -146,15 +146,15 @@
 <h3 class="wf-title"><small>第 3 站</small>讀與筆記</h3>
 <div class="wf-cells">
 <div class="wf-cell web"><p class="wf-lane">網頁版</p><ul>
-<li>筆記模板，請 AI 寫初稿（<a href="ai-quickstart.html#_5">一小時上手第五節</a>）<i class="wf-tag live">已上線</i></li>
-<li>構念定義表（<a href="ai-quickstart.html#61">一小時上手 6.1</a>）、文獻矩陣（<a href="prompts.html#32">提示詞範本 3.2</a>）、單篇導讀（<a href="prompts.html#34-ai">3.4</a>）<i class="wf-tag live">已上線</i></li>
+<li>筆記模板，請 AI 寫初稿（<a href="ai-quickstart.html#五文獻筆記模板">一小時上手第五節</a>）<i class="wf-tag live">已上線</i></li>
+<li>構念定義表（<a href="ai-quickstart.html#61-用三篇核心文獻整理構念定義表">一小時上手 6.1</a>）、文獻矩陣（<a href="prompts.html#32-文獻矩陣">提示詞範本 3.2</a>）、單篇導讀（<a href="prompts.html#34-單篇論文導讀先自己讀再讓-ai-考你">3.4</a>）<i class="wf-tag live">已上線</i></li>
 </ul></div>
 <div class="wf-cell cli"><p class="wf-lane">Claude Code／Codex</p><ul>
 <li>筆記軟體與欄位設計（<a href="tools-knowledge.html">文獻管理與知識庫</a>）<i class="wf-tag live">已上線</i></li>
 <li>Zotero 加 Obsidian 的筆記庫範本，讓 AI 直接讀寫筆記資料夾 <i class="wf-tag soon">尚未上線</i></li>
 </ul></div>
 <div class="wf-cell chk"><p class="wf-lane">回原文核對</p>
-<p>數字、樣本數、構念名稱逐項回 PDF 打勾。「跟我的研究有什麼關係」那一欄自己寫。<a href="ai-quickstart.html#ai">一小時上手第七節</a>的練習就是在練這一步。</p>
+<p>數字、樣本數、構念名稱逐項回 PDF 打勾。「跟我的研究有什麼關係」那一欄自己寫。<a href="ai-quickstart.html#七練習找出-ai-寫錯的地方">一小時上手第七節</a>的練習就是在練這一步。</p>
 </div>
 </div>
 </section>
@@ -162,8 +162,8 @@
 <h3 class="wf-title"><small>第 4 站</small>缺口與研究問題</h3>
 <div class="wf-cells">
 <div class="wf-cell web"><p class="wf-lane">網頁版</p><ul>
-<li>找研究缺口（<a href="ai-quickstart.html#63-ai">一小時上手 6.3</a>）、口試委員式反駁（<a href="ai-quickstart.html#62-ai">6.2</a>）<i class="wf-tag live">已上線</i></li>
-<li>邏輯斷鏈與理論縫合（<a href="prompts.html#41">提示詞範本 4.1</a>、<a href="prompts.html#43">4.3</a>）<i class="wf-tag live">已上線</i></li>
+<li>找研究缺口（<a href="ai-quickstart.html#63-請-ai-找研究缺口再自己回原文確認">一小時上手 6.3</a>）、口試委員式反駁（<a href="ai-quickstart.html#62-請-ai-對你的研究問題提出反駁">6.2</a>）<i class="wf-tag live">已上線</i></li>
+<li>邏輯斷鏈與理論縫合（<a href="prompts.html#41-邏輯斷鏈檢查研究教練角色">提示詞範本 4.1</a>、<a href="prompts.html#43-理論縫合診斷">4.3</a>）<i class="wf-tag live">已上線</i></li>
 <li>研究問題稽核的簡版提示詞（<a href="prompts.html#skill-lite-audit">提示詞範本 10.2</a>）<i class="wf-tag live">已上線</i></li>
 </ul></div>
 <div class="wf-cell cli"><p class="wf-lane">Claude Code／Codex</p><ul>
@@ -178,14 +178,14 @@
 <h3 class="wf-title"><small>第 5 站</small>寫作</h3>
 <div class="wf-cells">
 <div class="wf-cell web"><p class="wf-lane">網頁版</p><ul>
-<li>去 AI 感自檢、送達測試（<a href="prompts.html#61-ai">提示詞範本 6.1</a>、<a href="prompts.html#62">6.2</a>）<i class="wf-tag live">已上線</i></li>
+<li>去 AI 感自檢、送達測試（<a href="prompts.html#61-去-ai-感自檢">提示詞範本 6.1</a>、<a href="prompts.html#62-送達測試">6.2</a>）<i class="wf-tag live">已上線</i></li>
 <li>學術寫作紀律的簡版提示詞（<a href="prompts.html#skill-lite-writing">提示詞範本 10.3</a>）<i class="wf-tag live">已上線</i></li>
 </ul></div>
 <div class="wf-cell cli"><p class="wf-lane">Claude Code／Codex</p><ul>
 <li><a href="https://github.com/wayhong0928/mis-thesis-skills/tree/main/plugins/thesis-toolkit/skills/academic-writing-discipline"><code>academic-writing-discipline</code></a>：因果動詞、構句、APA 7、台灣學術用語 <i class="wf-tag live">已上線</i></li>
 </ul></div>
 <div class="wf-cell chk"><p class="wf-lane">回原文核對</p>
-<p>橫斷面資料不寫「導致」這類動詞（<a href="style.html#_1">學術中文寫作紀律第一節</a>）。每個引用都回原文確認作者真的這樣說。</p>
+<p>橫斷面資料不寫「導致」這類動詞（<a href="style.html#一因果動詞紀律">學術中文寫作紀律第一節</a>）。每個引用都回原文確認作者真的這樣說。</p>
 </div>
 </div>
 </section>
@@ -193,7 +193,7 @@
 <h3 class="wf-title"><small>第 6 站</small>送審與口試</h3>
 <div class="wf-cells">
 <div class="wf-cell web"><p class="wf-lane">網頁版</p><ul>
-<li>摘要要素檢核、簡報結構檢查（<a href="prompts.html#63">提示詞範本 6.3</a>、<a href="prompts.html#64">6.4</a>）<i class="wf-tag live">已上線</i></li>
+<li>摘要要素檢核、簡報結構檢查（<a href="prompts.html#63-摘要要素檢核">提示詞範本 6.3</a>、<a href="prompts.html#64-簡報結構檢查">6.4</a>）<i class="wf-tag live">已上線</i></li>
 <li><a href="defense.html">計畫書、口試與簡報</a>、<a href="ethics.html">學術倫理與 AI 揭露</a> <i class="wf-tag live">已上線</i></li>
 </ul></div>
 <div class="wf-cell cli"><p class="wf-lane">Claude Code／Codex</p><ul>
@@ -206,12 +206,12 @@
 </section>
 </div>
 
-<h2 id="_2">二、從哪裡開始</h2>
+<h2 id="二從哪裡開始">二、從哪裡開始</h2>
 <ul>
 <li>第一次用 AI 做研究：先做<a href="ai-quickstart.html">一小時上手</a>，做完照它第八節的順序往下讀。</li>
-<li>願意開終端機：做 <a href="ai-quickstart-agent.html">Claude Code／Codex 版的一小時上手</a>，裡面有 thesis-toolkit 的安裝步驟。站主自己的設定在<a href="ai-case-study.html#claude-code">實例第五節</a>。工具本身怎麼設定，看 <a href="https://wayhong0928.github.io/ai-agent-notes/">ai-agent-notes</a>。</li>
+<li>願意開終端機：做 <a href="ai-quickstart-agent.html">Claude Code／Codex 版的一小時上手</a>，裡面有 thesis-toolkit 的安裝步驟。站主自己的設定在<a href="ai-case-study.html#五進階claude-code-設定">實例第五節</a>。工具本身怎麼設定，看 <a href="https://wayhong0928.github.io/ai-agent-notes/">ai-agent-notes</a>。</li>
 </ul>
-<p>第 2 到第 4 站實際上會來回跑好幾輪：讀到新文獻就回頭改研究問題，問題改了再補文獻。不確定自己卡在哪一站，用<a href="ai-workflow.html#_8">AI 輔助研究工作流第十節</a>的卡關診斷先定位。</p>
+<p>第 2 到第 4 站實際上會來回跑好幾輪：讀到新文獻就回頭改研究問題，問題改了再補文獻。不確定自己卡在哪一站，用<a href="ai-workflow.html#十卡關診斷你站在哪個階段">AI 輔助研究工作流第十節</a>的卡關診斷先定位。</p>
 </article>
 <nav class="pager"><a class="prev" href="post-defense.html">← 口試後修訂、典藏與結案</a><a class="next" href="ai-quickstart.html">一小時上手：用網頁版 AI 建立你的論文助手 →</a></nav>
 <footer class="foot">
@@ -221,12 +221,13 @@
 </main>
 <aside class="toc" id="toc"><h2>本頁目錄</h2><div class="toc-body">
 <ul>
-<li><a href="#_1">一、全圖</a></li>
-<li><a href="#_2">二、從哪裡開始</a></li>
+<li><a href="#一全圖">一、全圖</a></li>
+<li><a href="#二從哪裡開始">二、從哪裡開始</a></li>
 </ul>
 </div>
 </aside>
 </div>
 <script src="../assets/site.js"></script>
+<script>(function(){var m={"_1":"一全圖","_2":"二從哪裡開始"};function f(){var h=decodeURIComponent(location.hash.slice(1));if(h&&m[h]&&!document.getElementById(h)){var n=m[h];history.replaceState(null,"","#"+encodeURIComponent(n));var g=function(){var e=document.getElementById(n);if(e)e.scrollIntoView();};document.readyState==="complete"?g():addEventListener("load",g);}}f();addEventListener("hashchange",f);})();</script>
 </body>
 </html>
