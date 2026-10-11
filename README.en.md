@@ -21,6 +21,7 @@ The default setting is **information management research with a social science o
 | [One-hour quickstart](https://wayhong0928.github.io/mis-thesis-guide/pages/ai-quickstart.html) | Students who only use the ChatGPT, Claude, or Gemini web apps and want a thesis assistant set up in an hour (there's also a [Claude Code and Codex version](https://wayhong0928.github.io/mis-thesis-guide/pages/ai-quickstart-agent.html)) |
 | [thesis-notes-template](https://github.com/wayhong0928/thesis-notes-template) | Students who want to take literature notes in Obsidian with a ready-made template and filling rules |
 | [mis-thesis-skills](https://github.com/wayhong0928/mis-thesis-skills) | Students using Claude Code or Codex who want AI to check topics and writing against fixed criteria |
+| [claude-workflow-template](https://github.com/wayhong0928/claude-workflow-template) | Students using Claude Code on a thesis or research project who want a ready-made workflow setup: session handoff, dispatch templates, independent verification |
 
 ## What it covers
 
