@@ -1,6 +1,6 @@
 # 一小時上手：用 Claude Code 或 Codex 建立你的論文助手
 
-> 這頁寫給做過[網頁版一小時上手](ai-quickstart.md)、願意打開終端機的研究生。照著做一小時，你會有一個放文獻和草稿的研究資料夾、一份 AI 每次都會先讀的指示檔，裝好站主整理的 thesis-toolkit 三個 SKILL，再用其中一個檢查自己的題目。Claude Code（Anthropic）和 Codex（OpenAI）的步驟大部分相同，相同的地方只寫一次，不同的地方分開寫，手上有哪一個就用哪一個。
+> 這頁寫給做過[網頁版一小時上手](ai-quickstart.md)、願意打開終端機的研究生。照著做一小時，你會有一個放文獻和草稿的研究資料夾、一份 AI 每次都會先讀的指示檔，裝好站主整理的 thesis-toolkit，再用其中一個檢查自己的題目。Claude Code（Anthropic）和 Codex（OpenAI）的步驟大部分相同，相同的地方只寫一次，不同的地方分開寫，手上有哪一個就用哪一個。
 >
 > 這頁沒有提供「整段貼給 AI，讓它自己裝好設好」的提示詞，每一步都要你自己動手。自己做過一次，你才知道每個檔案是做什麼的，之後 AI 出錯時也看得懂問題在哪。
 
@@ -102,7 +102,7 @@
 
 ## 六、安裝 thesis-toolkit
 
-thesis-toolkit 是站主整理的三個 SKILL：研究方向收斂（`research-direction-finding`）、研究問題稽核（`research-question-audit`）、學術寫作檢查（`academic-writing-discipline`）。原始檔在 [mis-thesis-skills](https://github.com/wayhong0928/mis-thesis-skills)。
+thesis-toolkit 是站主整理的三個稽核 SKILL：研究方向收斂（`research-direction-finding`）、研究問題稽核（`research-question-audit`）、學術寫作檢查（`academic-writing-discipline`），另有一個流程導覽（`thesis-roadmap`），不確定現在該用哪一個時問它。原始檔在 [mis-thesis-skills](https://github.com/wayhong0928/mis-thesis-skills)。
 
 ### 6.1 Claude Code：用 plugin 安裝
 
@@ -123,10 +123,10 @@ thesis-toolkit 是照 Claude Code 的 plugin 格式打包的，Codex 這邊改�
 
 1. 打開 [mis-thesis-skills](https://github.com/wayhong0928/mis-thesis-skills)，點綠色的「Code」按鈕，選「Download ZIP」，下載後解壓縮。會用 Git 的話，用 `git clone` 也可以。
 2. 在 `我的論文/` 裡建一個 `.agents` 資料夾，裡面再建一個 `skills` 資料夾。資料夾名稱開頭有一個點，有些系統預設會把它隱藏起來。
-3. 把解壓縮後 `plugins/thesis-toolkit/skills/` 底下的三個資料夾，整個複製到 `我的論文/.agents/skills/`。想讓每個資料夾都能用，改放到家目錄底下的 `.agents/skills/`。
+3. 把解壓縮後 `plugins/thesis-toolkit/skills/` 底下的四個資料夾，整個複製到 `我的論文/.agents/skills/`。想讓每個資料夾都能用，改放到家目錄底下的 `.agents/skills/`。
 4. Codex 會自動偵測新的 SKILL，沒出現就重開 Codex。輸入 `/skills` 可以看清單，輸入 `$research-question-audit` 就能指定使用。
 
-SKILL 之後會改版。Claude Code 從第三方市集裝的 plugin 預設不會自動更新，要在 `/plugin` 的 Marketplaces 分頁選這個市集，開啟自動更新；Codex 要自己重新下載，再覆蓋那三個資料夾。各版改了什麼，寫在 repo 的 CHANGELOG。
+SKILL 之後會改版。Claude Code 從第三方市集裝的 plugin 預設不會自動更新，要在 `/plugin` 的 Marketplaces 分頁選這個市集，開啟自動更新；Codex 要自己重新下載，再覆蓋那四個資料夾。各版改了什麼，寫在 repo 的 CHANGELOG。
 
 ---
 
