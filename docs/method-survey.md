@@ -47,6 +47,62 @@
 
 順序是：**預試通過 → 前測通過 → 才發正式問卷。**
 
+<figure class="diagram">
+<svg class="dg-wide" viewBox="0 0 700 215" role="img" aria-labelledby="dgsv-w">
+<title id="dgsv-w">發正式問卷前的兩道關卡。預試問題目看不看得懂，找少數人試填、逐題問在問什麼，不可省略；前測問測得準不準，做小樣本施測加信效度分析，樣本極難取得時可斟酌但要寫進限制。兩關都通過才發正式問卷，沒通過就修正題目。</title>
+<defs><marker id="dgsv-hw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-head" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="dg-box" x="10" y="30" width="210" height="116" rx="10"/>
+<text class="dg-t" x="26" y="58">預試</text>
+<text class="dg-s" x="26" y="82">看得懂嗎？</text>
+<text class="dg-s" x="26" y="106">少數人試填，逐題問在問什麼</text>
+<text class="dg-l" x="26" y="130">不可省略</text>
+<rect class="dg-box" x="250" y="30" width="210" height="116" rx="10"/>
+<text class="dg-t" x="266" y="58">前測</text>
+<text class="dg-s" x="266" y="82">測得準嗎？</text>
+<text class="dg-s" x="266" y="106">小樣本施測＋信效度分析</text>
+<text class="dg-l" x="266" y="130">極難取樣時可斟酌，寫進限制</text>
+<rect class="dg-you" x="490" y="30" width="200" height="116" rx="10"/>
+<text class="dg-t" x="506" y="58">正式問卷</text>
+<text class="dg-s" x="506" y="82">正式資料蒐集</text>
+<path class="dg-line" d="M220,88 L248,88" marker-end="url(#dgsv-hw)"/>
+<text class="dg-l" x="235" y="22" text-anchor="middle">通過</text>
+<path class="dg-line" d="M460,88 L488,88" marker-end="url(#dgsv-hw)"/>
+<text class="dg-l" x="475" y="22" text-anchor="middle">通過</text>
+<path class="dg-dash" d="M165,146 C165,188 65,188 65,150" marker-end="url(#dgsv-hw)"/>
+<text class="dg-l" x="115" y="205" text-anchor="middle">沒通過就修正題目</text>
+<path class="dg-dash" d="M405,146 C405,188 305,188 305,150" marker-end="url(#dgsv-hw)"/>
+<text class="dg-l" x="355" y="205" text-anchor="middle">沒通過就修正題目</text>
+</svg>
+<svg class="dg-narrow" viewBox="0 0 350 415" role="img" aria-labelledby="dgsv-n">
+<title id="dgsv-n">發正式問卷前的兩道關卡。預試問題目看不看得懂，找少數人試填、逐題問在問什麼，不可省略；前測問測得準不準，做小樣本施測加信效度分析，樣本極難取得時可斟酌但要寫進限制。兩關都通過才發正式問卷，沒通過就修正題目。</title>
+<defs><marker id="dgsv-hn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-head" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="dg-box" x="10" y="10" width="220" height="116" rx="10"/>
+<text class="dg-t" x="26" y="38">預試</text>
+<text class="dg-s" x="26" y="62">看得懂嗎？</text>
+<text class="dg-s" x="26" y="86">少數人試填，逐題問在問什麼</text>
+<text class="dg-l" x="26" y="110">不可省略</text>
+<path class="dg-line" d="M80,126 L80,174" marker-end="url(#dgsv-hn)"/>
+<text class="dg-l" x="92" y="155">通過</text>
+<rect class="dg-box" x="10" y="176" width="220" height="116" rx="10"/>
+<text class="dg-t" x="26" y="204">前測</text>
+<text class="dg-s" x="26" y="228">測得準嗎？</text>
+<text class="dg-s" x="26" y="252">小樣本施測＋信效度分析</text>
+<text class="dg-l" x="26" y="276">極難取樣時可斟酌，寫進限制</text>
+<path class="dg-line" d="M80,292 L80,340" marker-end="url(#dgsv-hn)"/>
+<text class="dg-l" x="92" y="321">通過</text>
+<rect class="dg-you" x="10" y="342" width="220" height="64" rx="10"/>
+<text class="dg-t" x="26" y="368">正式問卷</text>
+<text class="dg-s" x="26" y="392">正式資料蒐集</text>
+<path class="dg-dash" d="M230,40 C290,40 290,96 234,96" marker-end="url(#dgsv-hn)"/>
+<text class="dg-l" x="288" y="62">沒通過就</text>
+<text class="dg-l" x="288" y="80">修正題目</text>
+<path class="dg-dash" d="M230,206 C290,206 290,262 234,262" marker-end="url(#dgsv-hn)"/>
+<text class="dg-l" x="288" y="228">沒通過就</text>
+<text class="dg-l" x="288" y="246">修正題目</text>
+</svg>
+<figcaption>預試和前測檢驗的是兩件不同的事，順序是預試通過、前測通過，才發正式問卷。</figcaption>
+</figure>
+
 ---
 
 ## 三、抽樣

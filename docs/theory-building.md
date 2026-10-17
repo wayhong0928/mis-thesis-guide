@@ -139,6 +139,55 @@ Bacharach 提出的兩個判準，簡單到可以背起來，而且對付口試�
 - **構念用名詞片語**（知覺有用性），不要用句子。
 - 分析完成後把**路徑係數與顯著性標回同一張圖**，第四章就有一張總結圖。
 
+<figure class="diagram">
+<svg class="dg-wide" viewBox="0 0 700 260" role="img" aria-labelledby="dgtb-w">
+<title id="dgtb-w">研究模型圖的畫法慣例示意。由左至右排前因構念、中介構念、結果構念，路徑標 H1、H2；調節構念的箭頭指向中介到結果那條箭頭的中點，標 H3；控制變數放在結果構念下方。</title>
+<defs><marker id="dgtb-hw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-head" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<text class="dg-l" x="20" y="40">由左至右：前因 → 中介 → 結果</text>
+<rect class="dg-box" x="20" y="110" width="150" height="56" rx="10"/>
+<text class="dg-t" x="95" y="143" text-anchor="middle">前因構念</text>
+<rect class="dg-box" x="275" y="110" width="150" height="56" rx="10"/>
+<text class="dg-t" x="350" y="143" text-anchor="middle">中介構念</text>
+<rect class="dg-you" x="530" y="110" width="150" height="56" rx="10"/>
+<text class="dg-t" x="605" y="143" text-anchor="middle">結果構念</text>
+<path class="dg-line" d="M170,138 L273,138" marker-end="url(#dgtb-hw)"/>
+<text class="dg-c" x="222" y="128" text-anchor="middle">H1</text>
+<path class="dg-line" d="M425,138 L528,138" marker-end="url(#dgtb-hw)"/>
+<text class="dg-c" x="500" y="160" text-anchor="middle">H2</text>
+<rect class="dg-key" x="402" y="20" width="150" height="48" rx="10"/>
+<text class="dg-t" x="477" y="49" text-anchor="middle">調節構念</text>
+<path class="dg-line" d="M477,68 L477,134" marker-end="url(#dgtb-hw)"/>
+<text class="dg-c" x="487" y="104">H3</text>
+<rect class="dg-note" x="530" y="200" width="150" height="44" rx="10"/>
+<text class="dg-s" x="605" y="227" text-anchor="middle">控制變數</text>
+<path class="dg-dash" d="M605,200 L605,170" marker-end="url(#dgtb-hw)"/>
+</svg>
+<svg class="dg-narrow" viewBox="0 0 350 260" role="img" aria-labelledby="dgtb-n">
+<title id="dgtb-n">研究模型圖的畫法慣例示意。由左至右排前因構念、中介構念、結果構念，路徑標 H1、H2；調節構念的箭頭指向中介到結果那條箭頭的中點，標 H3；控制變數放在結果構念下方。</title>
+<defs><marker id="dgtb-hn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-head" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<text class="dg-l" x="5" y="30">由左至右：</text>
+<text class="dg-l" x="5" y="48">前因 → 中介 → 結果</text>
+<rect class="dg-box" x="5" y="110" width="90" height="50" rx="10"/>
+<text class="dg-t" x="50" y="140" text-anchor="middle">前因構念</text>
+<rect class="dg-box" x="130" y="110" width="90" height="50" rx="10"/>
+<text class="dg-t" x="175" y="140" text-anchor="middle">中介構念</text>
+<rect class="dg-you" x="255" y="110" width="90" height="50" rx="10"/>
+<text class="dg-t" x="300" y="140" text-anchor="middle">結果構念</text>
+<path class="dg-line" d="M95,135 L128,135" marker-end="url(#dgtb-hn)"/>
+<text class="dg-c" x="111" y="126" text-anchor="middle">H1</text>
+<path class="dg-line" d="M220,135 L253,135" marker-end="url(#dgtb-hn)"/>
+<text class="dg-c" x="236" y="178" text-anchor="middle">H2</text>
+<rect class="dg-key" x="186" y="20" width="100" height="44" rx="10"/>
+<text class="dg-t" x="236" y="47" text-anchor="middle">調節構念</text>
+<path class="dg-line" d="M236,64 L236,131" marker-end="url(#dgtb-hn)"/>
+<text class="dg-c" x="244" y="100">H3</text>
+<rect class="dg-note" x="255" y="204" width="90" height="40" rx="10"/>
+<text class="dg-s" x="300" y="229" text-anchor="middle">控制變數</text>
+<path class="dg-dash" d="M300,204 L300,164" marker-end="url(#dgtb-hn)"/>
+</svg>
+<figcaption>依本節的畫法慣例畫出的示意圖，構念名稱是佔位用的。實際論文的路徑編號要和第三章的假說編號一致。</figcaption>
+</figure>
+
 ---
 
 ## 七、理論可以推論到多遠：概化的四種形式

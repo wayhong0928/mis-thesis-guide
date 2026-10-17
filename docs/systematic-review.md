@@ -114,6 +114,74 @@ AND
 
 理想做法是由兩位審查者獨立判斷並依事先規則解決歧見。資源受限時，可由第二人複核一部分或所有邊界案例，但要如實報告做法及限制，不能把單人篩選寫成雙人審查。
 
+<figure class="diagram">
+<svg class="dg-wide" viewBox="0 0 700 200" role="img" aria-labelledby="dgsr-w">
+<title id="dgsr-w">兩階段篩選的流程。從多個資料庫匯入後先去除重複，同一研究的多份報告連成一組；接著做標題摘要篩選，資訊不足就留到全文；再做全文篩選，排除時記一個主要理由，最後彙整到流程圖；通過的納入。標題摘要與全文兩階段，理想做法是兩位審查者獨立判斷，依事先規則解決歧見。</title>
+<defs><marker id="dgsr-hw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-head" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<path class="dg-dash" d="M296,30 L555,30"/>
+<text class="dg-l" x="425" y="22" text-anchor="middle">理想上由兩位審查者獨立判斷，依事先規則解決歧見</text>
+<rect class="dg-box" x="10" y="40" width="116" height="56" rx="8"/>
+<text class="dg-t" x="68" y="73" text-anchor="middle">資料庫匯入</text>
+<rect class="dg-box" x="153" y="40" width="116" height="56" rx="8"/>
+<text class="dg-t" x="211" y="73" text-anchor="middle">去除重複</text>
+<rect class="dg-key" x="296" y="40" width="116" height="56" rx="8"/>
+<text class="dg-t" x="354" y="73" text-anchor="middle">標題摘要篩選</text>
+<rect class="dg-key" x="439" y="40" width="116" height="56" rx="8"/>
+<text class="dg-t" x="497" y="73" text-anchor="middle">全文篩選</text>
+<rect class="dg-you" x="582" y="40" width="116" height="56" rx="8"/>
+<text class="dg-t" x="640" y="73" text-anchor="middle">納入</text>
+<path class="dg-line" d="M126,68 L151,68" marker-end="url(#dgsr-hw)"/>
+<path class="dg-line" d="M269,68 L294,68" marker-end="url(#dgsr-hw)"/>
+<path class="dg-line" d="M412,68 L437,68" marker-end="url(#dgsr-hw)"/>
+<path class="dg-line" d="M555,68 L580,68" marker-end="url(#dgsr-hw)"/>
+<path class="dg-dash" d="M211,96 L211,118"/>
+<path class="dg-dash" d="M354,96 L354,118"/>
+<path class="dg-dash" d="M497,96 L497,118"/>
+<rect class="dg-note" x="153" y="120" width="116" height="70" rx="8"/>
+<text class="dg-s" x="161" y="144">同一研究多份報告</text>
+<text class="dg-s" x="161" y="162">連成一組</text>
+<rect class="dg-note" x="296" y="120" width="116" height="70" rx="8"/>
+<text class="dg-s" x="304" y="144">資訊不足</text>
+<text class="dg-s" x="304" y="162">留到全文再判斷</text>
+<rect class="dg-note" x="439" y="120" width="116" height="70" rx="8"/>
+<text class="dg-s" x="447" y="144">排除記一個</text>
+<text class="dg-s" x="447" y="162">主要理由</text>
+<text class="dg-s" x="447" y="180">彙整到流程圖</text>
+</svg>
+<svg class="dg-narrow" viewBox="0 0 350 395" role="img" aria-labelledby="dgsr-n">
+<title id="dgsr-n">兩階段篩選的流程。從多個資料庫匯入後先去除重複，同一研究的多份報告連成一組；接著做標題摘要篩選，資訊不足就留到全文；再做全文篩選，排除時記一個主要理由，最後彙整到流程圖；通過的納入。標題摘要與全文兩階段，理想做法是兩位審查者獨立判斷，依事先規則解決歧見。</title>
+<defs><marker id="dgsr-hn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-head" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="dg-box" x="10" y="10" width="150" height="44" rx="8"/>
+<text class="dg-t" x="85" y="38" text-anchor="middle">資料庫匯入</text>
+<rect class="dg-box" x="10" y="80" width="150" height="44" rx="8"/>
+<text class="dg-t" x="85" y="108" text-anchor="middle">去除重複</text>
+<rect class="dg-key" x="10" y="150" width="150" height="44" rx="8"/>
+<text class="dg-t" x="85" y="178" text-anchor="middle">標題摘要篩選</text>
+<rect class="dg-key" x="10" y="220" width="150" height="44" rx="8"/>
+<text class="dg-t" x="85" y="248" text-anchor="middle">全文篩選</text>
+<rect class="dg-you" x="10" y="290" width="150" height="44" rx="8"/>
+<text class="dg-t" x="85" y="318" text-anchor="middle">納入</text>
+<path class="dg-line" d="M85,54 L85,78" marker-end="url(#dgsr-hn)"/>
+<path class="dg-line" d="M85,124 L85,148" marker-end="url(#dgsr-hn)"/>
+<path class="dg-line" d="M85,194 L85,218" marker-end="url(#dgsr-hn)"/>
+<path class="dg-line" d="M85,264 L85,288" marker-end="url(#dgsr-hn)"/>
+<path class="dg-dash" d="M160,102 L178,102"/>
+<path class="dg-dash" d="M160,172 L178,172"/>
+<path class="dg-dash" d="M160,242 L178,242"/>
+<rect class="dg-note" x="180" y="80" width="160" height="44" rx="8"/>
+<text class="dg-s" x="190" y="98">同一研究多份報告</text>
+<text class="dg-s" x="190" y="116">連成一組</text>
+<rect class="dg-note" x="180" y="150" width="160" height="44" rx="8"/>
+<text class="dg-s" x="190" y="177">資訊不足就留到全文</text>
+<rect class="dg-note" x="180" y="220" width="160" height="44" rx="8"/>
+<text class="dg-s" x="190" y="238">排除記一個主要理由</text>
+<text class="dg-s" x="190" y="256">彙整到流程圖</text>
+<text class="dg-l" x="10" y="362">兩階段理想上由兩人獨立判斷，</text>
+<text class="dg-l" x="10" y="380">依事先規則解決歧見</text>
+</svg>
+<figcaption>兩階段篩選的流程。全文階段排除的每一篇都記一個主要理由，最後彙整到流程圖。</figcaption>
+</figure>
+
 !!! danger "AI 不得代替最終納入判斷"
     AI 可以協助標記可能相關文獻、整理排除理由候選或找出判斷不一致之處，但可能誤讀摘要、捏造全文內容或遺漏細節。最終判斷須由研究者依原文與準則完成；工具、版本、使用階段及人工覆核方式也要記錄。
 

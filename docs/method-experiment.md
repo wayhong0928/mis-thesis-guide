@@ -32,6 +32,70 @@
 | **準實驗（quasi-experiment）** | 無法隨機分派，用既有分組 | 現場可行性高 | 選擇偏誤，需統計控制 |
 | **自然實驗（natural experiment）** | 利用外生事件造成的分組 | 生態效度高 | 分組非隨機，需仔細論證可比性 |
 
+<figure class="diagram">
+<svg class="dg-wide" viewBox="0 0 700 180" role="img" aria-labelledby="dgxp-w">
+<title id="dgxp-w">前後測控制組設計。受試者先隨機分派到實驗組與控制組，兩組都做前測，實驗組給刺激、控制組不給，最後兩組都做後測。</title>
+<defs><marker id="dgxp-hw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-head" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="dg-key" x="10" y="56" width="110" height="86" rx="10"/>
+<text class="dg-t" x="65" y="104" text-anchor="middle">隨機分派</text>
+<path class="dg-line" d="M120,90 L134,62" marker-end="url(#dgxp-hw)"/>
+<path class="dg-line" d="M120,108 L134,136" marker-end="url(#dgxp-hw)"/>
+<rect class="dg-you" x="136" y="34" width="72" height="44" rx="8"/>
+<text class="dg-t" x="172" y="61" text-anchor="middle">實驗組</text>
+<rect class="dg-box" x="136" y="120" width="72" height="44" rx="8"/>
+<text class="dg-t" x="172" y="147" text-anchor="middle">控制組</text>
+<rect class="dg-box" x="232" y="34" width="120" height="44" rx="8"/>
+<text class="dg-s" x="292" y="60" text-anchor="middle">前測</text>
+<rect class="dg-key" x="390" y="34" width="140" height="44" rx="8"/>
+<text class="dg-s" x="460" y="60" text-anchor="middle">給刺激</text>
+<rect class="dg-box" x="568" y="34" width="122" height="44" rx="8"/>
+<text class="dg-s" x="629" y="60" text-anchor="middle">後測</text>
+<rect class="dg-box" x="232" y="120" width="120" height="44" rx="8"/>
+<text class="dg-s" x="292" y="146" text-anchor="middle">前測</text>
+<rect class="dg-note" x="390" y="120" width="140" height="44" rx="8"/>
+<text class="dg-s" x="460" y="146" text-anchor="middle">不給刺激</text>
+<rect class="dg-box" x="568" y="120" width="122" height="44" rx="8"/>
+<text class="dg-s" x="629" y="146" text-anchor="middle">後測</text>
+<path class="dg-line" d="M208,56 L230,56" marker-end="url(#dgxp-hw)"/>
+<path class="dg-line" d="M352,56 L388,56" marker-end="url(#dgxp-hw)"/>
+<path class="dg-line" d="M530,56 L566,56" marker-end="url(#dgxp-hw)"/>
+<path class="dg-line" d="M208,142 L230,142" marker-end="url(#dgxp-hw)"/>
+<path class="dg-line" d="M352,142 L388,142" marker-end="url(#dgxp-hw)"/>
+<path class="dg-line" d="M530,142 L566,142" marker-end="url(#dgxp-hw)"/>
+</svg>
+<svg class="dg-narrow" viewBox="0 0 350 350" role="img" aria-labelledby="dgxp-n">
+<title id="dgxp-n">前後測控制組設計。受試者先隨機分派到實驗組與控制組，兩組都做前測，實驗組給刺激、控制組不給，最後兩組都做後測。</title>
+<defs><marker id="dgxp-hn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-head" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="dg-key" x="110" y="10" width="130" height="44" rx="10"/>
+<text class="dg-t" x="175" y="38" text-anchor="middle">隨機分派</text>
+<path class="dg-line" d="M150,54 L102,88" marker-end="url(#dgxp-hn)"/>
+<path class="dg-line" d="M200,54 L248,88" marker-end="url(#dgxp-hn)"/>
+<rect class="dg-you" x="20" y="90" width="140" height="40" rx="8"/>
+<text class="dg-t" x="90" y="115" text-anchor="middle">實驗組</text>
+<rect class="dg-box" x="190" y="90" width="140" height="40" rx="8"/>
+<text class="dg-t" x="260" y="115" text-anchor="middle">控制組</text>
+<rect class="dg-box" x="20" y="160" width="140" height="40" rx="8"/>
+<text class="dg-s" x="90" y="184" text-anchor="middle">前測</text>
+<rect class="dg-box" x="190" y="160" width="140" height="40" rx="8"/>
+<text class="dg-s" x="260" y="184" text-anchor="middle">前測</text>
+<rect class="dg-key" x="20" y="230" width="140" height="40" rx="8"/>
+<text class="dg-s" x="90" y="254" text-anchor="middle">給刺激</text>
+<rect class="dg-note" x="190" y="230" width="140" height="40" rx="8"/>
+<text class="dg-s" x="260" y="254" text-anchor="middle">不給刺激</text>
+<rect class="dg-box" x="20" y="300" width="140" height="40" rx="8"/>
+<text class="dg-s" x="90" y="324" text-anchor="middle">後測</text>
+<rect class="dg-box" x="190" y="300" width="140" height="40" rx="8"/>
+<text class="dg-s" x="260" y="324" text-anchor="middle">後測</text>
+<path class="dg-line" d="M90,130 L90,158" marker-end="url(#dgxp-hn)"/>
+<path class="dg-line" d="M90,200 L90,228" marker-end="url(#dgxp-hn)"/>
+<path class="dg-line" d="M90,270 L90,298" marker-end="url(#dgxp-hn)"/>
+<path class="dg-line" d="M260,130 L260,158" marker-end="url(#dgxp-hn)"/>
+<path class="dg-line" d="M260,200 L260,228" marker-end="url(#dgxp-hn)"/>
+<path class="dg-line" d="M260,270 L260,298" marker-end="url(#dgxp-hn)"/>
+</svg>
+<figcaption>前後測控制組設計的流程。兩組只差在有沒有給刺激；拿掉前測就是後測控制組設計。</figcaption>
+</figure>
+
 !!! tip "自然實驗的經典設計思路"
     當你無法操弄，但外部世界替你操弄了（法規變動、平台改版、政策上路），就可以尋找一組「除了受到該事件影響之外，其他條件盡量相似」的對照組。
     最漂亮的作法是**相鄰行政區配對**：跨越政策邊界的兩側地區，經濟社會條件相近，卻只有一側受政策影響。這個設計的說服力，來自它同時處理了「地區性差異」這個最大的干擾因子。

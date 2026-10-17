@@ -46,6 +46,52 @@ Nunamaker 等人（1990）因此提出強烈的主張：
 - **理論化（Theorize）**：提出因果理論，解釋「**為什麼有效？**」
 - **驗證（Justify）**：以科學證據測試理論是否成立
 
+<figure class="diagram">
+<svg class="dg-wide" viewBox="0 0 700 230" role="img" aria-labelledby="dgds-w">
+<title id="dgds-w">四種研究活動分屬兩個範疇。設計科學範疇的核心是效用，包括建置（示範可行性，回答能不能做到）與評估（發展指標測量績效，回答做得多好）；自然科學範疇用來輔助設計科學，包括理論化（提出因果理論，解釋為什麼有效）與驗證（以科學證據測試理論是否成立）。</title>
+<rect class="dg-key" x="10" y="10" width="330" height="210" rx="12"/>
+<text class="dg-t" x="26" y="38">設計科學範疇</text>
+<text class="dg-s" x="126" y="38">核心是效用（utility）</text>
+<rect class="dg-box" x="26" y="56" width="298" height="70" rx="8"/>
+<text class="dg-t" x="42" y="84">建置（Build）</text>
+<text class="dg-s" x="42" y="108">示範可行性，回答能不能做到</text>
+<rect class="dg-box" x="26" y="136" width="298" height="70" rx="8"/>
+<text class="dg-t" x="42" y="164">評估（Evaluate）</text>
+<text class="dg-s" x="42" y="188">發展指標測量績效，回答做得多好</text>
+<rect class="dg-box" x="360" y="10" width="330" height="210" rx="12"/>
+<text class="dg-t" x="376" y="38">自然科學範疇</text>
+<text class="dg-s" x="476" y="38">用來輔助設計科學</text>
+<rect class="dg-box" x="376" y="56" width="298" height="70" rx="8"/>
+<text class="dg-t" x="392" y="84">理論化（Theorize）</text>
+<text class="dg-s" x="392" y="108">提出因果理論，解釋為什麼有效</text>
+<rect class="dg-box" x="376" y="136" width="298" height="70" rx="8"/>
+<text class="dg-t" x="392" y="164">驗證（Justify）</text>
+<text class="dg-s" x="392" y="188">以科學證據測試理論是否成立</text>
+</svg>
+<svg class="dg-narrow" viewBox="0 0 350 445" role="img" aria-labelledby="dgds-n">
+<title id="dgds-n">四種研究活動分屬兩個範疇。設計科學範疇的核心是效用，包括建置（示範可行性，回答能不能做到）與評估（發展指標測量績效，回答做得多好）；自然科學範疇用來輔助設計科學，包括理論化（提出因果理論，解釋為什麼有效）與驗證（以科學證據測試理論是否成立）。</title>
+<rect class="dg-key" x="10" y="10" width="330" height="205" rx="12"/>
+<text class="dg-t" x="26" y="36">設計科學範疇</text>
+<text class="dg-s" x="26" y="56">核心是效用（utility）</text>
+<rect class="dg-box" x="26" y="70" width="298" height="60" rx="8"/>
+<text class="dg-t" x="42" y="96">建置（Build）</text>
+<text class="dg-s" x="42" y="118">示範可行性，回答能不能做到</text>
+<rect class="dg-box" x="26" y="140" width="298" height="60" rx="8"/>
+<text class="dg-t" x="42" y="166">評估（Evaluate）</text>
+<text class="dg-s" x="42" y="188">發展指標測量績效，回答做得多好</text>
+<rect class="dg-box" x="10" y="230" width="330" height="205" rx="12"/>
+<text class="dg-t" x="26" y="256">自然科學範疇</text>
+<text class="dg-s" x="26" y="276">用來輔助設計科學</text>
+<rect class="dg-box" x="26" y="290" width="298" height="60" rx="8"/>
+<text class="dg-t" x="42" y="316">理論化（Theorize）</text>
+<text class="dg-s" x="42" y="338">提出因果理論，解釋為什麼有效</text>
+<rect class="dg-box" x="26" y="360" width="298" height="60" rx="8"/>
+<text class="dg-t" x="42" y="386">驗證（Justify）</text>
+<text class="dg-s" x="42" y="408">以科學證據測試理論是否成立</text>
+</svg>
+<figcaption>依 2.2 節整理的四種研究活動（March &amp; Smith, 1995）。這張是本站的整理圖，不是原文的圖。</figcaption>
+</figure>
+
 ---
 
 ## 三、Hevner 等人（2004）的七大規範

@@ -7,6 +7,7 @@
 <meta name="description" content="抽樣、信效度、PLS-SEM、共同方法變異">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128218;</text></svg>">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/diagram.css">
 </head>
 <body>
 <a class="skip" href="#main">跳到主要內容</a>
@@ -39,7 +40,7 @@
 </ul></div>
 <div class="navsec"><h2>論文寫作</h2><ul>
 <li><a href="../pages/writing.html" data-title="論文架構與各章寫作要領" data-slug="writing" data-updated="1790228535">論文架構與各章寫作要領</a></li>
-<li><a href="../pages/style.html" data-title="學術中文寫作紀律" data-slug="style" data-updated="1791622922">學術中文寫作紀律</a></li>
+<li><a href="../pages/style.html" data-title="學術中文寫作紀律" data-slug="style" data-updated="1791688315">學術中文寫作紀律</a></li>
 <li><a href="../pages/defense.html" data-title="計畫書、口試與簡報" data-slug="defense" data-updated="1788705875">計畫書、口試與簡報</a></li>
 <li><a href="../pages/post-defense.html" data-title="口試後修訂、典藏與結案" data-slug="post-defense" data-updated="1788525613">口試後修訂、典藏與結案</a></li>
 </ul></div>
@@ -50,7 +51,7 @@
 <li><a href="../pages/ai-workflow.html" data-title="AI 輔助研究工作流" data-slug="ai-workflow" data-updated="1791622922">AI 輔助研究工作流</a></li>
 <li><a href="../pages/ai-case-study.html" data-title="實例：一個碩士生的 AI 研究流程" data-slug="ai-case-study" data-updated="1791199752">實例：一個碩士生的 AI 研究流程</a></li>
 <li><a href="../pages/ai-tools.html" data-title="AI 工具生態與風險" data-slug="ai-tools" data-updated="1790431778">AI 工具生態與風險</a></li>
-<li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露" data-slug="ethics" data-updated="1790260517">學術倫理與 AI 揭露</a></li>
+<li><a href="../pages/ethics.html" data-title="學術倫理與 AI 揭露" data-slug="ethics" data-updated="1791688315">學術倫理與 AI 揭露</a></li>
 </ul></div>
 <div class="navsec"><h2>AI 工具與技術環境</h2><ul>
 <li><a href="../pages/claude-tools-overview.html" data-title="Claude 工具家族：介面與功能總覽" data-slug="claude-tools-overview" data-updated="1789618575">Claude 工具家族：介面與功能總覽</a></li>
@@ -66,7 +67,7 @@
 <li><a href="../pages/prompts.html" data-title="AI 提示詞範本" data-slug="prompts" data-updated="1791622922">AI 提示詞範本</a></li>
 <li><a href="../pages/glossary.html" data-title="名詞與用語對照" data-slug="glossary" data-updated="1788525613">名詞與用語對照</a></li>
 <li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南" data-slug="sources" data-updated="1790260517">延伸閱讀與資源指南</a></li>
-<li><a href="../pages/about.html" data-title="關於本站" data-slug="about" data-updated="1791265286">關於本站</a></li>
+<li><a href="../pages/about.html" data-title="關於本站" data-slug="about" data-updated="1791688315">關於本站</a></li>
 </ul></div>
 </nav>
 <div class="wrap">
@@ -136,6 +137,62 @@
 </tbody>
 </table>
 <p>順序是：<strong>預試通過 → 前測通過 → 才發正式問卷。</strong></p>
+<figure class="diagram">
+<svg class="dg-wide" viewBox="0 0 700 215" role="img" aria-labelledby="dgsv-w">
+<title id="dgsv-w">發正式問卷前的兩道關卡。預試問題目看不看得懂，找少數人試填、逐題問在問什麼，不可省略；前測問測得準不準，做小樣本施測加信效度分析，樣本極難取得時可斟酌但要寫進限制。兩關都通過才發正式問卷，沒通過就修正題目。</title>
+<defs><marker id="dgsv-hw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-head" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="dg-box" x="10" y="30" width="210" height="116" rx="10"/>
+<text class="dg-t" x="26" y="58">預試</text>
+<text class="dg-s" x="26" y="82">看得懂嗎？</text>
+<text class="dg-s" x="26" y="106">少數人試填，逐題問在問什麼</text>
+<text class="dg-l" x="26" y="130">不可省略</text>
+<rect class="dg-box" x="250" y="30" width="210" height="116" rx="10"/>
+<text class="dg-t" x="266" y="58">前測</text>
+<text class="dg-s" x="266" y="82">測得準嗎？</text>
+<text class="dg-s" x="266" y="106">小樣本施測＋信效度分析</text>
+<text class="dg-l" x="266" y="130">極難取樣時可斟酌，寫進限制</text>
+<rect class="dg-you" x="490" y="30" width="200" height="116" rx="10"/>
+<text class="dg-t" x="506" y="58">正式問卷</text>
+<text class="dg-s" x="506" y="82">正式資料蒐集</text>
+<path class="dg-line" d="M220,88 L248,88" marker-end="url(#dgsv-hw)"/>
+<text class="dg-l" x="235" y="22" text-anchor="middle">通過</text>
+<path class="dg-line" d="M460,88 L488,88" marker-end="url(#dgsv-hw)"/>
+<text class="dg-l" x="475" y="22" text-anchor="middle">通過</text>
+<path class="dg-dash" d="M165,146 C165,188 65,188 65,150" marker-end="url(#dgsv-hw)"/>
+<text class="dg-l" x="115" y="205" text-anchor="middle">沒通過就修正題目</text>
+<path class="dg-dash" d="M405,146 C405,188 305,188 305,150" marker-end="url(#dgsv-hw)"/>
+<text class="dg-l" x="355" y="205" text-anchor="middle">沒通過就修正題目</text>
+</svg>
+<svg class="dg-narrow" viewBox="0 0 350 415" role="img" aria-labelledby="dgsv-n">
+<title id="dgsv-n">發正式問卷前的兩道關卡。預試問題目看不看得懂，找少數人試填、逐題問在問什麼，不可省略；前測問測得準不準，做小樣本施測加信效度分析，樣本極難取得時可斟酌但要寫進限制。兩關都通過才發正式問卷，沒通過就修正題目。</title>
+<defs><marker id="dgsv-hn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-head" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="dg-box" x="10" y="10" width="220" height="116" rx="10"/>
+<text class="dg-t" x="26" y="38">預試</text>
+<text class="dg-s" x="26" y="62">看得懂嗎？</text>
+<text class="dg-s" x="26" y="86">少數人試填，逐題問在問什麼</text>
+<text class="dg-l" x="26" y="110">不可省略</text>
+<path class="dg-line" d="M80,126 L80,174" marker-end="url(#dgsv-hn)"/>
+<text class="dg-l" x="92" y="155">通過</text>
+<rect class="dg-box" x="10" y="176" width="220" height="116" rx="10"/>
+<text class="dg-t" x="26" y="204">前測</text>
+<text class="dg-s" x="26" y="228">測得準嗎？</text>
+<text class="dg-s" x="26" y="252">小樣本施測＋信效度分析</text>
+<text class="dg-l" x="26" y="276">極難取樣時可斟酌，寫進限制</text>
+<path class="dg-line" d="M80,292 L80,340" marker-end="url(#dgsv-hn)"/>
+<text class="dg-l" x="92" y="321">通過</text>
+<rect class="dg-you" x="10" y="342" width="220" height="64" rx="10"/>
+<text class="dg-t" x="26" y="368">正式問卷</text>
+<text class="dg-s" x="26" y="392">正式資料蒐集</text>
+<path class="dg-dash" d="M230,40 C290,40 290,96 234,96" marker-end="url(#dgsv-hn)"/>
+<text class="dg-l" x="288" y="62">沒通過就</text>
+<text class="dg-l" x="288" y="80">修正題目</text>
+<path class="dg-dash" d="M230,206 C290,206 290,262 234,262" marker-end="url(#dgsv-hn)"/>
+<text class="dg-l" x="288" y="228">沒通過就</text>
+<text class="dg-l" x="288" y="246">修正題目</text>
+</svg>
+<figcaption>預試和前測檢驗的是兩件不同的事，順序是預試通過、前測通過，才發正式問卷。</figcaption>
+</figure>
+
 <hr />
 <h2 id="三抽樣">三、抽樣</h2>
 <h3 id="31-機率抽樣-vs-非機率抽樣">3.1 機率抽樣 vs 非機率抽樣</h3>
