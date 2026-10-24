@@ -205,10 +205,48 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <header class="hero">
 <span class="tag">社會科學 ／ 資訊管理取向</span>
 <h1>研究方法與論文寫作<br>知識網絡</h1>
+<p><strong>寫論文卡住時，來這裡查那一步該怎麼做，以及用 AI 時哪裡要回原文核對。</strong></p>
 <p>把學習筆記、方法論書籍、公開規範與 AI 輔助研究的實務整理成一張可以反覆查閱的地圖。內容涵蓋研究的本質、研究倫理、證據綜整、量化基礎與多種研究設計，以及論文寫作、口試和結案。</p>
 <p>本站以<strong>社會科學取向的資訊管理研究</strong>為預設情境。統計判準、章節慣例與寫作規範都有領域限定，其他領域請以自身系所規範為準。</p>
 <p>站內沒有任何特定研究的題目或架構——所有範例都是通用的教科書級範例。</p>
 </header>
+
+<section class="fam fam-pains" aria-labelledby="fam-pains-h">
+<h2 id="fam-pains-h">你卡在哪裡</h2>
+<div class="fam-pain-grid">
+<div class="fam-pain"><b>碩一下，老師說題目自己想</b><q>我的興趣能不能變成題目？這題站得住嗎？</q><p>先看第一個月該做的五件事和收斂方向的例子；完全沒頭緒的話，有一段可以直接貼給 AI。</p><p class="fam-go"><a href="pages/getting-started.html">從零開始</a><a href="pages/problem-design.html">研究問題與假說</a><a href="https://github.com/wayhong0928/mis-thesis-skills">thesis-toolkit</a></p></div>
+<div class="fam-pain"><b>讀了三十篇，文獻探討還是寫不出來</b><q>筆記要怎麼做才寫得出來？AI 摘要能直接用嗎？</q><p>先看一份填好的示範筆記和文獻矩陣，再看 AI 摘要為什麼不能直接放進正文。</p><p class="fam-go"><a href="pages/thesis-notes-template.html">論文筆記庫範本</a><a href="pages/ai-zotero-obsidian.html">接上 Zotero 與 Obsidian</a><a href="pages/ethics.html">學術倫理與 AI 揭露</a></p></div>
+<div class="fam-pain"><b>要發問卷，量表要改編</b><q>改了題目還算原量表嗎？預試和前測差在哪？</q><p>先看題項沿用與改編要交代什麼，以及預試和前測各自檢查什麼。</p><p class="fam-go"><a href="pages/method-survey.html">問卷調查法</a></p></div>
+<div class="fam-pain"><b>統計跑完看不懂，或老師說數字不對</b><q>這個值代表什麼？樣本數要怎麼定？</q><p>先看 PLS-SEM 的常用判準、事前規劃樣本數的做法，再從分析計畫和資料清理順序回頭查。</p><p class="fam-go"><a href="pages/method-survey.html">問卷調查法</a><a href="pages/quant-analysis-basics.html">量化分析基礎</a></p></div>
+<div class="fam-pain"><b>用 AI 寫了一段，老師說引用對不上</b><q>AI 能幫到哪裡？怎麼查出它寫錯的地方？要怎麼揭露？</q><p>先看每一站要回原文核對的位置、站主自己論文裡被抓到的錯，和揭露聲明範本。</p><p class="fam-go"><a href="pages/ai-workflow-map.html">AI 工作流全圖</a><a href="pages/ai-case-study.html">一個碩士生的實例</a><a href="https://github.com/wayhong0928/mis-thesis-skills">thesis-toolkit</a></p></div>
+<div class="fam-pain"><b>下個月口試</b><q>會被問什麼？簡報怎麼做？</q><p>先看口試委員常問的十二個問題和簡報架構，再挑一份簡報範例來改。</p><p class="fam-go"><a href="pages/defense.html">計畫書、口試與簡報</a><a href="https://wayhong0928.github.io/md-to-slides/">md-to-slides</a></p></div>
+<div class="fam-pain"><b>口試完拿到一堆修改意見</b><q>怎麼改才不會越改越亂？</q><p>先把意見整理成修訂清單，每一項留回覆紀錄，頁面上有兩份表格的範例。</p><p class="fam-go"><a href="pages/post-defense.html">口試後修訂與結案</a></p></div>
+</div>
+</section>
+
+<!-- family:flow:start -->
+<link rel="stylesheet" href="assets/family.css">
+<div class="fam fam-flow" role="region" aria-labelledby="fam-flow-h">
+<h2 id="fam-flow-h">在整套論文流程的哪一站</h2>
+<a class="fam-guide fam-on" style="--i:0" href="https://wayhong0928.github.io/mis-thesis-guide/"><b>論文指南<em class="fam-tag">你在這裡</em></b><span>每一站該怎麼做，都有一頁說明</span></a>
+<ol class="fam-stages">
+<li class="fam-stage" style="--i:1"><b>找題目</b><a class="fam-chip" href="https://github.com/wayhong0928/mis-thesis-skills">thesis-toolkit</a></li>
+<li class="fam-stage" style="--i:2"><b>讀文獻</b><a class="fam-chip" href="https://wayhong0928.github.io/thesis-notes-template/">論文筆記庫範本</a></li>
+<li class="fam-stage" style="--i:3"><b>設計與分析</b><a class="fam-chip" href="https://wayhong0928.github.io/thesis-notes-template/">論文筆記庫範本</a></li>
+<li class="fam-stage" style="--i:4"><b>寫論文</b><a class="fam-chip" href="https://github.com/wayhong0928/mis-thesis-skills">thesis-toolkit</a></li>
+<li class="fam-stage" style="--i:5"><b>口試與修訂</b><a class="fam-chip" href="https://wayhong0928.github.io/md-to-slides/">md-to-slides</a></li>
+</ol>
+<div class="fam-base" style="--i:6"><b>每一站都用得到的 AI 工作環境</b><a class="fam-chip" href="https://wayhong0928.github.io/claude-workflow-template/">Claude Code 工作流 template</a><a class="fam-chip" href="https://wayhong0928.github.io/ai-agent-notes/">AI Agent 筆記</a></div>
+<p class="fam-more"><a href="https://wayhong0928.github.io/mis-thesis-guide/pages/ai-thesis-stages.html">看整套流程怎麼走</a></p>
+</div>
+<!-- family:flow:end -->
+
+<section class="fam fam-install" aria-labelledby="fam-install-h">
+<h2 id="fam-install-h">怎麼開始</h2>
+<div class="fam-box">
+<p>本站不用安裝，直接讀。第一次用 AI 做研究，從<a href="pages/ai-quickstart.html">網頁版一小時上手</a>或 <a href="pages/ai-quickstart-agent.html">Claude Code、Codex 一小時上手</a>開始。想一次裝好筆記庫範本、Zotero、Obsidian 和 thesis-toolkit，把<a href="pages/ai-full-install.html">整套安裝</a>那段 prompt 貼給你的 AI。</p>
+</div>
+</section>
 
 <div class="notice">
 <b>先講清楚四件事</b>
@@ -240,6 +278,21 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 </div>
 
 {sections}
+
+<!-- family:cards:start -->
+<div class="fam fam-cards" role="region" aria-labelledby="fam-cards-h">
+<h2 id="fam-cards-h">同一套的工具</h2>
+<div class="fam-grid">
+<div class="fam-card fam-here" aria-current="page"><small>網站</small><b>論文指南</b><span>研究方法、論文寫作和口試，每一站該怎麼做的說明。</span><em class="fam-tag">你在這裡</em></div>
+<a class="fam-card" href="https://github.com/wayhong0928/mis-thesis-skills"><small>Claude Code 外掛</small><b>thesis-toolkit</b><span>幫你收斂題目、稽核研究問題、檢查學術寫法的 SKILL。</span></a>
+<a class="fam-card" href="https://wayhong0928.github.io/thesis-notes-template/"><small>Obsidian 範本</small><b>論文筆記庫範本</b><span>文獻筆記、構念卡和假說推導放在同一個筆記庫，寫第二、三章時直接取材。</span></a>
+<a class="fam-card" href="https://wayhong0928.github.io/md-to-slides/"><small>簡報工具</small><b>md-to-slides</b><span>用 Markdown 寫簡報，挑場合和主題就有一份範例可以改。</span></a>
+<a class="fam-card" href="https://wayhong0928.github.io/claude-workflow-template/"><small>Claude Code 設定</small><b>Claude Code 工作流 template</b><span>開場接上次進度，產出交給另一個 agent 驗收，論文跨很多 session 也不會斷。</span></a>
+<a class="fam-card" href="https://wayhong0928.github.io/ai-agent-notes/"><small>網站</small><b>AI Agent 筆記</b><span>Claude、Codex 這類 AI 代理工具的概念、設定和協作方式。</span></a>
+</div>
+</div>
+<script src="assets/family.js" defer></script>
+<!-- family:cards:end -->
 
 <footer class="foot">
 <p>本站為個人學習筆記彙整，非官方規範。實際要求一律以系所規定、指導教授意見與投稿單位作者須知為準。</p>
