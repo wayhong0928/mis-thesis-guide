@@ -138,6 +138,24 @@
   "section": "論文寫作"
  },
  {
+  "slug": "ai-thesis-stages",
+  "title": "論文各階段用什麼：整合入口",
+  "desc": "從找文獻到口試，每個階段對到哪個 SKILL、提示詞、筆記庫範本與本站頁面，附取得新版的方式",
+  "section": "AI 輔助研究"
+ },
+ {
+  "slug": "ai-zotero-obsidian",
+  "title": "用 Claude Code＋Zotero＋Obsidian 管理文獻與文獻筆記",
+  "desc": "筆記庫範本怎麼接上 Zotero 和 Claude Code，從裝工具、寫筆記、核對到收進構念卡的順序",
+  "section": "AI 輔助研究"
+ },
+ {
+  "slug": "ai-full-install",
+  "title": "整套安裝：一段 prompt 裝好論文工作環境",
+  "desc": "貼給自己的 AI，裝好筆記庫範本、Zotero、Obsidian、thesis-toolkit，並接上 Claude Code 工作流程設定",
+  "section": "AI 輔助研究"
+ },
+ {
   "slug": "ai-workflow-map",
   "title": "論文 AI 工作流全圖",
   "desc": "地基加六站流程，對到網頁版與 Claude Code／Codex 兩條路線，每站標出回原文核對的地方",

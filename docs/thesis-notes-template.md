@@ -2,6 +2,8 @@
 
 > 這頁介紹 [thesis-notes-template](https://github.com/wayhong0928/thesis-notes-template)：一個下載解壓縮、用 Obsidian 打開就能用的論文筆記庫。裡面有五種筆記的模板、文獻筆記的填寫規則、一張文獻矩陣表，和可以直接貼給 AI 的提示詞（一段幫你安裝工具，五段用在寫筆記的各個階段）。範本另有一頁[介紹頁](https://wayhong0928.github.io/thesis-notes-template/)。
 >
+> 想看範本怎麼和 Zotero、Claude Code 接在一起，見[用 Claude Code＋Zotero＋Obsidian 管理文獻與文獻筆記](ai-zotero-obsidian.md)。
+>
 > 範本的模板以[文獻管理與知識庫](tools-knowledge.md)第四節的五種筆記為底，再加上一份碩士論文實際做下來踩過的坑。repo 裡沒有任何 AI 工具的設定檔，提示詞只是文字，設計上不依賴特定 AI 工具；實際測過哪些，見第七節。
 
 ---

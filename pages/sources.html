@@ -46,6 +46,9 @@
 <li><a href="../pages/post-defense.html" data-title="口試後修訂、典藏與結案" data-slug="post-defense" data-updated="1788525613">口試後修訂、典藏與結案</a></li>
 </ul></div>
 <div class="navsec"><h2>AI 輔助研究</h2><ul>
+<li><a href="../pages/ai-thesis-stages.html" data-title="論文各階段用什麼：整合入口" data-slug="ai-thesis-stages" data-updated="1792818904">論文各階段用什麼：整合入口</a></li>
+<li><a href="../pages/ai-zotero-obsidian.html" data-title="用 Claude Code＋Zotero＋Obsidian 管理文獻與文獻筆記" data-slug="ai-zotero-obsidian" data-updated="1792817892">用 Claude Code＋Zotero＋Obsidian 管理文獻與文獻筆記</a></li>
+<li><a href="../pages/ai-full-install.html" data-title="整套安裝：一段 prompt 裝好論文工作環境" data-slug="ai-full-install" data-updated="1792818903">整套安裝：一段 prompt 裝好論文工作環境</a></li>
 <li><a href="../pages/ai-workflow-map.html" data-title="論文 AI 工作流全圖" data-slug="ai-workflow-map" data-updated="1791622922">論文 AI 工作流全圖</a></li>
 <li><a href="../pages/ai-quickstart.html" data-title="一小時上手：用網頁版 AI 建立你的論文助手" data-slug="ai-quickstart" data-updated="1791622922">一小時上手：用網頁版 AI 建立你的論文助手</a></li>
 <li><a href="../pages/ai-quickstart-agent.html" data-title="一小時上手：用 Claude Code 或 Codex 建立你的論文助手" data-slug="ai-quickstart-agent" data-updated="1791686570">一小時上手：用 Claude Code 或 Codex 建立你的論文助手</a></li>
@@ -67,14 +70,14 @@
 <li><a href="../pages/checklists.html" data-title="檢查清單" data-slug="checklists" data-updated="1792247830">檢查清單</a></li>
 <li><a href="../pages/prompts.html" data-title="AI 提示詞範本" data-slug="prompts" data-updated="1791622922">AI 提示詞範本</a></li>
 <li><a href="../pages/glossary.html" data-title="名詞與用語對照" data-slug="glossary" data-updated="1788525613">名詞與用語對照</a></li>
-<li class="active"><a href="../pages/sources.html" data-title="延伸閱讀與資源指南" data-slug="sources" data-updated="1790260517">延伸閱讀與資源指南</a></li>
+<li class="active"><a href="../pages/sources.html" data-title="延伸閱讀與資源指南" data-slug="sources" data-updated="1792807866">延伸閱讀與資源指南</a></li>
 <li><a href="../pages/about.html" data-title="關於本站" data-slug="about" data-updated="1791688315">關於本站</a></li>
 </ul></div>
 </nav>
 <div class="wrap">
 <main id="main">
 <p class="crumb"><a href="../index.html">首頁</a> ／ 工具箱</p>
-<article class="doc" data-updated="1790260517">
+<article class="doc" data-updated="1792807866">
 <h1>延伸閱讀與資源指南</h1>
 <p class='lede'>書籍導讀、經典論文、線上講座、開源專案與官方規範入口</p>
 <blockquote>
@@ -367,9 +370,9 @@
 </tr>
 <tr>
 <td><a href="https://github.com/Imbad0202/academic-research-skills">Imbad0202/academic-research-skills</a></td>
-<td>學術研究的 Claude Code 技能套件：深度研究、論文撰寫、論文審查、十階段流程協調。<strong>完整繁體中文支援</strong>，會自動偵測語言</td>
+<td>學術研究的 Claude Code 技能套件：深度研究、論文撰寫、論文審查、十階段流程協調。使用者寫中文時預設用繁體中文回應，APA 7 中文引用有台灣慣例（筆畫排序、TSSCI 期刊）；寫作品質檢查只有英文詞表，沒找到台灣用語對照</td>
 <td>CC BY-NC 4.0（非商業）</td>
-<td>想要現成的中文學術工作流、不想自己從零寫 skill 的人</td>
+<td>寫英文論文、做系統性回顧，或想多一路審稿意見的人</td>
 </tr>
 <tr>
 <td><a href="https://github.com/ammosu/awesome-claude-skills-zh-TW">ammosu/awesome-claude-skills-zh-TW</a></td>
@@ -385,6 +388,11 @@
 </tr>
 </tbody>
 </table>
+<p><strong>academic-research-skills 的裝法與實測</strong>（2026-10-24）</p>
+<ul>
+<li>建議裝在論文專案層級：<code>claude plugin install academic-research-skills@academic-research-skills --scope project</code>。它帶 SessionStart 與 PreToolUse hook，<code>claude plugin details</code> 顯示每個 session 常駐約 3,083 tokens，裝在全域等於每個專案都多付這筆。</li>
+<li>本站拿它的 <code>academic-paper-reviewer</code> 審一份中文量化計畫書，和 mis-thesis-skills 的研究問題稽核加寫作稽核那一路並排比較。兩路抓到的研究設計問題大半重疊。它多抓的是領域層的質疑，例如反向因果、最接近研究的反證、樣本倫理，寫作層只挑結構性的幾條；mis-thesis-skills 那一路多抓用語、標點、構句，以及構念定義和量表題目對不對得上。</li>
+</ul>
 <div class="admonition warning">
 <p class="admonition-title">用別人的 skill 之前</p>
 <p>這類套件會<strong>代替你做部分判斷</strong>。它內建的論文結構、審查標準、寫作風格，未必符合你系所的規範。

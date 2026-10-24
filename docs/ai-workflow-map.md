@@ -1,6 +1,6 @@
 # 論文 AI 工作流全圖
 
-> 這張圖先打地基，再把論文從找方向到口試分成六站，每一步都列出兩條路線各用什麼。只用網頁版 AI 的人，用專案功能（Projects、Gems）加提示詞；願意開終端機的人，用 Claude Code 或 Codex，再裝上站主整理的 thesis-toolkit SKILL。每站最右欄是要回原文核對的地方，這一欄兩條路線都一樣。圖裡的項目都連到本站對應的節次。
+> 這張圖先打地基，再把論文從找方向到口試分成六站，每一步都列出兩條路線各用什麼。只用網頁版 AI 的人，用專案功能（Projects、Gems）加提示詞；願意開終端機的人，用 Claude Code 或 Codex，再裝上站主整理的 thesis-toolkit SKILL。每站最右欄是要回原文核對的地方，這一欄兩條路線都一樣。圖裡的項目都連到本站對應的節次。想依論文階段找資源，見[論文各階段用什麼：整合入口](ai-thesis-stages.md)。
 
 ---
 
@@ -77,7 +77,7 @@
 </ul></div>
 <div class="wf-cell cli"><p class="wf-lane">Claude Code／Codex</p><ul>
 <li>筆記軟體與欄位設計（<a href="tools-knowledge.md">文獻管理與知識庫</a>）<i class="wf-tag live">已上線</i></li>
-<li>Zotero 加 Obsidian 的筆記庫範本，讓 AI 直接讀寫筆記資料夾 <i class="wf-tag soon">尚未上線</i></li>
+<li>Zotero 加 Obsidian 的筆記庫範本，讓 AI 直接讀寫筆記資料夾（<a href="thesis-notes-template.md">論文筆記庫範本</a>）<i class="wf-tag live">已上線</i></li>
 </ul></div>
 <div class="wf-cell chk"><p class="wf-lane">回原文核對</p>
 <p>數字、樣本數、構念名稱逐項回 PDF 打勾。「跟我的研究有什麼關係」那一欄自己寫。<a href="ai-quickstart.md#七練習找出-ai-寫錯的地方">一小時上手第七節</a>的練習就是在練這一步。</p>

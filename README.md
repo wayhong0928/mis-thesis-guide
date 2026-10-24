@@ -17,6 +17,7 @@
 | 資源 | 適合誰 |
 |---|---|
 | [一小時上手](https://wayhong0928.github.io/mis-thesis-guide/pages/ai-quickstart.html) | 只用 ChatGPT、Claude、Gemini 網頁版，想在一小時內建好論文助手（另有 [Claude Code、Codex 版](https://wayhong0928.github.io/mis-thesis-guide/pages/ai-quickstart-agent.html)） |
+| [論文各階段用什麼](https://wayhong0928.github.io/mis-thesis-guide/pages/ai-thesis-stages.html) | 想知道論文每個階段該用本站、thesis-toolkit、筆記庫範本裡的哪一個，從找文獻開始照著重現整套流程（附[整套安裝](https://wayhong0928.github.io/mis-thesis-guide/pages/ai-full-install.html)與[Zotero＋Obsidian 文獻管理](https://wayhong0928.github.io/mis-thesis-guide/pages/ai-zotero-obsidian.html)兩頁） |
 | [thesis-notes-template](https://github.com/wayhong0928/thesis-notes-template) | 想用 Obsidian 做文獻筆記，要現成的模板和填寫規則 |
 | [mis-thesis-skills](https://github.com/wayhong0928/mis-thesis-skills) | 用 Claude Code 或 Codex，想讓 AI 照固定判準檢查題目與寫作 |
 | [claude-workflow-template](https://github.com/wayhong0928/claude-workflow-template) | 用 Claude Code 做論文或研究專案，想要現成的工作流程設定：接續進度、派工模板、獨立驗收 |

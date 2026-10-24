@@ -319,4 +319,4 @@ AI 寫的整理（藏了 3 個錯）：
 
 願意打開終端機的話，接著做[Claude Code／Codex 版的一小時上手](ai-quickstart-agent.md)：建研究資料夾、寫指示檔、安裝 thesis-toolkit，讓 AI 直接讀你資料夾裡的文獻。
 
-筆記庫範本（用 Zotero 管文獻和書目、用 Obsidian 放筆記，把這頁的筆記模板接進去）還沒上線。在那之前，筆記軟體的基本設定可以先看[文獻管理與知識庫](tools-knowledge.md)。
+筆記庫範本（用 Zotero 管文獻和書目、用 Obsidian 放筆記，把這頁的筆記模板接進去）已經上線，見[論文筆記庫範本](thesis-notes-template.md)。筆記軟體的基本設定可以看[文獻管理與知識庫](tools-knowledge.md)。

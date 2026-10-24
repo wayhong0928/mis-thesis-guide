@@ -49,6 +49,9 @@ NAV = [
         ("post-defense", "口試後修訂、典藏與結案", "修訂回覆、版本控制、授權送存、離校與研究結案"),
     ]),
     ("AI 輔助研究", [
+        ("ai-thesis-stages", "論文各階段用什麼：整合入口", "從找文獻到口試，每個階段對到哪個 SKILL、提示詞、筆記庫範本與本站頁面，附取得新版的方式"),
+        ("ai-zotero-obsidian", "用 Claude Code＋Zotero＋Obsidian 管理文獻與文獻筆記", "筆記庫範本怎麼接上 Zotero 和 Claude Code，從裝工具、寫筆記、核對到收進構念卡的順序"),
+        ("ai-full-install", "整套安裝：一段 prompt 裝好論文工作環境", "貼給自己的 AI，裝好筆記庫範本、Zotero、Obsidian、thesis-toolkit，並接上 Claude Code 工作流程設定"),
         ("ai-workflow-map", "論文 AI 工作流全圖", "地基加六站流程，對到網頁版與 Claude Code／Codex 兩條路線，每站標出回原文核對的地方"),
         ("ai-quickstart", "一小時上手：用網頁版 AI 建立你的論文助手", "建專案、填指示、做第一份文獻筆記，練習抓出 AI 的錯"),
         ("ai-quickstart-agent", "一小時上手：用 Claude Code 或 Codex 建立你的論文助手", "建研究資料夾、寫指示檔、裝 thesis-toolkit，用研究問題稽核檢查自己的題目"),
