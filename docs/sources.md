@@ -160,9 +160,14 @@
 | 專案 | 是什麼 | 授權 | 適合誰 |
 |---|---|---|---|
 | [pedrohcgs/claude-code-my-workflow](https://github.com/pedrohcgs/claude-code-my-workflow) | 學術研究的 Claude Code 工作流框架。18 個審查代理人、60 個技能，涵蓋講稿製作、論文審查、資料分析與複製包組建；有品質門檻與對抗式問答迴圈 | MIT | 用 LaTeX/Beamer + R 的量化研究者。經濟、政治科學領域為主，但架構可移植 |
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 學術研究的 Claude Code 技能套件：深度研究、論文撰寫、論文審查、十階段流程協調。**完整繁體中文支援**，會自動偵測語言 | CC BY-NC 4.0（非商業） | 想要現成的中文學術工作流、不想自己從零寫 skill 的人 |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 學術研究的 Claude Code 技能套件：深度研究、論文撰寫、論文審查、十階段流程協調。使用者寫中文時預設用繁體中文回應，APA 7 中文引用有台灣慣例（筆畫排序、TSSCI 期刊）；寫作品質檢查只有英文詞表，沒找到台灣用語對照 | CC BY-NC 4.0（非商業） | 寫英文論文、做系統性回顧，或想多一路審稿意見的人 |
 | [ammosu/awesome-claude-skills-zh-TW](https://github.com/ammosu/awesome-claude-skills-zh-TW) | 繁體中文化的 Claude Skills 精選清單，收錄 60+ 個技能，分九大類 | Apache 2.0（個別技能授權可能不同，需分別確認） | 想知道「skill 可以做到什麼」的人，當目錄用 |
 | [wayhong0928/mis-thesis-skills](https://github.com/wayhong0928/mis-thesis-skills) | 本站衍生的 Claude Code plugin marketplace，收錄研究方向收斂、研究問題稽核、學術寫作品質稽核三個 SKILL；建置與評測過程見新站的[把教材做成 SKILL](https://wayhong0928.github.io/ai-agent-notes/pages/skill-build.html)（原本收錄在本站，已於 2026-09-17 遷移） | MIT | 想直接安裝本站判準、不想每次複製貼上提示詞的人 |
+
+**academic-research-skills 的裝法與實測**（2026-10-24）
+
+- 建議裝在論文專案層級：`claude plugin install academic-research-skills@academic-research-skills --scope project`。它帶 SessionStart 與 PreToolUse hook，`claude plugin details` 顯示每個 session 常駐約 3,083 tokens，裝在全域等於每個專案都多付這筆。
+- 本站拿它的 `academic-paper-reviewer` 審一份中文量化計畫書，和 mis-thesis-skills 的研究問題稽核加寫作稽核那一路並排比較。兩路抓到的研究設計問題大半重疊。它多抓的是領域層的質疑，例如反向因果、最接近研究的反證、樣本倫理，寫作層只挑結構性的幾條；mis-thesis-skills 那一路多抓用語、標點、構句，以及構念定義和量表題目對不對得上。
 
 !!! warning "用別人的 skill 之前"
     這類套件會**代替你做部分判斷**。它內建的論文結構、審查標準、寫作風格，未必符合你系所的規範。
