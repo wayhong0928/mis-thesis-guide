@@ -253,7 +253,7 @@ a.fam-card:hover { border-color: var(--fam-acc); transform: translateY(-2px); }
 
 .fam-pain .fam-go a:hover { border-color: var(--fam-acc); }
 
-.fam-shot { margin: 0; }
+.fam-shot { margin-left: 0; margin-right: 0; }
 
 .fam-shot img {
   display: block;
