@@ -124,7 +124,7 @@ def source_updated(src):
 def nav_html(active, prefix=""):
     out = ['<nav class="sidenav" id="sidenav" aria-label="全站導覽">']
     out.append(f'<a class="brand" href="{prefix}index.html"><span class="brand-mark">◈</span>'
-               f'<span class="brand-text">研究方法<br><small>知識網絡</small></span></a>')
+               f'<span class="brand-text">研究方法</span></a>')
     out.append('<div class="navsearch"><input type="search" id="navfilter" '
                'placeholder="篩選頁面…" aria-label="篩選頁面"></div>')
     out.append(f'<a class="navread" href="{prefix}reading.html">閱讀追蹤</a>')
@@ -203,7 +203,6 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <main id="main">
 
 <header class="hero">
-<span class="tag">社會科學 ／ 資訊管理取向</span>
 <h1>研究方法與論文寫作<br>知識網絡</h1>
 <p><strong>寫論文卡住時，來這裡查那一步該怎麼做，以及用 AI 時哪裡要回原文核對。</strong></p>
 <p>把學習筆記、方法論書籍、公開規範與 AI 輔助研究的實務整理成一張可以反覆查閱的地圖。內容涵蓋研究的本質、研究倫理、證據綜整、量化基礎與多種研究設計，以及論文寫作、口試和結案。</p>
@@ -315,7 +314,7 @@ def build_index():
             cards.append(f'<a class="card" href="pages/{slug}.html">'
                          f'<h3>{title}</h3><p>{desc}</p></a>')
         parts.append(
-            f'<section class="mapsec"><h2><span class="num">{i:02d}</span>{sec}</h2>'
+            f'<section class="mapsec"><h2>{sec}</h2>'
             f'<p class="secdesc">{SEC_DESC.get(sec, "")}</p>'
             f'<div class="cards">{"".join(cards)}</div></section>')
     out = INDEX_TEMPLATE.format(nav=nav_html(None, prefix=""), sections="\n".join(parts))
@@ -409,7 +408,6 @@ def build():
 
 READING_BODY = """
 <header class="hero">
-<span class="tag">閱讀紀錄</span>
 <h1>閱讀追蹤</h1>
 <p>本站的文章頁都列在下面，讀完一頁就勾起來，沒勾的就是還沒讀的。勾過的頁面之後如果改版，會出現在「讀後有更新」。「AI 工具與技術環境」那四頁已搬到 ai-agent-notes，這裡不列。</p>
 </header>
