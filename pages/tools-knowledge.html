@@ -71,7 +71,7 @@
 <li><a href="../pages/prompts.html" data-title="AI 提示詞範本" data-slug="prompts" data-updated="1791622922">AI 提示詞範本</a></li>
 <li><a href="../pages/glossary.html" data-title="名詞與用語對照" data-slug="glossary" data-updated="1788525613">名詞與用語對照</a></li>
 <li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南" data-slug="sources" data-updated="1792807866">延伸閱讀與資源指南</a></li>
-<li><a href="../pages/about.html" data-title="關於本站" data-slug="about" data-updated="1793029502">關於本站</a></li>
+<li><a href="../pages/about.html" data-title="關於本站" data-slug="about" data-updated="1793290321">關於本站</a></li>
 </ul></div>
 </nav>
 <div class="wrap">
@@ -257,17 +257,17 @@
 <h4 id="235-也可以直接打-doiisbn-匯入">2.3.5 也可以直接打 DOI／ISBN 匯入</h4>
 <p>不想靠瀏覽器擷取時，Zotero 工具列有個「<strong>以識別碼新增項目（Add Item by Identifier）</strong>」按鈕，點下去、貼上識別碼、按 Enter 就會自動查回書目資料。支援的識別碼包括 DOI、ISBN、PubMed ID、arXiv ID、ADS Bibcode；要一次匯入多筆，識別碼之間用空格、逗號或換行分隔即可（<a href="https://www.zotero.org/support/adding_items_to_zotero">官方說明</a>）。</p>
 <div class="admonition warning">
-<p class="admonition-title">這樣匯入通常不會附全文 PDF</p>
-<p>「以識別碼新增項目」查到的是書目資料庫（CrossRef、WorldCat、arXiv 等）裡的中繼資料，不是期刊頁面本身，所以官方文件並沒有把它跟自動下載 PDF 綁在一起——相對地，透過 Zotero Connector 直接在期刊頁面上擷取，通常會一併抓到 PDF。用 DOI 打進書目之後，PDF 全文多半還是要回到 2.3.1／2.3.2 兩節描述的管道自己下載，再手動拖進該筆文獻底下當附件。</p>
+<p class="admonition-title">用網頁代理時，這樣匯入通常只附得到 OA 全文</p>
+<p>以識別碼新增項目時，Zotero 會依 DOI 去找出版社頁面並嘗試下載 PDF。在校內網路或 VPN 下可以抓到有訂閱權限的全文；如果你是用圖書館網頁代理，只會自動抓到公開取用（OA）的版本，其他全文要回到已登入代理的期刊頁面，用 Zotero Connector 存（見 2.3.1 與 2.3.3 兩節）。</p>
 </div>
 <h4 id="236-日期格式會決定你的-citation-key-亂不亂">2.3.6 日期格式會決定你的 citation key 亂不亂</h4>
 <p>這是 Better BibTeX 使用者最常踩、也最不容易自己查出原因的雷：日期欄位亂填，citekey 會跟著亂。原理分三層：</p>
 <ol>
-<li><strong>Zotero 的日期欄位不是純文字，而是會被解析（parse）成結構化的年／月／日。</strong> 這個解析器認得的日期寫法，綁定在你目前 Zotero 介面設定的語言（locale）上——不同語言的月份名稱、日期順序寫法不一樣，例如英文介面認得 <code>January</code>、<code>5/1/2024</code> 這類英文慣例的寫法，中文介面才認得「年」「月」「日」這種寫法。</li>
-<li><strong>介面設成英文卻打中文格式的日期（例如「2024年5月1日」），這串文字裡的「年」「月」「日」不在英文解析器認得的樣式清單裡</strong>，Zotero 解析不出結構化的年份，這個欄位就退化成一段沒有結構的純文字——這筆文獻的後設資料裡，沒有一個乾淨可用的「年」。</li>
-<li><strong>Better BibTeX 的 citekey 公式裡，<code>year</code> 這個函式抓的是「出版年份」這個已經解析好的值</strong>，不是它自己重新去猜你輸入的原始字串。官方文件所舉的預設公式範例是 <code>auth.lower + shorttitle(3,3) + year</code>（作者姓氏＋短標題＋年份）。上一步解析失敗，這裡年份那一段就是空的：好幾筆作者、標題相近但年份缺失的文獻，就會擠出幾乎一樣的 key。Better BibTeX 偵測到 key 重複時會自動加字尾（a、b、c……）區分，你看到的結果就是 citekey 缺一截年份、或被加上莫名其妙的字尾——這就是「亂掉」的真正樣子，不是 Zotero 故障，是那筆日期資料一開始就沒被解析成功。</li>
+<li><strong>Zotero 的日期欄位不是純文字，而是會被解析（parse）成結構化的年／月／日。</strong> Zotero 自己的解析器在任何介面語言下都認得「2024年5月1日」這種寫法，所以日期在 Zotero 裡看起來正常。</li>
+<li><strong>但 Better BibTeX 不用 Zotero 解析好的年份。</strong> 它的 citekey 公式裡，<code>year</code> 是 BBT 拿日期欄位的<strong>原始文字</strong>自己重新解析，跟 Zotero 介面語言無關。BBT 認得 <code>2024-05-01</code>、<code>2024</code> 這類寫法，但<strong>不認得「2024年5月1日」「2024年5月」「2024年」這種中文寫法</strong>。</li>
+<li><strong>認不得的日期，BBT 會把整串原文塞進 key 的年份位置。</strong> 官方文件所舉的預設公式範例是 <code>auth.lower + shorttitle(3,3) + year</code>（作者姓氏＋短標題＋年份），於是 key 的年份那一段會變成「2024年5月1日」這整串原文，看起來就是亂掉。Better BibTeX 偵測到 key 重複時會自動加字尾（a、b、c……）區分，所以你也可能看到被加上莫名其妙字尾的 citekey。這不是 Zotero 故障，是那筆日期資料的寫法 BBT 認不得。改用中文介面也解決不了。</li>
 </ol>
-<p><strong>修法</strong>：日期欄位一律填 <code>YYYY-MM-DD</code>（例如 <code>2024-05-01</code>），只知道年份就只填 <code>YYYY</code>（例如 <code>2024</code>）。這兩種寫法都是純數字、順序固定，不吃任何語言的月份名稱或日期順序慣例，在哪種介面語言下都會被正確辨識成合法日期——這也是 Zotero 論壇與官方說明一致建議的填法。改完日期後，回 Zotero 選取受影響的項目，右鍵→Better BibTeX→<strong>Refresh BibTeX Key</strong>，重新產生 citekey。</p>
+<p><strong>修法</strong>：日期欄位一律填 <code>YYYY-MM-DD</code>（例如 <code>2024-05-01</code>），只知道年份就只填 <code>YYYY</code>（例如 <code>2024</code>）。這兩種寫法都是純數字、順序固定，Zotero 與 Better BibTeX 都會正確辨識成合法日期。改完日期後，回 Zotero 選取受影響的項目，右鍵→Better BibTeX→<strong>Refresh BibTeX Key</strong>，重新產生 citekey。</p>
 <div class="admonition danger">
 <p class="admonition-title">citekey 重新產生之後，已經插進 Word 裡的舊引用不會自動跟著換</p>
 <p>如果亂掉的 citekey 已經拿去 Word 裡插入引用，Refresh 之後兩邊會對不起來，變成斷link。<strong>最好在正式開始大量插入引用之前，就先把整批文獻的日期欄位處理乾淨</strong>，越晚發現，要重新核對的引用就越多。</p>

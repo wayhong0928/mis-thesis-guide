@@ -30,7 +30,7 @@
 | Consensus、Elicit | 學術搜尋。查詢問題由 Claude 先擬，我自己去搜，結果貼回去一起比對 |
 | ChatGPT | 討論研究方向、找文獻；也用過網路上別人做的論文寫作 GPT |
 | Perplexity | 偶爾用來找文獻、想研究方向 |
-| NotebookLM | 前期用過：文獻庫問答，查文獻之間的關係 |
+| NotebookLM（現名 Gemini Notebook） | 前期用過：文獻庫問答，查文獻之間的關係 |
 | Zotero ＋ Obsidian | 不是 AI 工具，但筆記和引用都靠它們：Zotero 管 PDF 和書目，Obsidian 放筆記（見[文獻管理與知識庫](tools-knowledge.md)） |
 
 ---

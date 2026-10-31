@@ -655,7 +655,7 @@ description: 檢查橫斷面研究文字是否把相關或預測結果誤寫成�
 
 > 💡 上面只是示範用的最小骨架。完整版的因果動詞稽核（含三條件判準、主張強度對照表、自創路徑名稱檢查）已經包成正式 SKILL：`academic-writing-discipline`→ 安裝方式見頁首
 
-skill 是 Claude Code 或其他明確支援 skill 的 Claude 介面所用的機制。如果你平常使用 ChatGPT、Gemini，或不支援 skill 的純網頁對話，本頁的靜態提示詞仍是最泛用的做法，不必勉強轉換。
+SKILL（SKILL.md）是開放格式，Claude Code、Claude 網頁版、Codex 和 Gemini 網頁版的技能（skills）都能使用。如果你用的介面不支援，或不確定是否支援（例如 ChatGPT 的對話介面，本站沒有查到官方說明），本頁的靜態提示詞仍是最泛用的做法，不必勉強轉換。
 
 完整案例見新站的[把教材做成 SKILL](https://wayhong0928.github.io/ai-agent-notes/pages/skill-build.html)（原本收錄在本站[把教材做成可安裝的 SKILL](skill-build.md)，已於 2026-09-17 遷移）——記錄一次真的把網站內容包成可安裝 SKILL 的完整過程，包含規則被實務經驗糾正的真實教訓。
 

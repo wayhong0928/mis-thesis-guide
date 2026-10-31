@@ -37,7 +37,7 @@
 
 ## 二、依子領域分類的國際 Q1 期刊
 
-**分類依據**：以 [ICIS 2026 官方 tracks](https://icis2026.aisconferences.org/submissions/track-descriptions/)（共 12 個）為骨架——這是資管學界目前最權威、每年更新的子領域劃分，而且你之後投稿也會看到同一套分類，先熟悉可以少走一次彎路。再補上幾個 ICIS track 沒單獨列出、但學界公認很活躍的子領域（電子商務、人機互動、醫療資訊、知識管理、數位學習）。
+**分類依據**：以 [ICIS 2026 官方 tracks](https://icis2026.aisconferences.org/submissions/track-descriptions/)（共 24 個，含大會主題 track 與 General topics）為骨架——這是資管學界目前最權威、每年更新的子領域劃分，而且你之後投稿也會看到同一套分類，先熟悉可以少走一次彎路。再補上 ICIS 沒有獨立 track 的知識管理，並把電子商務、人機互動、醫療資訊、數位學習對應到 ICIS 2026 的 Economics of digital, social, and mobile commerce、Human technology interaction、Healthcare and wellbeing、Digital learning and pedagogy。
 
 **這不是窮盡清單**，是給完全沒方向的人一個「掃過去、挑幾個」的起點。
 
@@ -62,9 +62,9 @@
 
 | 名稱 | 官方網站 | 看主題分類（tracks／CFP）的網址 | 投稿時程（查得到的） |
 |---|---|---|---|
-| International Conference on Information Systems（ICIS）2026 | <https://icis2026.aisconferences.org/> | [track-descriptions](https://icis2026.aisconferences.org/submissions/track-descriptions/)（12 個 track，如 Cybersecurity and Privacy、Data Management and Analytics、Blockchain-DLT-Fintech 等） | 投稿截止 2026/5/1（Lisbon 場），2026/2/11 開放投稿，2026/7/27 通知結果 |
+| International Conference on Information Systems（ICIS）2026 | <https://icis2026.aisconferences.org/> | [track-descriptions](https://icis2026.aisconferences.org/submissions/track-descriptions/)（24 個 track，如 Cybersecurity and Privacy、Data Management and Analytics、Blockchain-DLT-Fintech 等） | 投稿截止 2026/5/1（Lisbon 場），2026/2/11 開放投稿，2026/7/27 通知結果 |
 | European Conference on Information Systems（ECIS）2026 | <https://ecis2026.it/> | [track-descriptions](https://ecis2026.it/track-descriptions/)（26 個 track，含 Cybersecurity and Privacy、Digital Transformation、Blockchain & Fintech 等） | 會議日期 2026/6/15–17（Milan），投稿截止日以官網 Call for Submissions 頁為準 |
-| Pacific Asia Conference on Information Systems（PACIS）2026 | <https://pacis2026.aisconferences.org/> | [track-descriptions](https://pacis2026.aisconferences.org/submissions/track-descriptions/)（22 個 track） | 投稿截止 2026/3/8（延長後），會議 2026/7/4–8（Jakarta） |
+| Pacific Asia Conference on Information Systems（PACIS）2026 | <https://pacis2026.aisconferences.org/> | [track-descriptions](https://pacis2026.aisconferences.org/submissions/track-descriptions/)（17 個 track，CFP 文字寫 18 個，以 track 頁為準） | 投稿截止 2026/3/8（延長後），會議 2026/7/4–8（Jakarta） |
 | Americas Conference on Information Systems（AMCIS）2026 | <https://amcis2026.aisconferences.org/> | [track-descriptions](https://amcis2026.aisconferences.org/submissions/track-descriptions/) | 投稿截止 2026/3/1 17:00 PST，會議 2026/8/20–22（Reno） |
 | Hawaii International Conference on System Sciences（HICSS）2027（第 60 屆） | <https://hicss.hawaii.edu/> | [tracks-and-minitracks](https://hicss.hawaii.edu/tracks-and-minitracks/) | 投稿截止 2026/6/15 23:59 HST，會議 2027/1/5–8（Big Island） |
 
@@ -80,7 +80,7 @@
 
 | 名稱 | 主辦單位 | 官方網址 | 投稿時程／出版頻率 | 備註 |
 |---|---|---|---|---|
-| 資訊管理學報（Journal of Information Management, JIM） | 中華民國資訊管理學會 | 官網：<https://jim-tw.com/>；編輯部：<https://eclab.nkust.edu.tw/>（國立高雄科技大學）；[投稿說明 PDF](https://eclab.nkust.edu.tw/submitjim/JIM_Call_for_Paper.pdf) | TSSCI 收錄，每年 1、4、7、10 月出刊（季刊），雙匿名審查，第一輪約 4 個月，投稿信箱 submit.jim@gmail.com | 編輯部網站憑證鏈較舊，瀏覽器可能顯示「不安全」警告——這是網站本身的問題，不代表期刊停辦；期刊確實仍在正常發行（2025 年五年影響係數 0.333，TSSCI 收錄） |
+| 資訊管理學報（Journal of Information Management, JIM） | 中華民國資訊管理學會 | 官網：<https://jim-tw.com/>；線上投稿系統：<https://jim-tw.com/jim> | TSSCI 收錄，每年 1、4、7、10 月出刊（季刊），雙匿名審查，第一輪約 4 個月；一律經線上投稿系統投稿（官方已不受理 email 投稿），進度詢問 submit.jim@gmail.com | 期刊確實仍在正常發行（2025 年五年影響係數 0.333，TSSCI 收錄） |
 | 電子商務學報（Journal of e-Business） | 中華企業資源規劃學會（CERPS） | <https://www.ipress.tw/J0284>（華藝 iPress 投稿平台，舊網址 jeb.cerps.org.tw 已轉到這裡） | TSSCI 收錄（自 2006 年起），每年 6 月底、12 月底出刊（半年刊），中英文皆可投 | — |
 
 ### 研討會
@@ -91,8 +91,8 @@
 | TANET 2026（臺灣網際網路研討會）暨 ICS（國際計算機會議） | 每年輪值不同大學主辦，2026 年為國立臺北護理健康大學 | <https://tanet2026.ntunhs.edu.tw/> | 官網「投稿主題」區塊，列出 9 大研究方向（含 AI 與應用、生成式 AI、機器學習、深度學習、資訊安全與隱私、網路通訊與雲端運算、智慧醫療應用、教育科技與多媒體等） | 投稿系統 2026/6/30 開放；徵稿截止分兩階段，第一階段 2026/9/20、第二階段 2026/10/9（官網 2026 年 9 月更新後的時程）；會議 2026/10/29–31 |
 | NCS（全國計算機會議） | 中華民國電腦學會（CSROC） | <http://www.csroc.org.tw/ncs.php> | 見上一列 TANET | 2021、2023、2025 年都與 TANET 合辦為「TANET 暨 NCS」，**沒有單獨徵稿**。2026 年 TANET 改與國際計算機會議（ICS）合辦，官網沒有提到 NCS。查資料時看到 NCS，以當年 TANET 官網公告的合辦會議為準，不要當成另一個獨立的投稿管道 |
 
-!!! warning "csim.org.tw 打開時顯示「不安全」，是真的"
-    中華民國資訊管理學會官網的 SSL 憑證已過期，瀏覽器會跳出警告。這是學會網站本身沒更新憑證，**不代表 ICIM 研討會停辦**——它已連續舉辦超過 30 屆。打不開就改查本屆網站（如 icim2026.com），或直接搜尋「ICIM 資訊管理學術研討會」找最新一屆。
+!!! warning "csim.org.tw 偶有維護或連線問題"
+    中華民國資訊管理學會官網偶有維護或連線問題（2026-10-23 查核時顯示維護中），**不代表 ICIM 研討會停辦**——它已連續舉辦超過 30 屆。打不開就改查本屆網站（如 icim2026.com），或直接搜尋「ICIM 資訊管理學術研討會」找最新一屆。
 
 **沒有查證的部分**：各校資管系所自辦的研討會範圍太廣、沒有固定清單，這裡沒有逐校列出。有需要可以針對特定學校（政大、中山、中央等資管系）另外查詢是否有自辦研討會。
 
@@ -116,7 +116,7 @@
 - AIS 官方清單現在是 **11 本**，不是傳統認知的 8 本；本頁的 Basket 表列的是原始 8 本。
 - 子領域分類跟著 **ICIS 官方 track** 走，之後投稿會用到同一套分類。
 - 台灣本地期刊與研討會是碩士論文**實際的投稿落點**，國際頂級期刊多半是文獻回顧要讀的對象。
-- 個別已知問題：CSIM 官網 SSL 憑證過期（研討會沒停辦）、NCS 近年與 TANET 合辦、不單獨徵稿（2026 年 TANET 改與 ICS 合辦）、Computers & Security 暫停收 AI/ML 為主的投稿。
+- 個別已知問題：CSIM 官網偶有維護或連線問題（研討會沒停辦）、NCS 近年與 TANET 合辦、不單獨徵稿（2026 年 TANET 改與 ICS 合辦）、Computers & Security 暫停收 AI/ML 為主的投稿。
 - 網址會壞是常態，打不開就搜尋全名，不用懷疑期刊或研討會本身消失了。
 
 ---

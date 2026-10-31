@@ -70,7 +70,7 @@
 | 探索性因素分析 | EFA | 尚未確定因素結構時 |
 | 驗證性因素分析 | CFA | 已有理論預期的因素結構 |
 | 結構方程模型 | SEM | 同時處理測量模型與結構模型 |
-| 偏最小平方法 | PLS-SEM | 預測導向、樣本要求較寬鬆 |
+| 偏最小平方法 | PLS-SEM | 預測導向；可處理較小樣本，但不代表小樣本就夠 |
 | 共變異數基礎 SEM | CB-SEM | 驗證導向、有模型適配檢定 |
 | Cronbach's α | — | 內部一致性；≥ .70 |
 | 組合信度 | composite reliability, ρ_c / ρ_a | ≥ .70；過高（> .95）可能題項冗餘 |
@@ -78,7 +78,7 @@
 | 外部負荷量 | outer loading | ≥ .70 |
 | 收斂效度 | convergent validity | 同構念題目彼此相關高 |
 | 區辨效度 | discriminant validity | 不同構念界線清楚 |
-| HTMT | heterotrait-monotrait ratio | ≤ .85 為佳；> .90 有問題 |
+| HTMT | heterotrait-monotrait ratio | ≤ .85（較嚴格）；構念概念上相近時可用 ≤ .90；要寫明採用哪一個 |
 | 變異數膨脹因子 | VIF | ≤ 3 為佳；> 5 有共線性問題 |
 | 決定係數 | R² | 模型解釋力 |
 | 效果量 f² | f-square | .02 小、.15 中、.35 大 |

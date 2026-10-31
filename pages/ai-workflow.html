@@ -71,7 +71,7 @@
 <li><a href="../pages/prompts.html" data-title="AI 提示詞範本" data-slug="prompts" data-updated="1791622922">AI 提示詞範本</a></li>
 <li><a href="../pages/glossary.html" data-title="名詞與用語對照" data-slug="glossary" data-updated="1788525613">名詞與用語對照</a></li>
 <li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南" data-slug="sources" data-updated="1792807866">延伸閱讀與資源指南</a></li>
-<li><a href="../pages/about.html" data-title="關於本站" data-slug="about" data-updated="1793029502">關於本站</a></li>
+<li><a href="../pages/about.html" data-title="關於本站" data-slug="about" data-updated="1793290321">關於本站</a></li>
 </ul></div>
 </nav>
 <div class="wrap">
@@ -554,8 +554,8 @@ AI 摘要傾向保留結論而丟掉條件。原文寫「在 A 條件下、以 B
 
 ③ 讀取文獻內容、跟文獻對話
    PDF 到手後，查詢內容的優先順序建議是：
-   1. 用 NotebookLM 這類「以文件為準」的工具建立筆記本，把 PDF 丟進去問問題
-      （答案錨定在你上傳的原文，比一般對話工具更不容易編造內容）
+   1. 用 Gemini Notebook（2026 年 7 月前叫 NotebookLM）這類「以文件為準」的工具建立筆記本，把 PDF 丟進去問問題
+      （答案錨定在你上傳的原文，比一般對話工具更不容易編造內容，但仍可能出錯，要回原文核對）
    2. 沒有這類工具，或文獻還沒收錄，改用 Claude Code／Codex 這類代理型工具讀 PDF 全文，
       整理成結構化摘要（見下方模板）；文件長就拆給子任務處理，不要在主對話裡一次吃光
    3. 只有短文獻（十幾頁內）而且對話上下文還很空時，才考慮直接貼給對話工具讀
@@ -581,11 +581,11 @@ AI 摘要傾向保留結論而丟掉條件。原文寫「在 A 條件下、以 B
 </code></pre>
 <div class="admonition tip">
 <p class="admonition-title">查文獻內容優先用「以文件為準」的工具，不是查完就丟</p>
-<p>第三站選 NotebookLM 這類工具的理由，跟<a href="#七引用查核的三個步驟">第七節「引用查核的三個步驟」</a>的邏輯是同一件事：<strong>答案能不能追溯回原文</strong>。一般對話工具讀完 PDF 給的摘要，跟真正逐句核對過的內容，品質差很多，尤其是條件、範圍這類容易被摘要簡化掉的細節。</p>
+<p>第三站選 Gemini Notebook 這類工具的理由，跟<a href="#七引用查核的三個步驟">第七節「引用查核的三個步驟」</a>的邏輯是同一件事：<strong>答案能不能追溯回原文</strong>。一般對話工具讀完 PDF 給的摘要，跟真正逐句核對過的內容，品質差很多，尤其是條件、範圍這類容易被摘要簡化掉的細節。</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">工具是別人的，流程是你自己的</p>
-<p>上面點名的工具（Zotero、NotebookLM、Claude Code、Codex）都會改版、換名字、甚至停止服務。<strong>真正值得留下來的是這個順序背後的邏輯</strong>：先分層管理文獻（別讓寫作引用庫跟到訪庫混在一起）、內容查證要能追溯回原文、筆記要有固定結構並連回中央概念網絡、彙整要定期做而不是等寫作階段才臨時抱佛腳。換掉任何一個工具，這套邏輯都還成立。</p>
+<p>上面點名的工具（Zotero、Gemini Notebook、Claude Code、Codex）都會改版、換名字、甚至停止服務。<strong>真正值得留下來的是這個順序背後的邏輯</strong>：先分層管理文獻（別讓寫作引用庫跟到訪庫混在一起）、內容查證要能追溯回原文、筆記要有固定結構並連回中央概念網絡、彙整要定期做而不是等寫作階段才臨時抱佛腳。換掉任何一個工具，這套邏輯都還成立。</p>
 </div>
 <h3 id="112-把重複的工作固定下來">11.2 把重複的工作固定下來</h3>
 <p>當你發現自己一直在貼同樣的指示，就該把它整理成可重用的提示詞範本或 skill。SKILL 機制本身怎麼運作見新站的<a href="https://wayhong0928.github.io/ai-agent-notes/pages/extensions.html">SKILL、Plugin、MCP 與 Subagent</a>，實際把教材做成 SKILL 的步驟見<a href="https://wayhong0928.github.io/ai-agent-notes/pages/skill-build.html">把教材做成可安裝的 SKILL</a>（原<a href="ai-agents.html">AI 代理工具懶人包</a>已於 2026-09-17 遷移至該站）。</p>

@@ -71,7 +71,7 @@
 <li><a href="../pages/prompts.html" data-title="AI 提示詞範本" data-slug="prompts" data-updated="1791622922">AI 提示詞範本</a></li>
 <li><a href="../pages/glossary.html" data-title="名詞與用語對照" data-slug="glossary" data-updated="1788525613">名詞與用語對照</a></li>
 <li><a href="../pages/sources.html" data-title="延伸閱讀與資源指南" data-slug="sources" data-updated="1792807866">延伸閱讀與資源指南</a></li>
-<li><a href="../pages/about.html" data-title="關於本站" data-slug="about" data-updated="1793029502">關於本站</a></li>
+<li><a href="../pages/about.html" data-title="關於本站" data-slug="about" data-updated="1793290321">關於本站</a></li>
 </ul></div>
 </nav>
 <div class="wrap">
@@ -270,7 +270,7 @@
 <hr />
 <h2 id="五信度與效度">五、信度與效度</h2>
 <h3 id="51-信度reliability一致性與穩定性">5.1 信度（reliability）：一致性與穩定性</h3>
-<p>測量結果的一致性與穩定性。<strong>通常要求大於 0.7。</strong></p>
+<p>測量結果的一致性與穩定性。<strong>常見門檻為 ≥ 0.70</strong>（Nunnally, 1978 把 0.70 定位成省時省力的下限，基礎研究則建議 0.80），要依研究階段與所引用的判準說明。</p>
 <table>
 <thead>
 <tr>
@@ -330,7 +330,7 @@
 <tr>
 <td><strong>區辨（區別）效度</strong></td>
 <td>測量不同構念的題目界線清楚，相關性低</td>
-<td>Fornell–Larcker、交叉負荷、HTMT</td>
+<td>HTMT（主要判準）；Fornell–Larcker 與交叉負荷可附報，但 Henseler et al. (2015) 指出兩者在 PLS-SEM 中敏感度很低，不能單獨作為證據</td>
 </tr>
 </tbody>
 </table>
@@ -357,7 +357,7 @@
 </tr>
 <tr>
 <td>樣本量</td>
-<td>相對寬鬆</td>
+<td>可估計較小樣本，但小樣本一樣損失檢定力（Goodhue et al., 2012）；樣本數應事前估算，例如反平方根法（Kock &amp; Hadaya, 2018）</td>
 <td>需求較大</td>
 </tr>
 <tr>
@@ -417,7 +417,7 @@
 </tr>
 <tr>
 <td>HTMT（區辨效度）</td>
-<td>≤ 0.85 為佳；0.85–0.90 需說明；&gt; 0.90 有問題</td>
+<td>≤ 0.85（較嚴格）；構念在概念上相近（如使用意圖與實際使用）時可採 ≤ 0.90；也可用 bootstrap 信賴區間檢定 HTMT 是否顯著小於 1（HTMT_inference）。論文中要寫明採用哪一個門檻與理由（Henseler et al., 2015）</td>
 </tr>
 </tbody>
 </table>
@@ -480,7 +480,7 @@
 <tr>
 <td>3</td>
 <td><strong>測量模型</strong></td>
-<td>內部一致性、收斂效度（AVE、CR）、區別效度（HTMT、Fornell-Larcker）</td>
+<td>內部一致性、收斂效度（AVE、CR）、區別效度（HTMT 為主，Fornell-Larcker 可附報）</td>
 <td><strong>停在這裡</strong>，刪題或重新界定構念，不要硬跑結構模型</td>
 </tr>
 <tr>
@@ -617,9 +617,9 @@
 <h2 id="十本頁重點回顧">十、本頁重點回顧</h2>
 <ul>
 <li>問卷法擅長相關與預測，不擅長因果與深層機制。</li>
-<li>預試看「懂不懂」，前測看「準不準」，兩者都不能跳過。</li>
+<li>預試看「懂不懂」，前測看「準不準」。預試不能跳過；前測只有在樣本極難取得時才可省略，並寫進限制。</li>
 <li>抽樣要「找對人來查」；非機率抽樣要誠實寫進限制。</li>
-<li>信度 &gt; 0.7；效度分表面、內容、建構、收斂、區辨。</li>
+<li>信度常見門檻 ≥ 0.70；效度分表面、內容、建構、收斂、區辨。</li>
 <li>PLS 或 CB-SEM 要有方法論依據，不是因為軟體好用。</li>
 <li>報告 PLS 結果要給效果量與預測指標，不能只寫「顯著」。</li>
 <li>第四章順序＝論證順序：樣本 → CMV → <strong>測量模型（沒過就停）</strong> → 結構模型 → 中介 → <strong>假說彙整表</strong>。</li>

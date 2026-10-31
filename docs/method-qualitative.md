@@ -166,10 +166,10 @@
 - **消極證據分析（negative evidence）**：找出文本中「沒寫、但不代表沒發生」的訊息，例如作者可能選擇性遺忘、合理化，或刻意避開某些內容。
 - **隱含語義分析（implicit semantics）**：讀出語句背後的態度、認知與推論痕跡。
 
-可結合 **Kember 反思思考模型**的四個層次做分層編碼：
+可結合 **Kember 反思思考模型**（Kember et al., 2008）的四個層次做分層編碼：
 
 ```
-描述（describing） → 理解（understanding） → 反思（reflection） → 批判性反思（critical reflection）
+習慣性行動／非反思（habitual action / non-reflection） → 理解（understanding） → 反思（reflection） → 批判性反思（critical reflection）
 ```
 
 !!! tip "AI 只能提供敏感度與分類提示"
@@ -279,6 +279,6 @@
 
 ---
 
-**參考**：Lincoln & Guba (1985), *Naturalistic Inquiry*；Kember 反思思考模型；Kvale & Brinkmann (2009), *InterViews*；Patton (2002), *Qualitative Research & Evaluation Methods*；Moustakas (1994), *Phenomenological Research Methods*；van Manen (1990), *Researching Lived Experience*；Clandinin & Connelly (2000), *Narrative Inquiry*；Riessman (2008), *Narrative Methods for the Human Sciences*；Yin (2018), *Case Study Research and Applications*；Eisenhardt (1989), "Building Theories from Case Study Research"；Strauss & Corbin (1998), *Basics of Qualitative Research*；Charmaz (2014), *Constructing Grounded Theory*；Hammersley & Atkinson (2007), *Ethnography: Principles in Practice*；Van Maanen (2011), *Tales of the Field*；Krippendorff (2018), *Content Analysis*；Bowen (2009), "Document Analysis as a Qualitative Research Method"。
+**參考**：Lincoln & Guba (1985), *Naturalistic Inquiry*；Kember, McKay, Sinclair & Wong (2008), *Assessment & Evaluation in Higher Education* 33(4), 369–379；Kvale & Brinkmann (2009), *InterViews*；Patton (2002), *Qualitative Research & Evaluation Methods*；Moustakas (1994), *Phenomenological Research Methods*；van Manen (1990), *Researching Lived Experience*；Clandinin & Connelly (2000), *Narrative Inquiry*；Riessman (2008), *Narrative Methods for the Human Sciences*；Yin (2018), *Case Study Research and Applications*；Eisenhardt (1989), "Building Theories from Case Study Research"；Strauss & Corbin (1998), *Basics of Qualitative Research*；Charmaz (2014), *Constructing Grounded Theory*；Hammersley & Atkinson (2007), *Ethnography: Principles in Practice*；Van Maanen (2011), *Tales of the Field*；Krippendorff (2018), *Content Analysis*；Bowen (2009), "Document Analysis as a Qualitative Research Method"。
 
 **延伸**：[方法論選擇地圖](methodology.md)｜[論文架構與各章寫作要領](writing.md)｜[AI 輔助研究工作流](ai-workflow.md)
